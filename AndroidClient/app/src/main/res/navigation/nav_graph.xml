@@ -3,29 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/HomeFragment">
-
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/HomeFragment"
+        android:id="@+id/homeFragment"
         android:name="com.example.androidclient.HomeFragment"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_HomeFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.androidclient.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_userProfileFragment"
-            app:destination="@id/userProfileFragment" />
-    </fragment>
+        android:id="@+id/categoryFragment"
+        android:name="com.example.androidclient.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
     <fragment
-        android:id="@+id/userProfileFragment"
-        android:name="com.example.androidclient.UserProfileFragment"
-        android:label="fragment_user_profile"
-        tools:layout="@layout/fragment_user_profile" />
+        android:id="@+id/buildFragment"
+        android:name="com.example.androidclient.BuildFragment"
+        android:label="fragment_build"
+        tools:layout="@layout/fragment_build" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.androidclient.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
 </navigation>
