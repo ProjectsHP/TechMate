@@ -1,0 +1,64 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Basic info">
+
+        <EditTextPreference
+            app:key="pref_FirstName"
+            app:summary="Not set"
+            app:title="First name"
+            app:persistent="false"
+            />
+
+
+        <EditTextPreference
+            app:key="pref_LastName"
+            app:persistent="false"
+            app:summary="Not set"
+            app:title="Last name" />
+
+
+        <ListPreference
+            app:defaultValue="Male"
+            app:entries="@array/gender_entries"
+            app:entryValues="@array/gender_entries"
+            app:key="pref_Gender"
+            app:persistent="false"
+            app:title="Gender" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Contact info">
+
+        <EditTextPreference
+            app:icon="@drawable/ic_round_alternate_email_24"
+            app:key="pref_Email"
+            app:persistent="false"
+            app:summary="Prince@gmail.com"
+            app:title="Email address" />
+
+        <EditTextPreference
+            app:icon="@drawable/ic_baseline_phone_24"
+            app:key="pref_Phone"
+            app:persistent="false"
+            app:title="Phone" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+
+
+        <Preference
+            app:key="pref_deleteAcc"
+            app:title="Delete my account"
+            app:icon="@drawable/ic_baseline_delete_24"
+            app:summary="Status: Active"/>
+
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/loginRegisterFragment">
+
+    <fragment
+        android:id="@+id/SingInFragment"
+        android:name="com.example.androidclient.login.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/action_SignInFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.androidclient.login.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_SignUpFragment_to_SignInFragment"
+            app:destination="@id/SingInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.example.androidclient.login.LoginRegisterFragment"
+        android:label="fragment_login_register"
+        tools:layout="@layout/fragment_login_register" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_SingInFragment"
+            app:destination="@id/SingInFragment"
+            app:popUpTo="@id/SingInFragment" />
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment"
+            app:popUpTo="@id/SignUpFragment" />
+    </fragment>
+</navigation>
