@@ -1,0 +1,21 @@
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll.config
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).pdb
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.AssemblyReference.cache
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.CoreCompileInputs.cache
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).dll
+C:\Users\Prince\Documents\Visual Studio 2022\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).pdb
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll.config
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).pdb
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.AssemblyReference.cache
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.CoreCompileInputs.cache
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).dll
+C:\Users\Prince\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).pdb
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll.config
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).pdb
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.AssemblyReference.cache
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).csproj.CoreCompileInputs.cache
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).dll
+C:\Users\phkub\Desktop\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Debug\WCF Service(Server).pdb

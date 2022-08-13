@@ -1,0 +1,31 @@
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll.config
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\WCF Service(Server).pdb
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\BouncyCastle.Crypto.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\EntityFramework.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\EntityFramework.SqlServer.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MailKit.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MimeKit.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Buffers.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Memory.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Numerics.Vectors.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Text.Encoding.CodePages.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\BouncyCastle.Crypto.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\EntityFramework.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\EntityFramework.SqlServer.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MailKit.pdb
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MailKit.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MimeKit.pdb
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\MimeKit.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Buffers.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Memory.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Numerics.Vectors.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Release\WCFService.csproj.AssemblyReference.cache
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Release\WCFService.csproj.CoreCompileInputs.cache
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Release\WCFService.csproj.CopyComplete
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Release\WCF Service(Server).dll
+C:\Users\phkub\Desktop\IFM3B Backup\IFM3B\WCF_ServiceSOAP_REST\WCF Service(Server)\WCF Service(Server)\obj\Release\WCF Service(Server).pdb

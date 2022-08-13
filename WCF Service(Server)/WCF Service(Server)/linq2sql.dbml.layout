@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linq2sql">
+  <DataContextMoniker Name="/linq2sqlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="15f8241d-1930-46b4-8c08-ee7038f8e257" absoluteBounds="0.5, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/linq2sqlDataContext/Component" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fe1170b-6c96-4954-bdde-662bc93fb14b" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e493136f-72ef-4a96-80c2-6ee23f9db6ea" absoluteBounds="5.25, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/linq2sqlDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9150148-c769-4c2e-89c0-c169a923bc24" absoluteBounds="5.265, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6dbf2e3-5e6b-4bd5-a22f-9f7f34d09ed7" absoluteBounds="3, 3, 2, 2.5401025390625">
+      <DataClassMoniker Name="/linq2sqlDataContext/Build" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d82a5964-4c3f-4e80-ac3d-d79105819630" absoluteBounds="3.015, 3.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

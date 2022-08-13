@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TechMate_db" Class="linq2sqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:techmatedbserver1.database.windows.net,1433;Initial Catalog=TechMate_db;Persist Security Info=False;User ID=TechMate;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TechMate_dbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Component" Member="Components">
+    <Type Name="Component">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="price" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="availability" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="compatibility" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="build_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="surname" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="cellNo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="userType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Build" Member="Builds">
+    <Type Name="Build">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="compatibilityStatus" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="baseBuild_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ram_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="storage_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="graphics_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cpu_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

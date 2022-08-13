@@ -1,0 +1,10 @@
+Website
+{
+	*create a breadcrumb using sitemappath
+      *
+}
+
+Server
+{
+	*create password secrecy
+}
