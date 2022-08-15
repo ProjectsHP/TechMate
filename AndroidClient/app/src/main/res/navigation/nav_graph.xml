@@ -3,25 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
+    android:label="Home"
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.androidclient.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/categoryFragment"
-        android:name="com.example.androidclient.CategoryFragment"
-        android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
     <fragment
         android:id="@+id/buildFragment"
         android:name="com.example.androidclient.BuildFragment"
-        android:label="fragment_build"
+        android:label="Build"
         tools:layout="@layout/fragment_build" />
     <fragment
         android:id="@+id/cartFragment"
         android:name="com.example.androidclient.CartFragment"
-        android:label="fragment_cart"
+        android:label="Cart"
         tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.androidclient.CategoryFragment"
+        android:label="Category" />
+    <activity
+        android:id="@+id/userProfile"
+        android:name="com.example.androidclient.UserProfile"
+        android:label="activity_user_profile"
+        tools:layout="@layout/activity_user_profile" />
 </navigation>

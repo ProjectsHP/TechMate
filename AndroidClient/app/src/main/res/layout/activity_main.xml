@@ -21,11 +21,13 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             tools:visibility="visible" >
+
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/toolbarLogo"
                 android:layout_width="118dp"
                 android:layout_height="64dp"
-                app:srcCompat="@drawable/logo_bk" />
+                app:srcCompat="@drawable/logo_bk"
+                tools:visibility="gone" />
         </com.google.android.material.appbar.MaterialToolbar>
 
 

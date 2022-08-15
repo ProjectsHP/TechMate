@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/group_category">
+        <item
+            android:id="@+id/desktop_cat"
+            android:icon="@drawable/desktop_icon"
+            android:title="Desktops" />
+
+        <item
+            android:id="@+id/laptop_cat"
+            android:icon="@drawable/laptop_icon"
+            android:title="Laptops" />
+
+        <item
+            android:id="@+id/cpu_cat"
+            android:icon="@drawable/cpu_icon"
+            android:title="Processor" />
+
+        <item
+            android:id="@+id/storage_cat"
+            android:icon="@drawable/harddisk_icon"
+            android:title="Storage" />
+
+        <item
+            android:id="@+id/ram_cat"
+            android:icon="@drawable/ram_icon"
+            android:title="Memory" />
+
+        <item
+            android:id="@+id/graphics_cat"
+            android:icon="@drawable/gpu_icon"
+            android:title="Graphics" />
+    </group>
+</menu>

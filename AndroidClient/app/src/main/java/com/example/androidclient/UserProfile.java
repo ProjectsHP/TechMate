@@ -17,7 +17,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.PreferenceManager;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -32,6 +31,7 @@ import com.example.androidclient.login.LoginActivity;
 import com.example.androidclient.network.URLGenerator;
 import com.example.androidclient.network.VolleyCallBack;
 import com.example.androidclient.network.VolleySingleton;
+import com.example.androidclient.objects.UserObject;
 import com.example.androidclient.ui.UIComponents;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

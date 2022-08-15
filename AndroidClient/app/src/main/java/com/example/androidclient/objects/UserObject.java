@@ -1,4 +1,4 @@
-package com.example.androidclient;
+package com.example.androidclient.objects;
 
 public class UserObject {
 

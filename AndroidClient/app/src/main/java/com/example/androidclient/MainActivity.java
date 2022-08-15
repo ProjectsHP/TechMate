@@ -28,13 +28,16 @@ import com.example.androidclient.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
     private AppBarLayout appBarLayout;
+
     private MaterialToolbar materialToolbar;
+    ImageView toolbarLogo;
 
 
 
@@ -54,9 +57,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
+        toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
         appBarLayout = (AppBarLayout) findViewById(R.id.mainAppBarLayout);
         materialToolbar = (MaterialToolbar) findViewById(R.id.mainToolbar);          //for access on other fragments
-       getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+      //  getSupportActionBar().setLogo(R.drawable.logo_bk);
+
 
 
 
@@ -72,14 +78,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-/*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_bottom_nav, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
         return true;
     }
-*/
+
     @Override
     public void onBackPressed(){
         Intent exitIntent = new Intent(Intent.ACTION_MAIN);

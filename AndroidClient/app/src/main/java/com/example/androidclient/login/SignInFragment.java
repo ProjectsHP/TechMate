@@ -16,7 +16,6 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-import androidx.preference.PreferenceManager;
 import androidx.viewpager.widget.ViewPager;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -28,7 +27,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.example.androidclient.MainActivity;
 import com.example.androidclient.R;
-import com.example.androidclient.UserObject;
+import com.example.androidclient.objects.UserObject;
 import com.example.androidclient.databinding.FragmentSignInBinding;
 import com.example.androidclient.network.URLGenerator;
 import com.example.androidclient.network.VolleyCallBack;
@@ -40,7 +39,6 @@ import com.google.gson.GsonBuilder;
 
 import org.json.JSONObject;
 
-import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
