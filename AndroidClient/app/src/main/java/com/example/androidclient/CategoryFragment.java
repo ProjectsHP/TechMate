@@ -1,11 +1,15 @@
 package com.example.androidclient;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,7 +44,9 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
+        NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
         toolbarLogo = getActivity().findViewById(R.id.toolbarLogo);
         toolbarLogo.setVisibility(View.GONE);
 
@@ -82,6 +88,8 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
 
     @Override
     public void onItemClick(int position) {
-        Toast.makeText(getActivity(),"Check if works nice",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getActivity(), ItemsListActivity.class);
+        startActivity(intent);
+
     }
 }

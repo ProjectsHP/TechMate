@@ -1,33 +1,23 @@
 package com.example.androidclient;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.example.androidclient.databinding.ActivityMainBinding;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.color.DynamicColors;
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.snackbar.Snackbar;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.androidclient.databinding.ActivityMainBinding;
-
 import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
     private AppBarLayout appBarLayout;
-
     private MaterialToolbar materialToolbar;
     ImageView toolbarLogo;
 
@@ -55,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
         toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
-        appBarLayout = (AppBarLayout) findViewById(R.id.mainAppBarLayout);
+        appBarLayout = (AppBarLayout) findViewById(R.id.itemAppBarLayout);
         materialToolbar = (MaterialToolbar) findViewById(R.id.mainToolbar);          //for access on other fragments
         getSupportActionBar().setDisplayShowTitleEnabled(false);
       //  getSupportActionBar().setLogo(R.drawable.logo_bk);
@@ -86,13 +76,14 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /*
     @Override
     public void onBackPressed(){
         Intent exitIntent = new Intent(Intent.ACTION_MAIN);
         exitIntent.addCategory(Intent.CATEGORY_HOME);
         exitIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK) ;
         startActivity(exitIntent);
-    }
+    }*/
 
    /*
     @Override
@@ -109,12 +100,12 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-    */
+
 }

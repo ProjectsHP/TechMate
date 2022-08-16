@@ -780,6 +780,7 @@
     <Content Include="SQL_DBDataSet.xsc">
       <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\TechMateSite - Web Deploy.pubxml" />
     <None Include="SQL_DBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SQL_DBDataSet.Designer.cs</LastGenOutput>

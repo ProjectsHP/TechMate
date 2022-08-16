@@ -23,6 +23,11 @@
             android:label="@string/title_activity_user_profile"
             android:theme="@style/Base.Theme.AndroidClient.NoActionBar" />
         <activity
+            android:name=".ItemsListActivity"
+            android:exported="false"
+            android:label="Items"
+            android:theme="@style/Base.Theme.AndroidClient" />
+        <activity
             android:name=".login.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_login"

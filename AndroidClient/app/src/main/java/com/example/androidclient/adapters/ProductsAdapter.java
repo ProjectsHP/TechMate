@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidclient.R;
+import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
 
@@ -15,6 +16,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
 
 
     private ArrayList localDataSet;
+    private final IRecyclerViewClickHandler recyclerViewClickHandler;
+
 
     /**
      * Provide a reference to the type of views that you are using
@@ -23,10 +26,23 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
 
-        public ViewHolder(View view) {
+        public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
             // Define click listener for the ViewHolder's View
 
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(recyclerViewClickHandler!=null){
+                        int pos = getBindingAdapterPosition();
+
+                        if(pos!= RecyclerView.NO_POSITION){
+                            recyclerViewClickHandler.onItemClick(pos);
+                        }
+
+                    }
+                }
+            });
             textView = (TextView) view.findViewById(R.id.lblProductName);
         }
 
@@ -35,13 +51,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         }
     }
 
-    /**
-     * Initialize the dataset of the Adapter.
-     *
-     * @param dataSet String[] containing the data to populate views to be used
-     * by RecyclerView.
-     */
-    public ProductsAdapter(ArrayList dataSet) {
+
+    public ProductsAdapter(ArrayList dataSet,  IRecyclerViewClickHandler clickHandler) {
+        this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
     }
 
@@ -52,7 +64,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.recycler_product_item, viewGroup, false);
 
-        return new ViewHolder(view);
+        return new ViewHolder(view,recyclerViewClickHandler);
     }
 
     // Replace the contents of a view (invoked by the layout manager)

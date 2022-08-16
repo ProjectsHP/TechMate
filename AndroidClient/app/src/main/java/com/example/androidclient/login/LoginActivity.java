@@ -47,9 +47,10 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DynamicColors.applyToActivitiesIfAvailable(getApplication());
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        DynamicColors.applyToActivitiesIfAvailable(getApplication());
+
 
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Login"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Sign Up"));
