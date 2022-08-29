@@ -10,10 +10,13 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.androidclient.databinding.FragmentProductDetailsBinding;
+import com.example.androidclient.objects.ProductObject;
 
 public class ProductDetailsFragment extends Fragment {
 
     private FragmentProductDetailsBinding binding;
+    ProductObject selectedProduct;
+
 
     @Override
     public View onCreateView(
@@ -28,6 +31,16 @@ public class ProductDetailsFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            selectedProduct = bundle.getParcelable("selectedProduct");
+            binding.txtDetName.setText(selectedProduct.getName());
+            binding.txtDetCategory.setText(selectedProduct.getCategory());
+            binding.txtDetDescription.setText(selectedProduct.getDescription());
+            binding.txtDetPrice.setText("R"+selectedProduct.getPrice());
+
+        }
+
 
 
     }

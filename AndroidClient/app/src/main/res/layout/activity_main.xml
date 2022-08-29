@@ -16,20 +16,11 @@
         app:elevation="164dp"
         tools:visibility="visible">
 
-
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/mainToolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            tools:visibility="visible">
-
-            <ImageView
-                android:id="@+id/toolbarLogo"
-                android:layout_width="118dp"
-                android:layout_height="64dp"
-                app:srcCompat="@drawable/logo_bk"
-                tools:visibility="gone" />
-        </com.google.android.material.appbar.MaterialToolbar>
+            tools:visibility="visible" />
 
 
     </com.google.android.material.appbar.AppBarLayout>

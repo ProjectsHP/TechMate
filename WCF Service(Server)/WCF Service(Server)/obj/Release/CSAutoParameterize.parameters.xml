@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="TechMateDBConnectionString-Web.config Connection String" description="TechMateDBConnectionString Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:techmatedbserver1.database.windows.net,1433;Initial Catalog=TechMate_db;Persist Security Info=False;User ID=TechMate;Password=@1990509hpK;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\phkub\\Desktop\\IFM3B\ Backup\\IFM3B\\WCF_ServiceSOAP_REST\\WCF\ Service\(Server\)\\WCF\ Service\(Server\)\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TechMateDBConnectionString']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\phkub\\Desktop\\TechMate\\WCF\ Service\(Server\)\\WCF\ Service\(Server\)\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TechMateDBConnectionString']/@connectionString" />
   </parameter>
   <parameter name="TechMate_dbConnectionString-Web.config Connection String" description="TechMate_dbConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:techmatedbserver1.database.windows.net,1433;Initial Catalog=TechMate_db;Persist Security Info=False;User ID=TechMate;Password=@1990509hpK;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\phkub\\Desktop\\IFM3B\ Backup\\IFM3B\\WCF_ServiceSOAP_REST\\WCF\ Service\(Server\)\\WCF\ Service\(Server\)\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TechMate_dbConnectionString']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\phkub\\Desktop\\TechMate\\WCF\ Service\(Server\)\\WCF\ Service\(Server\)\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TechMate_dbConnectionString']/@connectionString" />
   </parameter>
 </parameters>

@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-
+using System.Text.RegularExpressions;
 using System.ServiceModel.Description;
 using System.Net;
 
@@ -63,9 +63,30 @@ namespace WCF_Service_Server_
 
             if(user == null)
             {
-           
-                
-         //       password=HashPassword(password);
+              
+
+                if (email.Contains("@admin.com"))
+                {
+                    userType = "Admin";
+                }
+                else if(email.Contains("@manager.com"))
+                {
+                    userType = "Manager";
+                }
+                else if (email.Contains("@clerk.com"))
+                {
+                    userType = "Clerk";
+                }
+                else if (email.Contains("@sManager.com"))
+                {
+                    userType = "sManager";
+                }
+                else
+                {
+                    userType = "Customer";
+                }
+
+                //       password=HashPassword(password);
                 var newUser = new User
                 {
                     name = name,

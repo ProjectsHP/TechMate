@@ -23,17 +23,18 @@
         app:srcCompat="@drawable/google_logo" />
 
     <TextView
-        android:id="@+id/lblProductName"
+        android:id="@+id/lblListItemProductName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:lines="3"
         android:text="ASUS EXPERTCENTRE D5 CORE I3 10105 4GB RAM "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblListItemProductPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -42,8 +43,8 @@
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/lblProductName"
-        app:layout_constraintTop_toBottomOf="@+id/lblProductName" />
+        app:layout_constraintStart_toStartOf="@+id/lblListItemProductName"
+        app:layout_constraintTop_toBottomOf="@+id/lblListItemProductName" />
 
     <ImageButton
         android:id="@+id/imageButton"

@@ -19,6 +19,7 @@ namespace Front_end
             string dispCompDet = "";
            
             int style = 1;
+            int total = 0;
 
            dynamic build =  SRef.FetchBuildSOAP("2");
 
@@ -154,6 +155,8 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + desktop.image+"'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
+                Session["BuildTotPrice"] += desktop.price;
+
             }
             if (Session["CPU_build"] != null)
             {
@@ -168,6 +171,7 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + cpu.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
+                Session["BuildTotPrice"] += cpu.price;
             }
             if (Session["Ram_build"] != null)
             {
@@ -182,6 +186,7 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + ram.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
+                Session["BuildTotPrice"] += ram.price;
             }
             if (Session["Storage_build"] != null)
             {
@@ -196,6 +201,7 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + storage.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
+                Session["BuildTotPrice"] += storage.price;
             }
             if (Session["Graphics_build"] != null)
             {
@@ -210,17 +216,23 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + graphics.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
+                Session["BuildTotPrice"] += graphics.price;
             }
-            selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
-            selectedComp += "<div class='col-md-12 col-xs-12'>";
-            selectedComp += "<h5>Build details:</h5>";
-            selectedComp += "<p>This build is compitable with all selected components. No issues detected</p>";
-            selectedComp += "<a href = '#'>Total: R43 999</a>";
-            selectedComp += "</div>";
-            selectedComp += "<figure>";
-            selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
-            selectedComp += "</figure>";
-            selectedComp += "</div>";
+
+            if (Session["BuildTotPrice"] != null)
+            {
+                selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
+                selectedComp += "<div class='col-md-12 col-xs-12'>";
+                selectedComp += "<h5>Build details:</h5>";
+                selectedComp += "<p>This build is compitable with all selected components. No issues detected</p>";
+                selectedComp += "<a href = '#'>Total: R63 000</a>";
+                selectedComp += "</div>";
+                selectedComp += "<figure>";
+                selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
+                selectedComp += "</figure>";
+                selectedComp += "</div>";
+            }
+           
 
 
 

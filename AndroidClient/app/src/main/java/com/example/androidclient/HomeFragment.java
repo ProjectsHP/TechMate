@@ -1,6 +1,9 @@
 package com.example.androidclient;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -8,9 +11,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.example.androidclient.adapters.ProductsAdapter;
 import com.example.androidclient.databinding.FragmentHomeBinding;
+import com.example.androidclient.network.URLGenerator;
+import com.example.androidclient.network.VolleyCallBack;
+import com.example.androidclient.network.VolleySingleton;
+import com.example.androidclient.objects.ProductObject;
+import com.example.androidclient.objects.UserObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
+import com.example.androidclient.ui.UIComponents;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,18 +40,28 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-public class HomeFragment extends Fragment implements IRecyclerViewClickHandler {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class HomeFragment extends Fragment implements IRecyclerViewClickHandler , URLGenerator {
 
     private FragmentHomeBinding binding;
     private ImageView toolbarIcon;
+    UIComponents uiComponents;
+    ProductObject[] productObject =null;
+    ArrayList<ProductObject> list = new ArrayList<>();
+    RequestQueue requestQueue;
+    StringRequest stringRequest;
+    String serverResponseCode;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
@@ -43,28 +71,36 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
         super.onViewCreated(view, savedInstanceState);
 
 //        NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-//        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+    //    ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        uiComponents = new UIComponents(getActivity());
+        requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
 
-        ArrayList list = new ArrayList<>();
-        list.add("Object 1 if working correct");
-        list.add("Object 2 if working correct");
-        list.add("Object 3 if working correct");
-        list.add("Object 4 if working correct");
-        list.add("Object 5 if working correct");
-        list.add("Object 6 if working correct");
-        ProductsAdapter adapter = new ProductsAdapter(list,this);
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
-        binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
-        binding.recyclerPopularProducts.setAdapter(adapter);
-
-
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        GETRandomComponentsRequest(new VolleyCallBack() {
             @Override
-            public void onClick(View view) {
-//                NavHostFragment.findNavController(HomeFragment.this)
-//                        .navigate(R.id.action_HomeFragment_to_SecondFragment);
+            public void OnSuccess() {
+
+
+
+
+                        if (serverResponseCode != null) {
+                            if (serverResponseCode.equals("200")) {
+                                Log.e("RESPONSE CODE 200: ", serverResponseCode);
+                                list.addAll(Arrays.asList(productObject));                  //NOTE THIS LINE. Might cause null response
+                                ProductsAdapter adapter = new ProductsAdapter(list, HomeFragment.this);
+                                LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
+                                binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
+                                binding.recyclerPopularProducts.setAdapter(adapter);
+                            }
+                        } else {
+
+                            uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
+                        }
+                        serverResponseCode = null;
+
             }
         });
+
+
     }
 
     @Override
@@ -77,21 +113,69 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+      //  ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
 
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+     //   ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
 
     }
 
     @Override
     public void onItemClick(int position) {
-      //  NavHostFragment.findNavController(HomeFragment.this)
-        //                .navigate(R.id.action_HomeFragment_to_SecondFragment);
+
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("selectedProduct",list.get(position));
+        NavHostFragment.findNavController(HomeFragment.this)
+                        .navigate(R.id.action_homeFragment_to_productDetailsFragment,bundle);
+    }
+
+    @Override
+    public String generateURL() {
+        String cleanUrl = getResources().getString(R.string.WCF_URL);
+        return cleanUrl + "FetchRandomComponentsURI/9";
+    }
+
+
+    public void GETRandomComponentsRequest(final VolleyCallBack callBack) {
+
+        //JSONObject Request initialized
+        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL(), null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        ProductObject[] productObjects=null;
+
+                        try {
+                            JSONArray productsArr = response.getJSONArray("FetchRandomComponentsResult");
+                            GsonBuilder builder = new GsonBuilder();
+                            builder.serializeNulls();
+                            Gson gson = builder.setPrettyPrinting().create();
+                            productObject = gson.fromJson(String.valueOf(productsArr),ProductObject[].class);
+                            serverResponseCode = getResources().getString(R.string.response_success);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                        callBack.OnSuccess();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        String body = "";
+                        serverResponseCode = null;
+                        Log.e("Error response",error.toString());
+                        callBack.OnSuccess();
+                    }
+                }
+        );
+        JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        requestQueue.add(JsonObjectRequest);
     }
 
 //    @Override

@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+       // getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
-        toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
+       // toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
         appBarLayout = (AppBarLayout) findViewById(R.id.itemAppBarLayout);
         materialToolbar = (MaterialToolbar) findViewById(R.id.mainToolbar);          //for access on other fragments
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
       //  getSupportActionBar().setLogo(R.drawable.logo_bk);
 
 

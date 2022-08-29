@@ -9,13 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidclient.R;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
 
 public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHolder>{
 
-    private ArrayList localDataSet;
+    private final ArrayList<ProductObject> localDataSet;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
 
 
@@ -43,7 +44,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                     }
                 }
             });
-            textView = (TextView) view.findViewById(R.id.lblProductName);
+            textView = (TextView) view.findViewById(R.id.lblListItemProductName);
         }
 
         public TextView getTextView() {
@@ -52,7 +53,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     }
 
 
-    public ItemListAdapter(ArrayList dataSet,  IRecyclerViewClickHandler clickHandler) {
+    public ItemListAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
     }

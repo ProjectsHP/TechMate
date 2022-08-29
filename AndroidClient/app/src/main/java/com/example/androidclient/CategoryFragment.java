@@ -47,8 +47,8 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
         NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
-        toolbarLogo = getActivity().findViewById(R.id.toolbarLogo);
-        toolbarLogo.setVisibility(View.GONE);
+       // toolbarLogo = getActivity().findViewById(R.id.toolbarLogo);
+        //toolbarLogo.setVisibility(View.GONE);
 
 
 

@@ -1,0 +1,2190 @@
+﻿++Solution 'FrontEnd' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:FrontEnd.sln
+++FrontEnd
+i:{00000000-0000-0000-0000-000000000000}:FrontEnd
+++Connected Services
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\
+++Properties
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\
+++References
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++App_Code
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\
+++SqlServerTypes
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\sqlservertypes\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\
+++readme.htm
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\sqlservertypes\readme.htm
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\readme.htm
+++Loader.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\loader.cs
+++App_Data
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_data\
+++App_Start
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_start\
+++BundleConfig.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_start\bundleconfig.cs
+++RouteConfig.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_start\routeconfig.cs
+++bin
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\
+++de
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\
+++Microsoft.ReportViewer.Common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.common.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.common.resources.dll
+++Microsoft.ReportViewer.DataVisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.datavisualization.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.datavisualization.resources.dll
+++Microsoft.ReportViewer.Design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.design.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.design.resources.dll
+++Microsoft.ReportViewer.WebDesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.webdesign.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.webdesign.resources.dll
+++Microsoft.ReportViewer.WebForms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.webforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.webforms.resources.dll
+++Microsoft.ReportViewer.WinForms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\de\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\microsoft.reportviewer.winforms.resources.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\microsoft.reportviewer.winforms.resources.dll
+++es
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\es\
+++fr
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\fr\
+++it
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\it\
+++ja
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ja\
+++ko
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ko\
+++pt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\pt\
+++roslyn
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\
+++csc.exe
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csc.exe
+++csc.exe.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csc.exe.config
+++csc.rsp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csc.rsp
+++csi.exe
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csi.exe
+++csi.exe.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csi.exe.config
+++csi.rsp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\csi.rsp
+++Microsoft.Build.Tasks.CodeAnalysis.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.build.tasks.codeanalysis.dll
+++Microsoft.CodeAnalysis.CSharp.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.codeanalysis.csharp.dll
+++Microsoft.CodeAnalysis.CSharp.Scripting.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.codeanalysis.csharp.scripting.dll
+++Microsoft.CodeAnalysis.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.codeanalysis.dll
+++Microsoft.CodeAnalysis.Scripting.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.codeanalysis.scripting.dll
+++Microsoft.CodeAnalysis.VisualBasic.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.codeanalysis.visualbasic.dll
+++Microsoft.CSharp.Core.targets
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.DiaSymReader.Native.amd64.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.diasymreader.native.amd64.dll
+++Microsoft.DiaSymReader.Native.x86.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.diasymreader.native.x86.dll
+++Microsoft.Managed.Core.targets
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.VisualBasic.Core.targets
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.visualbasic.core.targets
+++Microsoft.Win32.Primitives.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\microsoft.win32.primitives.dll
+++System.AppContext.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.appcontext.dll
+++System.Collections.Immutable.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.collections.immutable.dll
+++System.Console.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.console.dll
+++System.Diagnostics.DiagnosticSource.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.diagnostics.diagnosticsource.dll
+++System.Diagnostics.FileVersionInfo.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.diagnostics.fileversioninfo.dll
+++System.Diagnostics.StackTrace.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.diagnostics.stacktrace.dll
+++System.Globalization.Calendars.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.globalization.calendars.dll
+++System.IO.Compression.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.io.compression.dll
+++System.IO.Compression.ZipFile.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.io.compression.zipfile.dll
+++System.IO.FileSystem.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.io.filesystem.dll
+++System.IO.FileSystem.Primitives.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.io.filesystem.primitives.dll
+++System.Net.Http.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.net.http.dll
+++System.Net.Sockets.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.net.sockets.dll
+++System.Reflection.Metadata.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.reflection.metadata.dll
+++System.Runtime.InteropServices.RuntimeInformation.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.runtime.interopservices.runtimeinformation.dll
+++System.Security.Cryptography.Algorithms.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.security.cryptography.algorithms.dll
+++System.Security.Cryptography.Encoding.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.security.cryptography.encoding.dll
+++System.Security.Cryptography.Primitives.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.security.cryptography.primitives.dll
+++System.Security.Cryptography.X509Certificates.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.security.cryptography.x509certificates.dll
+++System.Text.Encoding.CodePages.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.text.encoding.codepages.dll
+++System.Threading.Tasks.Extensions.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.threading.tasks.extensions.dll
+++System.ValueTuple.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.valuetuple.dll
+++System.Xml.ReaderWriter.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.xml.readerwriter.dll
+++System.Xml.XmlDocument.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.xml.xmldocument.dll
+++System.Xml.XPath.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.xml.xpath.dll
+++System.Xml.XPath.XDocument.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\system.xml.xpath.xdocument.dll
+++vbc.exe
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbc.exe
+++vbc.exe.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbc.exe.config
+++vbc.rsp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbc.rsp
+++VBCSCompiler.exe
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbcscompiler.exe
+++VBCSCompiler.exe.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbcscompiler.exe.config
+++ru
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\ru\
+++x64
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x64\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x64\
+++x86
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x86\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x86\
+++zh-CHS
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-chs\
+++zh-CHT
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\zh-cht\
+++Antlr3.Runtime.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\antlr3.runtime.dll
+++Antlr3.Runtime.pdb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\antlr3.runtime.pdb
+++AspNet.ScriptManager.bootstrap.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\aspnet.scriptmanager.bootstrap.dll
+++AspNet.ScriptManager.jQuery.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\aspnet.scriptmanager.jquery.dll
+++Bold.Licensing.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\bold.licensing.dll
+++EnvDTE.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\envdte.dll
+++Front end.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\front end.dll
+++Front end.dll.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.dll.config
+++Front end.pdb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.pdb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.pdb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\front end.pdb
+++Microsoft.AspNet.FriendlyUrls.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.aspnet.friendlyurls.dll
+++Microsoft.AspNet.FriendlyUrls.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.aspnet.friendlyurls.xml
+++Microsoft.AspNet.Web.Optimization.WebForms.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.aspnet.web.optimization.webforms.dll
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.codedom.providers.dotnetcompilerplatform.dll
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.codedom.providers.dotnetcompilerplatform.xml
+++Microsoft.ReportViewer.Common.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.common.dll
+++Microsoft.ReportViewer.DataVisualization.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.datavisualization.dll
+++Microsoft.ReportViewer.Design.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.design.dll
+++Microsoft.ReportViewer.ProcessingObjectModel.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.processingobjectmodel.dll
+++Microsoft.ReportViewer.WebDesign.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.webdesign.dll
+++Microsoft.ReportViewer.WebForms.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.webforms.dll
+++Microsoft.ReportViewer.WinForms.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.reportviewer.winforms.dll
+++Microsoft.ScriptManager.MSAjax.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.scriptmanager.msajax.dll
+++Microsoft.ScriptManager.WebForms.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.scriptmanager.webforms.dll
+++Microsoft.SqlServer.Types.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.sqlserver.types.dll
+++Microsoft.Web.Infrastructure.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.web.infrastructure.dll
+++Newtonsoft.Json.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\newtonsoft.json.dll
+++Newtonsoft.Json.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\newtonsoft.json.xml
+++stdole.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\stdole.dll
+++Syncfusion.Compression.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.compression.base.dll
+++Syncfusion.Compression.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.compression.base.xml
+++Syncfusion.DocIO.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.docio.base.dll
+++Syncfusion.DocIO.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.docio.base.xml
+++Syncfusion.Licensing.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.licensing.dll
+++Syncfusion.OfficeChart.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.officechart.base.dll
+++Syncfusion.OfficeChart.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.officechart.base.xml
+++Syncfusion.Pdf.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.pdf.base.dll
+++Syncfusion.Pdf.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.pdf.base.xml
+++Syncfusion.Presentation.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.presentation.base.dll
+++Syncfusion.Presentation.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.presentation.base.xml
+++Syncfusion.XlsIO.Base.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.xlsio.base.dll
+++Syncfusion.XlsIO.Base.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\syncfusion.xlsio.base.xml
+++System.Net.Http.Formatting.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.net.http.formatting.dll
+++System.Net.Http.Formatting.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.net.http.formatting.xml
+++System.Web.Http.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.http.dll
+++System.Web.Http.WebHost.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.http.webhost.dll
+++System.Web.Http.WebHost.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.http.webhost.xml
+++System.Web.Http.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.http.xml
+++System.Web.Optimization.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.optimization.dll
+++System.Web.Optimization.xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\system.web.optimization.xml
+++WebGrease.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\webgrease.dll
+++Content
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\
+++css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\
+++fonts
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\
+++images
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\
+++fancybox
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\
+++products
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\
+++components
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\
+++C1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c1.jpg
+++C2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c2.jpg
+++C3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c3.jpg
+++compBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\compbg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\compbg-350x430.jpg
+++component1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\component1.jpg
+++cpuBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\cpubg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\cpubg-350x430.jpg
+++D1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d1.jpg
+++D10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d10.jpg
+++D11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d11.jpg
+++D12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d12.jpg
+++D13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d13.jpg
+++D14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d14.jpg
+++D2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d2.jpg
+++D3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d3.jpg
+++D4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d4.jpg
+++D5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d5.jpg
+++D6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d6.jpg
+++D7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d7.jpg
+++D8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d8.jpg
+++D9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d9.jpg
+++G1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g1.jpg
+++G2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g2.jpg
+++G3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g3.jpg
+++G4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g4.jpg
+++G5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g5.jpg
+++G6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g6.jpg
+++G7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g7.jpg
+++G8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g8.jpg
+++G9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g9.jpg
+++graphicsBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\graphicsbg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\graphicsbg-350x430.jpg
+++L1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l1.jpg
+++L10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l10.jpg
+++L11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l11.jpg
+++L12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l12.jpg
+++L13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l13.jpg
+++L14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l14.jpg
+++L15.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l15.jpg
+++L16.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l16.jpg
+++L17.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l17.jpg
+++L18.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l18.jpg
+++L19.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l19.jpg
+++L2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l2.jpg
+++L20.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l20.jpg
+++L21.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l21.jpg
+++L22.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l22.jpg
+++L23.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l23.jpg
+++L24.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l24.jpg
+++L25.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l25.jpg
+++L26.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l26.jpg
+++L27.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l27.jpg
+++L28.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l28.jpg
+++L29.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l29.jpg
+++L3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l3.jpg
+++L30.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l30.jpg
+++L4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l4.jpg
+++L5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l5.jpg
+++L6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l6.jpg
+++L7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l7.jpg
+++L8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l8.jpg
+++L9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l9.jpg
+++R1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r1.jpg
+++R2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r2.jpg
+++R3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r3.jpg
+++R4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r4.jpg
+++R5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r5.jpg
+++R6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r6.jpg
+++R7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r7.jpg
+++R8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r8.jpg
+++ramBG-350X430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\rambg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\rambg-350x430.jpg
+++S1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s1.jpg
+++S2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s2.jpg
+++S3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s3.jpg
+++S4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s4.jpg
+++S5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s5.jpg
+++S6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s6.jpg
+++S7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s7.jpg
+++storageBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\storagebg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\storagebg-350x430.jpg
+++desktops
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\desktops\
+++laptops
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\laptops\
+++ui
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\
+++1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\1.jpg
+++2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\2.jpg
+++3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\3.jpg
+++4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\4.jpg
+++5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\5.jpg
+++accounting.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\accounting.jpg
+++anna_shaw.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\anna_shaw.jpg
+++anna_shaw_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\anna_shaw_s.jpg
+++art.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\art.jpg
+++ashley_moody.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\ashley_moody.jpg
+++ashley_moody_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\ashley_moody_s.jpg
+++bg_blue_abstract.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\bg_blue_abstract.png
+++bkg_rating.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\bkg_rating.html
+++border_bg.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\border_bg.png
+++business.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\business.jpg
+++car.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\car.jpg
+++class2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\class2.jpg
+++ConnecTech-01.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech-01.png
+++ConnecTech-02.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech-02.jpg
+++ConnecTech-02.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech-02.png
+++ConnecTech Mock1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech mock1.jpg
+++ConnecTech.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech.jpg
+++ConnecTech0.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech0.jpg
+++ConnecTech01.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\connectech01.png
+++count_bg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\count_bg.jpg
+++course_cat_bg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\course_cat_bg.jpg
+++fal_alaxander_louise.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_alaxander_louise.jpg
+++fal_alaxander_louise_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_alaxander_louise_s.jpg
+++fal_barry_john.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_barry_john.jpg
+++fal_barry_john_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_barry_john_s.jpg
+++fal_jerry_moulton.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_jerry_moulton.jpg
+++fal_leonardo_bonucci.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_leonardo_bonucci.jpg
+++fal_leonardo_bonucci_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_leonardo_bonucci_s.jpg
+++fal_rebeca_addam.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_rebeca_addam.jpg
+++fal_rebeca_addam_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_rebeca_addam_s.jpg
+++fal_sarah_johnson.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_sarah_johnson.jpg
+++fal_sarah_johnson_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fal_sarah_johnson_s.jpg
+++favicon.ico
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\favicon.ico
+++food.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\food.jpg
+++foot_campus.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_campus.jpg
+++foot_classroom.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_classroom.jpg
+++foot_graduate.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_graduate.jpg
+++foot_group_in_campus.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_group_in_campus.jpg
+++foot_inclass.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_inclass.jpg
+++foot_inclass1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_inclass1.jpg
+++foot_latest_news1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_latest_news1.jpg
+++foot_latest_news2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_latest_news2.jpg
+++foot_latest_news3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_latest_news3.jpg
+++foot_science.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_science.jpg
+++foot_sport.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_sport.jpg
+++foot_with_instructor.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\foot_with_instructor.jpg
+++instructor.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\instructor.png
+++jerry_mack.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\jerry_mack.jpg
+++jerry_mack_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\jerry_mack_s.jpg
+++latest_news1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\latest_news1.jpg
+++latest_news2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\latest_news2.jpg
+++latest_news3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\latest_news3.jpg
+++leon_thompson.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\leon_thompson.jpg
+++leon_thompson_s.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\leon_thompson_s.jpg
+++library.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\library.png
+++logo_bk.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\logo_bk.png
+++logo_wt.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\logo_wt.png
+++newsletter_bg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\newsletter_bg.jpg
+++online_courses.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\online_courses.png
+++psychology.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\psychology.jpg
+++qoutes_left.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\qoutes_left.png
+++science.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\science.jpg
+++slider_classroom.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_classroom.jpg
+++slider_graduate.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_graduate.jpg
+++slider_group_in_campus.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_group_in_campus.jpg
+++slider_inclass.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_inclass.jpg
+++slider_inclass1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_inclass1.jpg
+++slider_science.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_science.jpg
+++slider_with_instructor.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\slider_with_instructor.jpg
+++to-top-arrow.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\to-top-arrow.png
+++obj
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\
+++Scripts
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\
+++msvcr120.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x64\msvcr120.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x64\msvcr120.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x86\msvcr120.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x86\msvcr120.dll
+++SqlServerSpatial140.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x64\sqlserverspatial140.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x64\sqlserverspatial140.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\sqlservertypes\x86\sqlserverspatial140.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sqlservertypes\x86\sqlserverspatial140.dll
+++Admin.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx
+++BuildComputer.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\buildcomputer.aspx
+++BuildComputer.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\buildcomputer.aspx.cs
+++BuildComputer.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\buildcomputer.aspx.designer.cs
+++Bundle.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bundle.config
+++Cart.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\cart.aspx
+++Cart.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\cart.aspx.cs
+++Cart.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\cart.aspx.designer.cs
+++Global.asax
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\global.asax
+++Home.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx
+++Login.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx
+++Logout.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx
+++Master.Master
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master
+++packages.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\packages.config
+++PurchaseProof.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\purchaseproof.aspx
+++PurchaseProof.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\purchaseproof.aspx.cs
+++PurchaseProof.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\purchaseproof.aspx.designer.cs
+++Reports.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx
+++SelectComponent.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx
+++SingleProduct.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx
+++SQL_DBDataSet.xsd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xsd
+++UserProfile.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofile.aspx
+++UserProfileDemo.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofiledemo.aspx
+++userReport.rdlc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userreport.rdlc
+++ViewSwitcher.ascx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\viewswitcher.ascx
+++Web.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.config
+++Web.sitemap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.sitemap
+++web_tracelog.svclog
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web_tracelog.svclog
+++WebForm1.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\webform1.aspx
+++ServiceReference
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\
+++PublishProfiles
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\publishprofiles\
+++ServiceDependencies
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\servicedependencies\
+++AssemblyInfo.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\assemblyinfo.cs
+++Antlr3.Runtime
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++AspNet.ScriptManager.bootstrap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++AspNet.ScriptManager.jQuery
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.AspNet.FriendlyUrls
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.AspNet.Web.Optimization.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.CSharp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.Common
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.DataVisualization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.Design
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.ProcessingObjectModel
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WebDesign
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WinForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ScriptManager.MSAjax
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ScriptManager.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.SqlServer.Types
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.Web.Infrastructure
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Newtonsoft.Json
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.ComponentModel.DataAnnotations
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Configuration
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Core
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Data
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Data.DataSetExtensions
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Drawing
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.EnterpriseServices
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Runtime.Serialization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.ServiceModel
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.ApplicationServices
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.DynamicData
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Entity
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Extensions
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Optimization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Services
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Xml.Linq
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++WebGrease
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++assets
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\
+++rev
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\
+++AjaxLoader.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\ajaxloader.html
+++animate.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\animate.css
+++bootstrap-select.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\bootstrap-select.css
+++bootstrap.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\bootstrap.css
+++circularCountdown.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\circularcountdown.css
+++font-awesome.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\font-awesome.css
+++fontello.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fontello.css
+++jquery.fancybox.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\jquery.fancybox.css
+++mob_menu.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\mob_menu.css
+++nicepage.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\nicepage.css
+++owl.carousel.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\owl.carousel.css
+++reset.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\reset.css
+++style.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\style.css
+++userProfile.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\userprofile.css
+++fontawesome-webfont.eot
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontawesome-webfont.eot
+++fontawesome-webfont.svg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontawesome-webfont.svg
+++fontawesome-webfont.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontawesome-webfont.ttf
+++fontawesome-webfont.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontawesome-webfont.woff
+++fontawesome-webfont.woff2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontawesome-webfont.woff2
+++fontello-custom3b7b-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontello-custom3b7b-2.html
+++fontello-custom3b7b-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontello-custom3b7b-3.html
+++fontello-custom3b7b.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontello-custom3b7b.html
+++fontello-custom3b7b.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\fontello-custom3b7b.woff
+++glyphicons-halflings-regular.eot
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regular.woff2
+++glyphicons-halflings-regulard41d.eot
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\glyphicons-halflings-regulard41d.eot
+++icomoon.eot
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoon.eot
+++icomoon.svg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoon.svg
+++icomoon.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoon.ttf
+++icomoon.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoon.woff
+++icomoond41d.eot
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoond41d.eot
+++blank.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\blank.gif
+++fancybox_loading.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading.gif
+++fancybox_loading@2x.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading@2x.gif
+++fancybox_overlay.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_overlay.png
+++fancybox_sprite.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_sprite.png
+++computerBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\desktops\computerbg.jpg
+++desktop1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\desktops\desktop1.jpg
+++corei9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\laptops\corei9.jpg
+++150
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\
+++350
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\
+++Debug
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\
+++Release
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\
+++CodeMirror
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\
+++js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\
+++WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\
+++jquery.validate-vsdoc.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\jquery.validate-vsdoc.js
+++jquery.validate.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\jquery.validate.js
+++jquery.validate.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\jquery.validate.min.js
+++jsrender.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\jsrender.min.js
+++Admin.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.cs
+++Admin.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.designer.cs
+++Global.asax.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\global.asax.cs
+++Home.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.cs
+++Home.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.designer.cs
+++Login.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx.cs
+++Login.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx.designer.cs
+++Logout.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.cs
+++Logout.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.designer.cs
+++Master.Master.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.cs
+++Master.Master.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.designer.cs
+++Reports.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx.cs
+++Reports.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx.designer.cs
+++SelectComponent.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.cs
+++SelectComponent.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.designer.cs
+++SingleProduct.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx.cs
+++SingleProduct.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx.designer.cs
+++SQL_DBDataSet.Designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.designer.cs
+++SQL_DBDataSet.xsc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xsc
+++SQL_DBDataSet.xss
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xss
+++UserProfile.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofile.aspx.cs
+++UserProfile.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofile.aspx.designer.cs
+++UserProfileDemo.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofiledemo.aspx.cs
+++UserProfileDemo.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofiledemo.aspx.designer.cs
+++ViewSwitcher.ascx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\viewswitcher.ascx.cs
+++ViewSwitcher.ascx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\viewswitcher.ascx.designer.cs
+++Web.Debug.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.debug.config
+++Web.Release.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.release.config
+++WebForm1.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\webform1.aspx.cs
+++WebForm1.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\webform1.aspx.designer.cs
+++configuration.svcinfo
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\configuration.svcinfo
+++configuration91.svcinfo
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\configuration91.svcinfo
+++Reference.svcmap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\reference.svcmap
+++Service.disco
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\service.disco
+++Service.wsdl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\service.wsdl
+++Service.xsd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\service.xsd
+++Service1.xsd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\service1.xsd
+++Service2.xsd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\service2.xsd
+++TechMateWeb - Web Deploy.pubxml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\publishprofiles\techmateweb - web deploy.pubxml
+++TechMateWeb - Web Deploy.pubxml.user
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\publishprofiles\techmateweb - web deploy.pubxml.user
+++TechMateWeb - Web Deploy
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\servicedependencies\techmateweb - web deploy\
+++coloredbg.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\coloredbg.html
+++gridtile.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\gridtile.html
+++gridtile_3x3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\gridtile_3x3.html
+++gridtile_3x3_white.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\gridtile_3x3_white.html
+++gridtile_white.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\gridtile_white.html
+++loader.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\loader.html
+++revicons
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\
+++fontawesome-webfont3295-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295-2.html
+++fontawesome-webfont3295.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.html
+++fontawesome-webfont3295.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.ttf
+++fontawesome-webfont3295.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff
+++fontawesome-webfont3295.woff2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff2
+++fontawesome-webfontd41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfontd41d.html
+++Pe-icon-7-strokebb1d-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-2.html
+++Pe-icon-7-strokebb1d-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-3.html
+++Pe-icon-7-strokebb1d-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-4.html
+++Pe-icon-7-strokebb1d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d.html
+++Pe-icon-7-stroked41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-stroked41d.html
+++closedhand.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\closedhand.html
+++font-awesome.min.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\font-awesome.min.css
+++layers.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\layers.css
+++navigation.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\navigation.css
+++openhand.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\openhand.html
+++pe-icon-7-stroke.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\pe-icon-7-stroke.css
+++rev_responsive.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\rev_responsive.css
+++settings.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\settings.css
+++compBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\compbg.jpg
+++cpuBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\cpubg.jpg
+++graphicsBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\graphicsbg.jpg
+++ramBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\rambg.jpg
+++storageBG.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\storagebg.jpg
+++TempPE
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\
+++.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\.netframework,version=v4.7.2.assemblyattributes.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\.netframework,version=v4.7.2.assemblyattributes.cs
+++DesignTimeResolveAssemblyReferences.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferences.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferences.cache
+++DesignTimeResolveAssemblyReferencesInput.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferencesinput.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferencesinput.cache
+++Front end.csproj.AssemblyReference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.assemblyreference.cache
+++Front end.csproj.CopyComplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.copycomplete
+++Front end.csproj.CoreCompileInputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.corecompileinputs.cache
+++Front end.csproj.FileListAbsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.filelistabsolute.txt
+++FrontEnd.csproj.AssemblyReference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.assemblyreference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.assemblyreference.cache
+++FrontEnd.csproj.CopyComplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.copycomplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.copycomplete
+++FrontEnd.csproj.CoreCompileInputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.corecompileinputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.corecompileinputs.cache
+++FrontEnd.csproj.FileListAbsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.filelistabsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.filelistabsolute.txt
+++CSAutoParameterize
+++Package
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\
+++ProfileTransformWebConfig
+++TransformWebConfig
+++_WPPLastBuildInfo.txt
+++CSAutoParameterize.parameters.xml
+++addon
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\
+++keymap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\keymap\
+++lib
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\lib\
+++mode
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\
+++theme
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\
+++bootstrap-select.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\bootstrap-select.js
+++bootstrap.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\bootstrap.min.js
+++cartJS.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\cartjs.js
+++flicker.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\flicker.js
+++jquery-3.1.0.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\jquery-3.1.0.min.js
+++jquery-plugin-collection.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\jquery-plugin-collection.js
+++jquery.backstretch_video.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\jquery.backstretch_video.min.js
+++jquery.dlmenu.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\jquery.dlmenu.js
+++js-functions.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\js-functions.js
+++main.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\main.js
+++modernizr.custom.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\modernizr.custom.js
+++owl-carousel.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\owl-carousel.js
+++owl.carousel.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\owl.carousel.min.js
+++rev_slider.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev_slider.js
+++timecircles.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\timecircles.js
+++MSAjax
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\
+++DetailsView.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\detailsview.js
+++Focus.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\focus.js
+++GridView.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\gridview.js
+++Menu.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\menu.js
+++MenuStandards.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\menustandards.js
+++SmartNav.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\smartnav.js
+++TreeView.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\treeview.js
+++WebForms.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\webforms.js
+++WebParts.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\webparts.js
+++WebUIValidation.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\webuivalidation.js
+++Front_end.ServiceReference.Component.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.component.datasource
+++Front_end.ServiceReference.User.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.user.datasource
+++Front_end.ServiceReference.UserClass.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.userclass.datasource
+++Reference.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\reference.cs
+++profile.arm.json
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\servicedependencies\techmateweb - web deploy\profile.arm.json
+++revicons90c6-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-2.html
+++revicons90c6-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-3.html
+++revicons90c6-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-4.html
+++revicons90c6.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6.html
+++_C__USERS_PHKUB_DESKTOP_IFM3B_BACKUP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_backup_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
+++_C__USERS_PHKUB_DESKTOP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
+++Connected Services.ServiceReference.Reference.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\connected services.servicereference.reference.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\connected services.servicereference.reference.cs.dll
+++SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_db_mdfdataset.designer.cs.dll
+++SQL_DBDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_dbdataset.designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\sql_dbdataset.designer.cs.dll
+++original
+++transformed
+++PackageTmp
+++FrontEnd.SourceManifest.xml
+++assist
+++comment
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\comment\
+++dialog
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\dialog\
+++display
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\
+++edit
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\
+++fold
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\
+++hint
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\
+++lint
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\
+++merge
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\merge\
+++runmode
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\runmode\
+++scroll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\scroll\
+++search
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\
+++selection
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\selection\
+++tern
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\tern\
+++wrap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\wrap\
+++emacs.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\keymap\emacs.js
+++sublime.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\keymap\sublime.js
+++vim.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\keymap\vim.js
+++codemirror.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\lib\codemirror.css
+++codemirror.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\lib\codemirror.js
+++apl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\apl\
+++asciiarmor
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asciiarmor\
+++asn.1
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asn.1\
+++asterisk
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asterisk\
+++brainfuck
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\brainfuck\
+++clike
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clike\
+++clojure
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clojure\
+++cmake
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cmake\
+++cobol
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cobol\
+++coffeescript
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\coffeescript\
+++commonlisp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\commonlisp\
+++crystal
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\crystal\
+++cypher
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cypher\
+++d
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\d\
+++dart
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dart\
+++diff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\diff\
+++django
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\django\
+++dockerfile
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dockerfile\
+++dtd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dtd\
+++dylan
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dylan\
+++ebnf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ebnf\
+++ecl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ecl\
+++eiffel
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\eiffel\
+++elm
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\elm\
+++erlang
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\erlang\
+++factor
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\factor\
+++fcl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fcl\
+++forth
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\forth\
+++fortran
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fortran\
+++gas
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gas\
+++gfm
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gfm\
+++gherkin
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gherkin\
+++go
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\go\
+++groovy
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\groovy\
+++haml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haml\
+++handlebars
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\handlebars\
+++haskell
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell\
+++haskell-literate
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell-literate\
+++haxe
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haxe\
+++htmlembedded
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlembedded\
+++htmlmixed
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlmixed\
+++http
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\http\
+++idl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\idl\
+++javascript
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\
+++jinja2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jinja2\
+++jsx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jsx\
+++julia
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\julia\
+++livescript
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\livescript\
+++lua
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\lua\
+++markdown
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\markdown\
+++mathematica
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mathematica\
+++mbox
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mbox\
+++mirc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mirc\
+++mllike
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mllike\
+++modelica
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\modelica\
+++mscgen
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\
+++mumps
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mumps\
+++nginx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nginx\
+++nsis
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nsis\
+++ntriples
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ntriples\
+++octave
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\octave\
+++oz
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\oz\
+++pascal
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pascal\
+++pegjs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pegjs\
+++perl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\perl\
+++php
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\php\
+++pig
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pig\
+++powershell
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\powershell\
+++properties
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\properties\
+++protobuf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\protobuf\
+++pug
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pug\
+++puppet
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\puppet\
+++python
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\python\
+++q
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\q\
+++r
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\r\
+++rpm
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rpm\
+++rst
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rst\
+++ruby
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ruby\
+++rust
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rust\
+++sas
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sas\
+++sass
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sass\
+++scheme
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\scheme\
+++shell
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\shell\
+++sieve
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sieve\
+++slim
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\slim\
+++smalltalk
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smalltalk\
+++smarty
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smarty\
+++solr
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\solr\
+++soy
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\soy\
+++sparql
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sparql\
+++spreadsheet
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\spreadsheet\
+++sql
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sql\
+++stex
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stex\
+++stylus
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stylus\
+++swift
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\swift\
+++tcl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tcl\
+++textile
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\textile\
+++tiddlywiki
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiddlywiki\
+++tiki
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiki\
+++toml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\toml\
+++tornado
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tornado\
+++troff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\troff\
+++ttcn
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn\
+++ttcn-cfg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn-cfg\
+++turtle
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\turtle\
+++twig
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\twig\
+++vb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vb\
+++vbscript
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vbscript\
+++velocity
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\velocity\
+++verilog
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\verilog\
+++vhdl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vhdl\
+++vue
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vue\
+++webidl
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\webidl\
+++xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xml\
+++xquery
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xquery\
+++yacas
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yacas\
+++yaml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml\
+++yaml-frontmatter
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml-frontmatter\
+++z80
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\z80\
+++index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\apl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asciiarmor\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asn.1\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asterisk\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\brainfuck\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clike\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clojure\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cmake\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cobol\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\coffeescript\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\commonlisp\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\crystal\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cypher\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\d\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dart\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\diff\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\django\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dockerfile\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dtd\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dylan\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ebnf\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ecl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\eiffel\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\elm\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\erlang\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\factor\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fcl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\forth\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fortran\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gas\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gfm\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gherkin\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\go\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\groovy\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haml\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\handlebars\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell-literate\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haxe\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlembedded\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlmixed\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\http\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\idl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jinja2\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jsx\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\julia\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\livescript\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\lua\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\markdown\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mathematica\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mbox\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mirc\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mllike\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\modelica\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mumps\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nginx\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nsis\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ntriples\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\octave\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\oz\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pascal\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pegjs\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\perl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\php\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pig\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\powershell\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\properties\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\protobuf\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pug\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\puppet\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\python\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\q\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\r\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rpm\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rst\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ruby\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rust\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sas\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sass\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\scheme\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\shell\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sieve\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\slim\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smalltalk\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smarty\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\solr\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\soy\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sparql\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\spreadsheet\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sql\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stex\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stylus\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\swift\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tcl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\textile\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiddlywiki\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiki\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\toml\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tornado\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\troff\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn-cfg\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\turtle\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\twig\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vb\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vbscript\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\velocity\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\verilog\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vhdl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vue\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\webidl\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xml\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xquery\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yacas\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml-frontmatter\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\z80\index.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rpm\changes\index.html
+++meta.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\meta.js
+++3024-day.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\3024-day.css
+++3024-night.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\3024-night.css
+++abcdef.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\abcdef.css
+++ambiance-mobile.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\ambiance-mobile.css
+++ambiance.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\ambiance.css
+++base16-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\base16-dark.css
+++base16-light.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\base16-light.css
+++bespin.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\bespin.css
+++blackboard.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\blackboard.css
+++cobalt.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\cobalt.css
+++colorforth.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\colorforth.css
+++dracula.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\dracula.css
+++duotone-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\duotone-dark.css
+++duotone-light.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\duotone-light.css
+++eclipse.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\eclipse.css
+++elegant.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\elegant.css
+++erlang-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\erlang-dark.css
+++hopscotch.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\hopscotch.css
+++icecoder.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\icecoder.css
+++isotope.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\isotope.css
+++lesser-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\lesser-dark.css
+++liquibyte.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\liquibyte.css
+++material.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\material.css
+++mbo.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\mbo.css
+++mdn-like.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\mdn-like.css
+++midnight.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\midnight.css
+++monokai.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\monokai.css
+++neat.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\neat.css
+++neo.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\neo.css
+++night.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\night.css
+++oceanic-next.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\oceanic-next.css
+++panda-syntax.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\panda-syntax.css
+++paraiso-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\paraiso-dark.css
+++paraiso-light.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\paraiso-light.css
+++pastel-on-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\pastel-on-dark.css
+++railscasts.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\railscasts.css
+++rubyblue.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\rubyblue.css
+++seti.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\seti.css
+++shadowfox.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\shadowfox.css
+++solarized.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\solarized.css
+++the-matrix.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\the-matrix.css
+++tomorrow-night-bright.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\tomorrow-night-bright.css
+++tomorrow-night-eighties.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\tomorrow-night-eighties.css
+++ttcn.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\ttcn.css
+++twilight.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\twilight.css
+++vibrant-ink.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\vibrant-ink.css
+++xq-dark.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\xq-dark.css
+++xq-light.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\xq-light.css
+++yeti.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\yeti.css
+++zenburn.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\theme\zenburn.css
+++jquery.themepunch.revolution.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\jquery.themepunch.revolution.min.js
+++jquery.themepunch.tools.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\jquery.themepunch.tools.min.js
+++revolution.extension.actions.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.actions.min.js
+++revolution.extension.carousel.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.carousel.min.js
+++revolution.extension.kenburn.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.kenburn.min.js
+++revolution.extension.layeranimation.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.layeranimation.min.js
+++revolution.extension.migration.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.migration.min.js
+++revolution.extension.navigation.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.navigation.min.js
+++revolution.extension.parallax.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.parallax.min.js
+++revolution.extension.slideanims.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.slideanims.min.js
+++revolution.extension.video.min.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\revolution.extension.video.min.js
+++MicrosoftAjax.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajax.js
+++MicrosoftAjaxApplicationServices.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxapplicationservices.js
+++MicrosoftAjaxComponentModel.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxcomponentmodel.js
+++MicrosoftAjaxCore.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxcore.js
+++MicrosoftAjaxGlobalization.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxglobalization.js
+++MicrosoftAjaxHistory.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxhistory.js
+++MicrosoftAjaxNetwork.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxnetwork.js
+++MicrosoftAjaxSerialization.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxserialization.js
+++MicrosoftAjaxTimer.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxtimer.js
+++MicrosoftAjaxWebForms.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxwebforms.js
+++MicrosoftAjaxWebServices.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\webforms\msajax\microsoftajaxwebservices.js
+++comment.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\comment\comment.js
+++continuecomment.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\comment\continuecomment.js
+++dialog.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\dialog\dialog.css
+++dialog.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\dialog\dialog.js
+++autorefresh.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\autorefresh.js
+++fullscreen.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\fullscreen.css
+++fullscreen.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\fullscreen.js
+++panel.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\panel.js
+++placeholder.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\placeholder.js
+++rulers.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\display\rulers.js
+++closebrackets.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\closebrackets.js
+++closetag.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\closetag.js
+++continuelist.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\continuelist.js
+++matchbrackets.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\matchbrackets.js
+++matchtags.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\matchtags.js
+++trailingspace.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\edit\trailingspace.js
+++brace-fold.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\brace-fold.js
+++comment-fold.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\comment-fold.js
+++foldcode.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\foldcode.js
+++foldgutter.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\foldgutter.css
+++foldgutter.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\foldgutter.js
+++indent-fold.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\indent-fold.js
+++markdown-fold.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\markdown-fold.js
+++xml-fold.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\fold\xml-fold.js
+++anyword-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\anyword-hint.js
+++css-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\css-hint.js
+++html-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\html-hint.js
+++javascript-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\javascript-hint.js
+++show-hint.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\show-hint.css
+++show-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\show-hint.js
+++sql-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\sql-hint.js
+++xml-hint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\hint\xml-hint.js
+++coffeescript-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\coffeescript-lint.js
+++css-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\css-lint.js
+++html-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\html-lint.js
+++javascript-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\javascript-lint.js
+++json-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\json-lint.js
+++lint.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\lint.css
+++lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\lint.js
+++yaml-lint.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\lint\yaml-lint.js
+++merge.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\merge\merge.css
+++merge.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\merge\merge.js
+++loadmode.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\loadmode.js
+++multiplex.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\multiplex.js
+++multiplex_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\multiplex_test.js
+++overlay.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\overlay.js
+++simple.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\mode\simple.js
+++colorize.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\runmode\colorize.js
+++runmode-standalone.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\runmode\runmode-standalone.js
+++runmode.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\runmode\runmode.js
+++runmode.node.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\runmode\runmode.node.js
+++annotatescrollbar.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\scroll\annotatescrollbar.js
+++scrollpastend.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\scroll\scrollpastend.js
+++simplescrollbars.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\scroll\simplescrollbars.css
+++simplescrollbars.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\scroll\simplescrollbars.js
+++jump-to-line.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\jump-to-line.js
+++match-highlighter.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\match-highlighter.js
+++matchesonscrollbar.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\matchesonscrollbar.css
+++matchesonscrollbar.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\matchesonscrollbar.js
+++search.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\search.js
+++searchcursor.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\search\searchcursor.js
+++active-line.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\selection\active-line.js
+++mark-selection.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\selection\mark-selection.js
+++selection-pointer.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\selection\selection-pointer.js
+++tern.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\tern\tern.css
+++tern.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\tern\tern.js
+++worker.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\tern\worker.js
+++hardwrap.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\wrap\hardwrap.js
+++apl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\apl\apl.js
+++asciiarmor.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asciiarmor\asciiarmor.js
+++asn.1.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asn.1\asn.1.js
+++asterisk.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\asterisk\asterisk.js
+++brainfuck.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\brainfuck\brainfuck.js
+++clike.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clike\clike.js
+++scala.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clike\scala.html
+++test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clike\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cypher\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\d\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dockerfile\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dylan\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gfm\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haml\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jsx\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\markdown\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\php\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\powershell\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\python\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ruby\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rust\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sass\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\shell\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\slim\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\soy\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stex\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\swift\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\textile\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\verilog\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xml\test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xquery\test.js
+++clojure.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\clojure\clojure.js
+++cmake.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cmake\cmake.js
+++cobol.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cobol\cobol.js
+++coffeescript.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\coffeescript\coffeescript.js
+++commonlisp.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\commonlisp\commonlisp.js
+++crystal.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\crystal\crystal.js
+++css.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\css.js
+++gss.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\gss.html
+++gss_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\gss_test.js
+++less.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\less.html
+++less_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\less_test.js
+++scss.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\scss.html
+++scss_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\css\scss_test.js
+++cypher.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\cypher\cypher.js
+++d.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\d\d.js
+++dart.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dart\dart.js
+++diff.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\diff\diff.js
+++django.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\django\django.js
+++dockerfile.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dockerfile\dockerfile.js
+++dtd.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dtd\dtd.js
+++dylan.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\dylan\dylan.js
+++ebnf.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ebnf\ebnf.js
+++ecl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ecl\ecl.js
+++eiffel.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\eiffel\eiffel.js
+++elm.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\elm\elm.js
+++erlang.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\erlang\erlang.js
+++factor.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\factor\factor.js
+++fcl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fcl\fcl.js
+++forth.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\forth\forth.js
+++fortran.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\fortran\fortran.js
+++gas.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gas\gas.js
+++gfm.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gfm\gfm.js
+++gherkin.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\gherkin\gherkin.js
+++go.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\go\go.js
+++groovy.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\groovy\groovy.js
+++haml.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haml\haml.js
+++handlebars.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\handlebars\handlebars.js
+++haskell.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell\haskell.js
+++haskell-literate.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haskell-literate\haskell-literate.js
+++haxe.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\haxe\haxe.js
+++htmlembedded.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlembedded\htmlembedded.js
+++htmlmixed.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\htmlmixed\htmlmixed.js
+++http.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\http\http.js
+++idl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\idl\idl.js
+++javascript.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\javascript.js
+++json-ld.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\json-ld.html
+++typescript.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\javascript\typescript.html
+++jinja2.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jinja2\jinja2.js
+++jsx.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\jsx\jsx.js
+++julia.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\julia\julia.js
+++livescript.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\livescript\livescript.js
+++lua.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\lua\lua.js
+++markdown.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\markdown\markdown.js
+++mathematica.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mathematica\mathematica.js
+++mbox.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mbox\mbox.js
+++mirc.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mirc\mirc.js
+++mllike.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mllike\mllike.js
+++modelica.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\modelica\modelica.js
+++mscgen.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\mscgen.js
+++mscgen_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\mscgen_test.js
+++msgenny_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\msgenny_test.js
+++xu_test.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mscgen\xu_test.js
+++mumps.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\mumps\mumps.js
+++nginx.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nginx\nginx.js
+++nsis.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\nsis\nsis.js
+++ntriples.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ntriples\ntriples.js
+++octave.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\octave\octave.js
+++oz.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\oz\oz.js
+++pascal.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pascal\pascal.js
+++pegjs.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pegjs\pegjs.js
+++perl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\perl\perl.js
+++php.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\php\php.js
+++pig.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pig\pig.js
+++powershell.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\powershell\powershell.js
+++properties.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\properties\properties.js
+++protobuf.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\protobuf\protobuf.js
+++pug.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\pug\pug.js
+++puppet.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\puppet\puppet.js
+++python.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\python\python.js
+++q.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\q\q.js
+++r.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\r\r.js
+++changes
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rpm\changes\
+++rpm.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rpm\rpm.js
+++rst.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rst\rst.js
+++ruby.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ruby\ruby.js
+++rust.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\rust\rust.js
+++sas.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sas\sas.js
+++sass.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sass\sass.js
+++scheme.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\scheme\scheme.js
+++shell.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\shell\shell.js
+++sieve.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sieve\sieve.js
+++slim.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\slim\slim.js
+++smalltalk.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smalltalk\smalltalk.js
+++smarty.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\smarty\smarty.js
+++solr.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\solr\solr.js
+++soy.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\soy\soy.js
+++sparql.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sparql\sparql.js
+++spreadsheet.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\spreadsheet\spreadsheet.js
+++sql.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\sql\sql.js
+++stex.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stex\stex.js
+++stylus.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\stylus\stylus.js
+++swift.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\swift\swift.js
+++tcl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tcl\tcl.js
+++textile.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\textile\textile.js
+++tiddlywiki.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiddlywiki\tiddlywiki.css
+++tiddlywiki.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiddlywiki\tiddlywiki.js
+++tiki.css
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiki\tiki.css
+++tiki.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tiki\tiki.js
+++toml.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\toml\toml.js
+++tornado.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\tornado\tornado.js
+++troff.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\troff\troff.js
+++ttcn.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn\ttcn.js
+++ttcn-cfg.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\ttcn-cfg\ttcn-cfg.js
+++turtle.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\turtle\turtle.js
+++twig.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\twig\twig.js
+++vb.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vb\vb.js
+++vbscript.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vbscript\vbscript.js
+++velocity.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\velocity\velocity.js
+++verilog.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\verilog\verilog.js
+++vhdl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vhdl\vhdl.js
+++vue.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\vue\vue.js
+++webidl.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\webidl\webidl.js
+++xml.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xml\xml.js
+++xquery.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\xquery\xquery.js
+++yacas.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yacas\yacas.js
+++yaml.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml\yaml.js
+++yaml-frontmatter.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\yaml-frontmatter\yaml-frontmatter.js
+++z80.js
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\z80\z80.js
+++techmate_logo.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\techmate_logo.png
+++logoTM.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\logotm.jpg

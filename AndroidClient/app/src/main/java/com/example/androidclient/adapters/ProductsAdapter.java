@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidclient.R;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHolder> {
 
 
-    private ArrayList localDataSet;
+    private final ArrayList<ProductObject> localDataSet;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
 
 
@@ -24,7 +25,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
      * (custom ViewHolder).
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+        private final TextView txtName;
+        private final TextView txtPrice;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -43,16 +45,22 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
                     }
                 }
             });
-            textView = (TextView) view.findViewById(R.id.lblProductName);
+            txtName = (TextView) view.findViewById(R.id.lblListItemProductName);
+            txtPrice = (TextView) view.findViewById(R.id.lblListItemProductPrice);
+
         }
 
-        public TextView getTextView() {
-            return textView;
+        public TextView getTextNameView() {
+            return txtName;
+        }
+
+        public TextView getTextPriceView() {
+            return txtPrice;
         }
     }
 
 
-    public ProductsAdapter(ArrayList dataSet,  IRecyclerViewClickHandler clickHandler) {
+    public ProductsAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
     }
@@ -73,7 +81,9 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.getTextView().setText((CharSequence) localDataSet.get(position));
+
+        viewHolder.getTextNameView().setText((CharSequence) localDataSet.get(position).getName()+"...");
+        viewHolder.getTextPriceView().setText("R"+(CharSequence) localDataSet.get(position).getPrice());
     }
 
     // Return the size of your dataset (invoked by the layout manager)

@@ -34,7 +34,8 @@ namespace Front_end
                     dispComp += "<div class='course_img_hoverlay_btn'><a href='SingleProduct.aspx?pId="+comp.Id+"' title='View More' class='fa fa-eye'></a></div>";
                     dispComp += "</div>";
                     dispComp += "<div class='psychology'>";
-                    dispComp += "<div class='icon'><i class='fas fa-smile' title='Compatible'></i></div>";
+                    dispComp += "<div class='icon'><a href='BuildComputer.aspx?" + comp.category + "_build=" + comp.Id +"' title='Add to cart' class='fas fa-shopping-cart'></a></div>";
+                    // dispComp += "<div class='icon'><i class='fas fa-shopping-cart' title='Add to cart'></i></div>";
                     dispComp += "<div class='course_info'>";
                     dispComp += "<h4>" + comp.name + "</h4>";
                     dispComp += "<p>" + comp.description + "</p>";
