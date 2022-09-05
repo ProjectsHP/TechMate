@@ -108,5 +108,13 @@ namespace WCF_Service_Server_
          BodyStyle = WebMessageBodyStyle.Wrapped)]
         List<Component> FetchBuild(string build_id);
 
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchAllUserBuildsURI/{user_id}",
+        RequestFormat = WebMessageFormat.Json,
+        ResponseFormat = WebMessageFormat.Json,
+        BodyStyle = WebMessageBodyStyle.Wrapped)]
+        List<BuildClass> FetchAllUserBuilds(string user_id);
+
     }
 }

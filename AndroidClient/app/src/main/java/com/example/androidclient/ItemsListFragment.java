@@ -46,7 +46,9 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
     RequestQueue requestQueue;
     StringRequest stringRequest;
     String serverResponseCode;
+    String selectedCategory;
     UIComponents uiComponents;
+    ItemsListActivity listActivity;
     ProductObject[] productObject =null;
 
     @Override
@@ -63,10 +65,13 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
+
+   //     listActivity = (ItemsListActivity) getActivity();
         uiComponents = new UIComponents(getActivity());
         requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
 
-        GETRandomComponentsRequest(new VolleyCallBack() {
+        GETComponentsByCategoryRequest(new VolleyCallBack() {
             @Override
             public void OnSuccess() {
 
@@ -108,17 +113,18 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
     }
 
 
-    public void GETRandomComponentsRequest(final VolleyCallBack callBack) {
+    public void GETComponentsByCategoryRequest(final VolleyCallBack callBack) {
 
+        String url = generateURL()+listActivity.getSelectedCategory();
         //JSONObject Request initialized
-        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL(), null,
+        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         ProductObject[] productObjects=null;
 
                         try {
-                            JSONArray productsArr = response.getJSONArray("FetchComponentsByCategoryURIResult");
+                            JSONArray productsArr = response.getJSONArray("FetchComponentsByCategoryResult");
                             GsonBuilder builder = new GsonBuilder();
                             builder.serializeNulls();
                             Gson gson = builder.setPrettyPrinting().create();
@@ -126,7 +132,6 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
                             serverResponseCode = getResources().getString(R.string.response_success);
                         } catch (JSONException e) {
                             e.printStackTrace();
-
                         }
                         callBack.OnSuccess();
                     }

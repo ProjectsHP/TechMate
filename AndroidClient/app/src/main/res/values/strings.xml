@@ -161,4 +161,9 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="title_activity_item_list">ItemListActivity</string>
+
+
+    <!--    cart strings-->
+    <string name="stock_reserve_note">"Placing an item in your shopping cart does not reserve that item or price. "
+    "We only reserve stock for your order once payment is received."</string>
 </resources>

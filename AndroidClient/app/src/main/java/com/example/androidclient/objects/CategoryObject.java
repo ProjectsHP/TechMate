@@ -2,6 +2,7 @@ package com.example.androidclient.objects;
 
 public class CategoryObject {
 
+    private String title;
     private int image;
 
     public CategoryObject(int image, String title) {
@@ -9,7 +10,7 @@ public class CategoryObject {
         this.title = title;
     }
 
-    private String title;
+
 
 
 

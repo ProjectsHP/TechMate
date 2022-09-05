@@ -9,23 +9,52 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.example.androidclient.adapters.BuildCartAdapter;
 import com.example.androidclient.adapters.CartAdapter;
 import com.example.androidclient.adapters.CategoryAdapter;
+import com.example.androidclient.adapters.ProductsAdapter;
 import com.example.androidclient.databinding.FragmentCartBinding;
 import com.example.androidclient.databinding.FragmentCategoryBinding;
+import com.example.androidclient.network.URLGenerator;
+import com.example.androidclient.network.VolleyCallBack;
+import com.example.androidclient.network.VolleySingleton;
+import com.example.androidclient.objects.BuildObject;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
+import com.example.androidclient.ui.UIComponents;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
-public class CartFragment extends Fragment implements IRecyclerViewClickHandler {
+public class CartFragment extends Fragment implements IRecyclerViewClickHandler, URLGenerator {
 
 
     private FragmentCartBinding binding;
+    BuildObject[] buildObject =null;
+    ArrayList<BuildObject> list = new ArrayList<>();
+    RequestQueue requestQueue;
+    StringRequest stringRequest;
+    String serverResponseCode;
+    UIComponents uiComponents;
 
 
 
@@ -51,6 +80,33 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler 
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
 
+        uiComponents = new UIComponents(getActivity());
+        requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
+
+        GETAllUserBuildsRequest(new VolleyCallBack() {
+            @Override
+            public void OnSuccess() {
+
+                if (serverResponseCode != null) {
+                    if (serverResponseCode.equals("200")) {
+                        Log.e("RESPONSE CODE 200: ", serverResponseCode);
+                        list.addAll(Arrays.asList(buildObject));
+                        BuildCartAdapter adapter2 = new BuildCartAdapter(list,CartFragment.this);
+                        LinearLayoutManager linearLayoutManager2=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
+                        binding.recyclerMyBuildsCart.setLayoutManager(linearLayoutManager2);
+                        binding.recyclerMyBuildsCart.setAdapter(adapter2);
+                        //NOTE THIS LINE. Might cause null response
+
+
+                    }
+                } else {
+
+                    uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
+                }
+                serverResponseCode = null;
+
+            }
+        });
 
 
         ArrayList<String> list = new ArrayList<>();
@@ -58,12 +114,14 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler 
         list.add("Laptops");
         list.add("Processors");
         list.add("Graphic cards");
-        list.add("Computer memory");
-        list.add("Disk storage");
+
         CartAdapter adapter = new CartAdapter(list,this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerCart.setLayoutManager(linearLayoutManager);
         binding.recyclerCart.setAdapter(adapter);
+
+
+
 
     }
 
@@ -71,4 +129,58 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler 
     public void onItemClick(int position) {
 
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
+
+
+    @Override
+    public String generateURL() {
+        String cleanUrl = getResources().getString(R.string.WCF_URL);
+        return cleanUrl + "FetchAllUserBuildsURI/";
+    }
+
+
+    public void GETAllUserBuildsRequest(final VolleyCallBack callBack) {
+
+        //JSONObject Request initialized
+        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL()+"2", null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        BuildObject[] buildObjects=null;
+
+                        try {
+                            JSONArray buildsArr = response.getJSONArray("FetchAllUserBuildsResult");
+                            GsonBuilder builder = new GsonBuilder();
+                            builder.serializeNulls();
+                            Gson gson = builder.setPrettyPrinting().create();
+                            buildObject = gson.fromJson(String.valueOf(buildsArr),BuildObject[].class);
+                            serverResponseCode = getResources().getString(R.string.response_success);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                        callBack.OnSuccess();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        String body = "";
+                        serverResponseCode = null;
+                        Log.e("Error response",error.toString());
+                        callBack.OnSuccess();
+                    }
+                }
+        );
+        JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        requestQueue.add(JsonObjectRequest);
+    }
+
+
 }

@@ -9,13 +9,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidclient.R;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
-    private ArrayList localDataSet;
+    private final ArrayList<ProductObject> localDataSet;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
 
 

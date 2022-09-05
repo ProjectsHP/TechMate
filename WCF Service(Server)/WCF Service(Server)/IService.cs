@@ -61,6 +61,13 @@ namespace WCF_Service_Server_
         [OperationContract(Name = "CreateBuildSOAP")]
         int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
 
+
+
+        [OperationContract(Name = "FetchAllUserBuildsSOAP")]
+        List<BuildClass> FetchAllUserBuilds(string user_id);
+
+
+
        // [OperationContract(Name = "CheckoutCartSOAP")]
      //   int CheckoutCart(string user_id, string build_id, string component, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
 

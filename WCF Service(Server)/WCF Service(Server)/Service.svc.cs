@@ -369,6 +369,71 @@ namespace WCF_Service_Server_
 
         }
 
+
+        public List<BuildClass> FetchAllUserBuilds(string user_id)
+        {
+          
+            var buildCompList = new List<BuildClass>();
+            int Id = Convert.ToInt32(user_id);
+
+            dynamic activeBuild = (from u in db.Builds
+                               where u.user_id == Id
+                               select u);
+
+            if (activeBuild != null)
+            {
+               
+                foreach (Build build in activeBuild)
+                {
+                    BuildClass buildClass = new BuildClass();
+                    string buildId = Convert.ToString(build.Id);
+                    List<Component> buildComponentData = FetchBuild(buildId);
+                   
+                    foreach (Component component in buildComponentData)
+                    {
+                        switch (component.category)
+                        {
+                            case "Ram":
+                                buildClass.RamComponent = component;
+
+                                break;
+                            case "CPU":
+                                buildClass.CpuComponent = component;
+
+                                break;
+                            case "Storage":
+                                buildClass.StorageComponent = component;
+
+                                break;
+                            case "Desktop":
+                                buildClass.BaseCaseComponent = component;
+                                break;
+                            case "Graphics":
+                                buildClass.GraphicsComponent = component;
+                                break;
+                        }
+                    
+                    }
+                    buildClass.Build_id = buildId;
+                    buildClass.CompatibilityStatus = "Compatible";
+                    buildClass.User_build_id = user_id;
+                    buildClass.Category = build.category;
+                   
+                        buildCompList.Add(buildClass);
+                }
+
+             //   buildCompList.Sort((a, b) => a.Category.CompareTo(b.Category));
+
+                return buildCompList;
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+
         public List<Component> FetchTopComponents(string category, string size)
         {
             var compList = new List<Component>();

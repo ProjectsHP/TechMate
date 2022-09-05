@@ -26,6 +26,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
+        private final TextView txtPrice;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -44,12 +45,17 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                     }
                 }
             });
-            textView = (TextView) view.findViewById(R.id.lblListItemProductName);
+            textView = (TextView) view.findViewById(R.id.build_item_name);
+            txtPrice = (TextView) view.findViewById(R.id.build_item_price);
         }
 
         public TextView getTextView() {
             return textView;
         }
+        public TextView getPriceView() {
+            return txtPrice;
+        }
+
     }
 
 
@@ -78,7 +84,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.getTextView().setText((CharSequence) localDataSet.get(position));
+        viewHolder.getTextView().setText( localDataSet.get(position).getName());
+        viewHolder.getPriceView().setText("R" + localDataSet.get(position).getPrice());
     }
 
     @Override

@@ -33,10 +33,24 @@ public class ItemsListActivity extends AppCompatActivity implements IRecyclerVie
     private MaterialToolbar materialToolbar;
     private ActivityItemsListBinding binding;
 
+    public String getSelectedCategory() {
+        return selectedCategory;
+    }
+
+    private String selectedCategory;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Bundle b = getIntent().getExtras();
+
+        if(b != null){
+            selectedCategory = b.getString("selectedCategory");
+        }
+
+
 
         binding = ActivityItemsListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -47,7 +61,11 @@ public class ItemsListActivity extends AppCompatActivity implements IRecyclerVie
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-        getSupportActionBar().setTitle("Items");
+        if(selectedCategory!=null){
+            getSupportActionBar().setTitle(selectedCategory);
+        }else{
+            getSupportActionBar().setTitle("Items");
+        }
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -63,8 +81,8 @@ public class ItemsListActivity extends AppCompatActivity implements IRecyclerVie
     @Override
     public void onItemClick(int position) {
 
-        Intent intent = new Intent(this, ProductDetailsFragment.class);
-        startActivity(intent);
+     //   Intent intent = new Intent(this, ProductDetailsFragment.class);
+       // startActivity(intent);
 
 
     }

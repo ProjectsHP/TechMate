@@ -22,6 +22,8 @@ import android.widget.Toast;
 import com.example.androidclient.adapters.CategoryAdapter;
 import com.example.androidclient.adapters.ProductsAdapter;
 import com.example.androidclient.databinding.FragmentCategoryBinding;
+import com.example.androidclient.objects.CategoryObject;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
@@ -32,6 +34,7 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
 
     private FragmentCategoryBinding binding;
     private ImageView toolbarLogo;
+    ArrayList<String> list = new ArrayList<>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,6 +55,7 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
 
 
 
+
         ArrayList<Integer> iconsList = new ArrayList<>();
         iconsList.add(R.drawable.desktop_icon);
         iconsList.add(R.drawable.laptop_icon);
@@ -61,13 +65,12 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
         iconsList.add(R.drawable.harddisk_icon);
 
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Desktops");
-        list.add("Laptops");
-        list.add("Processors");
-        list.add("Graphic cards");
-        list.add("Computer memory");
-        list.add("Disk storage");
+        list.add("Desktop");
+        list.add("Laptop");
+        list.add("CPU");
+        list.add("Graphics");
+        list.add("Ram");
+        list.add("Storage");
         CategoryAdapter adapter = new CategoryAdapter(iconsList,list, this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerCategory.setLayoutManager(linearLayoutManager);
@@ -88,7 +91,11 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
 
     @Override
     public void onItemClick(int position) {
+
+        Bundle bundle = new Bundle();
+        bundle.putString("selectedCategory", list.get(position));
         Intent intent = new Intent(getActivity(), ItemsListActivity.class);
+        intent.putExtras(bundle);
         startActivity(intent);
 
     }

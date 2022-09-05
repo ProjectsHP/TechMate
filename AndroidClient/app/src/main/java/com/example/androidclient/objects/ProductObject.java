@@ -28,7 +28,31 @@ public class ProductObject implements Parcelable {
         this.build_id = build_id;
         this.category = category;
     }
-    
+
+
+    protected ProductObject(Parcel in) {
+        Id = in.readInt();
+        name = in.readString();
+        price = in.readString();
+        availability = in.readString();
+        description = in.readString();
+        image = in.readString();
+        compability = in.readString();
+        build_id = in.readString();
+        category = in.readString();
+    }
+
+    public static final Creator<ProductObject> CREATOR = new Creator<ProductObject>() {
+        @Override
+        public ProductObject createFromParcel(Parcel in) {
+            return new ProductObject(in);
+        }
+
+        @Override
+        public ProductObject[] newArray(int size) {
+            return new ProductObject[size];
+        }
+    };
 
     public int getId() {
         return Id;
@@ -110,6 +134,14 @@ public class ProductObject implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-
+        dest.writeInt(Id);
+        dest.writeString(name);
+        dest.writeString(price);
+        dest.writeString(availability);
+        dest.writeString(description);
+        dest.writeString(image);
+        dest.writeString(compability);
+        dest.writeString(build_id);
+        dest.writeString(category);
     }
 }

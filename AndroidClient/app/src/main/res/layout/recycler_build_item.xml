@@ -26,8 +26,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:lines="3"
         android:text="ASUS EXPERTCENTRE D5 CORE I3 10105 4GB RAM "
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/build_item_img" />
@@ -36,12 +36,38 @@
         android:id="@+id/build_item_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:gravity="center_horizontal"
         android:text="R3 999"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/build_item_name"
+        app:layout_constraintStart_toStartOf="@+id/build_item_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Compatible"
+        app:layout_constraintEnd_toEndOf="@+id/build_item_name"
         app:layout_constraintStart_toStartOf="@+id/build_item_name"
         app:layout_constraintTop_toBottomOf="@+id/build_item_name" />
+
+    <ToggleButton
+        android:id="@+id/toggleBtnAddAbuild"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="20dp"
+        android:text="Add build "
+        android:textOff="Add build"
+        android:textOn="Remove build"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/build_item_price" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
