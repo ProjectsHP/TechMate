@@ -307,6 +307,9 @@
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.UserClass.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.BuildClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiceReference\Service.disco" />
     <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference\configuration.svcinfo" />

@@ -13,13 +13,14 @@ namespace Front_end
 
         ServiceClient SRef = new ServiceClient();
         string selectedComp = "";
+        int total = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             string dispCompDet = "";
            
             int style = 1;
-            int total = 0;
+          
 
            dynamic build =  SRef.FetchBuildSOAP("2");
 
@@ -119,13 +120,6 @@ namespace Front_end
                     dispCompDet += "</div>";
                     dispCompDet += "<div class='teacher-detail'>";
                     dispCompDet += "<h3>"+c.category+"<span>"+c.name+"</span></h3>";
-                    dispCompDet += "<div class='social-icons'>";
-                    dispCompDet += "<ul>";
-                    dispCompDet += "<li><a class='fa fa-facebook' href='#'></a></li>";
-                    dispCompDet += "<li><a class='fa fa-instagram' href='#'></a></li>";
-                    dispCompDet += "<li><a class='fa fa-twitter' href='#'></a></li>";
-                    dispCompDet += "</ul>";
-                    dispCompDet += "</div>";
                     dispCompDet += "<p>"+c.description+"</p>";
                     dispCompDet += "<a class='btn' runat='server' href='SelectComponent.aspx?category="+c.category+"'>Choose "+c.category+"</a>";
                     dispCompDet += "</div>";
@@ -155,7 +149,9 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + desktop.image+"'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
-                Session["BuildTotPrice"] += desktop.price;
+                total += (int)desktop.intPriceFormat;
+              
+               // Session["BuildTotPrice"] += price;
 
             }
             if (Session["CPU_build"] != null)
@@ -171,7 +167,8 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + cpu.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
-                Session["BuildTotPrice"] += cpu.price;
+                total += (int)cpu.intPriceFormat;
+              //  Session["BuildTotPrice"] += cpu.price;
             }
             if (Session["Ram_build"] != null)
             {
@@ -186,7 +183,8 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + ram.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
-                Session["BuildTotPrice"] += ram.price;
+                total+=(int)ram.intPriceFormat;
+               // Session["BuildTotPrice"] += ram.price;
             }
             if (Session["Storage_build"] != null)
             {
@@ -201,7 +199,8 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + storage.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
-                Session["BuildTotPrice"] += storage.price;
+                total += (int)storage.intPriceFormat;
+               // Session["BuildTotPrice"] += storage.price;
             }
             if (Session["Graphics_build"] != null)
             {
@@ -216,16 +215,17 @@ namespace Front_end
                 selectedComp += "<img alt='Professional Instructor'style='width:173px; height:93px' src='Content/images/products/components/" + graphics.image + "'>";
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
-                Session["BuildTotPrice"] += graphics.price;
+                total += (int)graphics.intPriceFormat;
+                //Session["BuildTotPrice"] += graphics.price;
             }
 
-            if (Session["BuildTotPrice"] != null)
+            if (total!=0)
             {
                 selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>Build details:</h5>";
                 selectedComp += "<p>This build is compitable with all selected components. No issues detected</p>";
-                selectedComp += "<a href = '#'>Total: R63 000</a>";
+                selectedComp += "<a href = '#'>Total: R"+total+"</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
                 selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
@@ -254,7 +254,8 @@ namespace Front_end
                 string desktop = Session["Desktop_build"].ToString();
                 string user = Session["LoggedUser"].ToString();
                 string graphics = Session["Graphics_build"].ToString();
-                int response = SRef.CreateBuildSOAP(user, desktop, cpu, storage, graphics, ram, "Compatible");
+                string totPrice = Convert.ToString(total);
+                int response = SRef.CreateBuildSOAP(user, desktop, cpu, storage, graphics, ram, "Compatible",totPrice);
                 if (response !=-1)
                 {
                     Session.Remove("Ram_build");

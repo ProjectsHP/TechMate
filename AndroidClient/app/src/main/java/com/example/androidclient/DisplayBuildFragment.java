@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -86,6 +87,18 @@ public class DisplayBuildFragment extends Fragment implements IRecyclerViewClick
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerShowBuild.setLayoutManager(linearLayoutManager);
         binding.recyclerShowBuild.setAdapter(adapter);
+
+
+
+        binding.floatAddBuildToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("addBuildToCrt",build);
+                NavHostFragment.findNavController(DisplayBuildFragment.this)
+                        .navigate(R.id.action_displayBuildFragment_to_cartFragment,bundle);
+            }
+        });
 
 
     }

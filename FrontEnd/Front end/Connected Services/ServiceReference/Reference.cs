@@ -342,6 +342,9 @@ namespace Front_end.ServiceReference {
         private string imageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> intPriceFormatField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -449,6 +452,19 @@ namespace Front_end.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> intPriceFormat {
+            get {
+                return this.intPriceFormatField;
+            }
+            set {
+                if ((this.intPriceFormatField.Equals(value) != true)) {
+                    this.intPriceFormatField = value;
+                    this.RaisePropertyChanged("intPriceFormat");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string name {
             get {
                 return this.nameField;
@@ -470,6 +486,179 @@ namespace Front_end.ServiceReference {
                 if ((object.ReferenceEquals(this.priceField, value) != true)) {
                     this.priceField = value;
                     this.RaisePropertyChanged("price");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="BuildClass", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class BuildClass : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component BaseCaseComponentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Build_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CategoryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompatibilityStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component CpuComponentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component GraphicsComponentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component RamComponentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component StorageComponentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_build_idField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component BaseCaseComponent {
+            get {
+                return this.BaseCaseComponentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BaseCaseComponentField, value) != true)) {
+                    this.BaseCaseComponentField = value;
+                    this.RaisePropertyChanged("BaseCaseComponent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Build_id {
+            get {
+                return this.Build_idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Build_idField, value) != true)) {
+                    this.Build_idField = value;
+                    this.RaisePropertyChanged("Build_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Category {
+            get {
+                return this.CategoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CategoryField, value) != true)) {
+                    this.CategoryField = value;
+                    this.RaisePropertyChanged("Category");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CompatibilityStatus {
+            get {
+                return this.CompatibilityStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompatibilityStatusField, value) != true)) {
+                    this.CompatibilityStatusField = value;
+                    this.RaisePropertyChanged("CompatibilityStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component CpuComponent {
+            get {
+                return this.CpuComponentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CpuComponentField, value) != true)) {
+                    this.CpuComponentField = value;
+                    this.RaisePropertyChanged("CpuComponent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component GraphicsComponent {
+            get {
+                return this.GraphicsComponentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GraphicsComponentField, value) != true)) {
+                    this.GraphicsComponentField = value;
+                    this.RaisePropertyChanged("GraphicsComponent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component RamComponent {
+            get {
+                return this.RamComponentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RamComponentField, value) != true)) {
+                    this.RamComponentField = value;
+                    this.RaisePropertyChanged("RamComponent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component StorageComponent {
+            get {
+                return this.StorageComponentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StorageComponentField, value) != true)) {
+                    this.StorageComponentField = value;
+                    this.RaisePropertyChanged("StorageComponent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_build_id {
+            get {
+                return this.User_build_idField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_build_idField, value) != true)) {
+                    this.User_build_idField = value;
+                    this.RaisePropertyChanged("User_build_id");
                 }
             }
         }
@@ -561,10 +750,16 @@ namespace Front_end.ServiceReference {
         System.Threading.Tasks.Task<Front_end.ServiceReference.Component> FetchComponentSOAPAsync(string component_id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CreateBuildSOAP", ReplyAction="http://tempuri.org/IService/CreateBuildSOAPResponse")]
-        int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
+        int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CreateBuildSOAP", ReplyAction="http://tempuri.org/IService/CreateBuildSOAPResponse")]
-        System.Threading.Tasks.Task<int> CreateBuildSOAPAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
+        System.Threading.Tasks.Task<int> CreateBuildSOAPAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserBuildsSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserBuildsSOAPResponse")]
+        Front_end.ServiceReference.BuildClass[] FetchAllUserBuildsSOAP(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserBuildsSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserBuildsSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsSOAPAsync(string user_id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -690,12 +885,20 @@ namespace Front_end.ServiceReference {
             return base.Channel.FetchComponentSOAPAsync(component_id);
         }
         
-        public int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus) {
-            return base.Channel.CreateBuildSOAP(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus);
+        public int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
+            return base.Channel.CreateBuildSOAP(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus, totalPrice);
         }
         
-        public System.Threading.Tasks.Task<int> CreateBuildSOAPAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus) {
-            return base.Channel.CreateBuildSOAPAsync(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus);
+        public System.Threading.Tasks.Task<int> CreateBuildSOAPAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
+            return base.Channel.CreateBuildSOAPAsync(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus, totalPrice);
+        }
+        
+        public Front_end.ServiceReference.BuildClass[] FetchAllUserBuildsSOAP(string user_id) {
+            return base.Channel.FetchAllUserBuildsSOAP(user_id);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsSOAPAsync(string user_id) {
+            return base.Channel.FetchAllUserBuildsSOAPAsync(user_id);
         }
     }
     
@@ -734,10 +937,10 @@ namespace Front_end.ServiceReference {
         System.Threading.Tasks.Task<int> SendMailAsync(string receiverEmail, string subject, string body);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateBuild", ReplyAction="http://tempuri.org/IServiceREST/CreateBuildResponse")]
-        int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
+        int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateBuild", ReplyAction="http://tempuri.org/IServiceREST/CreateBuildResponse")]
-        System.Threading.Tasks.Task<int> CreateBuildAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus);
+        System.Threading.Tasks.Task<int> CreateBuildAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchActiveUser", ReplyAction="http://tempuri.org/IServiceREST/FetchActiveUserResponse")]
         Front_end.ServiceReference.User FetchActiveUser(string id);
@@ -774,6 +977,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchBuild", ReplyAction="http://tempuri.org/IServiceREST/FetchBuildResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchBuildAsync(string build_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserBuilds", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserBuildsResponse")]
+        Front_end.ServiceReference.BuildClass[] FetchAllUserBuilds(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserBuilds", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserBuildsResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsAsync(string user_id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -843,12 +1052,12 @@ namespace Front_end.ServiceReference {
             return base.Channel.SendMailAsync(receiverEmail, subject, body);
         }
         
-        public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus) {
-            return base.Channel.CreateBuild(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus);
+        public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
+            return base.Channel.CreateBuild(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus, totalPrice);
         }
         
-        public System.Threading.Tasks.Task<int> CreateBuildAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus) {
-            return base.Channel.CreateBuildAsync(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus);
+        public System.Threading.Tasks.Task<int> CreateBuildAsync(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
+            return base.Channel.CreateBuildAsync(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus, totalPrice);
         }
         
         public Front_end.ServiceReference.User FetchActiveUser(string id) {
@@ -897,6 +1106,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchBuildAsync(string build_id) {
             return base.Channel.FetchBuildAsync(build_id);
+        }
+        
+        public Front_end.ServiceReference.BuildClass[] FetchAllUserBuilds(string user_id) {
+            return base.Channel.FetchAllUserBuilds(user_id);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsAsync(string user_id) {
+            return base.Channel.FetchAllUserBuildsAsync(user_id);
         }
     }
 }

@@ -30,15 +30,15 @@ namespace WCF_Service_Server_
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertComponent(Component instance);
-    partial void UpdateComponent(Component instance);
-    partial void DeleteComponent(Component instance);
     partial void InsertUser(User instance);
     partial void UpdateUser(User instance);
     partial void DeleteUser(User instance);
     partial void InsertBuild(Build instance);
     partial void UpdateBuild(Build instance);
     partial void DeleteBuild(Build instance);
+    partial void InsertComponent(Component instance);
+    partial void UpdateComponent(Component instance);
+    partial void DeleteComponent(Component instance);
     #endregion
 		
 		public linq2sqlDataContext() : 
@@ -71,14 +71,6 @@ namespace WCF_Service_Server_
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<Component> Components
-		{
-			get
-			{
-				return this.GetTable<Component>();
-			}
-		}
-		
 		public System.Data.Linq.Table<User> Users
 		{
 			get
@@ -94,258 +86,12 @@ namespace WCF_Service_Server_
 				return this.GetTable<Build>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Component")]
-	public partial class Component : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private string _name;
-		
-		private string _price;
-		
-		private string _availability;
-		
-		private string _description;
-		
-		private string _image;
-		
-		private string _compatibility;
-		
-		private System.Nullable<int> _build_id;
-		
-		private string _category;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void OnnameChanging(string value);
-    partial void OnnameChanged();
-    partial void OnpriceChanging(string value);
-    partial void OnpriceChanged();
-    partial void OnavailabilityChanging(string value);
-    partial void OnavailabilityChanged();
-    partial void OndescriptionChanging(string value);
-    partial void OndescriptionChanged();
-    partial void OnimageChanging(string value);
-    partial void OnimageChanged();
-    partial void OncompatibilityChanging(string value);
-    partial void OncompatibilityChanged();
-    partial void Onbuild_idChanging(System.Nullable<int> value);
-    partial void Onbuild_idChanged();
-    partial void OncategoryChanging(string value);
-    partial void OncategoryChanged();
-    #endregion
-		
-		public Component()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Id
+		public System.Data.Linq.Table<Component> Components
 		{
 			get
 			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(MAX)")]
-		public string name
-		{
-			get
-			{
-				return this._name;
-			}
-			set
-			{
-				if ((this._name != value))
-				{
-					this.OnnameChanging(value);
-					this.SendPropertyChanging();
-					this._name = value;
-					this.SendPropertyChanged("name");
-					this.OnnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_price", DbType="VarChar(MAX)")]
-		public string price
-		{
-			get
-			{
-				return this._price;
-			}
-			set
-			{
-				if ((this._price != value))
-				{
-					this.OnpriceChanging(value);
-					this.SendPropertyChanging();
-					this._price = value;
-					this.SendPropertyChanged("price");
-					this.OnpriceChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_availability", DbType="VarChar(MAX)")]
-		public string availability
-		{
-			get
-			{
-				return this._availability;
-			}
-			set
-			{
-				if ((this._availability != value))
-				{
-					this.OnavailabilityChanging(value);
-					this.SendPropertyChanging();
-					this._availability = value;
-					this.SendPropertyChanged("availability");
-					this.OnavailabilityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_description", DbType="VarChar(MAX)")]
-		public string description
-		{
-			get
-			{
-				return this._description;
-			}
-			set
-			{
-				if ((this._description != value))
-				{
-					this.OndescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._description = value;
-					this.SendPropertyChanged("description");
-					this.OndescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_image", DbType="VarChar(MAX)")]
-		public string image
-		{
-			get
-			{
-				return this._image;
-			}
-			set
-			{
-				if ((this._image != value))
-				{
-					this.OnimageChanging(value);
-					this.SendPropertyChanging();
-					this._image = value;
-					this.SendPropertyChanged("image");
-					this.OnimageChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_compatibility", DbType="VarChar(MAX)")]
-		public string compatibility
-		{
-			get
-			{
-				return this._compatibility;
-			}
-			set
-			{
-				if ((this._compatibility != value))
-				{
-					this.OncompatibilityChanging(value);
-					this.SendPropertyChanging();
-					this._compatibility = value;
-					this.SendPropertyChanged("compatibility");
-					this.OncompatibilityChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_build_id", DbType="Int")]
-		public System.Nullable<int> build_id
-		{
-			get
-			{
-				return this._build_id;
-			}
-			set
-			{
-				if ((this._build_id != value))
-				{
-					this.Onbuild_idChanging(value);
-					this.SendPropertyChanging();
-					this._build_id = value;
-					this.SendPropertyChanged("build_id");
-					this.Onbuild_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_category", DbType="VarChar(50)")]
-		public string category
-		{
-			get
-			{
-				return this._category;
-			}
-			set
-			{
-				if ((this._category != value))
-				{
-					this.OncategoryChanging(value);
-					this.SendPropertyChanging();
-					this._category = value;
-					this.SendPropertyChanged("category");
-					this.OncategoryChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<Component>();
 			}
 		}
 	}
@@ -833,6 +579,284 @@ namespace WCF_Service_Server_
 					this._totalPrice = value;
 					this.SendPropertyChanged("totalPrice");
 					this.OntotalPriceChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Component")]
+	public partial class Component : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _name;
+		
+		private string _price;
+		
+		private string _availability;
+		
+		private string _description;
+		
+		private string _image;
+		
+		private string _compatibility;
+		
+		private System.Nullable<int> _build_id;
+		
+		private string _category;
+		
+		private System.Nullable<int> _intPriceFormat;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnnameChanging(string value);
+    partial void OnnameChanged();
+    partial void OnpriceChanging(string value);
+    partial void OnpriceChanged();
+    partial void OnavailabilityChanging(string value);
+    partial void OnavailabilityChanged();
+    partial void OndescriptionChanging(string value);
+    partial void OndescriptionChanged();
+    partial void OnimageChanging(string value);
+    partial void OnimageChanged();
+    partial void OncompatibilityChanging(string value);
+    partial void OncompatibilityChanged();
+    partial void Onbuild_idChanging(System.Nullable<int> value);
+    partial void Onbuild_idChanged();
+    partial void OncategoryChanging(string value);
+    partial void OncategoryChanged();
+    partial void OnintPriceFormatChanging(System.Nullable<int> value);
+    partial void OnintPriceFormatChanged();
+    #endregion
+		
+		public Component()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="VarChar(MAX)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this.OnnameChanging(value);
+					this.SendPropertyChanging();
+					this._name = value;
+					this.SendPropertyChanged("name");
+					this.OnnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_price", DbType="VarChar(MAX)")]
+		public string price
+		{
+			get
+			{
+				return this._price;
+			}
+			set
+			{
+				if ((this._price != value))
+				{
+					this.OnpriceChanging(value);
+					this.SendPropertyChanging();
+					this._price = value;
+					this.SendPropertyChanged("price");
+					this.OnpriceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_availability", DbType="VarChar(MAX)")]
+		public string availability
+		{
+			get
+			{
+				return this._availability;
+			}
+			set
+			{
+				if ((this._availability != value))
+				{
+					this.OnavailabilityChanging(value);
+					this.SendPropertyChanging();
+					this._availability = value;
+					this.SendPropertyChanged("availability");
+					this.OnavailabilityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_description", DbType="VarChar(MAX)")]
+		public string description
+		{
+			get
+			{
+				return this._description;
+			}
+			set
+			{
+				if ((this._description != value))
+				{
+					this.OndescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._description = value;
+					this.SendPropertyChanged("description");
+					this.OndescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_image", DbType="VarChar(MAX)")]
+		public string image
+		{
+			get
+			{
+				return this._image;
+			}
+			set
+			{
+				if ((this._image != value))
+				{
+					this.OnimageChanging(value);
+					this.SendPropertyChanging();
+					this._image = value;
+					this.SendPropertyChanged("image");
+					this.OnimageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_compatibility", DbType="VarChar(MAX)")]
+		public string compatibility
+		{
+			get
+			{
+				return this._compatibility;
+			}
+			set
+			{
+				if ((this._compatibility != value))
+				{
+					this.OncompatibilityChanging(value);
+					this.SendPropertyChanging();
+					this._compatibility = value;
+					this.SendPropertyChanged("compatibility");
+					this.OncompatibilityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_build_id", DbType="Int")]
+		public System.Nullable<int> build_id
+		{
+			get
+			{
+				return this._build_id;
+			}
+			set
+			{
+				if ((this._build_id != value))
+				{
+					this.Onbuild_idChanging(value);
+					this.SendPropertyChanging();
+					this._build_id = value;
+					this.SendPropertyChanged("build_id");
+					this.Onbuild_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_category", DbType="VarChar(MAX)")]
+		public string category
+		{
+			get
+			{
+				return this._category;
+			}
+			set
+			{
+				if ((this._category != value))
+				{
+					this.OncategoryChanging(value);
+					this.SendPropertyChanging();
+					this._category = value;
+					this.SendPropertyChanged("category");
+					this.OncategoryChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_intPriceFormat", DbType="Int")]
+		public System.Nullable<int> intPriceFormat
+		{
+			get
+			{
+				return this._intPriceFormat;
+			}
+			set
+			{
+				if ((this._intPriceFormat != value))
+				{
+					this.OnintPriceFormatChanging(value);
+					this.SendPropertyChanging();
+					this._intPriceFormat = value;
+					this.SendPropertyChanged("intPriceFormat");
+					this.OnintPriceFormatChanged();
 				}
 			}
 		}

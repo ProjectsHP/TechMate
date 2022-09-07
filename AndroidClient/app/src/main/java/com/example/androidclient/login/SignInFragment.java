@@ -100,10 +100,6 @@ public class SignInFragment extends Fragment implements URLGenerator {
                         @Override
                         public void OnSuccess() {
 
-                            final Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
 
                                     if (serverResponseCode != null) {
                                         if (serverResponseCode.equals("200")) {
@@ -133,8 +129,6 @@ public class SignInFragment extends Fragment implements URLGenerator {
                                     }
                                     serverResponseCode = null;
 
-                                }
-                            }, 700);
 
                         }
                     });

@@ -27,7 +27,7 @@ namespace Front_end
             {
                 foreach (Component comp in comps)
                 {
-                    dispComp += "<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>";
+                    dispComp += "<div class='col-lg-3 col-md-4 col-sm-6 col-xs-12'>";
                     dispComp += "<div class='course_block'>";
                     dispComp += "<div class='img_wrap'>";
                     dispComp += "<img alt='Science' src='Content/images/products/components/" + comp.image + "' style='width:335px; height:180px'>";

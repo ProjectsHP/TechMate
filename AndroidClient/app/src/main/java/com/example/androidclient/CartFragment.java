@@ -1,5 +1,7 @@
 package com.example.androidclient;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -57,7 +59,9 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
     ArrayList<BuildObject> list = new ArrayList<>();
     RequestQueue requestQueue;
     StringRequest stringRequest;
+    BuildObject build = new BuildObject();
     String serverResponseCode;
+    ArrayList<ProductObject> buildList = new ArrayList<>();
     ProductObject productObject  = new ProductObject();
     UIComponents uiComponents;
 
@@ -114,13 +118,21 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         });
 
 
-        ArrayList<ProductObject> list = new ArrayList<>();
-//        list.add("Sumsung Galaxy A33 1e");
-//        list.add("AMSUNG 1TB 980 PRO NVME GEN 4X4 SSD");
-//        list.add("Gaming Desktop Core i7 9700F 16GB 960GB SSD RTX 2060 6GB ");
-//        list.add("Apple iMac 24-inch Retina 4.5K Display Apple M1 Chip 512GB Pink 4 Port");
 
-        CartAdapter adapter = new CartAdapter(list,this);
+        CartAdapter adapter = new CartAdapter(buildList,this);
+
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            build = bundle.getParcelable("addBuildToCrt");
+            buildList.add(build.getGraphicsComponent());
+            buildList.add(build.getRamComponent());
+            buildList.add(build.getCpuComponent());
+            buildList.add(build.getStorageComponent());
+            buildList.add(build.getBaseCaseComponent());
+            adapter.notifyDataSetChanged();
+
+        }
+
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerCart.setLayoutManager(linearLayoutManager);
         binding.recyclerCart.setAdapter(adapter);
@@ -152,10 +164,11 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
 
     public void GETAllUserBuildsRequest(final VolleyCallBack callBack) {
 
-
+        SharedPreferences sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
+        String id = sharedPreferences.getString("pref_Id", "-1");
 
         //JSONObject Request initialized
-        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL()+"2", null,
+        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL()+id, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

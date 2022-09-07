@@ -11,6 +11,7 @@ namespace WCF_Service_Server_
         string build_id;
         string user_build_id;
         string category;
+        string totalPrice;
         string compatibilityStatus;
         Component ramComponent;
         Component cpuComponent;
@@ -41,5 +42,6 @@ namespace WCF_Service_Server_
         public Component StorageComponent { get => storageComponent; set => storageComponent = value; }
         public Component BaseCaseComponent { get => baseCaseComponent; set => baseCaseComponent = value; }
         public string User_build_id { get => user_build_id; set => user_build_id = value; }
+        public string TotalPrice { get => totalPrice; set => totalPrice = value; }
     }
 }

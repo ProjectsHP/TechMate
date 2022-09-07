@@ -85,6 +85,12 @@
   <wsdl:message name="IService_CreateBuildSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:CreateBuildSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_FetchAllUserBuildsSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserBuildsSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchAllUserBuildsSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserBuildsSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceREST_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
@@ -157,6 +163,12 @@
   <wsdl:message name="IServiceREST_FetchBuild_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchBuildResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchAllUserBuilds_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserBuilds" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchAllUserBuilds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserBuildsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="LoginSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/LoginSOAP" message="tns:IService_LoginSOAP_InputMessage" />
@@ -210,6 +222,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/CreateBuildSOAP" message="tns:IService_CreateBuildSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/CreateBuildSOAPResponse" message="tns:IService_CreateBuildSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="FetchAllUserBuildsSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchAllUserBuildsSOAP" message="tns:IService_FetchAllUserBuildsSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchAllUserBuildsSOAPResponse" message="tns:IService_FetchAllUserBuildsSOAP_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IServiceREST">
     <wsdl:operation name="Login">
@@ -259,6 +275,10 @@
     <wsdl:operation name="FetchBuild">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchBuild" message="tns:IServiceREST_FetchBuild_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchBuildResponse" message="tns:IServiceREST_FetchBuild_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAllUserBuilds">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserBuilds" message="tns:IServiceREST_FetchAllUserBuilds_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserBuildsResponse" message="tns:IServiceREST_FetchAllUserBuilds_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="SOAPEndPoint" type="tns:IService">
@@ -373,6 +393,15 @@
     </wsdl:operation>
     <wsdl:operation name="CreateBuildSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/CreateBuildSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAllUserBuildsSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchAllUserBuildsSOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -100,21 +100,20 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
         // contents of the view with that element
 
 
-        int total = localDataSet.get(position).getTotalBuildPrice();
         viewHolder.getTextNameView().setText((CharSequence) localDataSet.get(position).getBaseCaseComponent().getName());
-        viewHolder.getTextPriceView().setText("R"+ total);
+        viewHolder.getTextPriceView().setText("R"+ localDataSet.get(position).getTotalPrice());
         viewHolder.getTextNumberView().setText("Build "+(position+1));
 
-//        viewHolder.tglAddCart.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(viewHolder.tglAddCart.isChecked()){
-//                    buildList.add(localDataSet.get(viewHolder.getBindingAdapterPosition()));
-//                }else{
-//                    buildList.remove(localDataSet.get(viewHolder.getBindingAdapterPosition()));
-//                }
-//            }
-//        });
+        viewHolder.tglAddCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(viewHolder.tglAddCart.isChecked()){
+                    buildList.add(localDataSet.get(viewHolder.getBindingAdapterPosition()));
+                }else{
+                    buildList.remove(localDataSet.get(viewHolder.getBindingAdapterPosition()));
+                }
+            }
+        });
 
 
     }

@@ -200,7 +200,7 @@ namespace WCF_Service_Server_
             return response;
         }
 
-        public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus)
+        public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice)
         {
 
           
@@ -210,6 +210,7 @@ namespace WCF_Service_Server_
             int graphics = Convert.ToInt32(graphics_id);
             int ram = Convert.ToInt32(ram_id);
             int desktop = Convert.ToInt32(desktop_id);
+            int total = Convert.ToInt32(totalPrice);
            
              
 
@@ -224,8 +225,7 @@ namespace WCF_Service_Server_
                      compatibilityStatus=compatibilityStatus,
                      category="Desktop Computer",
                      user_id= user,
-                    
-
+                     totalPrice= total,
 
                   };
                   db.Builds.InsertOnSubmit(newBuild);
@@ -431,6 +431,8 @@ namespace WCF_Service_Server_
                     buildClass.CompatibilityStatus = "Compatible";
                     buildClass.User_build_id = user_id;
                     buildClass.Category = build.category;
+                    string tot = Convert.ToString(build.totalPrice);
+                    buildClass.TotalPrice = tot;
                    
                         buildCompList.Add(buildClass);
                 }
@@ -468,6 +470,6 @@ namespace WCF_Service_Server_
             return compList;
         }
 
-      
+     
     }
 }

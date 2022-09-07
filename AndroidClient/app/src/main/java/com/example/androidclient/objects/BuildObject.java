@@ -10,7 +10,7 @@ public class BuildObject implements Parcelable{
     String User_build_id;
     String Category;
     String CompatibilityStatus;
-    String totalPrice;
+    String TotalPrice;
     int intTotalPrice;
 
     ProductObject BaseCaseComponent;
@@ -29,6 +29,7 @@ public class BuildObject implements Parcelable{
         Build_id = in.readString();
         User_build_id = in.readString();
         Category = in.readString();
+        TotalPrice = in.readString();
         CompatibilityStatus = in.readString();
         BaseCaseComponent = in.readParcelable(ProductObject.class.getClassLoader());
         CpuComponent = in.readParcelable(ProductObject.class.getClassLoader());
@@ -67,6 +68,14 @@ public class BuildObject implements Parcelable{
 
     public String getCategory() {
         return Category;
+    }
+
+    public String getTotalPrice() {
+        return TotalPrice;
+    }
+
+    public void setTotalPrice(String totalPrice) {
+        this.TotalPrice = totalPrice;
     }
 
     public void setCategory(String category) {
@@ -131,6 +140,7 @@ public class BuildObject implements Parcelable{
         dest.writeString(Build_id);
         dest.writeString(User_build_id);
         dest.writeString(Category);
+        dest.writeString(TotalPrice);
         dest.writeString(CompatibilityStatus);
         dest.writeParcelable(BaseCaseComponent, flags);
         dest.writeParcelable(CpuComponent, flags);
@@ -139,28 +149,5 @@ public class BuildObject implements Parcelable{
         dest.writeParcelable(GraphicsComponent, flags);
     }
 
-    public int getTotalBuildPrice(){
-        int total;
-        String desktop = getBaseCaseComponent().getPrice();
-        String cpu = getCpuComponent().getPrice();
-        String storage = getStorageComponent().getPrice();
-        String ram = getRamComponent().getPrice();
-        String graphics = getGraphicsComponent().getPrice();
 
-       desktop= desktop.replaceAll(" ","");
-       cpu= cpu.replaceAll(" ","");
-        storage=storage.replaceAll(" ","");
-        ram=ram.replaceAll(" ","");
-        graphics=graphics.replaceAll(" ","");
-
-       int deskPrice = Integer.parseInt(desktop);
-       int cpuPrice = Integer.parseInt(cpu);
-       int storPrice =  Integer.parseInt(storage);
-       int ramPrice = Integer.parseInt(ram);
-       int graPrice = Integer.parseInt(graphics);
-       this.intTotalPrice=deskPrice+cpuPrice+storPrice+ramPrice+graPrice;
-
-        return intTotalPrice;
-
-    }
 }

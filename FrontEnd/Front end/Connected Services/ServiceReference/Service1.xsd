@@ -46,9 +46,30 @@
       <xs:element minOccurs="0" name="compatibility" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="intPriceFormat" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="price" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Component" nillable="true" type="tns:Component" />
+  <xs:complexType name="ArrayOfBuildClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BuildClass" nillable="true" type="tns:BuildClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuildClass" nillable="true" type="tns:ArrayOfBuildClass" />
+  <xs:complexType name="BuildClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseCaseComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="Build_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompatibilityStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CpuComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="GraphicsComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="RamComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="StorageComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="User_build_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BuildClass" nillable="true" type="tns:BuildClass" />
 </xs:schema>
