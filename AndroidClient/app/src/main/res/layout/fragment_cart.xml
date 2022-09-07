@@ -78,6 +78,7 @@
             android:layout_height="100dp"
             android:elevation="8dp"
             android:foregroundGravity="top"
+            app:cardBackgroundColor="#F4F1F1"
             app:cardElevation="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

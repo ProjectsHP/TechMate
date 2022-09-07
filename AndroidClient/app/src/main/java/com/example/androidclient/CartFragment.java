@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +20,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.example.androidclient.adapters.BuildCartAdapter;
@@ -41,8 +43,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 
 
 public class CartFragment extends Fragment implements IRecyclerViewClickHandler, URLGenerator {
@@ -54,6 +58,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
     RequestQueue requestQueue;
     StringRequest stringRequest;
     String serverResponseCode;
+    ProductObject productObject  = new ProductObject();
     UIComponents uiComponents;
 
 
@@ -109,25 +114,26 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         });
 
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Desktops");
-        list.add("Laptops");
-        list.add("Processors");
-        list.add("Graphic cards");
+        ArrayList<ProductObject> list = new ArrayList<>();
+//        list.add("Sumsung Galaxy A33 1e");
+//        list.add("AMSUNG 1TB 980 PRO NVME GEN 4X4 SSD");
+//        list.add("Gaming Desktop Core i7 9700F 16GB 960GB SSD RTX 2060 6GB ");
+//        list.add("Apple iMac 24-inch Retina 4.5K Display Apple M1 Chip 512GB Pink 4 Port");
 
         CartAdapter adapter = new CartAdapter(list,this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerCart.setLayoutManager(linearLayoutManager);
         binding.recyclerCart.setAdapter(adapter);
 
-
-
-
     }
 
     @Override
     public void onItemClick(int position) {
 
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("selectedBuild",list.get(position));
+        NavHostFragment.findNavController(CartFragment.this)
+                .navigate(R.id.action_cartFragment_to_displayBuildFragment,bundle);
     }
 
     @Override
@@ -146,18 +152,21 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
 
     public void GETAllUserBuildsRequest(final VolleyCallBack callBack) {
 
+
+
         //JSONObject Request initialized
         JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL()+"2", null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        BuildObject[] buildObjects=null;
+                        BuildObject buildObjects=null;
 
                         try {
-                            JSONArray buildsArr = response.getJSONArray("FetchAllUserBuildsResult");
                             GsonBuilder builder = new GsonBuilder();
                             builder.serializeNulls();
                             Gson gson = builder.setPrettyPrinting().create();
+                            JSONArray buildsArr = response.getJSONArray("FetchAllUserBuildsResult");
+
                             buildObject = gson.fromJson(String.valueOf(buildsArr),BuildObject[].class);
                             serverResponseCode = getResources().getString(R.string.response_success);
                         } catch (JSONException e) {
@@ -177,7 +186,9 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
                     }
                 }
         );
-        JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+
+                JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         requestQueue.add(JsonObjectRequest);
     }

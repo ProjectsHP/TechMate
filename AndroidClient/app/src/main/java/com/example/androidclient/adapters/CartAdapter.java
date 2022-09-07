@@ -21,7 +21,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+        private final TextView txtName;
+        private final TextView txtCategory;
+        private final TextView txtPrice;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -40,15 +42,25 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
                     }
                 }
             });
-            textView = (TextView) view.findViewById(R.id.cartNameItem);
+            txtName = (TextView) view.findViewById(R.id.cartNameItem);
+            txtCategory = (TextView) view.findViewById(R.id.cartCategoryItem);
+            txtPrice = (TextView) view.findViewById(R.id.cartPriceItem);
         }
 
-        public TextView getTextView() {
-            return textView;
+        public TextView getNameView() {
+            return txtName;
+        }
+
+        public TextView getPriceView() {
+            return txtPrice;
+        }
+
+        public TextView getCategoryView() {
+            return txtCategory;
         }
     }
 
-    public CartAdapter(ArrayList dataSet,  IRecyclerViewClickHandler clickHandler) {
+    public CartAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
     }
@@ -70,7 +82,10 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.getTextView().setText((CharSequence) localDataSet.get(position));
+        viewHolder.getNameView().setText((CharSequence) localDataSet.get(position).getName());
+        viewHolder.getCategoryView().setText((CharSequence) localDataSet.get(position).getCategory());
+        viewHolder.getPriceView().setText("R"+ localDataSet.get(position).getPrice());
+
     }
 
 

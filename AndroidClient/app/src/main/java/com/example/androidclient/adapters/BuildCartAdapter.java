@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidclient.R;
 import com.example.androidclient.objects.BuildObject;
-import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
@@ -18,6 +17,7 @@ import java.util.ArrayList;
 public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.ViewHolder>{
 
     private final ArrayList<BuildObject> localDataSet;
+    private ArrayList<BuildObject> buildList;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
 
     /**
@@ -27,7 +27,8 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView txtName;
         private final TextView txtPrice;
-        private final ToggleButton btnAddBuildToCart;
+        private final TextView txtBuildNumber;
+        private final ToggleButton tglAddCart;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -46,11 +47,19 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
                     }
                 }
             });
+
+
+
             txtName = (TextView) view.findViewById(R.id.build_item_name);
             txtPrice = (TextView) view.findViewById(R.id.build_item_price);
-            btnAddBuildToCart = (ToggleButton) view.findViewById(R.id.toggleBtnAddAbuild);
+            txtBuildNumber = (TextView) view.findViewById(R.id.build_item_number);
+            tglAddCart = (ToggleButton) view.findViewById(R.id.toggleAddBuildToCart);
+
+
 
         }
+
+
 
         public TextView getTextNameView() {
             return txtName;
@@ -60,9 +69,11 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
             return txtPrice;
         }
 
-        public ToggleButton getToggleAddToCart(){
-            return btnAddBuildToCart;
+        public TextView getTextNumberView() {
+            return txtBuildNumber;
         }
+
+
     }
 
     public BuildCartAdapter(ArrayList<BuildObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
@@ -88,8 +99,23 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
 
-        viewHolder.getTextNameView().setText((CharSequence) "Test object");
-        viewHolder.getTextPriceView().setText((CharSequence) "R46 999");
+
+        int total = localDataSet.get(position).getTotalBuildPrice();
+        viewHolder.getTextNameView().setText((CharSequence) localDataSet.get(position).getBaseCaseComponent().getName());
+        viewHolder.getTextPriceView().setText("R"+ total);
+        viewHolder.getTextNumberView().setText("Build "+(position+1));
+
+//        viewHolder.tglAddCart.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(viewHolder.tglAddCart.isChecked()){
+//                    buildList.add(localDataSet.get(viewHolder.getBindingAdapterPosition()));
+//                }else{
+//                    buildList.remove(localDataSet.get(viewHolder.getBindingAdapterPosition()));
+//                }
+//            }
+//        });
+
 
     }
 

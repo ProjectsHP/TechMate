@@ -159,6 +159,7 @@ public class SignInFragment extends Fragment implements URLGenerator {
     public void GETLoginRequest(final VolleyCallBack callBack) {
 
         //JSONObject Request initialized
+
         JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL(), null,
                 new Response.Listener<JSONObject>() {
                     @Override

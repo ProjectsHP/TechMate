@@ -202,37 +202,50 @@ namespace WCF_Service_Server_
 
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus)
         {
+
+          
+            int storage=Convert.ToInt32(storage_id);
+            int user = Convert.ToInt32(user_id);
+            int cpu = Convert.ToInt32(cpu_id);
+            int graphics = Convert.ToInt32(graphics_id);
+            int ram = Convert.ToInt32(ram_id);
+            int desktop = Convert.ToInt32(desktop_id);
            
-
-                var newBuild = new Build
-                {
-                   baseBuild_id=Convert.ToInt32(desktop_id),
-                   cpu_id= Convert.ToInt32(cpu_id),
-                   storage_id= Convert.ToInt32(storage_id),
-                   graphics_id= Convert.ToInt32(graphics_id),
-                   ram_id= Convert.ToInt32(ram_id),
-                   compatibilityStatus=compatibilityStatus,
-                   category="Desktop Computer",
-                   user_id= Convert.ToInt32(user_id)
+             
 
 
-                };
-                db.Builds.InsertOnSubmit(newBuild);
+              var newBuild = new Build
+                  {
+                     baseBuild_id=desktop,
+                     cpu_id= cpu,
+                     storage_id= storage,
+                     graphics_id= graphics,
+                     ram_id= ram,
+                     compatibilityStatus=compatibilityStatus,
+                     category="Desktop Computer",
+                     user_id= user,
+                    
 
-                try
-                {
-                    // created build successfully
-                    db.SubmitChanges();
 
-                int build_id = newBuild.Id;
-                    return build_id;
-                }
-                catch (Exception ex)
-                {
-                    //error occured
-                    ex.GetBaseException();
-                    return -1;
-                }
+                  };
+                  db.Builds.InsertOnSubmit(newBuild);
+
+                  try
+                  {
+                      // created build successfully
+                      db.SubmitChanges();
+
+                  int build_id = newBuild.Id;
+                      return build_id;
+                  }
+                  catch (Exception ex)
+                  {
+                      //error occured
+                      ex.GetBaseException();
+                      return -1;
+                  }
+            
+        
             }
 
         public User FetchActiveUser(string id)

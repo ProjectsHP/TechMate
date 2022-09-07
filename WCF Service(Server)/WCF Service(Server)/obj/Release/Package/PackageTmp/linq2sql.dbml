@@ -28,14 +28,15 @@
   <Table Name="dbo.Build" Member="Builds">
     <Type Name="Build">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="category" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
-      <Column Name="compatibilityStatus" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="category" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="compatibilityStatus" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="baseBuild_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ram_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="storage_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="graphics_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="cpu_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="totalPrice" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

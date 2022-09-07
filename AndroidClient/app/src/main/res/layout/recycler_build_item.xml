@@ -7,67 +7,79 @@
     android:layout_marginHorizontal="4dp"
     android:layout_marginVertical="4dp"
     android:layout_weight=".45"
-    android:background="@drawable/product_boarder">
-
-    <ImageView
-        android:id="@+id/build_item_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/google_logo" />
+    android:background="@drawable/product_boarder"
+    android:paddingBottom="16dp"
+    app:layout_constraintWidth_percent=".70">
 
     <TextView
         android:id="@+id/build_item_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="ASUS EXPERTCENTRE D5 CORE I3 10105 4GB RAM "
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/build_item_img" />
+        android:lines="2"
+        android:text="ASUS EXPERTCENTRE D5 CORE I3 10105 4GB RAM"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/build_item_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="R3 999"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/build_item_name"
         app:layout_constraintStart_toStartOf="@+id/build_item_name"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/desktop1" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/build_item_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Build 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Compatible"
-        app:layout_constraintEnd_toEndOf="@+id/build_item_name"
+        android:textColor="#4CAF50"
         app:layout_constraintStart_toStartOf="@+id/build_item_name"
         app:layout_constraintTop_toBottomOf="@+id/build_item_name" />
 
     <ToggleButton
-        android:id="@+id/toggleBtnAddAbuild"
-        android:layout_width="0dp"
+        android:id="@+id/toggleAddBuildToCart"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:paddingHorizontal="20dp"
-        android:text="Add build "
-        android:textOff="Add build"
-        android:textOn="Remove build"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/build_item_price" />
+        android:background="@drawable/product_boarder"
+        android:text="ToggleButton"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textOff="Add to cart"
+        android:textOn="Remove from cart"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/build_item_price"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

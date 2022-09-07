@@ -604,6 +604,8 @@ namespace WCF_Service_Server_
 		
 		private System.Nullable<int> _cpu_id;
 		
+		private System.Nullable<int> _totalPrice;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -626,6 +628,8 @@ namespace WCF_Service_Server_
     partial void Ongraphics_idChanged();
     partial void Oncpu_idChanging(System.Nullable<int> value);
     partial void Oncpu_idChanged();
+    partial void OntotalPriceChanging(System.Nullable<int> value);
+    partial void OntotalPriceChanged();
     #endregion
 		
 		public Build()
@@ -653,7 +657,7 @@ namespace WCF_Service_Server_
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_category", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_category", DbType="VarChar(MAX)")]
 		public string category
 		{
 			get
@@ -673,7 +677,7 @@ namespace WCF_Service_Server_
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_compatibilityStatus", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_compatibilityStatus", DbType="VarChar(MAX)")]
 		public string compatibilityStatus
 		{
 			get
@@ -809,6 +813,26 @@ namespace WCF_Service_Server_
 					this._cpu_id = value;
 					this.SendPropertyChanged("cpu_id");
 					this.Oncpu_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalPrice", DbType="Int")]
+		public System.Nullable<int> totalPrice
+		{
+			get
+			{
+				return this._totalPrice;
+			}
+			set
+			{
+				if ((this._totalPrice != value))
+				{
+					this.OntotalPriceChanging(value);
+					this.SendPropertyChanging();
+					this._totalPrice = value;
+					this.SendPropertyChanged("totalPrice");
+					this.OntotalPriceChanged();
 				}
 			}
 		}

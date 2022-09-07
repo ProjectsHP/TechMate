@@ -26,7 +26,11 @@
         android:id="@+id/cartFragment"
         android:name="com.example.androidclient.CartFragment"
         android:label="Cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_displayBuildFragment"
+            app:destination="@id/displayBuildFragment" />
+    </fragment>
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.androidclient.CategoryFragment"
@@ -53,5 +57,14 @@
         <action
             android:id="@+id/action_productDetailsFragment_to_itemsListActivity"
             app:destination="@id/itemsListActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayBuildFragment"
+        android:name="com.example.androidclient.DisplayBuildFragment"
+        android:label="My build"
+        tools:layout="@layout/fragment_display_build">
+        <action
+            android:id="@+id/action_displayBuildFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
     </fragment>
 </navigation>
