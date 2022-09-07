@@ -79,9 +79,6 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
             @Override
             public void OnSuccess() {
 
-
-
-
                         if (serverResponseCode != null) {
                             if (serverResponseCode.equals("200")) {
                                 Log.e("RESPONSE CODE 200: ", serverResponseCode);
@@ -100,7 +97,6 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
             }
         });
 
-
     }
 
     @Override
@@ -113,14 +109,24 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
     @Override
     public void onResume() {
         super.onResume();
-      //  ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setLogo(R.mipmap.logo_bk);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayUseLogoEnabled(true);
 
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayUseLogoEnabled(false);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-     //   ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayUseLogoEnabled(false);
 
     }
 

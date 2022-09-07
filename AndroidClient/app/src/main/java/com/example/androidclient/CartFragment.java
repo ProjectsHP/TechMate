@@ -86,8 +86,8 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         super.onViewCreated(view, savedInstanceState);
 
         NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
+      //  ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        //((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
 
         uiComponents = new UIComponents(getActivity());
         requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();

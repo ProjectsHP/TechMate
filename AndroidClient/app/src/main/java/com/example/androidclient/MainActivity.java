@@ -7,11 +7,13 @@ import com.example.androidclient.databinding.ActivityMainBinding;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.color.DynamicColors;
+import com.google.android.material.navigation.NavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -37,36 +39,27 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         DynamicColors.applyToActivitiesIfAvailable(getApplication());
-        setSupportActionBar(binding.mainToolbar);
+        setSupportActionBar(binding.mainBarDrawer.mainToolbar);
 
 
+        DrawerLayout drawer = binding.drawerLayout;
+        NavigationView navigationView = binding.navView;
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+      //  appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).setOpenableLayout(drawer).build();
+
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(binding.bottomNavView, navController);
-       // getSupportActionBar().setDisplayShowTitleEnabled(false);
+        NavigationUI.setupWithNavController(binding.mainBarDrawer.bottomNavView, navController);
+        NavigationUI.setupWithNavController(navigationView, navController);
+
+
 
         getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
        // toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
         appBarLayout = (AppBarLayout) findViewById(R.id.itemAppBarLayout);
         materialToolbar = (MaterialToolbar) findViewById(R.id.mainToolbar);          //for access on other fragments
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
-      //  getSupportActionBar().setLogo(R.drawable.logo_bk);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-
-
-
-        /**
-         * TODO: Clear sharedPreference
-         */
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,UserProfile.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 
     @Override

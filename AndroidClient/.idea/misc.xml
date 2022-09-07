@@ -4,13 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/drawable/product_boarder.xml" value="0.109" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/drawable/side_nav_bar.xml" value="0.1155" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/drawable/square_boarder_bg.xml" value="0.1095" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/drawable/top_curve_bg_white.xml" value="0.109" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout-w1240dp/nav_header_drawer.xml" value="0.12315930388219545" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_drawer.xml" value="0.1455122393472348" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_item_list.xml" value="0.14266304347826086" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_items_list.xml" value="0.2" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_login.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_main.xml" value="0.13677536231884058" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/activity_user_profile.xml" value="0.14266304347826086" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/app_bar_drawer.xml" value="0.1455122393472348" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/content_drawer.xml" value="0.1455122393472348" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/content_item_list.xml" value="0.14266304347826086" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/content_login.xml" value="0.13677536231884058" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/content_main.xml" value="0.13677536231884058" />
@@ -19,11 +24,14 @@
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_category.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_category_list.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_display_build.xml" value="0.2" />
-        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_items_list.xml" value="0.25" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_product_details.xml" value="0.18" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_second.xml" value="0.14266304347826086" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_user_profile.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/main_app_drawer.xml" value="0.1455122393472348" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/nav_header_drawer.xml" value="0.1455122393472348" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/nav_header_drawer2.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_build_item.xml" value="0.33" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_cart_item.xml" value="0.4974293059125964" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_category_item.xml" value="0.33" />
@@ -33,6 +41,7 @@
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/categories_menu.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/menu_bottom_nav.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/menu_user_profile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/nav_drawer_menu.xml" value="0.1573321932449765" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/toolbar_menu.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/phkub/Documents/AndroidStudio/AndroidClient/app/src/main/res/drawable-v24/gradient.xml" value="0.1095" />
         <entry key="..\:/Users/phkub/Documents/AndroidStudio/AndroidClient/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1095" />
