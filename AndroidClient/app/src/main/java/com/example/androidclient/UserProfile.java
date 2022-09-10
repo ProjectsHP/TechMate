@@ -14,6 +14,10 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
@@ -49,6 +53,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
     public UIComponents uiComponents;
     String serverResponseCode;
     SharedPreferences sharedPreferences;
+    private AppBarConfiguration appBarConfiguration;
     Context context;
     RequestQueue requestQueue;
     private ActivityUserProfileBinding binding;
@@ -68,6 +73,8 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
         binding = ActivityUserProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
+
+
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         uiComponents = new UIComponents(this);
@@ -333,6 +340,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
         }
         return serverResponseCode;
     }
+
 
     public static class ProfileFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
 

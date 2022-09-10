@@ -48,9 +48,7 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
         super.onViewCreated(view, savedInstanceState);
 
         NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-       // ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        //((MainActivity) getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
-        //((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
+        ((AppCompatActivity)getActivity()).getSupportActionBar(). setDisplayHomeAsUpEnabled(false);
        // toolbarLogo = getActivity().findViewById(R.id.toolbarLogo);
         //toolbarLogo.setVisibility(View.GONE);
 
@@ -79,11 +77,12 @@ public class CategoryFragment extends Fragment implements IRecyclerViewClickHand
 
     }
 
-   /* @Override
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-    }*/
+    }
+
 
 
 

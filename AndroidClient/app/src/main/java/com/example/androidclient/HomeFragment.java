@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
     RequestQueue requestQueue;
     StringRequest stringRequest;
     String serverResponseCode;
+    ProductsAdapter adapter;
 
     @Override
     public View onCreateView(
@@ -75,27 +76,34 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
         uiComponents = new UIComponents(getActivity());
         requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
 
-        GETRandomComponentsRequest(new VolleyCallBack() {
-            @Override
-            public void OnSuccess() {
+        if(list.isEmpty()){
+            GETRandomComponentsRequest(new VolleyCallBack() {
+                @Override
+                public void OnSuccess() {
 
-                        if (serverResponseCode != null) {
-                            if (serverResponseCode.equals("200")) {
-                                Log.e("RESPONSE CODE 200: ", serverResponseCode);
-                                list.addAll(Arrays.asList(productObject));                  //NOTE THIS LINE. Might cause null response
-                                ProductsAdapter adapter = new ProductsAdapter(list, HomeFragment.this);
-                                LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
-                                binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
-                                binding.recyclerPopularProducts.setAdapter(adapter);
-                            }
-                        } else {
-
-                            uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
+                    if (serverResponseCode != null) {
+                        if (serverResponseCode.equals("200")) {
+                            Log.e("RESPONSE CODE 200: ", serverResponseCode);
+                            list.addAll(Arrays.asList(productObject));                  //NOTE THIS LINE. Might cause null response
+                             adapter = new ProductsAdapter(list, HomeFragment.this);
+                            LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
+                            binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
+                            binding.recyclerPopularProducts.setAdapter(adapter);
                         }
-                        serverResponseCode = null;
+                    } else {
 
-            }
-        });
+                        uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
+                    }
+                    serverResponseCode = null;
+                }
+            });
+
+        }else{
+            adapter = new ProductsAdapter(list, HomeFragment.this);
+            LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
+            binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
+            binding.recyclerPopularProducts.setAdapter(adapter);
+        }
 
     }
 
@@ -115,12 +123,12 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
 
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayUseLogoEnabled(false);
-    }
+//    @Override
+//    public void onPause() {
+//        super.onPause();
+//        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(true);
+//        ((MainActivity) getActivity()).getSupportActionBar().setDisplayUseLogoEnabled(false);
+//    }
 
     @Override
     public void onStop() {

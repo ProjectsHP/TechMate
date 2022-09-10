@@ -154,7 +154,9 @@ public class SignUpFragment extends Fragment implements URLGenerator {
 
     public void POSTRegisterRequest(final VolleyCallBack callBack) throws JSONException {
 
+
         JSONObject jsonBody = new JSONObject();
+
         jsonBody.put("name", binding.txtFNameEditor.getText());
         jsonBody.put("surname", binding.txtSurnameEditor.getText());
         jsonBody.put("email", binding.txtEmailEditor.getText());
@@ -164,7 +166,7 @@ public class SignUpFragment extends Fragment implements URLGenerator {
         jsonBody.put("userType","customer");
         final String mRequestBody = jsonBody.toString();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, generateURL(), new Response.Listener<String>() {
+          StringRequest stringRequest = new StringRequest(Request.Method.POST, generateURL(), new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 String jsonObj = response.toString();
@@ -174,8 +176,7 @@ public class SignUpFragment extends Fragment implements URLGenerator {
                     serverResponseCode="201";
                 }else if(jsonObj.contains("-1")){
                     serverResponseCode="202";
-                }
-                else {
+                }else {
                     serverResponseCode = getResources().getString(R.string.response_login_error);
                     Log.e("Inside response", "returned null object from server login");
                 }

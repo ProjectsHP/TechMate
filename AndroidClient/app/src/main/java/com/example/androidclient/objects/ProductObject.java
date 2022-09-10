@@ -14,10 +14,15 @@ public class ProductObject implements Parcelable {
     private String compability;
     private String build_id;
     private String category;
+    private int intPriceFormat;
+
+
+
+
 
     public ProductObject(){}
 
-    public ProductObject(int id, String name, String price, String availability, String description, String image, String compability, String build_id, String category) {
+    public ProductObject(int id, String name, String price, String availability, String description, String image, String compability, String build_id, String category, int intPrice) {
         Id = id;
         this.name = name;
         this.price = price;
@@ -27,6 +32,7 @@ public class ProductObject implements Parcelable {
         this.compability = compability;
         this.build_id = build_id;
         this.category = category;
+        this.intPriceFormat = intPrice;
     }
 
 
@@ -40,6 +46,7 @@ public class ProductObject implements Parcelable {
         compability = in.readString();
         build_id = in.readString();
         category = in.readString();
+        intPriceFormat = in.readInt();
     }
 
     public static final Creator<ProductObject> CREATOR = new Creator<ProductObject>() {
@@ -76,6 +83,14 @@ public class ProductObject implements Parcelable {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public int getIntPrice() {
+        return intPriceFormat;
+    }
+
+    public void setIntPrice(int intPrice) {
+        this.intPriceFormat = intPrice;
     }
 
     public String getAvailability() {
@@ -143,5 +158,6 @@ public class ProductObject implements Parcelable {
         dest.writeString(compability);
         dest.writeString(build_id);
         dest.writeString(category);
+        dest.writeInt(intPriceFormat);
     }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group >
+        <item android:title="Manage Components">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_round_add_24"
+                    android:title="Add" />
+                <item
+                    android:icon="@drawable/ic_round_edit_24"
+                    android:title="Edit" />
+                <item
+                    android:icon="@drawable/ic_round_delete_24"
+                    android:title="Delete" />
+            </menu>
+        </item>
+        <item android:title="Manage Compatibility" />
+    </group>
+
+
+</menu>

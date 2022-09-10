@@ -1,15 +1,21 @@
 package com.example.androidclient.adapters;
 
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.androidclient.MainActivity;
 import com.example.androidclient.R;
 import com.example.androidclient.objects.BuildObject;
+import com.example.androidclient.objects.ProductObject;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
@@ -19,6 +25,9 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
     private final ArrayList<BuildObject> localDataSet;
     private ArrayList<BuildObject> buildList;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
+//    private ArrayList<ProductObject> cartProductList;
+    ArrayList<ProductObject> persistantCartlist;
+
 
     /**
      * Provide a reference to the type of views that you are using
@@ -30,9 +39,13 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
         private final TextView txtBuildNumber;
         private final ToggleButton tglAddCart;
 
+        View tglAddCartView;
+
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
             // Define click listener for the ViewHolder's View
+
+
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -48,17 +61,12 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
                 }
             });
 
-
-
             txtName = (TextView) view.findViewById(R.id.build_item_name);
             txtPrice = (TextView) view.findViewById(R.id.build_item_price);
             txtBuildNumber = (TextView) view.findViewById(R.id.build_item_number);
             tglAddCart = (ToggleButton) view.findViewById(R.id.toggleAddBuildToCart);
 
-
-
         }
-
 
 
         public TextView getTextNameView() {
@@ -73,15 +81,17 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
             return txtBuildNumber;
         }
 
-
     }
 
     public BuildCartAdapter(ArrayList<BuildObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
+
+
     }
 
     // Create new views (invoked by the layout manager)
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         // Create a new view, which defines the UI of the list item
@@ -96,10 +106,7 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
 
-        // Get element from your dataset at this position and replace the
-        // contents of the view with that element
-
-
+        int pos=viewHolder.getBindingAdapterPosition();
         viewHolder.getTextNameView().setText((CharSequence) localDataSet.get(position).getBaseCaseComponent().getName());
         viewHolder.getTextPriceView().setText("R"+ localDataSet.get(position).getTotalPrice());
         viewHolder.getTextNumberView().setText("Build "+(position+1));
@@ -107,21 +114,51 @@ public class BuildCartAdapter extends RecyclerView.Adapter<BuildCartAdapter.View
         viewHolder.tglAddCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                BuildObject build;
+                int totPrice=0;
+                build=localDataSet.get(viewHolder.getBindingAdapterPosition());
+
                 if(viewHolder.tglAddCart.isChecked()){
-                    buildList.add(localDataSet.get(viewHolder.getBindingAdapterPosition()));
-                }else{
-                    buildList.remove(localDataSet.get(viewHolder.getBindingAdapterPosition()));
+
+                   build.getStorageComponent().setBuild_id(build.getBuild_id());
+                   build.getRamComponent().setBuild_id(build.getBuild_id());
+                   build.getGraphicsComponent().setBuild_id(build.getBuild_id());
+                   build.getCpuComponent().setBuild_id(build.getBuild_id());
+                   build.getBaseCaseComponent().setBuild_id(build.getBuild_id());
+
+                    ((MainActivity) v.getContext()).getPersistantCartlist().add(build.getStorageComponent());
+                    ((MainActivity) v.getContext()).getPersistantCartlist().add(build.getRamComponent());
+                    ((MainActivity) v.getContext()).getPersistantCartlist().add(build.getGraphicsComponent());
+                    ((MainActivity) v.getContext()).getPersistantCartlist().add(build.getCpuComponent());
+                    ((MainActivity) v.getContext()).getPersistantCartlist().add(build.getBaseCaseComponent());
+
+
+                }else
+                {
+                    ((MainActivity) v.getContext()).getPersistantCartlist().removeIf(product ->
+                            product.getBuild_id() == build.getBuild_id() );
+
                 }
+
+
+                persistantCartlist= ((MainActivity) v.getContext()).getPersistantCartlist();
+                for (ProductObject product:persistantCartlist) {
+                    totPrice+=product.getIntPrice();
+                }
+                ((MainActivity) v.getContext()).setDynamicTotalPriceCart(totPrice);
+                ((MainActivity)v.getContext()).getCartAdapter().notifyDataSetChanged();
             }
         });
 
-
     }
+
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
         return localDataSet.size();
     }
+
+
 
 }

@@ -23,7 +23,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_drawer2"
-        app:menu="@menu/menu_bottom_nav" />
+        app:menu="@menu/admin_menu" />
 
 
 

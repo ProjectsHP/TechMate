@@ -59,6 +59,15 @@ namespace WCF_Service_Server_
           BodyStyle = WebMessageBodyStyle.Wrapped)]
         int SendMail(string receiverEmail, string subject, string body);
 
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/MakeOrder",
+         RequestFormat = WebMessageFormat.Json,
+         ResponseFormat = WebMessageFormat.Json,
+         BodyStyle = WebMessageBodyStyle.Wrapped)]
+        void MakeOrder(List<CartItemClass> itemsList);
+
+
         [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/CreateBuildURI",
           RequestFormat = WebMessageFormat.Json,

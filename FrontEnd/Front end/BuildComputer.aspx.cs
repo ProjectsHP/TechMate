@@ -150,8 +150,6 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)desktop.intPriceFormat;
-              
-               // Session["BuildTotPrice"] += price;
 
             }
             if (Session["CPU_build"] != null)
@@ -168,7 +166,7 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)cpu.intPriceFormat;
-              //  Session["BuildTotPrice"] += cpu.price;
+      
             }
             if (Session["Ram_build"] != null)
             {
@@ -184,7 +182,7 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total+=(int)ram.intPriceFormat;
-               // Session["BuildTotPrice"] += ram.price;
+    
             }
             if (Session["Storage_build"] != null)
             {
@@ -200,7 +198,7 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)storage.intPriceFormat;
-               // Session["BuildTotPrice"] += storage.price;
+   
             }
             if (Session["Graphics_build"] != null)
             {
@@ -216,7 +214,7 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)graphics.intPriceFormat;
-                //Session["BuildTotPrice"] += graphics.price;
+    
             }
 
             if (total!=0)
@@ -232,14 +230,9 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
             }
-           
-
-
-
+          
             shBuild.InnerHtml = selectedComp;
             
-
-
         }
 
 

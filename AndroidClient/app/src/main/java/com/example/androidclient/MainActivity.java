@@ -1,9 +1,14 @@
 package com.example.androidclient;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.example.androidclient.adapters.CartAdapter;
 import com.example.androidclient.databinding.ActivityMainBinding;
+import com.example.androidclient.objects.BuildObject;
+import com.example.androidclient.objects.ProductObject;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.color.DynamicColors;
@@ -22,6 +27,8 @@ import androidx.navigation.ui.NavigationUI;
 import android.view.Menu;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -29,6 +36,36 @@ public class MainActivity extends AppCompatActivity {
     private AppBarLayout appBarLayout;
     private MaterialToolbar materialToolbar;
     ImageView toolbarLogo;
+    ArrayList<ProductObject> persistantCartlist;
+    CartAdapter cartAdapter;
+    int dynamicTotalPriceCart;
+    SharedPreferences userSharedPreferences;
+
+    public CartAdapter getCartAdapter() {
+        return cartAdapter;
+    }
+
+    public void setCartAdapter(CartAdapter cartAdapter) {
+        this.cartAdapter = cartAdapter;
+    }
+
+    public int getDynamicTotalPriceCart() {
+        return dynamicTotalPriceCart;
+    }
+
+    public void setDynamicTotalPriceCart(int dynamicTotalPriceCart) {
+        this.dynamicTotalPriceCart = dynamicTotalPriceCart;
+    }
+
+    public ArrayList<ProductObject> getPersistantCartlist() {
+        return persistantCartlist;
+    }
+
+    public void setPersistantCartlist(ArrayList<ProductObject> persistantCartlist) {
+        this.persistantCartlist = persistantCartlist;
+    }
+
+
 
 
 
@@ -41,21 +78,35 @@ public class MainActivity extends AppCompatActivity {
         DynamicColors.applyToActivitiesIfAvailable(getApplication());
         setSupportActionBar(binding.mainBarDrawer.mainToolbar);
 
-
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
+        persistantCartlist = new ArrayList<>();
+        userSharedPreferences = getSharedPreferences("userPref", Context.MODE_PRIVATE);
+        String userType=userSharedPreferences.getString("pref_UserType","Customer");
+        navigationView.getMenu().clear();
+        switch (userType){
+            case "Admin":
+                navigationView.inflateMenu(R.menu.admin_menu);
+                break;
+            case "Manager":
+                navigationView.inflateMenu(R.menu.manager_menu);
+                break;
+            case "Clerk":
+                navigationView.inflateMenu(R.menu.clerk_menu);
+                break;
+            default:
+                navigationView.inflateMenu(R.menu.customer_menu);
+        }
+
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-      //  appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).setOpenableLayout(drawer).build();
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.mainBarDrawer.bottomNavView, navController);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-
         getWindow().setNavigationBarColor(getResources().getColor(R.color.white));
-       // toolbarLogo = (ImageView) findViewById(R.id.toolbarLogo);
         appBarLayout = (AppBarLayout) findViewById(R.id.itemAppBarLayout);
         materialToolbar = (MaterialToolbar) findViewById(R.id.mainToolbar);          //for access on other fragments
         getSupportActionBar().setDisplayShowTitleEnabled(false);

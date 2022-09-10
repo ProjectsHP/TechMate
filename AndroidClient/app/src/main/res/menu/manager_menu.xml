@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group >
+        <item android:title="Manage Stock Levels">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_round_add_24"
+                    android:title="Add stock" />
+                <item
+                    android:icon="@drawable/ic_round_edit_24"
+                    android:title="Update stock" />
+            </menu>
+        </item>
+    </group>
+    <group >
+        <item android:title="Reports">
+            <menu>
+                <item
+                    android:title="Stock level" />
+                <item
+                    android:title="Component popularity" />
+                <item
+                    android:title="Build popularity" />
+            </menu>
+        </item>
+    </group>
+</menu>

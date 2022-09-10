@@ -431,8 +431,7 @@ namespace WCF_Service_Server_
                     buildClass.CompatibilityStatus = "Compatible";
                     buildClass.User_build_id = user_id;
                     buildClass.Category = build.category;
-                    string tot = Convert.ToString(build.totalPrice);
-                    buildClass.TotalPrice = tot;
+                    buildClass.TotalPrice = Convert.ToString(build.totalPrice);
                    
                         buildCompList.Add(buildClass);
                 }
@@ -468,6 +467,11 @@ namespace WCF_Service_Server_
             }
 
             return compList;
+        }
+
+        public void MakeOrder(List<CartItemClass> itemsList)
+        {
+
         }
 
      

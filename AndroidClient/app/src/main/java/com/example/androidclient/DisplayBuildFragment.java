@@ -23,6 +23,7 @@ import com.example.androidclient.network.VolleyCallBack;
 import com.example.androidclient.network.VolleySingleton;
 import com.example.androidclient.objects.BuildObject;
 import com.example.androidclient.objects.ProductObject;
+import com.example.androidclient.ui.ICartClickHandler;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 import com.example.androidclient.ui.UIComponents;
 
@@ -30,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class DisplayBuildFragment extends Fragment implements IRecyclerViewClickHandler {
+public class DisplayBuildFragment extends Fragment implements ICartClickHandler {
 
 
     private FragmentDisplayBuildBinding binding;
@@ -38,13 +39,14 @@ public class DisplayBuildFragment extends Fragment implements IRecyclerViewClick
     ArrayList<BuildObject> list = new ArrayList<>();
     ProductObject selectedBuild  = new ProductObject();
     UIComponents uiComponents;
+    ArrayList<ProductObject> cartlist = new ArrayList<>();
+   // CartAdapter adapter=null ;
     BuildObject build;
 
 
     public DisplayBuildFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -66,41 +68,38 @@ public class DisplayBuildFragment extends Fragment implements IRecyclerViewClick
         super.onViewCreated(view, savedInstanceState);
 
         NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-       // ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        //((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
-
         uiComponents = new UIComponents(getActivity());
         Bundle bundle = this.getArguments();
+
+
         if (bundle != null) {
-            build = bundle.getParcelable("selectedBuild");
+            build = bundle.getParcelable("selectedBuildDisplay");
+            cartlist.add(build.getBaseCaseComponent());
+            cartlist.add(build.getRamComponent());
+            cartlist.add(build.getGraphicsComponent());
+            cartlist.add(build.getCpuComponent());
+            cartlist.add(build.getStorageComponent());
+
         }
 
-        ArrayList<ProductObject> list = new ArrayList<>();
-        list.add(build.getBaseCaseComponent());
-        list.add(build.getRamComponent());
-        list.add(build.getStorageComponent());
-        list.add(build.getCpuComponent());
-        list.add(build.getGraphicsComponent());
 
-
-        CartAdapter adapter = new CartAdapter(list,this);
+       CartAdapter adapter = new CartAdapter(cartlist,this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerShowBuild.setLayoutManager(linearLayoutManager);
         binding.recyclerShowBuild.setAdapter(adapter);
 
-
-
+/*
         binding.floatAddBuildToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("addBuildToCrt",build);
+                bundle.putParcelable("addBuildToCart",build);
                 NavHostFragment.findNavController(DisplayBuildFragment.this)
                         .navigate(R.id.action_displayBuildFragment_to_cartFragment,bundle);
             }
         });
 
-
+*/
     }
 
     @Override
@@ -109,8 +108,9 @@ public class DisplayBuildFragment extends Fragment implements IRecyclerViewClick
         binding = null;
     }
 
+
     @Override
-    public void onItemClick(int position) {
+    public void OncartClickListener(int pos) {
 
     }
 }

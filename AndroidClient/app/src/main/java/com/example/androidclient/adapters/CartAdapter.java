@@ -3,13 +3,16 @@ package com.example.androidclient.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.androidclient.CartFragment;
 import com.example.androidclient.R;
 import com.example.androidclient.objects.ProductObject;
+import com.example.androidclient.ui.ICartClickHandler;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 
 import java.util.ArrayList;
@@ -17,15 +20,19 @@ import java.util.ArrayList;
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
     private final ArrayList<ProductObject> localDataSet;
-    private final IRecyclerViewClickHandler recyclerViewClickHandler;
+//    private final IRecyclerViewClickHandler recyclerViewClickHandler;
+    private final ICartClickHandler iclickHandler;
+
+
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView txtName;
         private final TextView txtCategory;
         private final TextView txtPrice;
+        EditText txtQuantity;
 
-        public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
+        public ViewHolder(View view, ICartClickHandler recyclerViewClickHandler) {
             super(view);
             // Define click listener for the ViewHolder's View
 
@@ -36,7 +43,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
                         int pos = getBindingAdapterPosition();
 
                         if(pos!= RecyclerView.NO_POSITION){
-                            recyclerViewClickHandler.onItemClick(pos);
+                            recyclerViewClickHandler.OncartClickListener(pos);
                         }
 
                     }
@@ -45,6 +52,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
             txtName = (TextView) view.findViewById(R.id.cartNameItem);
             txtCategory = (TextView) view.findViewById(R.id.cartCategoryItem);
             txtPrice = (TextView) view.findViewById(R.id.cartPriceItem);
+            txtQuantity = (EditText) view.findViewById(R.id.txtQuantityNum);
+        }
+
+        public EditText getTxtQuantity() {
+            return txtQuantity;
         }
 
         public TextView getNameView() {
@@ -60,10 +72,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         }
     }
 
-    public CartAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
-        this.recyclerViewClickHandler=clickHandler;
+    public CartAdapter(ArrayList<ProductObject> dataSet,  ICartClickHandler clickHandler) {
+        this.iclickHandler=clickHandler;
         this.localDataSet = dataSet;
     }
+
+
 
     // Create new views (invoked by the layout manager)
     @NonNull
@@ -73,7 +87,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.recycler_cart_item, viewGroup, false);
 
-        return new CartAdapter.ViewHolder(view,recyclerViewClickHandler);
+        return new CartAdapter.ViewHolder(view,iclickHandler);
     }
 
 
@@ -85,10 +99,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         viewHolder.getNameView().setText((CharSequence) localDataSet.get(position).getName());
         viewHolder.getCategoryView().setText((CharSequence) localDataSet.get(position).getCategory());
         viewHolder.getPriceView().setText("R"+ localDataSet.get(position).getPrice());
+       String x = viewHolder.getTxtQuantity().getText().toString();
 
     }
 
 
     @Override
     public int getItemCount() { return localDataSet.size(); }
+
+
+
 }

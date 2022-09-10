@@ -3,8 +3,15 @@ package com.example.androidclient;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,30 +19,25 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
+import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.example.androidclient.adapters.BuildCartAdapter;
 import com.example.androidclient.adapters.CartAdapter;
-import com.example.androidclient.adapters.CategoryAdapter;
-import com.example.androidclient.adapters.ProductsAdapter;
 import com.example.androidclient.databinding.FragmentCartBinding;
-import com.example.androidclient.databinding.FragmentCategoryBinding;
 import com.example.androidclient.network.URLGenerator;
 import com.example.androidclient.network.VolleyCallBack;
 import com.example.androidclient.network.VolleySingleton;
 import com.example.androidclient.objects.BuildObject;
+import com.example.androidclient.objects.CartItemObject;
 import com.example.androidclient.objects.ProductObject;
+import com.example.androidclient.ui.ICartClickHandler;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 import com.example.androidclient.ui.UIComponents;
 import com.google.gson.Gson;
@@ -45,33 +47,31 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Type;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Map;
+import java.util.Objects;
 
 
-public class CartFragment extends Fragment implements IRecyclerViewClickHandler, URLGenerator {
+public class CartFragment extends Fragment implements IRecyclerViewClickHandler, ICartClickHandler, URLGenerator {
 
 
-    private FragmentCartBinding binding;
-    BuildObject[] buildObject =null;
+    BuildObject[] buildObject = null;
     ArrayList<BuildObject> list = new ArrayList<>();
     RequestQueue requestQueue;
     StringRequest stringRequest;
     BuildObject build = new BuildObject();
     String serverResponseCode;
-    ArrayList<ProductObject> buildList = new ArrayList<>();
-    ProductObject productObject  = new ProductObject();
+    ProductObject productObject = new ProductObject();
     UIComponents uiComponents;
-
+    BuildCartAdapter buildAdapter;
+    SharedPreferences sharedPreferences;
+    private FragmentCartBinding binding;
 
 
     public CartFragment() {
         // Required empty public constructor
     }
-
-
 
 
     @Override
@@ -85,67 +85,112 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
-      //  ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        //((MainActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
 
+        NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment_content_main);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         uiComponents = new UIComponents(getActivity());
         requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
 
-        GETAllUserBuildsRequest(new VolleyCallBack() {
+        if(((MainActivity) requireActivity()).getDynamicTotalPriceCart()!=0){
+
+            int totPrice = ((MainActivity) requireActivity()).getDynamicTotalPriceCart();
+            int ItemsNum = ((MainActivity) requireActivity()).getPersistantCartlist().size();
+            binding.txtCartTotal.setText("R"+totPrice);
+            binding.txtTotalItemsCart.setText("("+((MainActivity) requireActivity()).getPersistantCartlist().size()+") items in cart");
+        }
+
+        if(list.isEmpty()){
+            GETAllUserBuildsRequest(new VolleyCallBack() {
+                @Override
+                public void OnSuccess() {
+
+                    if (serverResponseCode != null) {
+                        if (serverResponseCode.equals("200")) {
+                            Log.e("RESPONSE CODE 200: ", serverResponseCode);
+                            list.addAll(Arrays.asList(buildObject));
+                            buildAdapter = new BuildCartAdapter(list, CartFragment.this);
+                            LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL, false);
+                            binding.recyclerMyBuildsCart.setLayoutManager(linearLayoutManager2);
+                            binding.recyclerMyBuildsCart.setAdapter(buildAdapter);
+                            //NOTE THIS LINE. Might cause null response
+
+                        }
+                    } else {
+
+                        uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
+                    }
+                    serverResponseCode = null;
+
+                }
+            });
+
+        }else{
+            buildAdapter = new BuildCartAdapter(list, CartFragment.this);
+            LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL, false);
+            binding.recyclerMyBuildsCart.setLayoutManager(linearLayoutManager2);
+            binding.recyclerMyBuildsCart.setAdapter(buildAdapter);
+        }
+
+        ((MainActivity) requireActivity()).cartAdapter = new CartAdapter(((MainActivity) requireActivity()).getPersistantCartlist(),this );
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL, false);
+        binding.recyclerCart.setLayoutManager(linearLayoutManager);
+        binding.recyclerCart.setAdapter(((MainActivity) requireActivity()).cartAdapter);
+
+        ((MainActivity) requireActivity()).cartAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
             @Override
-            public void OnSuccess() {
+            public void onChanged() {
+                super.onChanged();
+                String cartNum = "("+((MainActivity) requireActivity()).getPersistantCartlist().size()+") items in cart";
+                binding.txtCartTotal.setText("R"+((MainActivity) requireActivity()).getDynamicTotalPriceCart());
+                binding.txtTotalItemsCart.setText(cartNum);
+            }
+        });
 
-                if (serverResponseCode != null) {
-                    if (serverResponseCode.equals("200")) {
-                        Log.e("RESPONSE CODE 200: ", serverResponseCode);
-                        list.addAll(Arrays.asList(buildObject));
-                        BuildCartAdapter adapter2 = new BuildCartAdapter(list,CartFragment.this);
-                        LinearLayoutManager linearLayoutManager2=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
-                        binding.recyclerMyBuildsCart.setLayoutManager(linearLayoutManager2);
-                        binding.recyclerMyBuildsCart.setAdapter(adapter2);
-                        //NOTE THIS LINE. Might cause null response
+        binding.btnProceedToCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArrayList<CartItemObject> listToOrder = null;
+                CartItemObject cartItem = new CartItemObject();
+                ArrayList<ProductObject> localList;
+                sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
+                int userId = Integer.parseInt(sharedPreferences.getString("pref_Id","-1"));
+                if(sharedPreferences!=null){
+                    localList = ((MainActivity) requireActivity()).getPersistantCartlist();
+                    int size = ((MainActivity) requireActivity()).cartAdapter.getItemCount();
+                    if(size!=0){
+                        for(int i=0;i<size;i++){
+                            String quantity = ((EditText) Objects.requireNonNull(binding.recyclerCart.findViewHolderForAdapterPosition(i)).itemView.findViewById(R.id.txtQuantityNum)).getText().toString();
+                            cartItem.setProductId(localList.get(i).getId());
+                            cartItem.setQuantity(Integer.parseInt(quantity));
+                            cartItem.setUserId(userId);
+                            cartItem.setProductPrice(localList.get(i).getIntPrice());
+                            listToOrder.add(cartItem);
+                        }
 
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelableArrayList("listItemsToOrder",listToOrder);
+                        NavHostFragment.findNavController(CartFragment.this)
+                                .navigate(R.id.action_cartFragment_to_makeOrderFragment,bundle);
 
                     }
-                } else {
-
-                    uiComponents.alertDialog_DefaultNoCancel("Server is temporarily down. Please try again later", "Error", "Ok");
                 }
-                serverResponseCode = null;
+
+
+
 
             }
         });
 
-
-
-        CartAdapter adapter = new CartAdapter(buildList,this);
-
-        Bundle bundle = this.getArguments();
-        if (bundle != null) {
-            build = bundle.getParcelable("addBuildToCrt");
-            buildList.add(build.getGraphicsComponent());
-            buildList.add(build.getRamComponent());
-            buildList.add(build.getCpuComponent());
-            buildList.add(build.getStorageComponent());
-            buildList.add(build.getBaseCaseComponent());
-            adapter.notifyDataSetChanged();
-
-        }
-
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
-        binding.recyclerCart.setLayoutManager(linearLayoutManager);
-        binding.recyclerCart.setAdapter(adapter);
-
     }
+
 
     @Override
     public void onItemClick(int position) {
 
         Bundle bundle = new Bundle();
-        bundle.putParcelable("selectedBuild",list.get(position));
+        bundle.putParcelable("selectedBuildDisplay", list.get(position));
         NavHostFragment.findNavController(CartFragment.this)
-                .navigate(R.id.action_cartFragment_to_displayBuildFragment,bundle);
+                .navigate(R.id.action_cartFragment_to_displayBuildFragment, bundle);
     }
 
     @Override
@@ -153,6 +198,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         super.onDestroyView();
         binding = null;
     }
+
 
 
     @Override
@@ -168,19 +214,17 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         String id = sharedPreferences.getString("pref_Id", "-1");
 
         //JSONObject Request initialized
-        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL()+id, null,
+        JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Request.Method.GET, generateURL() + id, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        BuildObject buildObjects=null;
-
+                       // BuildObject buildObjects = null;
                         try {
                             GsonBuilder builder = new GsonBuilder();
                             builder.serializeNulls();
                             Gson gson = builder.setPrettyPrinting().create();
                             JSONArray buildsArr = response.getJSONArray("FetchAllUserBuildsResult");
-
-                            buildObject = gson.fromJson(String.valueOf(buildsArr),BuildObject[].class);
+                            buildObject = gson.fromJson(String.valueOf(buildsArr), BuildObject[].class);
                             serverResponseCode = getResources().getString(R.string.response_success);
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -194,17 +238,31 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
                     public void onErrorResponse(VolleyError error) {
                         String body = "";
                         serverResponseCode = null;
-                        Log.e("Error response",error.toString());
+                        Log.e("Error response", error.toString());
                         callBack.OnSuccess();
                     }
                 }
         );
 
-
-                JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         requestQueue.add(JsonObjectRequest);
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+     //   list.clear();
+    }
+
+    @Override
+    public void OncartClickListener(int pos) {
+
+
+
+
+    }
+
 
 
 }
