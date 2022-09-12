@@ -21,6 +21,10 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.AndroidClient.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AndroidClient.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="Base.Theme.AndroidClient.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

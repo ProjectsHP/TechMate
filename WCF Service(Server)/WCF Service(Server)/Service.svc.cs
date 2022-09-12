@@ -474,6 +474,50 @@ namespace WCF_Service_Server_
 
         }
 
-     
+        public int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email)
+        {
+
+            int user_id=Convert.ToInt32(userId);
+            var user = (from u in db.Users
+                        where u.Id == user_id
+                        select u).FirstOrDefault();
+
+            if (user == null)
+            {
+
+         
+                var newUserAddress = new DeliveryAddress
+                {
+                    user_id = user_id,
+                    country = country,
+                    province = province,
+                    city = city,
+                    suburb = "Brixton",
+                    streetUnit = streetUnit,
+               
+                };
+                db.DeliveryAddresses.InsertOnSubmit(newUserAddress);
+
+                try
+                {
+                    // registered successfully
+                    db.SubmitChanges();
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+                    //error occured
+                    ex.GetBaseException();
+                    return -1;
+                }
+            }
+            else
+            {
+                // user not found. 
+                return 0;
+            }
+
+           
+        }
     }
 }

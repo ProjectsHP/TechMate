@@ -32,6 +32,10 @@ namespace WCF_Service_Server_
         int DeleteUser(string activeId);
 
 
+        [OperationContract(Name = "StoreUserAddressSOAP")]
+        int StoreUserAddress(string userId, string country,string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+
+
         [OperationContract(Name ="FetchActiveUserSOAP")]
         User FetchActiveUser(string id);
 

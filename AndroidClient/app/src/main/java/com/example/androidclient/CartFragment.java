@@ -1,6 +1,7 @@
 package com.example.androidclient;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,6 +38,7 @@ import com.example.androidclient.network.VolleySingleton;
 import com.example.androidclient.objects.BuildObject;
 import com.example.androidclient.objects.CartItemObject;
 import com.example.androidclient.objects.ProductObject;
+import com.example.androidclient.orders.MakeOrderActivity;
 import com.example.androidclient.ui.ICartClickHandler;
 import com.example.androidclient.ui.IRecyclerViewClickHandler;
 import com.example.androidclient.ui.UIComponents;
@@ -149,7 +151,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         binding.btnProceedToCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<CartItemObject> listToOrder = null;
+                ArrayList<CartItemObject> listToOrder = new ArrayList<>();
                 CartItemObject cartItem = new CartItemObject();
                 ArrayList<ProductObject> localList;
                 sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
@@ -169,8 +171,11 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
 
                         Bundle bundle = new Bundle();
                         bundle.putParcelableArrayList("listItemsToOrder",listToOrder);
-                        NavHostFragment.findNavController(CartFragment.this)
-                                .navigate(R.id.action_cartFragment_to_makeOrderFragment,bundle);
+                        Intent intent = new Intent(getActivity(), MakeOrderActivity.class);
+                        startActivity(intent);
+
+                       // NavHostFragment.findNavController(CartFragment.this)
+                         //      .navigate(R.id.action_cartFragment_to_orders_nav_graph,bundle);
 
                     }
                 }
@@ -198,7 +203,6 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
         super.onDestroyView();
         binding = null;
     }
-
 
 
     @Override

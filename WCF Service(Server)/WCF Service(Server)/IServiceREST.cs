@@ -69,6 +69,14 @@ namespace WCF_Service_Server_
 
 
         [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/StoreUserAddress",
+         RequestFormat = WebMessageFormat.Json,
+         ResponseFormat = WebMessageFormat.Json,
+         BodyStyle = WebMessageBodyStyle.Wrapped)]
+        int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+
+
+        [OperationContract]
         [WebInvoke(Method = "POST", UriTemplate = "/CreateBuildURI",
           RequestFormat = WebMessageFormat.Json,
           ResponseFormat = WebMessageFormat.Json,

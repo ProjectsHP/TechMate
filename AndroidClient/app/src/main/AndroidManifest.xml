@@ -17,6 +17,13 @@
         android:theme="@style/Base.Theme.AndroidClient"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <activity
+            android:name=".orders.MakeOrderActivity"
+            android:exported="false"
+            android:label="Order"
+            android:theme="@style/Base.Theme.AndroidClient" />
+
         <activity
             android:name=".UserProfile"
             android:exported="false"

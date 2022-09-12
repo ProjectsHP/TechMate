@@ -31,8 +31,8 @@
             android:id="@+id/action_cartFragment_to_displayBuildFragment"
             app:destination="@id/displayBuildFragment" />
         <action
-            android:id="@+id/action_cartFragment_to_makeOrderFragment"
-            app:destination="@id/makeOrderFragment" />
+            android:id="@+id/action_cartFragment_to_orders_nav_graph"
+            app:destination="@id/orders_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
@@ -70,13 +70,5 @@
             android:id="@+id/action_displayBuildFragment_to_cartFragment"
             app:destination="@id/cartFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/makeOrderFragment"
-        android:name="com.example.androidclient.MakeOrderFragment"
-        android:label="fragment_make_order"
-        tools:layout="@layout/fragment_make_order" >
-        <action
-            android:id="@+id/action_makeOrderFragment_to_cartFragment"
-            app:destination="@id/cartFragment" />
-    </fragment>
+    <include app:graph="@navigation/orders_nav_graph" />
 </navigation>

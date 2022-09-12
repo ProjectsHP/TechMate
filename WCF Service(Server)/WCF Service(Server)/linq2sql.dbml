@@ -57,4 +57,16 @@
       <Column Name="totalDiscountSaved" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.DeliveryAddress" Member="DeliveryAddresses">
+    <Type Name="DeliveryAddress">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="province" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="suburb" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="streetUnit" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="zipCode" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

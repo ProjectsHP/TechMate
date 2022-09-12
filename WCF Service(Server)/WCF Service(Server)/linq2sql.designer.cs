@@ -45,6 +45,9 @@ namespace WCF_Service_Server_
     partial void InsertCart(Cart instance);
     partial void UpdateCart(Cart instance);
     partial void DeleteCart(Cart instance);
+    partial void InsertDeliveryAddress(DeliveryAddress instance);
+    partial void UpdateDeliveryAddress(DeliveryAddress instance);
+    partial void DeleteDeliveryAddress(DeliveryAddress instance);
     #endregion
 		
 		public linq2sqlDataContext() : 
@@ -114,6 +117,14 @@ namespace WCF_Service_Server_
 			get
 			{
 				return this.GetTable<Cart>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DeliveryAddress> DeliveryAddresses
+		{
+			get
+			{
+				return this.GetTable<DeliveryAddress>();
 			}
 		}
 	}
@@ -1171,6 +1182,236 @@ namespace WCF_Service_Server_
 					this._totalDiscountSaved = value;
 					this.SendPropertyChanged("totalDiscountSaved");
 					this.OntotalDiscountSavedChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DeliveryAddress")]
+	public partial class DeliveryAddress : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private string _country;
+		
+		private string _province;
+		
+		private string _city;
+		
+		private string _suburb;
+		
+		private string _streetUnit;
+		
+		private string _zipCode;
+		
+		private System.Nullable<int> _user_id;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OncountryChanging(string value);
+    partial void OncountryChanged();
+    partial void OnprovinceChanging(string value);
+    partial void OnprovinceChanged();
+    partial void OncityChanging(string value);
+    partial void OncityChanged();
+    partial void OnsuburbChanging(string value);
+    partial void OnsuburbChanged();
+    partial void OnstreetUnitChanging(string value);
+    partial void OnstreetUnitChanged();
+    partial void OnzipCodeChanging(string value);
+    partial void OnzipCodeChanged();
+    partial void Onuser_idChanging(System.Nullable<int> value);
+    partial void Onuser_idChanged();
+    #endregion
+		
+		public DeliveryAddress()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_country", DbType="VarChar(MAX)")]
+		public string country
+		{
+			get
+			{
+				return this._country;
+			}
+			set
+			{
+				if ((this._country != value))
+				{
+					this.OncountryChanging(value);
+					this.SendPropertyChanging();
+					this._country = value;
+					this.SendPropertyChanged("country");
+					this.OncountryChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_province", DbType="VarChar(MAX)")]
+		public string province
+		{
+			get
+			{
+				return this._province;
+			}
+			set
+			{
+				if ((this._province != value))
+				{
+					this.OnprovinceChanging(value);
+					this.SendPropertyChanging();
+					this._province = value;
+					this.SendPropertyChanged("province");
+					this.OnprovinceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_city", DbType="VarChar(MAX)")]
+		public string city
+		{
+			get
+			{
+				return this._city;
+			}
+			set
+			{
+				if ((this._city != value))
+				{
+					this.OncityChanging(value);
+					this.SendPropertyChanging();
+					this._city = value;
+					this.SendPropertyChanged("city");
+					this.OncityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_suburb", DbType="VarChar(MAX)")]
+		public string suburb
+		{
+			get
+			{
+				return this._suburb;
+			}
+			set
+			{
+				if ((this._suburb != value))
+				{
+					this.OnsuburbChanging(value);
+					this.SendPropertyChanging();
+					this._suburb = value;
+					this.SendPropertyChanged("suburb");
+					this.OnsuburbChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_streetUnit", DbType="VarChar(MAX)")]
+		public string streetUnit
+		{
+			get
+			{
+				return this._streetUnit;
+			}
+			set
+			{
+				if ((this._streetUnit != value))
+				{
+					this.OnstreetUnitChanging(value);
+					this.SendPropertyChanging();
+					this._streetUnit = value;
+					this.SendPropertyChanged("streetUnit");
+					this.OnstreetUnitChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_zipCode", DbType="VarChar(MAX)")]
+		public string zipCode
+		{
+			get
+			{
+				return this._zipCode;
+			}
+			set
+			{
+				if ((this._zipCode != value))
+				{
+					this.OnzipCodeChanging(value);
+					this.SendPropertyChanging();
+					this._zipCode = value;
+					this.SendPropertyChanged("zipCode");
+					this.OnzipCodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_id", DbType="Int")]
+		public System.Nullable<int> user_id
+		{
+			get
+			{
+				return this._user_id;
+			}
+			set
+			{
+				if ((this._user_id != value))
+				{
+					this.Onuser_idChanging(value);
+					this.SendPropertyChanging();
+					this._user_id = value;
+					this.SendPropertyChanged("user_id");
+					this.Onuser_idChanged();
 				}
 			}
 		}

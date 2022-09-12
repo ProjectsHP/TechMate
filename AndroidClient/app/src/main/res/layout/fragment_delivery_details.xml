@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_Country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lblCountry"
+            app:layout_constraintTop_toBottomOf="@+id/lblCountry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="South Africa" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Country"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lblProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Province"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_Country"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayout_Country" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_Country"
+            app:layout_constraintStart_toStartOf="@+id/lblProvince"
+            app:layout_constraintTop_toBottomOf="@+id/lblProvince">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gauteng" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_province"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayout_province" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_province"
+            app:layout_constraintStart_toStartOf="@+id/lblCity"
+            app:layout_constraintTop_toBottomOf="@+id/lblCity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brixton" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblStreetUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Street unit"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_city"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayout_city" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_street_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_city"
+            app:layout_constraintStart_toStartOf="@+id/lblStreetUnit"
+            app:layout_constraintTop_toBottomOf="@+id/lblStreetUnit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtStreetUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="75 Caroline" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_street_unit"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayout_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_street_unit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lblName"
+            app:layout_constraintTop_toBottomOf="@+id/lblName"
+            app:layout_constraintWidth_percent=".44">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prince" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Surname"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/InputLayout_name"
+            app:layout_constraintTop_toTopOf="@+id/lblName" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputLayout_surname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_street_unit"
+            app:layout_constraintStart_toStartOf="@+id/lblSurname"
+            app:layout_constraintTop_toBottomOf="@+id/lblSurname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kubaye" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Contact details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_street_unit"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayout_street_unit" />
+
+        <TextView
+            android:id="@+id/lblCellPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cellphone"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/InputLayout_name"
+            app:layout_constraintTop_toBottomOf="@+id/InputLayout_name" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_cellphone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/InputLayout_name"
+            app:layout_constraintStart_toStartOf="@+id/lblCellPhone"
+            app:layout_constraintTop_toBottomOf="@+id/lblCellPhone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCellPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="071 831 4441" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/InputLayout_surname"
+            app:layout_constraintTop_toTopOf="@+id/lblCellPhone" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/InputLayout_surname"
+            app:layout_constraintStart_toStartOf="@+id/InputLayout_surname"
+            app:layout_constraintTop_toBottomOf="@+id/lblEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ph.kubaye@gmail.com" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_cellphone"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_cellphone"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayout_cellphone" />
+
+        <Button
+            android:id="@+id/btnContinueOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="@+id/inputLayout_email"
+            app:layout_constraintStart_toStartOf="@+id/inputLayout_email"
+            app:layout_constraintTop_toTopOf="@+id/btnCancelOrder" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

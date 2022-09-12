@@ -72,13 +72,13 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
 
         binding = ActivityUserProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setSupportActionBar(binding.toolbar);
+        setSupportActionBar(binding.userToolbar);
 
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         uiComponents = new UIComponents(this);
-        CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
+        CollapsingToolbarLayout toolBarLayout = binding.userToolbarLayout;
         toolBarLayout.setTitle("Profile");
         FloatingActionButton fab = binding.fab;
         // userPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
@@ -91,7 +91,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
             }
         });
 
-        binding.toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        binding.userToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
