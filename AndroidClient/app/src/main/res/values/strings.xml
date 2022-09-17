@@ -44,7 +44,7 @@
     <!--    http://192.168.8.168:45455/-->
     <!--    https://wcfservice.conveyor.cloud/-->
     <!--    http://techmateappservice.azurewebsites.net-->
-    <string name="WCF_URL">http://192.168.8.168:45455/Service.svc/REST/</string>
+    <string name="WCF_URL">http://techmateappservice.azurewebsites.net/Service.svc/REST/</string>
 
 
     <string name="large_text">

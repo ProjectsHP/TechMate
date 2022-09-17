@@ -67,7 +67,7 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
 
 
 
-   //     listActivity = (ItemsListActivity) getActivity();
+        listActivity = (ItemsListActivity) getActivity();
         uiComponents = new UIComponents(getActivity());
         requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
 
