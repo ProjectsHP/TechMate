@@ -61,24 +61,13 @@ public class DeliveryDetailsFragment extends Fragment implements URLGenerator {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        sharedPreferences = requireContext().getSharedPreferences("user_pref",Context.MODE_PRIVATE);
         uiComponents = new UIComponents(getActivity());
         binding.btnContinueOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 requestQueue = VolleySingleton.getVolleyInstance(getContext()).getRequestQueue();
-            /*    UserAddressObject userAddressObject = new UserAddressObject();
-                userAddressObject.setCountry(binding.txtCountry.toString());
-                userAddressObject.setProvince(binding.txtProvince.toString());
-                userAddressObject.setCity(binding.txtCity.toString());
-                userAddressObject.setStreetUnit(binding.txtStreetUnit.toString());
-                userAddressObject.setUserName(binding.txtName.toString());
-                userAddressObject.setUserSurname(binding.txtSurname.toString());
-                userAddressObject.setUserCellNo(binding.txtCellPhone.toString());
-                userAddressObject.setUserEmail(binding.txtEmail.toString());
-                userAddressObject.setUserId("2");
-*/
-
                 try {
                     POSTUserAddressRequest(new VolleyCallBack() {
                         @Override
@@ -89,6 +78,10 @@ public class DeliveryDetailsFragment extends Fragment implements URLGenerator {
                                         switch(serverResponseCode){
                                             case "200":
                                                 Log.e("RESPONSE CODE 200: ", serverResponseCode);
+                                               int uId = Integer.parseInt(sharedPreferences.getString("pref_Id","-1"));
+                                                ((MakeOrderActivity) requireActivity()).getOrderObject().setOrderStatus("Pending");
+                                                ((MakeOrderActivity) requireActivity()).getOrderObject().setUserId(uId);
+                                                createUserAddressSharedPreferences();
                                                 ((MakeOrderActivity) requireActivity()).getOrderViewPager().setCurrentItem(1,true);
                                                 break;
 
@@ -145,9 +138,12 @@ public class DeliveryDetailsFragment extends Fragment implements URLGenerator {
     public void POSTUserAddressRequest(final VolleyCallBack callBack) throws JSONException{
 
         JSONObject jsonBody = new JSONObject();
-        SharedPreferences sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
+        sharedPreferences = getContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
 
-        jsonBody.put("userId",sharedPreferences.getString("pref_Id","-1"));
+        String id = sharedPreferences.getString("pref_Id", "-1");
+
+
+        jsonBody.put("userId",id);
         jsonBody.put("country", binding.txtCountry.getText());
         jsonBody.put("province", binding.txtProvince.getText());
         jsonBody.put("city", binding.txtCity.getText());
@@ -212,5 +208,16 @@ public class DeliveryDetailsFragment extends Fragment implements URLGenerator {
         stringRequest.setRetryPolicy(new DefaultRetryPolicy(3000, 3, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         requestQueue.add(stringRequest);
+    }
+
+
+    public void createUserAddressSharedPreferences(){
+
+      SharedPreferences userSharedPreferences = requireContext().getSharedPreferences("userOrderSessionPref", Context.MODE_PRIVATE);
+      SharedPreferences.Editor editor = userSharedPreferences.edit();
+      editor.putString("streetName",binding.txtStreetUnit.getText().toString());
+      editor.putString("userName",binding.txtName.getText().toString()+" "+binding.txtSurname.getText().toString());
+      editor.commit();
+
     }
 }

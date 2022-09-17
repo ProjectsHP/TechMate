@@ -42,12 +42,15 @@ namespace WCF_Service_Server_
     partial void InsertCartItem(CartItem instance);
     partial void UpdateCartItem(CartItem instance);
     partial void DeleteCartItem(CartItem instance);
-    partial void InsertCart(Cart instance);
-    partial void UpdateCart(Cart instance);
-    partial void DeleteCart(Cart instance);
     partial void InsertDeliveryAddress(DeliveryAddress instance);
     partial void UpdateDeliveryAddress(DeliveryAddress instance);
     partial void DeleteDeliveryAddress(DeliveryAddress instance);
+    partial void InsertOrder(Order instance);
+    partial void UpdateOrder(Order instance);
+    partial void DeleteOrder(Order instance);
+    partial void InsertCart(Cart instance);
+    partial void UpdateCart(Cart instance);
+    partial void DeleteCart(Cart instance);
     #endregion
 		
 		public linq2sqlDataContext() : 
@@ -112,19 +115,27 @@ namespace WCF_Service_Server_
 			}
 		}
 		
-		public System.Data.Linq.Table<Cart> Carts
-		{
-			get
-			{
-				return this.GetTable<Cart>();
-			}
-		}
-		
 		public System.Data.Linq.Table<DeliveryAddress> DeliveryAddresses
 		{
 			get
 			{
 				return this.GetTable<DeliveryAddress>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Order> Orders
+		{
+			get
+			{
+				return this.GetTable<Order>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Cart> Carts
+		{
+			get
+			{
+				return this.GetTable<Cart>();
 			}
 		}
 	}
@@ -1049,164 +1060,6 @@ namespace WCF_Service_Server_
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Cart")]
-	public partial class Cart : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _Id;
-		
-		private int _user_id;
-		
-		private int _build_id;
-		
-		private string _totalPrice;
-		
-		private string _totalDiscountSaved;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIdChanging(int value);
-    partial void OnIdChanged();
-    partial void Onuser_idChanging(int value);
-    partial void Onuser_idChanged();
-    partial void Onbuild_idChanging(int value);
-    partial void Onbuild_idChanged();
-    partial void OntotalPriceChanging(string value);
-    partial void OntotalPriceChanged();
-    partial void OntotalDiscountSavedChanging(string value);
-    partial void OntotalDiscountSavedChanged();
-    #endregion
-		
-		public Cart()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int Id
-		{
-			get
-			{
-				return this._Id;
-			}
-			set
-			{
-				if ((this._Id != value))
-				{
-					this.OnIdChanging(value);
-					this.SendPropertyChanging();
-					this._Id = value;
-					this.SendPropertyChanged("Id");
-					this.OnIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_id", DbType="Int NOT NULL")]
-		public int user_id
-		{
-			get
-			{
-				return this._user_id;
-			}
-			set
-			{
-				if ((this._user_id != value))
-				{
-					this.Onuser_idChanging(value);
-					this.SendPropertyChanging();
-					this._user_id = value;
-					this.SendPropertyChanged("user_id");
-					this.Onuser_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_build_id", DbType="Int NOT NULL")]
-		public int build_id
-		{
-			get
-			{
-				return this._build_id;
-			}
-			set
-			{
-				if ((this._build_id != value))
-				{
-					this.Onbuild_idChanging(value);
-					this.SendPropertyChanging();
-					this._build_id = value;
-					this.SendPropertyChanged("build_id");
-					this.Onbuild_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalPrice", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
-		public string totalPrice
-		{
-			get
-			{
-				return this._totalPrice;
-			}
-			set
-			{
-				if ((this._totalPrice != value))
-				{
-					this.OntotalPriceChanging(value);
-					this.SendPropertyChanging();
-					this._totalPrice = value;
-					this.SendPropertyChanged("totalPrice");
-					this.OntotalPriceChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalDiscountSaved", DbType="VarChar(MAX)")]
-		public string totalDiscountSaved
-		{
-			get
-			{
-				return this._totalDiscountSaved;
-			}
-			set
-			{
-				if ((this._totalDiscountSaved != value))
-				{
-					this.OntotalDiscountSavedChanging(value);
-					this.SendPropertyChanging();
-					this._totalDiscountSaved = value;
-					this.SendPropertyChanged("totalDiscountSaved");
-					this.OntotalDiscountSavedChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DeliveryAddress")]
 	public partial class DeliveryAddress : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1412,6 +1265,394 @@ namespace WCF_Service_Server_
 					this._user_id = value;
 					this.SendPropertyChanged("user_id");
 					this.Onuser_idChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[Order]")]
+	public partial class Order : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<int> _cartId;
+		
+		private System.Nullable<int> _paymentId;
+		
+		private System.Nullable<int> _userAddressId;
+		
+		private System.Nullable<int> _userId;
+		
+		private string _dateCreated;
+		
+		private string _paymentMade;
+		
+		private string _orderStatus;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OncartIdChanging(System.Nullable<int> value);
+    partial void OncartIdChanged();
+    partial void OnpaymentIdChanging(System.Nullable<int> value);
+    partial void OnpaymentIdChanged();
+    partial void OnuserAddressIdChanging(System.Nullable<int> value);
+    partial void OnuserAddressIdChanged();
+    partial void OnuserIdChanging(System.Nullable<int> value);
+    partial void OnuserIdChanged();
+    partial void OndateCreatedChanging(string value);
+    partial void OndateCreatedChanged();
+    partial void OnpaymentMadeChanging(string value);
+    partial void OnpaymentMadeChanged();
+    partial void OnorderStatusChanging(string value);
+    partial void OnorderStatusChanged();
+    #endregion
+		
+		public Order()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cartId", DbType="Int")]
+		public System.Nullable<int> cartId
+		{
+			get
+			{
+				return this._cartId;
+			}
+			set
+			{
+				if ((this._cartId != value))
+				{
+					this.OncartIdChanging(value);
+					this.SendPropertyChanging();
+					this._cartId = value;
+					this.SendPropertyChanged("cartId");
+					this.OncartIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_paymentId", DbType="Int")]
+		public System.Nullable<int> paymentId
+		{
+			get
+			{
+				return this._paymentId;
+			}
+			set
+			{
+				if ((this._paymentId != value))
+				{
+					this.OnpaymentIdChanging(value);
+					this.SendPropertyChanging();
+					this._paymentId = value;
+					this.SendPropertyChanged("paymentId");
+					this.OnpaymentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_userAddressId", DbType="Int")]
+		public System.Nullable<int> userAddressId
+		{
+			get
+			{
+				return this._userAddressId;
+			}
+			set
+			{
+				if ((this._userAddressId != value))
+				{
+					this.OnuserAddressIdChanging(value);
+					this.SendPropertyChanging();
+					this._userAddressId = value;
+					this.SendPropertyChanged("userAddressId");
+					this.OnuserAddressIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_userId", DbType="Int")]
+		public System.Nullable<int> userId
+		{
+			get
+			{
+				return this._userId;
+			}
+			set
+			{
+				if ((this._userId != value))
+				{
+					this.OnuserIdChanging(value);
+					this.SendPropertyChanging();
+					this._userId = value;
+					this.SendPropertyChanged("userId");
+					this.OnuserIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dateCreated", DbType="VarChar(MAX)")]
+		public string dateCreated
+		{
+			get
+			{
+				return this._dateCreated;
+			}
+			set
+			{
+				if ((this._dateCreated != value))
+				{
+					this.OndateCreatedChanging(value);
+					this.SendPropertyChanging();
+					this._dateCreated = value;
+					this.SendPropertyChanged("dateCreated");
+					this.OndateCreatedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_paymentMade", DbType="VarChar(MAX)")]
+		public string paymentMade
+		{
+			get
+			{
+				return this._paymentMade;
+			}
+			set
+			{
+				if ((this._paymentMade != value))
+				{
+					this.OnpaymentMadeChanging(value);
+					this.SendPropertyChanging();
+					this._paymentMade = value;
+					this.SendPropertyChanged("paymentMade");
+					this.OnpaymentMadeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_orderStatus", DbType="VarChar(MAX)")]
+		public string orderStatus
+		{
+			get
+			{
+				return this._orderStatus;
+			}
+			set
+			{
+				if ((this._orderStatus != value))
+				{
+					this.OnorderStatusChanging(value);
+					this.SendPropertyChanging();
+					this._orderStatus = value;
+					this.SendPropertyChanged("orderStatus");
+					this.OnorderStatusChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Cart")]
+	public partial class Cart : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<int> _user_id;
+		
+		private System.Nullable<int> _build_id;
+		
+		private string _totalPrice;
+		
+		private string _totalDiscountSaved;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void Onuser_idChanging(System.Nullable<int> value);
+    partial void Onuser_idChanged();
+    partial void Onbuild_idChanging(System.Nullable<int> value);
+    partial void Onbuild_idChanged();
+    partial void OntotalPriceChanging(string value);
+    partial void OntotalPriceChanged();
+    partial void OntotalDiscountSavedChanging(string value);
+    partial void OntotalDiscountSavedChanged();
+    #endregion
+		
+		public Cart()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_user_id", DbType="Int")]
+		public System.Nullable<int> user_id
+		{
+			get
+			{
+				return this._user_id;
+			}
+			set
+			{
+				if ((this._user_id != value))
+				{
+					this.Onuser_idChanging(value);
+					this.SendPropertyChanging();
+					this._user_id = value;
+					this.SendPropertyChanged("user_id");
+					this.Onuser_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_build_id", DbType="Int")]
+		public System.Nullable<int> build_id
+		{
+			get
+			{
+				return this._build_id;
+			}
+			set
+			{
+				if ((this._build_id != value))
+				{
+					this.Onbuild_idChanging(value);
+					this.SendPropertyChanging();
+					this._build_id = value;
+					this.SendPropertyChanged("build_id");
+					this.Onbuild_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalPrice", DbType="VarChar(MAX)")]
+		public string totalPrice
+		{
+			get
+			{
+				return this._totalPrice;
+			}
+			set
+			{
+				if ((this._totalPrice != value))
+				{
+					this.OntotalPriceChanging(value);
+					this.SendPropertyChanging();
+					this._totalPrice = value;
+					this.SendPropertyChanged("totalPrice");
+					this.OntotalPriceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalDiscountSaved", DbType="VarChar(MAX)")]
+		public string totalDiscountSaved
+		{
+			get
+			{
+				return this._totalDiscountSaved;
+			}
+			set
+			{
+				if ((this._totalDiscountSaved != value))
+				{
+					this.OntotalDiscountSavedChanging(value);
+					this.SendPropertyChanging();
+					this._totalDiscountSaved = value;
+					this.SendPropertyChanged("totalDiscountSaved");
+					this.OntotalDiscountSavedChanged();
 				}
 			}
 		}

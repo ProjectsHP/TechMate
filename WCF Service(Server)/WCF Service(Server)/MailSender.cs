@@ -20,15 +20,15 @@ namespace WCF_Service_Server_
             //Object to fill up email data
             MimeMessage mimeMessage = new MimeMessage();
             //sending from
-            mimeMessage.From.Add(new MailboxAddress("Prince", "hlulankubayi@gmail.com"));
+            mimeMessage.From.Add(new MailboxAddress("TechMate", "hlulankubayi@gmail.com"));
             //sending to
-            mimeMessage.To.Add(MailboxAddress.Parse("ph.kubaye@gmail.com"));
+            mimeMessage.To.Add(MailboxAddress.Parse(receiverEmail));
             //message subject
-            mimeMessage.Subject = "Ey dawg WORKS";
+            mimeMessage.Subject = subject;
 
             mimeMessage.Body = new TextPart("plain")
             {
-                Text = @"This is my shandis bro"
+                Text = body
             };
          
             SmtpClient smtpClient = new SmtpClient();

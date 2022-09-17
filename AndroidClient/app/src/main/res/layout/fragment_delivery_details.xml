@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".orders.DeliveryDetailsFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +16,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            android:labelFor="@id/lblCountry"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/lblCountry"
             app:layout_constraintTop_toBottomOf="@+id/lblCountry">
@@ -22,8 +25,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtCountry"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="South Africa" />
+                android:layout_height="wrap_content"
+                android:hint="South Africa"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -32,10 +38,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
+            android:contentDescription="@string/action_sign_in_short"
             android:text="Country"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
         <TextView
@@ -47,10 +55,13 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/inputLayout_Country"
             app:layout_constraintTop_toBottomOf="@+id/inputLayout_Country" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayout_province"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/inputLayout_Country"
             app:layout_constraintStart_toStartOf="@+id/lblProvince"
             app:layout_constraintTop_toBottomOf="@+id/lblProvince">
@@ -59,7 +70,9 @@
                 android:id="@+id/txtProvince"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Gauteng" />
+                android:hint="Gauteng"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -71,10 +84,12 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/inputLayout_province"
             app:layout_constraintTop_toBottomOf="@+id/inputLayout_province" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayout_city"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/inputLayout_province"
             app:layout_constraintStart_toStartOf="@+id/lblCity"
             app:layout_constraintTop_toBottomOf="@+id/lblCity">
@@ -83,7 +98,9 @@
                 android:id="@+id/txtCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Brixton" />
+                android:hint="Brixton"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -95,10 +112,12 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/inputLayout_city"
             app:layout_constraintTop_toBottomOf="@+id/inputLayout_city" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayout_street_unit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/inputLayout_city"
             app:layout_constraintStart_toStartOf="@+id/lblStreetUnit"
             app:layout_constraintTop_toBottomOf="@+id/lblStreetUnit">
@@ -107,7 +126,9 @@
                 android:id="@+id/txtStreetUnit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="75 Caroline" />
+                android:hint="75 Caroline"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -124,6 +145,7 @@
             android:id="@+id/InputLayout_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/inputLayout_street_unit"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/lblName"
@@ -134,7 +156,9 @@
                 android:id="@+id/txtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Prince" />
+                android:hint="Prince"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -144,12 +168,15 @@
             android:layout_marginStart="8dp"
             android:text="Surname"
             android:textStyle="bold"
+            app:hintEnabled="false"
             app:layout_constraintStart_toEndOf="@+id/InputLayout_name"
             app:layout_constraintTop_toTopOf="@+id/lblName" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/InputLayout_surname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/inputLayout_street_unit"
             app:layout_constraintStart_toStartOf="@+id/lblSurname"
             app:layout_constraintTop_toBottomOf="@+id/lblSurname">
@@ -158,7 +185,9 @@
                 android:id="@+id/txtSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Kubaye" />
+                android:hint="Kubaye"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -186,6 +215,7 @@
             android:id="@+id/inputLayout_cellphone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/InputLayout_name"
             app:layout_constraintStart_toStartOf="@+id/lblCellPhone"
             app:layout_constraintTop_toBottomOf="@+id/lblCellPhone">
@@ -194,7 +224,9 @@
                 android:id="@+id/txtCellPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="071 831 4441" />
+                android:hint="071 831 4441"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -209,6 +241,7 @@
             android:id="@+id/inputLayout_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/InputLayout_surname"
             app:layout_constraintStart_toStartOf="@+id/InputLayout_surname"
             app:layout_constraintTop_toBottomOf="@+id/lblEmail">
@@ -216,8 +249,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="ph.kubaye@gmail.com" />
+                android:layout_height="match_parent"
+                android:hint="user@gmail.com"
+                android:imeOptions="actionNext"
+                android:singleLine="true"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

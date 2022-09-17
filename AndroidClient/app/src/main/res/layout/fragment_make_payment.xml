@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orders.MakePaymentFragment">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Setup a payment method"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="You will not be charged until you review this order on the next page."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:checked="true"
+        android:text="Credit card"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mastercard_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/radioButton" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/visa_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/lblCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Name on card"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_cardName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/lblCardName"
+        app:layout_constraintTop_toBottomOf="@+id/lblCardName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Card number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/inputLayout_cardName"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout_cardName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_cardNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout_cardName"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="**** **** **** **** "
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="19"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Expiration date"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/inputLayout_cardNum"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout_cardNum" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_expire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout_cardNum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblExpireDate"
+        app:layout_constraintTop_toBottomOf="@+id/lblExpireDate"
+        app:layout_constraintWidth_percent=".44">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtExpireDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblCVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Security code"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/inputLayout_expire"
+        app:layout_constraintTop_toTopOf="@+id/lblExpireDate" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_cvc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout_cardNum"
+        app:layout_constraintStart_toStartOf="@+id/lblCVC"
+        app:layout_constraintTop_toBottomOf="@+id/lblCVC">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCVC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CVC"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSavePayment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Confirm and continue"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayout_cvc"
+        app:layout_constraintStart_toStartOf="@+id/inputLayout_expire"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout_expire" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

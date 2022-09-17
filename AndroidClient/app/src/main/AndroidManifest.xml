@@ -21,8 +21,8 @@
         <activity
             android:name=".orders.MakeOrderActivity"
             android:exported="false"
-            android:label="Order"
-            android:theme="@style/Base.Theme.AndroidClient" />
+            android:label="Checkout"
+            android:theme="@style/Theme.AndroidClient" />
 
         <activity
             android:name=".UserProfile"

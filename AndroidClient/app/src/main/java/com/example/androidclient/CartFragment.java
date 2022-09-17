@@ -152,7 +152,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
             @Override
             public void onClick(View v) {
                 ArrayList<CartItemObject> listToOrder = new ArrayList<>();
-                CartItemObject cartItem = new CartItemObject();
+
                 ArrayList<ProductObject> localList;
                 sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
                 int userId = Integer.parseInt(sharedPreferences.getString("pref_Id","-1"));
@@ -162,16 +162,18 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
                     if(size!=0){
                         for(int i=0;i<size;i++){
                             String quantity = ((EditText) Objects.requireNonNull(binding.recyclerCart.findViewHolderForAdapterPosition(i)).itemView.findViewById(R.id.txtQuantityNum)).getText().toString();
+                            CartItemObject cartItem = new CartItemObject();
                             cartItem.setProductId(localList.get(i).getId());
                             cartItem.setQuantity(Integer.parseInt(quantity));
                             cartItem.setUserId(userId);
                             cartItem.setProductPrice(localList.get(i).getIntPrice());
                             listToOrder.add(cartItem);
+
                         }
 
-                        Bundle bundle = new Bundle();
-                        bundle.putParcelableArrayList("listItemsToOrder",listToOrder);
+
                         Intent intent = new Intent(getActivity(), MakeOrderActivity.class);
+                        intent.putParcelableArrayListExtra("listItemsToOrder",listToOrder);
                         startActivity(intent);
 
                        // NavHostFragment.findNavController(CartFragment.this)

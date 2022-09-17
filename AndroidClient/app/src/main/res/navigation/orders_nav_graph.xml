@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/orders_nav_graph"
-    app:startDestination="@id/placeOrderFragment">
+    app:startDestination="@id/makeOrderFragment">
     <fragment
-        android:id="@+id/placeOrderFragment"
-        android:name="com.example.androidclient.orders.PlaceOrderFragment"
-        android:label="PlaceOrderFragment" >
+        android:id="@+id/makeOrderFragment"
+        android:name="com.example.androidclient.orders.MakePaymentFragment"
+        android:label="MakePaymentFragment">
         <action
-            android:id="@+id/action_placeOrderFragment_to_confirmOrderFragment"
-            app:destination="@id/confirmOrderFragment" />
-        <action
-            android:id="@+id/action_placeOrderFragment_to_deliveryDetailsFragment"
+            android:id="@+id/action_makeOrderFragment_to_deliveryDetailsFragment"
             app:destination="@id/deliveryDetailsFragment" />
+        <action
+            android:id="@+id/action_makeOrderFragment_to_confirmOrderFragment"
+            app:destination="@id/confirmOrderFragment" />
     </fragment>
     <fragment
         android:id="@+id/deliveryDetailsFragment"
         android:name="com.example.androidclient.orders.DeliveryDetailsFragment"
         android:label="DeliveryDetailsFragment" >
         <action
-            android:id="@+id/action_deliveryDetailsFragment_to_placeOrderFragment"
-            app:destination="@id/placeOrderFragment" />
+            android:id="@+id/action_deliveryDetailsFragment_to_makeOrderFragment"
+            app:destination="@id/makeOrderFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmOrderFragment"
@@ -29,7 +29,7 @@
         android:label="fragment_confirm_order"
         tools:layout="@layout/fragment_confirm_order" >
         <action
-            android:id="@+id/action_confirmOrderFragment_to_placeOrderFragment"
-            app:destination="@id/placeOrderFragment" />
+            android:id="@+id/action_confirmOrderFragment_to_makeOrderFragment"
+            app:destination="@id/makeOrderFragment" />
     </fragment>
 </navigation>

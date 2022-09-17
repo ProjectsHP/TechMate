@@ -48,15 +48,6 @@
       <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Cart" Member="Carts">
-    <Type Name="Cart">
-      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="build_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="totalPrice" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
-      <Column Name="totalDiscountSaved" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.DeliveryAddress" Member="DeliveryAddresses">
     <Type Name="DeliveryAddress">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -67,6 +58,27 @@
       <Column Name="streetUnit" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="zipCode" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cartId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="paymentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userAddressId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="userId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dateCreated" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="paymentMade" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="orderStatus" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cart" Member="Carts">
+    <Type Name="Cart">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="build_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="totalPrice" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="totalDiscountSaved" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

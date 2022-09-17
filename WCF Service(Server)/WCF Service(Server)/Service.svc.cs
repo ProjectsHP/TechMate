@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.ServiceModel.Description;
 using System.Net;
+using System.Collections;
 
 namespace WCF_Service_Server_
 {
@@ -17,7 +18,7 @@ namespace WCF_Service_Server_
     {
 
         linq2sqlDataContext db = new linq2sqlDataContext();
-  
+
 
         public string HashPassword(string password)
         {
@@ -34,7 +35,7 @@ namespace WCF_Service_Server_
 
         public UserClass Login(string email, string password)
         {
-          
+
 
             //  string hashedPass = HashPassword(password);
             var user = (from u in db.Users
@@ -43,33 +44,33 @@ namespace WCF_Service_Server_
 
             if (user != null)
             {
-                UserClass userObj = new UserClass(user.Id,user.name,user.surname,user.email,Convert.ToInt32(user.cellNo),user.gender,user.userType);
+                UserClass userObj = new UserClass(user.Id, user.name, user.surname, user.email, Convert.ToInt32(user.cellNo), user.gender, user.userType);
                 return userObj;
             }
             else
             {
                 UserClass defaultObj = new UserClass(-1, "def", "def", "def", 111, "def", "def");
                 return defaultObj;
-              
+
             }
-       
+
         }
 
         public int Register(string name, string surname, string cellNo, string gender, string email, string password, string userType)
         {
             var user = (from u in db.Users
-                        where u.email == email 
+                        where u.email == email
                         select u).FirstOrDefault();
 
-            if(user == null)
+            if (user == null)
             {
-              
+
 
                 if (email.Contains("@admin.com"))
                 {
                     userType = "Admin";
                 }
-                else if(email.Contains("@manager.com"))
+                else if (email.Contains("@manager.com"))
                 {
                     userType = "Manager";
                 }
@@ -91,13 +92,13 @@ namespace WCF_Service_Server_
                 {
                     name = name,
                     surname = surname,
-                  //  cellNo = 4545,
+                    //  cellNo = 4545,
                     cellNo = cellNo,
                     gender = gender,
                     email = email,
                     password = password,
                     userType = userType,
-                    
+
 
                 };
                 db.Users.InsertOnSubmit(newUser);
@@ -120,10 +121,10 @@ namespace WCF_Service_Server_
                 // user already exist try different email
                 return 0;
             }
-              
+
         }
-        
-        public int EditUser(string name, string surname, string cellNo, string gender,string email, string activeId)
+
+        public int EditUser(string name, string surname, string cellNo, string gender, string email, string activeId)
         {
             int id = Convert.ToInt32(activeId);
             var user = (from u in db.Users
@@ -156,8 +157,8 @@ namespace WCF_Service_Server_
             {
                 //User doesnt exist
                 return 0;
-            }  
-            
+            }
+
         }
 
         public int DeleteUser(string activeId)
@@ -167,7 +168,7 @@ namespace WCF_Service_Server_
                         where userId == u.Id
                         select u).FirstOrDefault();
 
-            if(user != null)
+            if (user != null)
             {
                 db.Users.DeleteOnSubmit(user);
                 try
@@ -189,64 +190,63 @@ namespace WCF_Service_Server_
                 //user not found
                 return 0;
             }
-        
+
         }
 
         public int SendMail(string receiverEmail, string subject, string body)
         {
             MailSender mailSender = new MailSender();
-            int response = mailSender.sendTextMail("ph.kubaye@gmail.com", "Test email",
-                "Just to check if the server sends email to clients");
+            int response = mailSender.sendTextMail(receiverEmail, subject, body);
             return response;
         }
 
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice)
         {
 
-          
-            int storage=Convert.ToInt32(storage_id);
+
+            int storage = Convert.ToInt32(storage_id);
             int user = Convert.ToInt32(user_id);
             int cpu = Convert.ToInt32(cpu_id);
             int graphics = Convert.ToInt32(graphics_id);
             int ram = Convert.ToInt32(ram_id);
             int desktop = Convert.ToInt32(desktop_id);
             int total = Convert.ToInt32(totalPrice);
-           
-             
 
 
-              var newBuild = new Build
-                  {
-                     baseBuild_id=desktop,
-                     cpu_id= cpu,
-                     storage_id= storage,
-                     graphics_id= graphics,
-                     ram_id= ram,
-                     compatibilityStatus=compatibilityStatus,
-                     category="Desktop Computer",
-                     user_id= user,
-                     totalPrice= total,
 
-                  };
-                  db.Builds.InsertOnSubmit(newBuild);
 
-                  try
-                  {
-                      // created build successfully
-                      db.SubmitChanges();
+            var newBuild = new Build
+            {
+                baseBuild_id = desktop,
+                cpu_id = cpu,
+                storage_id = storage,
+                graphics_id = graphics,
+                ram_id = ram,
+                compatibilityStatus = compatibilityStatus,
+                category = "Desktop Computer",
+                user_id = user,
+                totalPrice = total,
 
-                  int build_id = newBuild.Id;
-                      return build_id;
-                  }
-                  catch (Exception ex)
-                  {
-                      //error occured
-                      ex.GetBaseException();
-                      return -1;
-                  }
-            
-        
+            };
+            db.Builds.InsertOnSubmit(newBuild);
+
+            try
+            {
+                // created build successfully
+                db.SubmitChanges();
+
+                int build_id = newBuild.Id;
+                return build_id;
             }
+            catch (Exception ex)
+            {
+                //error occured
+                ex.GetBaseException();
+                return -1;
+            }
+
+
+        }
 
         public User FetchActiveUser(string id)
         {
@@ -255,7 +255,7 @@ namespace WCF_Service_Server_
                               where u.Id == userId
                               select u).FirstOrDefault();
 
-            if(activeUser != null)
+            if (activeUser != null)
             {
                 return activeUser;
             }
@@ -271,9 +271,9 @@ namespace WCF_Service_Server_
             dynamic allUsers = (from u in db.Users
                                 select u);
 
-            if(allUsers != null)
+            if (allUsers != null)
             {
-                foreach(dynamic user in allUsers)
+                foreach (dynamic user in allUsers)
                 {
                     allUserList.Add(user);
                 }
@@ -290,8 +290,8 @@ namespace WCF_Service_Server_
         {
             int compId = Convert.ToInt32(component_id);
             var activeComponent = (from u in db.Components
-                              where u.Id == compId
-                              select u).FirstOrDefault();
+                                   where u.Id == compId
+                                   select u).FirstOrDefault();
 
             if (activeComponent != null)
             {
@@ -309,12 +309,12 @@ namespace WCF_Service_Server_
             var compList = new List<Component>();
 
             dynamic result = (from u in db.Components.ToList()
-             
-              select u).OrderBy(x => Guid.NewGuid()).Take(Convert.ToInt32(size));
 
-       
+                              select u).OrderBy(x => Guid.NewGuid()).Take(Convert.ToInt32(size));
 
-            if(result != null)
+
+
+            if (result != null)
             {
                 foreach (Component comp in result)
                 {
@@ -322,7 +322,7 @@ namespace WCF_Service_Server_
                 }
             }
 
-            return compList;          
+            return compList;
         }
 
         public List<Component> FetchComponentsByCategory(string category)
@@ -345,15 +345,15 @@ namespace WCF_Service_Server_
                 return null;
             }
         }
-     
+
         public List<Component> FetchBuild(string build_id)
         {
 
             var buildCompList = new List<Component>();
             int Id = Convert.ToInt32(build_id);
             var activeBuild = (from u in db.Builds
-                              where u.Id == Id
-                              select u).FirstOrDefault();
+                               where u.Id == Id
+                               select u).FirstOrDefault();
 
             if (activeBuild != null)
             {
@@ -364,12 +364,12 @@ namespace WCF_Service_Server_
                                            u.Id == activeBuild.ram_id ||
                                            u.Id == activeBuild.baseBuild_id
                                      select u);
-                foreach(dynamic comp in buildComp)
+                foreach (dynamic comp in buildComp)
                 {
 
                     buildCompList.Add(comp);
                 }
-           
+
                 buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
 
                 return buildCompList;
@@ -382,26 +382,25 @@ namespace WCF_Service_Server_
 
         }
 
-
         public List<BuildClass> FetchAllUserBuilds(string user_id)
         {
-          
+
             var buildCompList = new List<BuildClass>();
             int Id = Convert.ToInt32(user_id);
 
             dynamic activeBuild = (from u in db.Builds
-                               where u.user_id == Id
-                               select u);
+                                   where u.user_id == Id
+                                   select u);
 
             if (activeBuild != null)
             {
-               
+
                 foreach (Build build in activeBuild)
                 {
                     BuildClass buildClass = new BuildClass();
                     string buildId = Convert.ToString(build.Id);
                     List<Component> buildComponentData = FetchBuild(buildId);
-                   
+
                     foreach (Component component in buildComponentData)
                     {
                         switch (component.category)
@@ -425,18 +424,18 @@ namespace WCF_Service_Server_
                                 buildClass.GraphicsComponent = component;
                                 break;
                         }
-                    
+
                     }
                     buildClass.Build_id = buildId;
                     buildClass.CompatibilityStatus = "Compatible";
                     buildClass.User_build_id = user_id;
                     buildClass.Category = build.category;
                     buildClass.TotalPrice = Convert.ToString(build.totalPrice);
-                   
-                        buildCompList.Add(buildClass);
+
+                    buildCompList.Add(buildClass);
                 }
 
-             //   buildCompList.Sort((a, b) => a.Category.CompareTo(b.Category));
+                //   buildCompList.Sort((a, b) => a.Category.CompareTo(b.Category));
 
                 return buildCompList;
             }
@@ -469,23 +468,99 @@ namespace WCF_Service_Server_
             return compList;
         }
 
-        public void MakeOrder(List<CartItemClass> itemsList)
+
+
+        public int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
+                                 string userAddressId, string totalPrice, string totalItems, string paymentMade,
+                                 string orderStatus, ArrayList listOfCartItemId)
         {
+
+
+            int uId = Convert.ToInt32(userId);
+            var user = (from u in db.Users
+                        where u.Id == uId
+                        select u).FirstOrDefault();
+
+            if (user != null)
+            {
+
+                bool allSavedToCart = true;
+                //CREATE CART *************************
+                int cartSaved = SaveCart(userId, "-1", totalPrice, "0");
+                string cartI = Convert.ToString(cartSaved);
+                if (cartSaved != -1 || cartSaved != -2)
+                {
+                    foreach (int itemId in listOfCartItemId)
+                    {
+
+                        int verify = SaveCartItems(Convert.ToString(itemId), cartI, "1");
+                        if (verify != 1)
+                        {
+                            allSavedToCart = false;
+                        }
+
+                    }
+                    if (allSavedToCart == true)
+                    {
+                        string date = DateTime.Today.ToString("yy/MM/yyyy");
+                        var newOrder = new Order
+                        {
+                            cartId = cartSaved,
+                            orderStatus = orderStatus,
+                            paymentId = Convert.ToInt32(paymentId),
+                            userAddressId = 2,
+                            userId = user.Id,
+                            dateCreated = date,
+                            paymentMade = paymentMade,
+
+                        };
+                        db.Orders.InsertOnSubmit(newOrder);
+
+                        try
+                        {
+                            // registered successfully
+                            db.SubmitChanges();
+                            string body = "Hello " + user.name + " your order has been received. It will shortly be reviewed and place for shippment.";
+
+                            int retVal = SendMail("hlulankubayi@gmail.com", "Order received", body);
+                            if (retVal == 1)
+                            {
+                                //added and sent email
+                                return 1;
+                            }
+                            else
+                            {
+                                // added but did not send email
+                                return -3;
+                            }
+
+                        }
+                        catch (Exception ex)
+                        {
+                            //error occured
+                            ex.GetBaseException();
+                            return -1;
+                        }
+
+                    }
+                }
+
+            }
+            return 0;
 
         }
 
         public int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email)
         {
 
-            int user_id=Convert.ToInt32(userId);
+            int user_id = Convert.ToInt32(userId);
             var user = (from u in db.Users
                         where u.Id == user_id
                         select u).FirstOrDefault();
 
-            if (user == null)
+            if (user != null)
             {
 
-         
                 var newUserAddress = new DeliveryAddress
                 {
                     user_id = user_id,
@@ -494,7 +569,8 @@ namespace WCF_Service_Server_
                     city = city,
                     suburb = "Brixton",
                     streetUnit = streetUnit,
-               
+
+
                 };
                 db.DeliveryAddresses.InsertOnSubmit(newUserAddress);
 
@@ -513,11 +589,106 @@ namespace WCF_Service_Server_
             }
             else
             {
-                // user not found. 
+                // user not found/logged in. 
                 return 0;
             }
 
-           
+
+        }
+
+        public DeliveryAddress FetchUserAddress(string userId)
+        {
+            int user_id = Convert.ToInt32(userId);
+
+            var address = (from u in db.DeliveryAddresses
+                           where u.user_id == user_id
+                           select u).FirstOrDefault();
+
+            if (address != null)
+            {
+                return address;
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+        public int SaveCart(string userId, string buildId, string totalPrice, string discountSaved)
+        {
+            int user_id = Convert.ToInt32(userId);
+
+            var user = (from u in db.Users
+                        where u.Id == user_id
+                        select u).FirstOrDefault();
+
+            if (user != null)
+            {
+
+                var newCart = new Cart
+                {
+                    build_id = -1,
+                    user_id = Convert.ToInt32(user_id),
+                    totalPrice = totalPrice,
+                    totalDiscountSaved = discountSaved
+
+                };
+                db.Carts.InsertOnSubmit(newCart);
+
+                try
+                {
+                    // added new cart successfully
+                    db.SubmitChanges();
+
+                    int cartId = newCart.Id;
+                    return cartId;
+                }
+                catch (Exception ex)
+                {
+                    //error occured
+                    ex.GetBaseException();
+                    return -1;
+                }
+
+            }
+            else
+            {
+                //user does not exist
+                return -2;
+            }
+
+
+        }
+
+        public int SaveCartItems(string componentId, string cartId, string quantity)
+        {
+
+            var cartItem = new CartItem
+            {
+                component_id = Convert.ToInt32(componentId),
+                cart_id = Convert.ToInt32(cartId),
+                quantity = 1
+
+            };
+            db.CartItems.InsertOnSubmit(cartItem);
+
+            try
+            {
+                // added new cart item successfully
+                db.SubmitChanges();
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                //error occured
+                ex.GetBaseException();
+                return -1;
+            }
+
+
+
+
         }
     }
 }

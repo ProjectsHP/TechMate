@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 //using System.Runtime.Serialization;
@@ -43,6 +44,7 @@ namespace WCF_Service_Server_
         [OperationContract(Name ="FetchAllUsersSOAP")] 
         List<User> FetchAllUsers();
 
+
         [OperationContract(Name = "FetchRandomComponentsSOAP")]
         List<Component> FetchRandomComponents(string size);
 
@@ -70,8 +72,27 @@ namespace WCF_Service_Server_
         List<BuildClass> FetchAllUserBuilds(string user_id);
 
 
-        [OperationContract(Name = "MakeOrderSOAP")]
-        void MakeOrder(List<CartItemClass> itemsList);
+
+
+        [OperationContract(Name = "FetchUserAddressSOAP")]
+        DeliveryAddress FetchUserAddress(string userId);
+
+
+
+        [OperationContract(Name = "CheckoutOrderSOAP")]
+        int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
+                                 string userAddressId, string totalPrice, string totalItems, string paymentMade,
+                                 string orderStatus, ArrayList listOfCartItemId);
+
+
+
+        [OperationContract(Name = "SaveCartSOAP")]
+        int SaveCart(string userId, string buildId, string totalPrice, string discountSaved);
+
+
+        [OperationContract(Name = "SaveCartItemsSOAP")]
+        int SaveCartItems(string componentId, string cartId, string quantity);
+
 
 
     }

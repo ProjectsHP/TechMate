@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -61,11 +62,13 @@ namespace WCF_Service_Server_
 
 
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/MakeOrder",
+        [WebInvoke(Method = "POST", UriTemplate = "/CheckoutOrder",
          RequestFormat = WebMessageFormat.Json,
          ResponseFormat = WebMessageFormat.Json,
          BodyStyle = WebMessageBodyStyle.Wrapped)]
-        void MakeOrder(List<CartItemClass> itemsList);
+        int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
+                                 string userAddressId, string totalPrice, string totalItems, string paymentMade,
+                                 string orderStatus, ArrayList listOfCartItemId);
 
 
         [OperationContract]
@@ -73,7 +76,8 @@ namespace WCF_Service_Server_
          RequestFormat = WebMessageFormat.Json,
          ResponseFormat = WebMessageFormat.Json,
          BodyStyle = WebMessageBodyStyle.Wrapped)]
-        int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, 
+                             string surname, string cellPhone, string email);
 
 
         [OperationContract]
@@ -81,10 +85,19 @@ namespace WCF_Service_Server_
           RequestFormat = WebMessageFormat.Json,
           ResponseFormat = WebMessageFormat.Json,
           BodyStyle = WebMessageBodyStyle.Wrapped)]
-        int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
+        int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id,
+                        string compatibilityStatus, string totalPrice);
        
+
         [OperationContract]
         User FetchActiveUser(string id);
+
+       
+        int SaveCart(string userId, string buildId, string totalPrice, string discountSaved);
+
+
+       
+        int SaveCartItems(string componentId, string cartId, string quantity);
 
 
         [OperationContract]
@@ -132,6 +145,14 @@ namespace WCF_Service_Server_
         ResponseFormat = WebMessageFormat.Json,
         BodyStyle = WebMessageBodyStyle.Wrapped)]
         List<BuildClass> FetchAllUserBuilds(string user_id);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchUserAddress/{userId}",
+          RequestFormat = WebMessageFormat.Json,
+          ResponseFormat = WebMessageFormat.Json,
+          BodyStyle = WebMessageBodyStyle.Wrapped)]
+        DeliveryAddress FetchUserAddress(string userId);
 
     }
 }

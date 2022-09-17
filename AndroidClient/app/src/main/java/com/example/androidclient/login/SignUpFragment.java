@@ -121,7 +121,7 @@ public class SignUpFragment extends Fragment implements URLGenerator {
                                             }
                                             serverResponseCode = null;
                                         }
-                                    }, 700);
+                                    }, 200);
 
                                 }
                             });

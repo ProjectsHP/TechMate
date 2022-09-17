@@ -5,6 +5,8 @@ import android.os.Bundle;
 import com.example.androidclient.databinding.ActivityLoginBinding;
 import com.example.androidclient.databinding.ActivityMakeOrderBinding;
 import com.example.androidclient.login.FragmentAdapter;
+import com.example.androidclient.objects.CartItemObject;
+import com.example.androidclient.objects.OrderObject;
 import com.google.android.material.color.DynamicColors;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -34,7 +36,33 @@ public class MakeOrderActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     OrdersFragmentAdapter myAdapter;
     private ViewPager orderViewPager;
+    private String paymentMade;
+    private OrderObject orderObject;
+    ArrayList<CartItemObject> itemListToOrder = new ArrayList<>();
 
+    public ArrayList<CartItemObject> getItemListToOrder() {
+        return itemListToOrder;
+    }
+
+    public void setItemListToOrder(ArrayList<CartItemObject> itemListToOrder) {
+        this.itemListToOrder = itemListToOrder;
+    }
+
+    public OrderObject getOrderObject() {
+        return orderObject;
+    }
+
+    public void setOrderObject(OrderObject orderObject) {
+        this.orderObject = orderObject;
+    }
+
+    public String getPaymentMade() {
+        return paymentMade;
+    }
+
+    public void setPaymentMade(String paymentMade) {
+        this.paymentMade = paymentMade;
+    }
 
     public ViewPager getOrderViewPager() {
         return orderViewPager;
@@ -69,6 +97,7 @@ public class MakeOrderActivity extends AppCompatActivity {
         binding.ordersViewPager.beginFakeDrag();
         binding.ordersTabLayout.setClickable(false);
 
+        orderObject = new OrderObject();
 
     }
 
