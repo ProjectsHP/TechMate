@@ -41,6 +41,10 @@ namespace WCF_Service_Server_
         User FetchActiveUser(string id);
 
 
+        [OperationContract(Name = "FetchSingleUserBuildSOAP")]
+        List<Component> FetchSingleUserBuild(string user_id);
+
+
         [OperationContract(Name ="FetchAllUsersSOAP")] 
         List<User> FetchAllUsers();
 
@@ -78,11 +82,15 @@ namespace WCF_Service_Server_
         DeliveryAddress FetchUserAddress(string userId);
 
 
+        [OperationContract(Name = "FetchOrderSOAP")]
+        OrderClass FetchOrder(string userId, string orderId, string cardNumber);
+
+
 
         [OperationContract(Name = "CheckoutOrderSOAP")]
         int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
                                  string userAddressId, string totalPrice, string totalItems, string paymentMade,
-                                 string orderStatus, ArrayList listOfCartItemId);
+                                 string orderStatus, List<int> listOfCartItemId);
 
 
 

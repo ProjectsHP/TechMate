@@ -42,8 +42,8 @@
                 
 
                 <%-- <button class="checkout">Checkout</button>--%>
-             <%--   <asp:Button ID="btn find_course_form_btn" runat="server" Text="Checkout" OnClick="btnCheckout_Click"/>--%>
-                <a class="btn find_course_form_btn" href="Home.aspx">Checkout</a>
+               <asp:Button ID="btnCheckout" class="btn find_course_form_btn" runat="server" Text="Checkout" OnClick="btnCheckout_Click" />
+             <%--   <a class="btn find_course_form_btn" href="Home.aspx">Checkout</a>--%>
             </div>
         </div>
     </div>

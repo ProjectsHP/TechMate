@@ -23,10 +23,11 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="ee04404e-d320-4c6d-9d4c-6ccbab22881f" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?wsdl" />
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="7909688a-11c7-4f2b-8d51-ff93c4e43038" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="9f91388b-4628-49b8-8e42-76a71896d6cd" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd2" />
     <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="156e2db6-a5a1-432a-9807-c53269b1fdfb" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?disco" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="7909688a-11c7-4f2b-8d51-ff93c4e43038" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd0" />
     <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="637d38f6-025f-4080-8681-d4ef32a3e2a6" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="9f91388b-4628-49b8-8e42-76a71896d6cd" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="1c1f9905-ecd4-4745-aed0-81899463b3c4" SourceId="1" SourceUrl="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" />
+      <xsd:import schemaLocation="https://techmateappservice.azurewebsites.net/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService_LoginSOAP_InputMessage">
@@ -37,11 +38,23 @@
   <wsdl:message name="IService_DeleteUserSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:DeleteUserSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_StoreUserAddressSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:StoreUserAddressSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_StoreUserAddressSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StoreUserAddressSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IService_FetchActiveUserSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:FetchActiveUserSOAP" />
   </wsdl:message>
   <wsdl:message name="IService_FetchActiveUserSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchActiveUserSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchSingleUserBuildSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchSingleUserBuildSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchSingleUserBuildSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchSingleUserBuildSOAPResponse" />
   </wsdl:message>
   <wsdl:message name="IService_FetchAllUsersSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:FetchAllUsersSOAP" />
@@ -91,6 +104,36 @@
   <wsdl:message name="IService_FetchAllUserBuildsSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchAllUserBuildsSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_FetchUserAddressSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchUserAddressSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchUserAddressSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchUserAddressSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchOrderSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchOrderSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchOrderSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchOrderSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckoutOrderSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckoutOrderSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_CheckoutOrderSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckoutOrderSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SaveCartSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCartSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_SaveCartSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCartSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SaveCartItemsSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCartItemsSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_SaveCartItemsSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCartItemsSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceREST_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
@@ -121,6 +164,18 @@
   <wsdl:message name="IServiceREST_SendMail_OutputMessage">
     <wsdl:part name="parameters" element="tns:SendMailResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceREST_CheckoutOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckoutOrder" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_CheckoutOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckoutOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_StoreUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:StoreUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_StoreUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StoreUserAddressResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceREST_CreateBuild_InputMessage">
     <wsdl:part name="parameters" element="tns:CreateBuild" />
   </wsdl:message>
@@ -138,6 +193,12 @@
   </wsdl:message>
   <wsdl:message name="IServiceREST_FetchComponent_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchComponentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchSingleUserBuild_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchSingleUserBuild" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchSingleUserBuild_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchSingleUserBuildResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceREST_FetchRandomComponents_InputMessage">
     <wsdl:part name="parameters" element="tns:FetchRandomComponents" />
@@ -169,6 +230,18 @@
   <wsdl:message name="IServiceREST_FetchAllUserBuilds_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchAllUserBuildsResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchUserAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchUserAddress" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchUserAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchUserAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchOrder" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchOrderResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="LoginSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/LoginSOAP" message="tns:IService_LoginSOAP_InputMessage" />
@@ -190,9 +263,17 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/DeleteUserSOAP" message="tns:IService_DeleteUserSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/DeleteUserSOAPResponse" message="tns:IService_DeleteUserSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="StoreUserAddressSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/StoreUserAddressSOAP" message="tns:IService_StoreUserAddressSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/StoreUserAddressSOAPResponse" message="tns:IService_StoreUserAddressSOAP_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="FetchActiveUserSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchActiveUserSOAP" message="tns:IService_FetchActiveUserSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchActiveUserSOAPResponse" message="tns:IService_FetchActiveUserSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchSingleUserBuildSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchSingleUserBuildSOAP" message="tns:IService_FetchSingleUserBuildSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchSingleUserBuildSOAPResponse" message="tns:IService_FetchSingleUserBuildSOAP_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="FetchAllUsersSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchAllUsersSOAP" message="tns:IService_FetchAllUsersSOAP_InputMessage" />
@@ -226,6 +307,26 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchAllUserBuildsSOAP" message="tns:IService_FetchAllUserBuildsSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchAllUserBuildsSOAPResponse" message="tns:IService_FetchAllUserBuildsSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="FetchUserAddressSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchUserAddressSOAP" message="tns:IService_FetchUserAddressSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchUserAddressSOAPResponse" message="tns:IService_FetchUserAddressSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchOrderSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchOrderSOAP" message="tns:IService_FetchOrderSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchOrderSOAPResponse" message="tns:IService_FetchOrderSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckoutOrderSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckoutOrderSOAP" message="tns:IService_CheckoutOrderSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CheckoutOrderSOAPResponse" message="tns:IService_CheckoutOrderSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCartSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SaveCartSOAP" message="tns:IService_SaveCartSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SaveCartSOAPResponse" message="tns:IService_SaveCartSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCartItemsSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SaveCartItemsSOAP" message="tns:IService_SaveCartItemsSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SaveCartItemsSOAPResponse" message="tns:IService_SaveCartItemsSOAP_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IServiceREST">
     <wsdl:operation name="Login">
@@ -248,6 +349,14 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/SendMail" message="tns:IServiceREST_SendMail_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/SendMailResponse" message="tns:IServiceREST_SendMail_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="CheckoutOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/CheckoutOrder" message="tns:IServiceREST_CheckoutOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/CheckoutOrderResponse" message="tns:IServiceREST_CheckoutOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StoreUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/StoreUserAddress" message="tns:IServiceREST_StoreUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/StoreUserAddressResponse" message="tns:IServiceREST_StoreUserAddress_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="CreateBuild">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/CreateBuild" message="tns:IServiceREST_CreateBuild_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/CreateBuildResponse" message="tns:IServiceREST_CreateBuild_OutputMessage" />
@@ -259,6 +368,10 @@
     <wsdl:operation name="FetchComponent">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchComponent" message="tns:IServiceREST_FetchComponent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchComponentResponse" message="tns:IServiceREST_FetchComponent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchSingleUserBuild">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchSingleUserBuild" message="tns:IServiceREST_FetchSingleUserBuild_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchSingleUserBuildResponse" message="tns:IServiceREST_FetchSingleUserBuild_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="FetchRandomComponents">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchRandomComponents" message="tns:IServiceREST_FetchRandomComponents_InputMessage" />
@@ -279,6 +392,14 @@
     <wsdl:operation name="FetchAllUserBuilds">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserBuilds" message="tns:IServiceREST_FetchAllUserBuilds_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserBuildsResponse" message="tns:IServiceREST_FetchAllUserBuilds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchUserAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchUserAddress" message="tns:IServiceREST_FetchUserAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchUserAddressResponse" message="tns:IServiceREST_FetchUserAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchOrder" message="tns:IServiceREST_FetchOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchOrderResponse" message="tns:IServiceREST_FetchOrder_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="SOAPEndPoint" type="tns:IService">
@@ -328,8 +449,26 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="StoreUserAddressSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/StoreUserAddressSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="FetchActiveUserSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/FetchActiveUserSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchSingleUserBuildSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchSingleUserBuildSOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -402,6 +541,51 @@
     </wsdl:operation>
     <wsdl:operation name="FetchAllUserBuildsSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/FetchAllUserBuildsSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchUserAddressSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchUserAddressSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchOrderSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchOrderSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckoutOrderSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/CheckoutOrderSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCartSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/SaveCartSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCartItemsSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/SaveCartItemsSOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

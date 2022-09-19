@@ -68,7 +68,7 @@ namespace WCF_Service_Server_
          BodyStyle = WebMessageBodyStyle.Wrapped)]
         int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
                                  string userAddressId, string totalPrice, string totalItems, string paymentMade,
-                                 string orderStatus, ArrayList listOfCartItemId);
+                                 string orderStatus, List<int> listOfCartItemId);
 
 
         [OperationContract]
@@ -106,6 +106,14 @@ namespace WCF_Service_Server_
          ResponseFormat = WebMessageFormat.Json,
          BodyStyle = WebMessageBodyStyle.Wrapped)]
         Component FetchComponent(string component_id);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchSingleUserBuildURI/{user_id}",
+         RequestFormat = WebMessageFormat.Json,
+         ResponseFormat = WebMessageFormat.Json,
+         BodyStyle = WebMessageBodyStyle.Wrapped)]
+        List<Component> FetchSingleUserBuild(string user_id);
 
 
         [OperationContract]
@@ -153,6 +161,15 @@ namespace WCF_Service_Server_
           ResponseFormat = WebMessageFormat.Json,
           BodyStyle = WebMessageBodyStyle.Wrapped)]
         DeliveryAddress FetchUserAddress(string userId);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchOrderURI/{userId}/{orderId}/{cardNumber}",
+       RequestFormat = WebMessageFormat.Json,
+       ResponseFormat = WebMessageFormat.Json,
+       BodyStyle = WebMessageBodyStyle.Wrapped)]
+        OrderClass FetchOrder(string userId, string orderId, string cardNumber);
+
 
     }
 }

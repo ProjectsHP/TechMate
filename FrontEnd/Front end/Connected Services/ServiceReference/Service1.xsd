@@ -25,12 +25,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="User" nillable="true" type="tns:User" />
-  <xs:complexType name="ArrayOfUser">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
   <xs:complexType name="ArrayOfComponent">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Component" nillable="true" type="tns:Component" />
@@ -52,6 +46,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Component" nillable="true" type="tns:Component" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
   <xs:complexType name="ArrayOfBuildClass">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="BuildClass" nillable="true" type="tns:BuildClass" />
@@ -68,8 +68,52 @@
       <xs:element minOccurs="0" name="GraphicsComponent" nillable="true" type="tns:Component" />
       <xs:element minOccurs="0" name="RamComponent" nillable="true" type="tns:Component" />
       <xs:element minOccurs="0" name="StorageComponent" nillable="true" type="tns:Component" />
+      <xs:element minOccurs="0" name="TotalPrice" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="User_build_id" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="BuildClass" nillable="true" type="tns:BuildClass" />
+  <xs:complexType name="DeliveryAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="streetUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="suburb" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="user_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="zipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryAddress" nillable="true" type="tns:DeliveryAddress" />
+  <xs:complexType name="OrderClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CardNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="DeliveryAddress" nillable="true" type="tns:DeliveryAddress" />
+      <xs:element minOccurs="0" name="ListOfCartObj" nillable="true" type="tns:ArrayOfCartItem" />
+      <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderId" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentMade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalItems" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:int" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderClass" nillable="true" type="tns:OrderClass" />
+  <xs:complexType name="ArrayOfCartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CartItem" nillable="true" type="tns:CartItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCartItem" nillable="true" type="tns:ArrayOfCartItem" />
+  <xs:complexType name="CartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="cart_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="component_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="quantity" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CartItem" nillable="true" type="tns:CartItem" />
 </xs:schema>

@@ -534,6 +534,9 @@ namespace Front_end.ServiceReference {
         private Front_end.ServiceReference.Component StorageComponentField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TotalPriceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string User_build_idField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -651,6 +654,19 @@ namespace Front_end.ServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TotalPrice {
+            get {
+                return this.TotalPriceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TotalPriceField, value) != true)) {
+                    this.TotalPriceField = value;
+                    this.RaisePropertyChanged("TotalPrice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string User_build_id {
             get {
                 return this.User_build_idField;
@@ -659,6 +675,445 @@ namespace Front_end.ServiceReference {
                 if ((object.ReferenceEquals(this.User_build_idField, value) != true)) {
                     this.User_build_idField = value;
                     this.RaisePropertyChanged("User_build_id");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DeliveryAddress", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class DeliveryAddress : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string countryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string provinceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string streetUnitField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string suburbField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> user_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string zipCodeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string city {
+            get {
+                return this.cityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cityField, value) != true)) {
+                    this.cityField = value;
+                    this.RaisePropertyChanged("city");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string country {
+            get {
+                return this.countryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.countryField, value) != true)) {
+                    this.countryField = value;
+                    this.RaisePropertyChanged("country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string province {
+            get {
+                return this.provinceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.provinceField, value) != true)) {
+                    this.provinceField = value;
+                    this.RaisePropertyChanged("province");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string streetUnit {
+            get {
+                return this.streetUnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.streetUnitField, value) != true)) {
+                    this.streetUnitField = value;
+                    this.RaisePropertyChanged("streetUnit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string suburb {
+            get {
+                return this.suburbField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.suburbField, value) != true)) {
+                    this.suburbField = value;
+                    this.RaisePropertyChanged("suburb");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> user_id {
+            get {
+                return this.user_idField;
+            }
+            set {
+                if ((this.user_idField.Equals(value) != true)) {
+                    this.user_idField = value;
+                    this.RaisePropertyChanged("user_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string zipCode {
+            get {
+                return this.zipCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.zipCodeField, value) != true)) {
+                    this.zipCodeField = value;
+                    this.RaisePropertyChanged("zipCode");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="OrderClass", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class OrderClass : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CardNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.DeliveryAddress DeliveryAddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.CartItem[] ListOfCartObjField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OrderDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int OrderIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OrderStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PaymentMadeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TotalItemsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TotalPriceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.User UserField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CardNumber {
+            get {
+                return this.CardNumberField;
+            }
+            set {
+                if ((this.CardNumberField.Equals(value) != true)) {
+                    this.CardNumberField = value;
+                    this.RaisePropertyChanged("CardNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.DeliveryAddress DeliveryAddress {
+            get {
+                return this.DeliveryAddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DeliveryAddressField, value) != true)) {
+                    this.DeliveryAddressField = value;
+                    this.RaisePropertyChanged("DeliveryAddress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.CartItem[] ListOfCartObj {
+            get {
+                return this.ListOfCartObjField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ListOfCartObjField, value) != true)) {
+                    this.ListOfCartObjField = value;
+                    this.RaisePropertyChanged("ListOfCartObj");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OrderDate {
+            get {
+                return this.OrderDateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderDateField, value) != true)) {
+                    this.OrderDateField = value;
+                    this.RaisePropertyChanged("OrderDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int OrderId {
+            get {
+                return this.OrderIdField;
+            }
+            set {
+                if ((this.OrderIdField.Equals(value) != true)) {
+                    this.OrderIdField = value;
+                    this.RaisePropertyChanged("OrderId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OrderStatus {
+            get {
+                return this.OrderStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderStatusField, value) != true)) {
+                    this.OrderStatusField = value;
+                    this.RaisePropertyChanged("OrderStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PaymentMade {
+            get {
+                return this.PaymentMadeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentMadeField, value) != true)) {
+                    this.PaymentMadeField = value;
+                    this.RaisePropertyChanged("PaymentMade");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TotalItems {
+            get {
+                return this.TotalItemsField;
+            }
+            set {
+                if ((this.TotalItemsField.Equals(value) != true)) {
+                    this.TotalItemsField = value;
+                    this.RaisePropertyChanged("TotalItems");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TotalPrice {
+            get {
+                return this.TotalPriceField;
+            }
+            set {
+                if ((this.TotalPriceField.Equals(value) != true)) {
+                    this.TotalPriceField = value;
+                    this.RaisePropertyChanged("TotalPrice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.User User {
+            get {
+                return this.UserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserField, value) != true)) {
+                    this.UserField = value;
+                    this.RaisePropertyChanged("User");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CartItem", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class CartItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> cart_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> component_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> quantityField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> cart_id {
+            get {
+                return this.cart_idField;
+            }
+            set {
+                if ((this.cart_idField.Equals(value) != true)) {
+                    this.cart_idField = value;
+                    this.RaisePropertyChanged("cart_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> component_id {
+            get {
+                return this.component_idField;
+            }
+            set {
+                if ((this.component_idField.Equals(value) != true)) {
+                    this.component_idField = value;
+                    this.RaisePropertyChanged("component_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> quantity {
+            get {
+                return this.quantityField;
+            }
+            set {
+                if ((this.quantityField.Equals(value) != true)) {
+                    this.quantityField = value;
+                    this.RaisePropertyChanged("quantity");
                 }
             }
         }
@@ -707,11 +1162,23 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteUserSOAP", ReplyAction="http://tempuri.org/IService/DeleteUserSOAPResponse")]
         System.Threading.Tasks.Task<int> DeleteUserSOAPAsync(string activeId);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/StoreUserAddressSOAP", ReplyAction="http://tempuri.org/IService/StoreUserAddressSOAPResponse")]
+        int StoreUserAddressSOAP(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/StoreUserAddressSOAP", ReplyAction="http://tempuri.org/IService/StoreUserAddressSOAPResponse")]
+        System.Threading.Tasks.Task<int> StoreUserAddressSOAPAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchActiveUserSOAP", ReplyAction="http://tempuri.org/IService/FetchActiveUserSOAPResponse")]
         Front_end.ServiceReference.User FetchActiveUserSOAP(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchActiveUserSOAP", ReplyAction="http://tempuri.org/IService/FetchActiveUserSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.User> FetchActiveUserSOAPAsync(string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchSingleUserBuildSOAP", ReplyAction="http://tempuri.org/IService/FetchSingleUserBuildSOAPResponse")]
+        Front_end.ServiceReference.Component[] FetchSingleUserBuildSOAP(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchSingleUserBuildSOAP", ReplyAction="http://tempuri.org/IService/FetchSingleUserBuildSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleUserBuildSOAPAsync(string user_id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUsersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUsersSOAPResponse")]
         Front_end.ServiceReference.User[] FetchAllUsersSOAP();
@@ -760,6 +1227,36 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserBuildsSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserBuildsSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsSOAPAsync(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchUserAddressSOAP", ReplyAction="http://tempuri.org/IService/FetchUserAddressSOAPResponse")]
+        Front_end.ServiceReference.DeliveryAddress FetchUserAddressSOAP(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchUserAddressSOAP", ReplyAction="http://tempuri.org/IService/FetchUserAddressSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.DeliveryAddress> FetchUserAddressSOAPAsync(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderSOAPResponse")]
+        Front_end.ServiceReference.OrderClass FetchOrderSOAP(string userId, string orderId, string cardNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderSOAPAsync(string userId, string orderId, string cardNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CheckoutOrderSOAP", ReplyAction="http://tempuri.org/IService/CheckoutOrderSOAPResponse")]
+        int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CheckoutOrderSOAP", ReplyAction="http://tempuri.org/IService/CheckoutOrderSOAPResponse")]
+        System.Threading.Tasks.Task<int> CheckoutOrderSOAPAsync(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCartSOAP", ReplyAction="http://tempuri.org/IService/SaveCartSOAPResponse")]
+        int SaveCartSOAP(string userId, string buildId, string totalPrice, string discountSaved);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCartSOAP", ReplyAction="http://tempuri.org/IService/SaveCartSOAPResponse")]
+        System.Threading.Tasks.Task<int> SaveCartSOAPAsync(string userId, string buildId, string totalPrice, string discountSaved);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCartItemsSOAP", ReplyAction="http://tempuri.org/IService/SaveCartItemsSOAPResponse")]
+        int SaveCartItemsSOAP(string componentId, string cartId, string quantity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCartItemsSOAP", ReplyAction="http://tempuri.org/IService/SaveCartItemsSOAPResponse")]
+        System.Threading.Tasks.Task<int> SaveCartItemsSOAPAsync(string componentId, string cartId, string quantity);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -829,12 +1326,28 @@ namespace Front_end.ServiceReference {
             return base.Channel.DeleteUserSOAPAsync(activeId);
         }
         
+        public int StoreUserAddressSOAP(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
+            return base.Channel.StoreUserAddressSOAP(userId, country, province, city, streetUnit, name, surname, cellPhone, email);
+        }
+        
+        public System.Threading.Tasks.Task<int> StoreUserAddressSOAPAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
+            return base.Channel.StoreUserAddressSOAPAsync(userId, country, province, city, streetUnit, name, surname, cellPhone, email);
+        }
+        
         public Front_end.ServiceReference.User FetchActiveUserSOAP(string id) {
             return base.Channel.FetchActiveUserSOAP(id);
         }
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.User> FetchActiveUserSOAPAsync(string id) {
             return base.Channel.FetchActiveUserSOAPAsync(id);
+        }
+        
+        public Front_end.ServiceReference.Component[] FetchSingleUserBuildSOAP(string user_id) {
+            return base.Channel.FetchSingleUserBuildSOAP(user_id);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleUserBuildSOAPAsync(string user_id) {
+            return base.Channel.FetchSingleUserBuildSOAPAsync(user_id);
         }
         
         public Front_end.ServiceReference.User[] FetchAllUsersSOAP() {
@@ -900,6 +1413,46 @@ namespace Front_end.ServiceReference {
         public System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsSOAPAsync(string user_id) {
             return base.Channel.FetchAllUserBuildsSOAPAsync(user_id);
         }
+        
+        public Front_end.ServiceReference.DeliveryAddress FetchUserAddressSOAP(string userId) {
+            return base.Channel.FetchUserAddressSOAP(userId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.DeliveryAddress> FetchUserAddressSOAPAsync(string userId) {
+            return base.Channel.FetchUserAddressSOAPAsync(userId);
+        }
+        
+        public Front_end.ServiceReference.OrderClass FetchOrderSOAP(string userId, string orderId, string cardNumber) {
+            return base.Channel.FetchOrderSOAP(userId, orderId, cardNumber);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderSOAPAsync(string userId, string orderId, string cardNumber) {
+            return base.Channel.FetchOrderSOAPAsync(userId, orderId, cardNumber);
+        }
+        
+        public int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
+            return base.Channel.CheckoutOrderSOAP(userId, orderId, cardId, paymentId, userAddressId, totalPrice, totalItems, paymentMade, orderStatus, listOfCartItemId);
+        }
+        
+        public System.Threading.Tasks.Task<int> CheckoutOrderSOAPAsync(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
+            return base.Channel.CheckoutOrderSOAPAsync(userId, orderId, cardId, paymentId, userAddressId, totalPrice, totalItems, paymentMade, orderStatus, listOfCartItemId);
+        }
+        
+        public int SaveCartSOAP(string userId, string buildId, string totalPrice, string discountSaved) {
+            return base.Channel.SaveCartSOAP(userId, buildId, totalPrice, discountSaved);
+        }
+        
+        public System.Threading.Tasks.Task<int> SaveCartSOAPAsync(string userId, string buildId, string totalPrice, string discountSaved) {
+            return base.Channel.SaveCartSOAPAsync(userId, buildId, totalPrice, discountSaved);
+        }
+        
+        public int SaveCartItemsSOAP(string componentId, string cartId, string quantity) {
+            return base.Channel.SaveCartItemsSOAP(componentId, cartId, quantity);
+        }
+        
+        public System.Threading.Tasks.Task<int> SaveCartItemsSOAPAsync(string componentId, string cartId, string quantity) {
+            return base.Channel.SaveCartItemsSOAPAsync(componentId, cartId, quantity);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -936,6 +1489,18 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/SendMail", ReplyAction="http://tempuri.org/IServiceREST/SendMailResponse")]
         System.Threading.Tasks.Task<int> SendMailAsync(string receiverEmail, string subject, string body);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CheckoutOrder", ReplyAction="http://tempuri.org/IServiceREST/CheckoutOrderResponse")]
+        int CheckoutOrder(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CheckoutOrder", ReplyAction="http://tempuri.org/IServiceREST/CheckoutOrderResponse")]
+        System.Threading.Tasks.Task<int> CheckoutOrderAsync(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/StoreUserAddress", ReplyAction="http://tempuri.org/IServiceREST/StoreUserAddressResponse")]
+        int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/StoreUserAddress", ReplyAction="http://tempuri.org/IServiceREST/StoreUserAddressResponse")]
+        System.Threading.Tasks.Task<int> StoreUserAddressAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateBuild", ReplyAction="http://tempuri.org/IServiceREST/CreateBuildResponse")]
         int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
         
@@ -953,6 +1518,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchComponent", ReplyAction="http://tempuri.org/IServiceREST/FetchComponentResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Component> FetchComponentAsync(string component_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchSingleUserBuild", ReplyAction="http://tempuri.org/IServiceREST/FetchSingleUserBuildResponse")]
+        Front_end.ServiceReference.Component[] FetchSingleUserBuild(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchSingleUserBuild", ReplyAction="http://tempuri.org/IServiceREST/FetchSingleUserBuildResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleUserBuildAsync(string user_id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchRandomComponents", ReplyAction="http://tempuri.org/IServiceREST/FetchRandomComponentsResponse")]
         Front_end.ServiceReference.Component[] FetchRandomComponents(string size);
@@ -983,6 +1554,18 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserBuilds", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserBuildsResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsAsync(string user_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchUserAddress", ReplyAction="http://tempuri.org/IServiceREST/FetchUserAddressResponse")]
+        Front_end.ServiceReference.DeliveryAddress FetchUserAddress(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchUserAddress", ReplyAction="http://tempuri.org/IServiceREST/FetchUserAddressResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.DeliveryAddress> FetchUserAddressAsync(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchOrder", ReplyAction="http://tempuri.org/IServiceREST/FetchOrderResponse")]
+        Front_end.ServiceReference.OrderClass FetchOrder(string userId, string orderId, string cardNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchOrder", ReplyAction="http://tempuri.org/IServiceREST/FetchOrderResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderAsync(string userId, string orderId, string cardNumber);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1052,6 +1635,22 @@ namespace Front_end.ServiceReference {
             return base.Channel.SendMailAsync(receiverEmail, subject, body);
         }
         
+        public int CheckoutOrder(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
+            return base.Channel.CheckoutOrder(userId, orderId, cardId, paymentId, userAddressId, totalPrice, totalItems, paymentMade, orderStatus, listOfCartItemId);
+        }
+        
+        public System.Threading.Tasks.Task<int> CheckoutOrderAsync(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
+            return base.Channel.CheckoutOrderAsync(userId, orderId, cardId, paymentId, userAddressId, totalPrice, totalItems, paymentMade, orderStatus, listOfCartItemId);
+        }
+        
+        public int StoreUserAddress(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
+            return base.Channel.StoreUserAddress(userId, country, province, city, streetUnit, name, surname, cellPhone, email);
+        }
+        
+        public System.Threading.Tasks.Task<int> StoreUserAddressAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
+            return base.Channel.StoreUserAddressAsync(userId, country, province, city, streetUnit, name, surname, cellPhone, email);
+        }
+        
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
             return base.Channel.CreateBuild(user_id, desktop_id, cpu_id, storage_id, graphics_id, ram_id, compatibilityStatus, totalPrice);
         }
@@ -1074,6 +1673,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Component> FetchComponentAsync(string component_id) {
             return base.Channel.FetchComponentAsync(component_id);
+        }
+        
+        public Front_end.ServiceReference.Component[] FetchSingleUserBuild(string user_id) {
+            return base.Channel.FetchSingleUserBuild(user_id);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleUserBuildAsync(string user_id) {
+            return base.Channel.FetchSingleUserBuildAsync(user_id);
         }
         
         public Front_end.ServiceReference.Component[] FetchRandomComponents(string size) {
@@ -1114,6 +1721,22 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.BuildClass[]> FetchAllUserBuildsAsync(string user_id) {
             return base.Channel.FetchAllUserBuildsAsync(user_id);
+        }
+        
+        public Front_end.ServiceReference.DeliveryAddress FetchUserAddress(string userId) {
+            return base.Channel.FetchUserAddress(userId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.DeliveryAddress> FetchUserAddressAsync(string userId) {
+            return base.Channel.FetchUserAddressAsync(userId);
+        }
+        
+        public Front_end.ServiceReference.OrderClass FetchOrder(string userId, string orderId, string cardNumber) {
+            return base.Channel.FetchOrder(userId, orderId, cardNumber);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderAsync(string userId, string orderId, string cardNumber) {
+            return base.Channel.FetchOrderAsync(userId, orderId, cardNumber);
         }
     }
 }

@@ -382,6 +382,43 @@ namespace WCF_Service_Server_
 
         }
 
+
+        public List<Component> FetchSingleUserBuild(string user_id)
+        {
+
+            var buildCompList = new List<Component>();
+            int Id = Convert.ToInt32(user_id);
+            var activeBuild = (from u in db.Builds
+                               where u.user_id == Id
+                               select u).FirstOrDefault();
+
+            if (activeBuild != null)
+            {
+                dynamic buildComp = (from u in db.Components
+                                     where u.Id == activeBuild.storage_id ||
+                                           u.Id == activeBuild.graphics_id ||
+                                           u.Id == activeBuild.cpu_id ||
+                                           u.Id == activeBuild.ram_id ||
+                                           u.Id == activeBuild.baseBuild_id
+                                     select u);
+                foreach (dynamic comp in buildComp)
+                {
+
+                    buildCompList.Add(comp);
+                }
+
+                buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
+
+                return buildCompList;
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+
         public List<BuildClass> FetchAllUserBuilds(string user_id)
         {
 
@@ -472,7 +509,7 @@ namespace WCF_Service_Server_
 
         public int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
                                  string userAddressId, string totalPrice, string totalItems, string paymentMade,
-                                 string orderStatus, ArrayList listOfCartItemId)
+                                 string orderStatus, List<int> listOfCartItemId)
         {
 
 
@@ -690,5 +727,115 @@ namespace WCF_Service_Server_
 
 
         }
+
+        public OrderClass FetchOrder(string userId, string orderId, string cardNumber)
+        {
+            bool running = true;
+            OrderClass objOrder = new OrderClass();
+            int uId = Convert.ToInt32(userId);
+            int oId = Convert.ToInt32(orderId);
+            var activeOrder = (from u in db.Orders
+                               where u.Id == oId && u.userId == uId
+                               select u).FirstOrDefault();
+
+            if (activeOrder != null)
+            {
+                objOrder.OrderId = activeOrder.Id;
+                objOrder.CardNumber = Convert.ToInt32(cardNumber);
+                objOrder.OrderDate = activeOrder.dateCreated;
+                objOrder.OrderStatus = "Accepted";
+                objOrder.PaymentMade = activeOrder.paymentMade;
+
+                //get address
+                var address = (from u in db.DeliveryAddresses
+                               where u.user_id == uId
+                               select u).FirstOrDefault();
+                if (address != null)
+                {
+                    objOrder.DeliveryAddress = address;
+
+
+                }
+                else
+                {
+                    running = false;
+                }
+
+
+
+                //get user
+                var userObj = (from u in db.Users
+                               where u.Id == uId
+                               select u).FirstOrDefault();
+                if (userObj != null)
+                {
+                    objOrder.User = userObj;
+                }
+                else
+                {
+                    running = false;
+                }
+
+
+                // get cart
+                var cartObj = (from u in db.Carts
+                               where u.Id == activeOrder.cartId
+                               select u).FirstOrDefault();
+                if (cartObj != null)
+                {
+                    
+                    //get cart items
+                    dynamic itemsList = (from u in db.CartItems
+                                         where u.cart_id == activeOrder.cartId
+                                         select u);
+
+                    if (itemsList != null)
+                    {
+
+                        //make list of items
+                        
+                       objOrder.ListOfCartObj = new List<CartItem>();
+                        foreach (CartItem item in itemsList)
+                        {
+
+                            objOrder.ListOfCartObj.Add(item);
+                        }
+                        objOrder.TotalItems = objOrder.ListOfCartObj.Count();
+                        objOrder.TotalPrice = Convert.ToInt32(cartObj.totalPrice);
+
+
+                    }
+                    else
+                    {
+                        running = false;
+                    }
+
+
+                }
+                else
+                {
+                    running = false;
+                }
+
+
+            }
+            else
+            {
+                running = false;
+                
+            }
+
+
+                //return 
+                if (running == true)
+                {
+                    return objOrder;
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+        }
     }
-}

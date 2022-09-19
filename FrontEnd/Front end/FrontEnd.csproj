@@ -298,6 +298,7 @@
     <Content Include="bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
     <Content Include="BuildComputer.aspx" />
     <Content Include="Cart.aspx" />
+    <Content Include="ConfirmOrder.aspx" />
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Component.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -308,6 +309,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.BuildClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.DeliveryAddress.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.OrderClass.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\ServiceReference\Service.disco" />
@@ -460,10 +467,10 @@
     <Content Include="Content\images\products\ui\350\storageBG-350x430.jpg" />
     <Content Include="Content\images\techmate_logo.png" />
     <Content Include="Logout.aspx" />
+    <Content Include="ProofOfPurchase.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="PurchaseProof.aspx" />
     <Content Include="Scripts\CodeMirror\addon\comment\comment.js" />
     <Content Include="Scripts\CodeMirror\addon\comment\continuecomment.js" />
     <Content Include="Scripts\CodeMirror\addon\dialog\dialog.css" />
@@ -870,6 +877,9 @@
     <Content Include="Scripts\CodeMirror\theme\xq-light.css" />
     <Content Include="Scripts\CodeMirror\theme\yeti.css" />
     <Content Include="Scripts\CodeMirror\theme\zenburn.css" />
+    <None Include="Connected Services\ServiceReference\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -1037,6 +1047,13 @@
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmOrder.aspx.cs">
+      <DependentUpon>ConfirmOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmOrder.aspx.designer.cs">
+      <DependentUpon>ConfirmOrder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1073,14 +1090,14 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PurchaseProof.aspx.cs">
-      <DependentUpon>PurchaseProof.aspx</DependentUpon>
+    <Compile Include="ProofOfPurchase.aspx.cs">
+      <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PurchaseProof.aspx.designer.cs">
-      <DependentUpon>PurchaseProof.aspx</DependentUpon>
+    <Compile Include="ProofOfPurchase.aspx.designer.cs">
+      <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectComponent.aspx.cs">
       <DependentUpon>SelectComponent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

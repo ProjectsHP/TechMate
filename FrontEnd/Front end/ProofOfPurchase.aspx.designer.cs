@@ -11,25 +11,25 @@ namespace Front_end
 {
 
 
-    public partial class Cart
+    public partial class ProofOfPurchase
     {
 
         /// <summary>
-        /// cartBuild control.
+        /// orderNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cartBuild;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl orderNumber;
 
         /// <summary>
-        /// btnCheckout control.
+        /// billedTo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCheckout;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl billedTo;
     }
 }

@@ -9,41 +9,42 @@ namespace WCF_Service_Server_
     public class OrderClass
     {
         int orderId;
-        int cardId;
-        int paymentId;
-        int userAddressId;
-        int userId;
+        int cardNumber;
+        string orderDate;
         int totalPrice;
         int totalItems;
         string paymentMade;
         string orderStatus;
-        ArrayList listOfCartItemId;
+        DeliveryAddress deliveryAddress;
+        User user;
+        List<CartItem> listOfCartObj;
 
+      
         public OrderClass() { }
 
-        public OrderClass(int orderId, int cardId, int paymentId, int userAddressId, int userId, int totalPrice, int totalItems, string paymentMade, string orderStatus, ArrayList listOfCartItemId)
+        public OrderClass(int orderId, int cardNumber, string orderDate, int totalPrice, int totalItems, string paymentMade, string orderStatus, DeliveryAddress deliveryAddress, User user, List<CartItem> listOfCartObj)
         {
             this.OrderId = orderId;
-            this.CardId = cardId;
-            this.PaymentId = paymentId;
-            this.UserAddressId = userAddressId;
-            this.UserId = userId;
+            this.CardNumber = cardNumber;
+            this.OrderDate = orderDate;
             this.TotalPrice = totalPrice;
             this.TotalItems = totalItems;
-            this.PaymentMade = paymentMade ?? throw new ArgumentNullException(nameof(paymentMade));
-            this.OrderStatus = orderStatus ?? throw new ArgumentNullException(nameof(orderStatus));
-            this.ListOfCartItemId = listOfCartItemId ?? throw new ArgumentNullException(nameof(listOfCartItemId));
+            this.PaymentMade = paymentMade;
+            this.OrderStatus = orderStatus;
+            this.DeliveryAddress = deliveryAddress;
+            this.User = user;
+            this.ListOfCartObj = listOfCartObj;
         }
 
         public int OrderId { get => orderId; set => orderId = value; }
-        public int CardId { get => cardId; set => cardId = value; }
-        public int PaymentId { get => paymentId; set => paymentId = value; }
-        public int UserAddressId { get => userAddressId; set => userAddressId = value; }
-        public int UserId { get => userId; set => userId = value; }
+        public int CardNumber { get => cardNumber; set => cardNumber = value; }
+        public string OrderDate { get => orderDate; set => orderDate = value; }
         public int TotalPrice { get => totalPrice; set => totalPrice = value; }
         public int TotalItems { get => totalItems; set => totalItems = value; }
         public string PaymentMade { get => paymentMade; set => paymentMade = value; }
         public string OrderStatus { get => orderStatus; set => orderStatus = value; }
-        public ArrayList ListOfCartItemId { get => listOfCartItemId; set => listOfCartItemId = value; }
+        public DeliveryAddress DeliveryAddress { get => deliveryAddress; set => deliveryAddress = value; }
+        public User User { get => user; set => user = value; }
+        public List<CartItem> ListOfCartObj { get => listOfCartObj; set => listOfCartObj = value; }
     }
 }
