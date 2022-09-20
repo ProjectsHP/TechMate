@@ -317,6 +317,9 @@
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.OrderClass.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Order.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiceReference\Service.disco" />
     <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
@@ -375,83 +378,83 @@
     <Content Include="Content\images\ConnecTech-02.png" />
     <Content Include="Content\images\ConnecTech.jpg" />
     <Content Include="Content\images\logoTM.jpg" />
-    <Content Include="Content\images\products\components\C1.jpg" />
-    <Content Include="Content\images\products\components\C2.jpg" />
-    <Content Include="Content\images\products\components\C3.jpg" />
-    <Content Include="Content\images\products\components\compBG-350x430.jpg" />
+    <Content Include="Content\images\products\components\c1.jpg" />
+    <Content Include="Content\images\products\components\c2.jpg" />
+    <Content Include="Content\images\products\components\c3.jpg" />
+    <Content Include="Content\images\products\components\compbg.jpg" />
     <Content Include="Content\images\products\components\component1.jpg" />
-    <Content Include="Content\images\products\components\cpuBG-350x430.jpg" />
-    <Content Include="Content\images\products\components\D1.jpg" />
-    <Content Include="Content\images\products\components\D10.jpg" />
-    <Content Include="Content\images\products\components\D11.jpg" />
-    <Content Include="Content\images\products\components\D12.jpg" />
-    <Content Include="Content\images\products\components\D13.jpg" />
-    <Content Include="Content\images\products\components\D14.jpg" />
-    <Content Include="Content\images\products\components\D2.jpg" />
-    <Content Include="Content\images\products\components\D3.jpg" />
-    <Content Include="Content\images\products\components\D4.jpg" />
-    <Content Include="Content\images\products\components\D5.jpg" />
-    <Content Include="Content\images\products\components\D6.jpg" />
-    <Content Include="Content\images\products\components\D7.jpg" />
-    <Content Include="Content\images\products\components\D8.jpg" />
-    <Content Include="Content\images\products\components\D9.jpg" />
-    <Content Include="Content\images\products\components\G1.jpg" />
-    <Content Include="Content\images\products\components\G2.jpg" />
-    <Content Include="Content\images\products\components\G3.jpg" />
-    <Content Include="Content\images\products\components\G4.jpg" />
-    <Content Include="Content\images\products\components\G5.jpg" />
-    <Content Include="Content\images\products\components\G6.jpg" />
-    <Content Include="Content\images\products\components\G7.jpg" />
-    <Content Include="Content\images\products\components\G8.jpg" />
-    <Content Include="Content\images\products\components\G9.jpg" />
-    <Content Include="Content\images\products\components\graphicsBG-350x430.jpg" />
-    <Content Include="Content\images\products\components\L1.jpg" />
-    <Content Include="Content\images\products\components\L10.jpg" />
-    <Content Include="Content\images\products\components\L11.jpg" />
-    <Content Include="Content\images\products\components\L12.jpg" />
-    <Content Include="Content\images\products\components\L13.jpg" />
-    <Content Include="Content\images\products\components\L14.jpg" />
-    <Content Include="Content\images\products\components\L15.jpg" />
-    <Content Include="Content\images\products\components\L16.jpg" />
-    <Content Include="Content\images\products\components\L17.jpg" />
-    <Content Include="Content\images\products\components\L18.jpg" />
-    <Content Include="Content\images\products\components\L19.jpg" />
-    <Content Include="Content\images\products\components\L2.jpg" />
-    <Content Include="Content\images\products\components\L20.jpg" />
-    <Content Include="Content\images\products\components\L21.jpg" />
-    <Content Include="Content\images\products\components\L22.jpg" />
-    <Content Include="Content\images\products\components\L23.jpg" />
-    <Content Include="Content\images\products\components\L24.jpg" />
-    <Content Include="Content\images\products\components\L25.jpg" />
-    <Content Include="Content\images\products\components\L26.jpg" />
-    <Content Include="Content\images\products\components\L27.jpg" />
-    <Content Include="Content\images\products\components\L28.jpg" />
-    <Content Include="Content\images\products\components\L29.jpg" />
-    <Content Include="Content\images\products\components\L3.jpg" />
-    <Content Include="Content\images\products\components\L30.jpg" />
-    <Content Include="Content\images\products\components\L4.jpg" />
-    <Content Include="Content\images\products\components\L5.jpg" />
-    <Content Include="Content\images\products\components\L6.jpg" />
-    <Content Include="Content\images\products\components\L7.jpg" />
-    <Content Include="Content\images\products\components\L8.jpg" />
-    <Content Include="Content\images\products\components\L9.jpg" />
-    <Content Include="Content\images\products\components\R1.jpg" />
-    <Content Include="Content\images\products\components\R2.jpg" />
-    <Content Include="Content\images\products\components\R3.jpg" />
-    <Content Include="Content\images\products\components\R4.jpg" />
-    <Content Include="Content\images\products\components\R5.jpg" />
-    <Content Include="Content\images\products\components\R6.jpg" />
-    <Content Include="Content\images\products\components\R7.jpg" />
-    <Content Include="Content\images\products\components\R8.jpg" />
-    <Content Include="Content\images\products\components\ramBG-350X430.jpg" />
-    <Content Include="Content\images\products\components\S1.jpg" />
-    <Content Include="Content\images\products\components\S2.jpg" />
-    <Content Include="Content\images\products\components\S3.jpg" />
-    <Content Include="Content\images\products\components\S4.jpg" />
-    <Content Include="Content\images\products\components\S5.jpg" />
-    <Content Include="Content\images\products\components\S6.jpg" />
-    <Content Include="Content\images\products\components\S7.jpg" />
-    <Content Include="Content\images\products\components\storageBG-350x430.jpg" />
+    <Content Include="Content\images\products\components\cpubg.jpg" />
+    <Content Include="Content\images\products\components\d1.jpg" />
+    <Content Include="Content\images\products\components\d10.jpg" />
+    <Content Include="Content\images\products\components\d11.jpg" />
+    <Content Include="Content\images\products\components\d12.jpg" />
+    <Content Include="Content\images\products\components\d13.jpg" />
+    <Content Include="Content\images\products\components\d14.jpg" />
+    <Content Include="Content\images\products\components\d2.jpg" />
+    <Content Include="Content\images\products\components\d3.jpg" />
+    <Content Include="Content\images\products\components\d4.jpg" />
+    <Content Include="Content\images\products\components\d5.jpg" />
+    <Content Include="Content\images\products\components\d6.jpg" />
+    <Content Include="Content\images\products\components\d7.jpg" />
+    <Content Include="Content\images\products\components\d8.jpg" />
+    <Content Include="Content\images\products\components\d9.jpg" />
+    <Content Include="Content\images\products\components\g1.jpg" />
+    <Content Include="Content\images\products\components\g2.jpg" />
+    <Content Include="Content\images\products\components\g3.jpg" />
+    <Content Include="Content\images\products\components\g4.jpg" />
+    <Content Include="Content\images\products\components\g5.jpg" />
+    <Content Include="Content\images\products\components\g6.jpg" />
+    <Content Include="Content\images\products\components\g7.jpg" />
+    <Content Include="Content\images\products\components\g8.jpg" />
+    <Content Include="Content\images\products\components\g9.jpg" />
+    <Content Include="Content\images\products\components\graphicsbg.jpg" />
+    <Content Include="Content\images\products\components\l1.jpg" />
+    <Content Include="Content\images\products\components\l10.jpg" />
+    <Content Include="Content\images\products\components\l11.jpg" />
+    <Content Include="Content\images\products\components\l12.jpg" />
+    <Content Include="Content\images\products\components\l13.jpg" />
+    <Content Include="Content\images\products\components\l14.jpg" />
+    <Content Include="Content\images\products\components\l15.jpg" />
+    <Content Include="Content\images\products\components\l16.jpg" />
+    <Content Include="Content\images\products\components\l17.jpg" />
+    <Content Include="Content\images\products\components\l18.jpg" />
+    <Content Include="Content\images\products\components\l19.jpg" />
+    <Content Include="Content\images\products\components\l2.jpg" />
+    <Content Include="Content\images\products\components\l20.jpg" />
+    <Content Include="Content\images\products\components\l21.jpg" />
+    <Content Include="Content\images\products\components\l22.jpg" />
+    <Content Include="Content\images\products\components\l23.jpg" />
+    <Content Include="Content\images\products\components\l24.jpg" />
+    <Content Include="Content\images\products\components\l25.jpg" />
+    <Content Include="Content\images\products\components\l26.jpg" />
+    <Content Include="Content\images\products\components\l27.jpg" />
+    <Content Include="Content\images\products\components\l28.jpg" />
+    <Content Include="Content\images\products\components\l29.jpg" />
+    <Content Include="Content\images\products\components\l3.jpg" />
+    <Content Include="Content\images\products\components\l30.jpg" />
+    <Content Include="Content\images\products\components\l4.jpg" />
+    <Content Include="Content\images\products\components\l5.jpg" />
+    <Content Include="Content\images\products\components\l6.jpg" />
+    <Content Include="Content\images\products\components\l7.jpg" />
+    <Content Include="Content\images\products\components\l8.jpg" />
+    <Content Include="Content\images\products\components\l9.jpg" />
+    <Content Include="Content\images\products\components\r1.jpg" />
+    <Content Include="Content\images\products\components\r2.jpg" />
+    <Content Include="Content\images\products\components\r3.jpg" />
+    <Content Include="Content\images\products\components\r4.jpg" />
+    <Content Include="Content\images\products\components\r5.jpg" />
+    <Content Include="Content\images\products\components\r6.jpg" />
+    <Content Include="Content\images\products\components\r7.jpg" />
+    <Content Include="Content\images\products\components\r8.jpg" />
+    <Content Include="Content\images\products\components\rambg.jpg" />
+    <Content Include="Content\images\products\components\s1.jpg" />
+    <Content Include="Content\images\products\components\s2.jpg" />
+    <Content Include="Content\images\products\components\s3.jpg" />
+    <Content Include="Content\images\products\components\s4.jpg" />
+    <Content Include="Content\images\products\components\s5.jpg" />
+    <Content Include="Content\images\products\components\s6.jpg" />
+    <Content Include="Content\images\products\components\s7.jpg" />
+    <Content Include="Content\images\products\components\storagebg.jpg" />
     <Content Include="Content\images\products\desktops\computerBG.jpg" />
     <Content Include="Content\images\products\desktops\desktop1.jpg" />
     <Content Include="Content\images\products\laptops\corei9.jpg" />
@@ -467,6 +470,7 @@
     <Content Include="Content\images\products\ui\350\storageBG-350x430.jpg" />
     <Content Include="Content\images\techmate_logo.png" />
     <Content Include="Logout.aspx" />
+    <Content Include="OrderHistory.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="Home.aspx" />
@@ -1090,6 +1094,13 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProofOfPurchase.aspx.cs">
       <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1117,6 +1128,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechMate_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
@@ -1196,6 +1212,17 @@
     </None>
     <Content Include="SQL_DBDataSet.xss">
       <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="TechMate_dbDataSet.xsc">
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TechMate_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechMate_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TechMate_dbDataSet.xss">
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

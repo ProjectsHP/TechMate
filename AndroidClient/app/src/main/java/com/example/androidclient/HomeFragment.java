@@ -85,7 +85,7 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
                         if (serverResponseCode.equals("200")) {
                             Log.e("RESPONSE CODE 200: ", serverResponseCode);
                             list.addAll(Arrays.asList(productObject));                  //NOTE THIS LINE. Might cause null response
-                             adapter = new ProductsAdapter(list, HomeFragment.this);
+                             adapter = new ProductsAdapter(list,getContext() ,HomeFragment.this);
                             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
                             binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
                             binding.recyclerPopularProducts.setAdapter(adapter);
@@ -99,7 +99,7 @@ public class HomeFragment extends Fragment implements IRecyclerViewClickHandler 
             });
 
         }else{
-            adapter = new ProductsAdapter(list, HomeFragment.this);
+            adapter = new ProductsAdapter(list,getContext(), HomeFragment.this);
             LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL,false);
             binding.recyclerPopularProducts.setLayoutManager(linearLayoutManager);
             binding.recyclerPopularProducts.setAdapter(adapter);

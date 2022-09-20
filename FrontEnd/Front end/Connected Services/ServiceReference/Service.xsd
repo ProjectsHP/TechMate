@@ -282,6 +282,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="FetchAllUserOrdersSOAP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchAllUserOrdersSOAPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchAllUserOrdersSOAPResult" nillable="true" type="q13:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="CheckoutOrderSOAP">
     <xs:complexType>
       <xs:sequence>
@@ -294,7 +308,7 @@
         <xs:element minOccurs="0" name="totalItems" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="paymentMade" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="orderStatus" nillable="true" type="xs:string" />
-        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listOfCartItemId" nillable="true" type="q13:ArrayOfint" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listOfCartItemId" nillable="true" type="q14:ArrayOfint" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -349,7 +363,7 @@
   <xs:element name="LoginResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="LoginResult" nillable="true" type="q14:UserClass" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="LoginResult" nillable="true" type="q15:UserClass" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -434,7 +448,7 @@
         <xs:element minOccurs="0" name="totalItems" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="paymentMade" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="orderStatus" nillable="true" type="xs:string" />
-        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listOfCartItemId" nillable="true" type="q15:ArrayOfint" />
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listOfCartItemId" nillable="true" type="q16:ArrayOfint" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -498,7 +512,7 @@
   <xs:element name="FetchActiveUserResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchActiveUserResult" nillable="true" type="q16:User" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchActiveUserResult" nillable="true" type="q17:User" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -512,7 +526,7 @@
   <xs:element name="FetchComponentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchComponentResult" nillable="true" type="q17:Component" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchComponentResult" nillable="true" type="q18:Component" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -526,7 +540,7 @@
   <xs:element name="FetchSingleUserBuildResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchSingleUserBuildResult" nillable="true" type="q18:ArrayOfComponent" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchSingleUserBuildResult" nillable="true" type="q19:ArrayOfComponent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -540,7 +554,7 @@
   <xs:element name="FetchRandomComponentsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchRandomComponentsResult" nillable="true" type="q19:ArrayOfComponent" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchRandomComponentsResult" nillable="true" type="q20:ArrayOfComponent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -555,7 +569,7 @@
   <xs:element name="FetchTopComponentsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchTopComponentsResult" nillable="true" type="q20:ArrayOfComponent" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchTopComponentsResult" nillable="true" type="q21:ArrayOfComponent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -569,7 +583,7 @@
   <xs:element name="FetchComponentsByCategoryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchComponentsByCategoryResult" nillable="true" type="q21:ArrayOfComponent" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchComponentsByCategoryResult" nillable="true" type="q22:ArrayOfComponent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -583,7 +597,7 @@
   <xs:element name="FetchBuildResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchBuildResult" nillable="true" type="q22:ArrayOfComponent" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchBuildResult" nillable="true" type="q23:ArrayOfComponent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -597,7 +611,7 @@
   <xs:element name="FetchAllUserBuildsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchAllUserBuildsResult" nillable="true" type="q23:ArrayOfBuildClass" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchAllUserBuildsResult" nillable="true" type="q24:ArrayOfBuildClass" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -611,7 +625,7 @@
   <xs:element name="FetchUserAddressResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchUserAddressResult" nillable="true" type="q24:DeliveryAddress" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchUserAddressResult" nillable="true" type="q25:DeliveryAddress" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -627,7 +641,21 @@
   <xs:element name="FetchOrderResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchOrderResult" nillable="true" type="q25:OrderClass" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchOrderResult" nillable="true" type="q26:OrderClass" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchAllUserOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FetchAllUserOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WCF_Service_Server_" minOccurs="0" name="FetchAllUserOrdersResult" nillable="true" type="q27:ArrayOfOrder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

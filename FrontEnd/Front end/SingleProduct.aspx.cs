@@ -42,6 +42,10 @@ namespace Front_end
                     dispComp += "<a href='Cart.aspx?pId=" + component.Id + "'>Add to cart</a>";
                     dispComp += "<a href='BuildComputer.aspx?" + component.category + "_build=" + component.Id + "'>Add to build</a>";
                     dispComp += "<a href='#'>Add to wishlist </a>";
+                    if (Session["Admin"] != null)
+                    {
+                        //must disp remove component
+                    }
                     dispComp += "</li>";
                     dispComp += "</ul>";
                     dispComp += "</div>";

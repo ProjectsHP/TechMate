@@ -360,7 +360,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
 
             getPreferenceScreen().getSharedPreferences()
                   .registerOnSharedPreferenceChangeListener(this);
-            updatePreference("userPref");
+          //  updatePreference("userPref");
             EditTextPreference txtNamePref = findPreference("pref_FirstName");
             String name = sharedPreferences.getString("pref_FirstName", "Not set");
             txtNamePref.setSummary(name);
@@ -420,6 +420,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
             //Code check what preference was changed and update the container n SharedPreference
             //updatePreference(key);
+          /*
             SharedPreferences.Editor editor = sharedPreferences.edit();
             Preference preference = findPreference(key);
             if (preference instanceof EditTextPreference) {
@@ -434,9 +435,9 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
                     editTextPreference.setSummary("Not set");
                 }
             }
-
+*/
         }
-
+/*
         private void updatePreference(String key) {
 
             SharedPreferences sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
@@ -454,6 +455,7 @@ public class UserProfile extends AppCompatActivity implements URLGenerator {
                 }
             }
         }
+        */
 
     }
 }

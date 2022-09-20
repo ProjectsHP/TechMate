@@ -83,7 +83,7 @@ public class DisplayBuildFragment extends Fragment implements ICartClickHandler 
         }
 
 
-       CartAdapter adapter = new CartAdapter(cartlist,this);
+       CartAdapter adapter = new CartAdapter(cartlist,getContext(),this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL,false);
         binding.recyclerShowBuild.setLayoutManager(linearLayoutManager);
         binding.recyclerShowBuild.setAdapter(adapter);

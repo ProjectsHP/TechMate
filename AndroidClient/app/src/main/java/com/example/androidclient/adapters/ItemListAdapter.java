@@ -1,8 +1,12 @@
 package com.example.androidclient.adapters;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,6 +22,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
     private final ArrayList<ProductObject> localDataSet;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
+    Context mContext;
 
 
     /**
@@ -27,6 +32,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
         private final TextView txtPrice;
+        private final ImageView imgProduct;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -45,6 +51,8 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
                     }
                 }
             });
+
+            imgProduct = (ImageView) view.findViewById(R.id.product_item_list_img);
             textView = (TextView) view.findViewById(R.id.build_item_name);
             txtPrice = (TextView) view.findViewById(R.id.build_item_price);
         }
@@ -55,13 +63,18 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
         public TextView getPriceView() {
             return txtPrice;
         }
+        public ImageView getImageView() {
+            return imgProduct;
+        }
+
 
     }
 
 
-    public ItemListAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
+    public ItemListAdapter(ArrayList<ProductObject> dataSet,Context context , IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
+        this.mContext=context;
     }
 
 
@@ -84,6 +97,11 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHo
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
+
+        String imageName = localDataSet.get(position).getImage();
+        String result = imageName.substring(0, imageName.indexOf("."));
+        int drawableId = mContext.getResources().getIdentifier(result, "drawable", mContext.getPackageName());
+        viewHolder.getImageView().setImageResource(drawableId);
         viewHolder.getTextView().setText( localDataSet.get(position).getName());
         viewHolder.getPriceView().setText("R" + localDataSet.get(position).getPrice());
     }

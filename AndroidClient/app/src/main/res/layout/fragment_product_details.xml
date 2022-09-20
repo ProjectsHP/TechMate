@@ -14,7 +14,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imgProductDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -34,7 +34,7 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imgProductDetails" />
 
     <TextView
         android:id="@+id/txtDetName"

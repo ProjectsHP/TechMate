@@ -38,6 +38,10 @@ public class MakeOrderActivity extends AppCompatActivity {
     private ViewPager orderViewPager;
     private String paymentMade;
     private OrderObject orderObject;
+    int totPrice;
+
+
+
     ArrayList<CartItemObject> itemListToOrder = new ArrayList<>();
 
     public ArrayList<CartItemObject> getItemListToOrder() {
@@ -46,6 +50,14 @@ public class MakeOrderActivity extends AppCompatActivity {
 
     public void setItemListToOrder(ArrayList<CartItemObject> itemListToOrder) {
         this.itemListToOrder = itemListToOrder;
+    }
+
+    public int getTotPrice() {
+        return totPrice;
+    }
+
+    public void setTotPrice(int totPrice) {
+        this.totPrice = totPrice;
     }
 
     public OrderObject getOrderObject() {
@@ -85,6 +97,7 @@ public class MakeOrderActivity extends AppCompatActivity {
         binding = ActivityMakeOrderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        totPrice=getIntent().getIntExtra("OrderSubTotal",0);
         setSupportActionBar(binding.orderToolbar);
         orderViewPager = (ViewPager) findViewById(R.id.orders_viewPager);
         binding.ordersTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);

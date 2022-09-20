@@ -84,13 +84,16 @@ namespace Front_end
                             list.Add(listOfItems[i].Id);
                         }
                         int[] myArray = list.ToArray();
-                        int response = SRef.CheckoutOrderSOAP(user_id, "-1", "-1", "-1", "-1", totalPrice.ToString(),
+                        int response = SRef.CheckoutOrderSOAP(user_id, "-5", "-5", "-5", "-5", totalPrice.ToString(),
                                                               listOfItems.Count.ToString(), "True","Pending",myArray);
 
                         if (response == 1)
                         {
+                          
+                            Session["ActiveContacts"]=txtOrderContact.Value;
+                            Session["ActiveEmail"]=txtOrderEmail.Value;
                             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thank you, your order has been placed.')", true);
-
+                            Response.Redirect("ProofOfPurchase.aspx");
 
                         }
                         else

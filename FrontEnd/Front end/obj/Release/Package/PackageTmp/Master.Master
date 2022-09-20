@@ -120,7 +120,7 @@
                     <div id="navbar" class="navbar navbar-default">
 
                         <div class="navbar-header col-md-2 col-sm-4 col-xs-4">
-                            <a class="navbar-brand trigger" href="index.html" title="LearnMate">
+                            <a class="navbar-brand trigger" href="Home.aspx" title="LearnMate">
                                 <img alt="Logo" src="Content/images/logo_bk.png"></a>
                         </div>
                         <div class="col-md-9 col-sm-7 col-xs-7 pull-xs-right">
@@ -174,6 +174,7 @@
 
                             <div class="main_menu_wrap">
                                 <ul class="main_menu">
+                                    <li><a id="A1" runat="server" class="trigger" href="Home.aspx">Home</a></li>
                                     <li><a class="trigger" href="#">Build PC <i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a href="BuildComputer.aspx">System Builder</a></li>
@@ -182,11 +183,11 @@
                                     </li>
                                     <li><a class="trigger" href="#">Products <i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="course_dtl.html">Laptops</a></li>
-                                            <li><a href="course_dtl.html">Desktops</a></li>
-                                            <li><a href="course_dtl.html">Cell Phones</a></li>
-                                            <li><a href="course_dtl.html">Accessories</a></li>
-                                            <li><a href="course_dtl.html">Individual Components</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Laptop">Laptops</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Desktop">Desktops</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Laptop">Cell Phones</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Laptop">Accessories</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Laptop">Individual Components</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="trigger" href="#">Blog <i class="fa fa-angle-down"></i></a>
@@ -203,6 +204,7 @@
                                             <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Usage</a></li>
                                         </ul>
                                     </li>
+                                    <li><a id="liOrderHistory" runat="server" class="trigger" href="OrderHistory.aspx">My orders</a></li>
                                     <li><a id="liContactUs" runat="server" class="trigger" href="contact.html">Contact us</a></li>
                                     <li><a id="liProfile" runat="server" class="trigger" href="UserProfile.aspx">Profile</a></li>
 
@@ -309,39 +311,39 @@
                                 <h3>Event Gallery</h3>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/D1.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/D1.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/D2.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/D2.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/D3.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/D3.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/L1.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/L1.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/L2.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/L2.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/L3.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/L3.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/G1.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/G1.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/G2.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/G2.jpg"></a>
                                 </div>
                                 <div class="col-md-4 col-xs-3">
                                     <a href="blog_right_sidebar.html">
-                                        <img alt="" style="width:91px;height:91px" src="Content/images/products/components/G3.jpg"></a>
+                                        <img alt="" style="width: 91px; height: 91px" src="Content/images/products/components/G3.jpg"></a>
                                 </div>
                             </div>
                         </div>

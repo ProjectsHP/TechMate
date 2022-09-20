@@ -133,7 +133,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
             binding.recyclerMyBuildsCart.setAdapter(buildAdapter);
         }
 
-        ((MainActivity) requireActivity()).cartAdapter = new CartAdapter(((MainActivity) requireActivity()).getPersistantCartlist(),this );
+        ((MainActivity) requireActivity()).cartAdapter = new CartAdapter(((MainActivity) requireActivity()).getPersistantCartlist(),getContext(),this );
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.VERTICAL, false);
         binding.recyclerCart.setLayoutManager(linearLayoutManager);
         binding.recyclerCart.setAdapter(((MainActivity) requireActivity()).cartAdapter);
@@ -157,6 +157,7 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
                 sharedPreferences = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
                 int userId = Integer.parseInt(sharedPreferences.getString("pref_Id","-1"));
                 if(sharedPreferences!=null){
+                    int subTotal=0;
                     localList = ((MainActivity) requireActivity()).getPersistantCartlist();
                     int size = ((MainActivity) requireActivity()).cartAdapter.getItemCount();
                     if(size!=0){
@@ -168,12 +169,17 @@ public class CartFragment extends Fragment implements IRecyclerViewClickHandler,
                             cartItem.setUserId(userId);
                             cartItem.setProductPrice(localList.get(i).getIntPrice());
                             listToOrder.add(cartItem);
+                            subTotal+= localList.get(i).getIntPrice();
 
                         }
 
+                        SharedPreferences userSharedPreferences = requireContext().getSharedPreferences("userOrderSessionPref", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = userSharedPreferences.edit();
+                        editor.putInt("orderSubTotal",subTotal);
 
                         Intent intent = new Intent(getActivity(), MakeOrderActivity.class);
                         intent.putParcelableArrayListExtra("listItemsToOrder",listToOrder);
+                        intent.putExtra("OrderSubTotal",subTotal);
                         startActivity(intent);
 
                        // NavHostFragment.findNavController(CartFragment.this)

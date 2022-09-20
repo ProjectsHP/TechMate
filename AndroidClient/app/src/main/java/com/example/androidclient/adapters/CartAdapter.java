@@ -1,9 +1,11 @@
 package com.example.androidclient.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +24,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
     private final ArrayList<ProductObject> localDataSet;
 //    private final IRecyclerViewClickHandler recyclerViewClickHandler;
     private final ICartClickHandler iclickHandler;
+    Context mContext;
 
 
 
@@ -30,7 +33,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         private final TextView txtName;
         private final TextView txtCategory;
         private final TextView txtPrice;
+        private final ImageView imgCart;
         EditText txtQuantity;
+
 
         public ViewHolder(View view, ICartClickHandler recyclerViewClickHandler) {
             super(view);
@@ -53,6 +58,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
             txtCategory = (TextView) view.findViewById(R.id.cartCategoryItem);
             txtPrice = (TextView) view.findViewById(R.id.cartPriceItem);
             txtQuantity = (EditText) view.findViewById(R.id.txtQuantityNum);
+            imgCart = (ImageView) view.findViewById(R.id.imgCart);
         }
 
         public EditText getTxtQuantity() {
@@ -70,11 +76,18 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         public TextView getCategoryView() {
             return txtCategory;
         }
+
+        public ImageView getCartImageView() {
+            return imgCart;
+        }
+
+
     }
 
-    public CartAdapter(ArrayList<ProductObject> dataSet,  ICartClickHandler clickHandler) {
+    public CartAdapter(ArrayList<ProductObject> dataSet,Context context , ICartClickHandler clickHandler) {
         this.iclickHandler=clickHandler;
         this.localDataSet = dataSet;
+        this.mContext = context;
     }
 
 
@@ -96,6 +109,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
+
+
+        String imageName = localDataSet.get(position).getImage();
+        String result = imageName.substring(0, imageName.indexOf("."));
+        int drawableId = mContext.getResources().getIdentifier(result, "drawable", mContext.getPackageName());
+        viewHolder.getCartImageView().setImageResource(drawableId);
         viewHolder.getNameView().setText((CharSequence) localDataSet.get(position).getName());
         viewHolder.getCategoryView().setText((CharSequence) localDataSet.get(position).getCategory());
         viewHolder.getPriceView().setText("R"+ localDataSet.get(position).getPrice());

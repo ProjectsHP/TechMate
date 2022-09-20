@@ -1,5 +1,7 @@
 package com.example.androidclient;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,6 +40,11 @@ public class ProductDetailsFragment extends Fragment {
             binding.txtDetCategory.setText(selectedProduct.getCategory());
             binding.txtDetDescription.setText(selectedProduct.getDescription());
             binding.txtDetPrice.setText("R"+selectedProduct.getPrice());
+
+            String productsImageURL = getResources().getString(R.string.productsDirectory);
+            String cleanUrl = productsImageURL+selectedProduct.getImage();
+            Bitmap bitmap = BitmapFactory.decodeFile(cleanUrl);
+            binding.imgProductDetails.setImageBitmap(bitmap);
 
         }
 

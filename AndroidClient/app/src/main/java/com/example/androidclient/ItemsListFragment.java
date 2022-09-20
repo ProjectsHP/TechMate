@@ -79,7 +79,7 @@ public class ItemsListFragment extends Fragment implements IRecyclerViewClickHan
                     if (serverResponseCode.equals("200")) {
                         Log.e("RESPONSE CODE 200: ", serverResponseCode);
                         list.addAll(Arrays.asList(productObject));                  //NOTE THIS LINE. Might cause null response
-                        ItemListAdapter adapter = new ItemListAdapter(list, ItemsListFragment.this);
+                        ItemListAdapter adapter = new ItemListAdapter(list,getContext(), ItemsListFragment.this);
                         binding.recyclerListItems.setLayoutManager(new GridLayoutManager(getContext(),2));
                         binding.recyclerListItems.setAdapter(adapter);
                     }

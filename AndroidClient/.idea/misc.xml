@@ -25,7 +25,7 @@
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_category.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_category_list.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_confirm_order.xml" value="0.22" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_confirm_order.xml" value="0.25" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_delivery_details.xml" value="0.33" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_display_build.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/fragment_home.xml" value="0.22" />
@@ -45,8 +45,8 @@
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_cart_item.xml" value="0.25" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_category_item.xml" value="0.33" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_icon_label_item.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_list_items.xml" value="0.48761609907120745" />
-        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_product_item.xml" value="0.33" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_list_items.xml" value="0.22" />
+        <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/layout/recycler_product_item.xml" value="0.22" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/admin_menu.xml" value="0.1573321932449765" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/categories_menu.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/phkub/Desktop/TechMate/AndroidClient/app/src/main/res/menu/clerk_menu.xml" value="0.1573321932449765" />

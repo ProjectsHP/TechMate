@@ -141,9 +141,18 @@ namespace Front_end
 
         protected void btnCheckout_Click(object sender, EventArgs e)
         {
-         
-            Session["ListOfItemsToCheckout"] = getUserBuild;
-            Response.Redirect("ConfirmOrder.aspx");
+
+            if (Session["ActiveBuild"] != null)
+            {
+                Session["ListOfItemsToCheckout"] = build;
+                Response.Redirect("ConfirmOrder.aspx");
+            }
+            else
+            {
+                Session["ListOfItemsToCheckout"] = getUserBuild;
+                Response.Redirect("ConfirmOrder.aspx");
+            }
+           
 
  
         }

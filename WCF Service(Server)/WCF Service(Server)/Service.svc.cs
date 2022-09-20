@@ -734,8 +734,9 @@ namespace WCF_Service_Server_
             OrderClass objOrder = new OrderClass();
             int uId = Convert.ToInt32(userId);
             int oId = Convert.ToInt32(orderId);
+           
             var activeOrder = (from u in db.Orders
-                               where u.Id == oId && u.userId == uId
+                               where u.userId == uId
                                select u).FirstOrDefault();
 
             if (activeOrder != null)
@@ -795,10 +796,14 @@ namespace WCF_Service_Server_
                         //make list of items
                         
                        objOrder.ListOfCartObj = new List<CartItem>();
+                       objOrder.ListOfComponents = new List<Component>();
+
                         foreach (CartItem item in itemsList)
                         {
 
+                            var comp = FetchComponent(Convert.ToString(item.component_id));
                             objOrder.ListOfCartObj.Add(item);
+                            objOrder.ListOfComponents.Add(comp);
                         }
                         objOrder.TotalItems = objOrder.ListOfCartObj.Count();
                         objOrder.TotalPrice = Convert.ToInt32(cartObj.totalPrice);
@@ -837,5 +842,31 @@ namespace WCF_Service_Server_
                 }
 
             }
+
+        public List<Order> FetchAllUserOrders(string userId)
+        {
+            int uId = Convert.ToInt32(userId);
+            var orderList = new List<Order>();
+           
+
+
+            dynamic allOrders = (from u in db.Orders
+                                where u.userId == uId
+                                select u);
+
+            if (allOrders != null)
+            {
+                foreach (dynamic comp in allOrders)
+                {
+                 
+                    orderList.Add(comp);
+                }
+                return orderList;
+            }
+            else
+            {
+                return null;
+            }
         }
+    }
     }

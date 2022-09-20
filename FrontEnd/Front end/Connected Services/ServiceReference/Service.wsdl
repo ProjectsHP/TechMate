@@ -116,6 +116,12 @@
   <wsdl:message name="IService_FetchOrderSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchOrderSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_FetchAllUserOrdersSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserOrdersSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchAllUserOrdersSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserOrdersSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IService_CheckoutOrderSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:CheckoutOrderSOAP" />
   </wsdl:message>
@@ -242,6 +248,12 @@
   <wsdl:message name="IServiceREST_FetchOrder_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchOrderResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchAllUserOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserOrders" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_FetchAllUserOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchAllUserOrdersResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="LoginSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/LoginSOAP" message="tns:IService_LoginSOAP_InputMessage" />
@@ -314,6 +326,10 @@
     <wsdl:operation name="FetchOrderSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchOrderSOAP" message="tns:IService_FetchOrderSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchOrderSOAPResponse" message="tns:IService_FetchOrderSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAllUserOrdersSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP" message="tns:IService_FetchAllUserOrdersSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse" message="tns:IService_FetchAllUserOrdersSOAP_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="CheckoutOrderSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/CheckoutOrderSOAP" message="tns:IService_CheckoutOrderSOAP_InputMessage" />
@@ -400,6 +416,10 @@
     <wsdl:operation name="FetchOrder">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchOrder" message="tns:IServiceREST_FetchOrder_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchOrderResponse" message="tns:IServiceREST_FetchOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAllUserOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserOrders" message="tns:IServiceREST_FetchAllUserOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FetchAllUserOrdersResponse" message="tns:IServiceREST_FetchAllUserOrders_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="SOAPEndPoint" type="tns:IService">
@@ -559,6 +579,15 @@
     </wsdl:operation>
     <wsdl:operation name="FetchOrderSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/FetchOrderSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAllUserOrdersSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchAllUserOrdersSOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

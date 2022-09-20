@@ -1,8 +1,12 @@
 package com.example.androidclient.adapters;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,6 +22,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
 
     private final ArrayList<ProductObject> localDataSet;
     private final IRecyclerViewClickHandler recyclerViewClickHandler;
+    Context mContext;
 
 
     /**
@@ -27,6 +32,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView txtName;
         private final TextView txtPrice;
+        private final ImageView imgProduct;
 
         public ViewHolder(View view, IRecyclerViewClickHandler recyclerViewClickHandler) {
             super(view);
@@ -47,6 +53,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
             });
             txtName = (TextView) view.findViewById(R.id.build_item_name);
             txtPrice = (TextView) view.findViewById(R.id.build_item_price);
+            imgProduct = (ImageView) view.findViewById(R.id.product_item_list_img);
 
         }
 
@@ -57,12 +64,17 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         public TextView getTextPriceView() {
             return txtPrice;
         }
+
+        public ImageView getImageView() {
+            return imgProduct;
+        }
     }
 
 
-    public ProductsAdapter(ArrayList<ProductObject> dataSet,  IRecyclerViewClickHandler clickHandler) {
+    public ProductsAdapter(ArrayList<ProductObject> dataSet,Context context , IRecyclerViewClickHandler clickHandler) {
         this.recyclerViewClickHandler=clickHandler;
         this.localDataSet = dataSet;
+        this.mContext=context;
     }
 
     // Create new views (invoked by the layout manager)
@@ -82,6 +94,15 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
 
+
+//        String productsImageURL = mContext.getResources().getString(R.string.productsDirectory);
+//        String cleanUrl = productsImageURL+localDataSet.get(position).getImage();
+//        Bitmap bitmap = BitmapFactory.decodeFile(cleanUrl);
+//        viewHolder.getImageView().setImageBitmap(bitmap);
+        String imageName = localDataSet.get(position).getImage();
+        String result = imageName.substring(0, imageName.indexOf("."));
+        int drawableId = mContext.getResources().getIdentifier(result, "drawable", mContext.getPackageName());
+        viewHolder.getImageView().setImageResource(drawableId);
         viewHolder.getTextNameView().setText((CharSequence) localDataSet.get(position).getName()+"...");
         viewHolder.getTextPriceView().setText("R"+(CharSequence) localDataSet.get(position).getPrice());
     }

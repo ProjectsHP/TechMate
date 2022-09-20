@@ -865,6 +865,9 @@ namespace Front_end.ServiceReference {
         private Front_end.ServiceReference.CartItem[] ListOfCartObjField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Front_end.ServiceReference.Component[] ListOfComponentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string OrderDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -930,6 +933,19 @@ namespace Front_end.ServiceReference {
                 if ((object.ReferenceEquals(this.ListOfCartObjField, value) != true)) {
                     this.ListOfCartObjField = value;
                     this.RaisePropertyChanged("ListOfCartObj");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Front_end.ServiceReference.Component[] ListOfComponents {
+            get {
+                return this.ListOfComponentsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ListOfComponentsField, value) != true)) {
+                    this.ListOfComponentsField = value;
+                    this.RaisePropertyChanged("ListOfComponents");
                 }
             }
         }
@@ -1128,6 +1144,163 @@ namespace Front_end.ServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Order", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class Order : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> cartIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string dateCreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string orderStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> paymentIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string paymentMadeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> userAddressIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> userIdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> cartId {
+            get {
+                return this.cartIdField;
+            }
+            set {
+                if ((this.cartIdField.Equals(value) != true)) {
+                    this.cartIdField = value;
+                    this.RaisePropertyChanged("cartId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string dateCreated {
+            get {
+                return this.dateCreatedField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.dateCreatedField, value) != true)) {
+                    this.dateCreatedField = value;
+                    this.RaisePropertyChanged("dateCreated");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string orderStatus {
+            get {
+                return this.orderStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.orderStatusField, value) != true)) {
+                    this.orderStatusField = value;
+                    this.RaisePropertyChanged("orderStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> paymentId {
+            get {
+                return this.paymentIdField;
+            }
+            set {
+                if ((this.paymentIdField.Equals(value) != true)) {
+                    this.paymentIdField = value;
+                    this.RaisePropertyChanged("paymentId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string paymentMade {
+            get {
+                return this.paymentMadeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.paymentMadeField, value) != true)) {
+                    this.paymentMadeField = value;
+                    this.RaisePropertyChanged("paymentMade");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> userAddressId {
+            get {
+                return this.userAddressIdField;
+            }
+            set {
+                if ((this.userAddressIdField.Equals(value) != true)) {
+                    this.userAddressIdField = value;
+                    this.RaisePropertyChanged("userAddressId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> userId {
+            get {
+                return this.userIdField;
+            }
+            set {
+                if ((this.userIdField.Equals(value) != true)) {
+                    this.userIdField = value;
+                    this.RaisePropertyChanged("userId");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IService")]
     public interface IService {
@@ -1239,6 +1412,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderSOAPAsync(string userId, string orderId, string cardNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse")]
+        Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersSOAPAsync(string userId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CheckoutOrderSOAP", ReplyAction="http://tempuri.org/IService/CheckoutOrderSOAPResponse")]
         int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
@@ -1430,6 +1609,14 @@ namespace Front_end.ServiceReference {
             return base.Channel.FetchOrderSOAPAsync(userId, orderId, cardNumber);
         }
         
+        public Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId) {
+            return base.Channel.FetchAllUserOrdersSOAP(userId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersSOAPAsync(string userId) {
+            return base.Channel.FetchAllUserOrdersSOAPAsync(userId);
+        }
+        
         public int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
             return base.Channel.CheckoutOrderSOAP(userId, orderId, cardId, paymentId, userAddressId, totalPrice, totalItems, paymentMade, orderStatus, listOfCartItemId);
         }
@@ -1566,6 +1753,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchOrder", ReplyAction="http://tempuri.org/IServiceREST/FetchOrderResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderAsync(string userId, string orderId, string cardNumber);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserOrders", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserOrdersResponse")]
+        Front_end.ServiceReference.Order[] FetchAllUserOrders(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserOrders", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserOrdersResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersAsync(string userId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1737,6 +1930,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderAsync(string userId, string orderId, string cardNumber) {
             return base.Channel.FetchOrderAsync(userId, orderId, cardNumber);
+        }
+        
+        public Front_end.ServiceReference.Order[] FetchAllUserOrders(string userId) {
+            return base.Channel.FetchAllUserOrders(userId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersAsync(string userId) {
+            return base.Channel.FetchAllUserOrdersAsync(userId);
         }
     }
 }

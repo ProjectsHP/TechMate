@@ -86,6 +86,10 @@ namespace WCF_Service_Server_
         OrderClass FetchOrder(string userId, string orderId, string cardNumber);
 
 
+        [OperationContract(Name = "FetchAllUserOrdersSOAP")]
+        List<Order> FetchAllUserOrders(string userId);
+
+
 
         [OperationContract(Name = "CheckoutOrderSOAP")]
         int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,

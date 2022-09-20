@@ -82,8 +82,18 @@ public class ConfirmOrderFragment extends Fragment implements URLGenerator {
 
         spOrderSession = requireContext().getSharedPreferences("userOrderSessionPref", Context.MODE_PRIVATE);
         spUser = requireContext().getSharedPreferences("userPref", Context.MODE_PRIVATE);
+        int total =  ((MakeOrderActivity) requireActivity()).getTotPrice();
 
         uiComponents = new UIComponents(getActivity());
+       String cardNum = spOrderSession.getString("cardNumber","0");
+        String last4 = cardNum.substring(cardNum.length() - 4);
+        binding.txtOrderCardNum.setText("****"+last4);
+        binding.txtOrderCardDate.setText(spOrderSession.getString("ExpireDate","01/23"));
+        binding.txtUserName.setText(spOrderSession.getString("userName",""));
+        binding.txtStreetN.setText(spOrderSession.getString("streetName",""));
+        binding.txtOrderSubTot.setText("R"+total);
+        binding.txtTot.setText("R"+(total+60));
+
 
         binding.btnSubmitOrder.setOnClickListener(new View.OnClickListener() {
             @Override

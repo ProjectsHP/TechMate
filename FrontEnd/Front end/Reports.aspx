@@ -39,7 +39,7 @@
                     </DataSources>
                 </localreport>
             </rsweb:ReportViewer>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SQL_DBConnectionStringReports %>" SelectCommand="SELECT [Id], [name], [surname], [email], [userType], [gender], [cellNo] FROM [User]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechMate_dbConnectionString %>" SelectCommand="SELECT [userId], [dateCreated], [Id] FROM [Order]"></asp:SqlDataSource>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="FrontEnd.SQL_DBDataSetTableAdapters.UserTableAdapter"></asp:ObjectDataSource>
        
     </form>

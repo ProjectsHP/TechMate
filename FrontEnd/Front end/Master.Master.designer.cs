@@ -60,6 +60,15 @@ namespace Front_end
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl liLogout;
 
         /// <summary>
+        /// A1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
+
+        /// <summary>
         /// liReports control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace Front_end
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor liReports;
+
+        /// <summary>
+        /// liOrderHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor liOrderHistory;
 
         /// <summary>
         /// liContactUs control.

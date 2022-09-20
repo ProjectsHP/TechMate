@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imgCart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -28,8 +28,8 @@
         android:layout_marginStart="16dp"
         android:text="Sumsung Galaxy A33 1e"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+        app:layout_constraintStart_toEndOf="@+id/imgCart"
+        app:layout_constraintTop_toTopOf="@+id/imgCart" />
 
     <TextView
         android:id="@+id/cartPriceItem"

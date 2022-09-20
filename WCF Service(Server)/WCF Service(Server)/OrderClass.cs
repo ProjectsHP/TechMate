@@ -18,11 +18,12 @@ namespace WCF_Service_Server_
         DeliveryAddress deliveryAddress;
         User user;
         List<CartItem> listOfCartObj;
+        List<Component> listOfComponents;
 
       
         public OrderClass() { }
 
-        public OrderClass(int orderId, int cardNumber, string orderDate, int totalPrice, int totalItems, string paymentMade, string orderStatus, DeliveryAddress deliveryAddress, User user, List<CartItem> listOfCartObj)
+        public OrderClass(int orderId, int cardNumber, string orderDate, int totalPrice, int totalItems, string paymentMade, string orderStatus, DeliveryAddress deliveryAddress, User user, List<CartItem> listOfCartObj, List<Component> listOfComponents)
         {
             this.OrderId = orderId;
             this.CardNumber = cardNumber;
@@ -34,6 +35,7 @@ namespace WCF_Service_Server_
             this.DeliveryAddress = deliveryAddress;
             this.User = user;
             this.ListOfCartObj = listOfCartObj;
+            this.ListOfComponents = listOfComponents;
         }
 
         public int OrderId { get => orderId; set => orderId = value; }
@@ -46,5 +48,6 @@ namespace WCF_Service_Server_
         public DeliveryAddress DeliveryAddress { get => deliveryAddress; set => deliveryAddress = value; }
         public User User { get => user; set => user = value; }
         public List<CartItem> ListOfCartObj { get => listOfCartObj; set => listOfCartObj = value; }
+        public List<Component> ListOfComponents { get => listOfComponents; set => listOfComponents = value; }
     }
 }

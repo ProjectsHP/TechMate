@@ -171,5 +171,14 @@ namespace WCF_Service_Server_
         OrderClass FetchOrder(string userId, string orderId, string cardNumber);
 
 
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchAllUserOrdersURI/{userId}",
+    RequestFormat = WebMessageFormat.Json,
+    ResponseFormat = WebMessageFormat.Json,
+    BodyStyle = WebMessageBodyStyle.Wrapped)]
+        List<Order> FetchAllUserOrders(string userId);
+
+
     }
 }
