@@ -131,6 +131,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddComponent.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="App_Code\SqlServerTypes\readme.htm" />
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -469,6 +470,7 @@
     <Content Include="Content\images\products\ui\350\ramBG-350X430.jpg" />
     <Content Include="Content\images\products\ui\350\storageBG-350x430.jpg" />
     <Content Include="Content\images\techmate_logo.png" />
+    <Content Include="EditComponent.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="OrderHistory.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
@@ -1028,6 +1030,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddComponent.aspx.cs">
+      <DependentUpon>AddComponent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddComponent.aspx.designer.cs">
+      <DependentUpon>AddComponent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1062,6 +1071,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="EditComponent.aspx.cs">
+      <DependentUpon>EditComponent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditComponent.aspx.designer.cs">
+      <DependentUpon>EditComponent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
