@@ -1335,6 +1335,18 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/EditComponentSOAP", ReplyAction="http://tempuri.org/IService/EditComponentSOAPResponse")]
         System.Threading.Tasks.Task<int> EditComponentSOAPAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FulfilOrderSOAP", ReplyAction="http://tempuri.org/IService/FulfilOrderSOAPResponse")]
+        int FulfilOrderSOAP(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FulfilOrderSOAP", ReplyAction="http://tempuri.org/IService/FulfilOrderSOAPResponse")]
+        System.Threading.Tasks.Task<int> FulfilOrderSOAPAsync(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RejectOrderSOAP", ReplyAction="http://tempuri.org/IService/RejectOrderSOAPResponse")]
+        int RejectOrderSOAP(string orderId, string reason);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RejectOrderSOAP", ReplyAction="http://tempuri.org/IService/RejectOrderSOAPResponse")]
+        System.Threading.Tasks.Task<int> RejectOrderSOAPAsync(string orderId, string reason);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteUserSOAP", ReplyAction="http://tempuri.org/IService/DeleteUserSOAPResponse")]
         int DeleteUserSOAP(string activeId);
         
@@ -1437,11 +1449,23 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.OrderClass> FetchOrderSOAPAsync(string userId, string orderId, string cardNumber);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderByIdSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderByIdSOAPResponse")]
+        Front_end.ServiceReference.Order FetchOrderByIdSOAP(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderByIdSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderByIdSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order> FetchOrderByIdSOAPAsync(string orderId);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse")]
         Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersSOAPAsync(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllOrdersSOAPResponse")]
+        Front_end.ServiceReference.Order[] FetchAllOrdersSOAP(string filter);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllOrdersSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllOrdersSOAPAsync(string filter);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CheckoutOrderSOAP", ReplyAction="http://tempuri.org/IService/CheckoutOrderSOAPResponse")]
         int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
@@ -1527,6 +1551,22 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> EditComponentSOAPAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
             return base.Channel.EditComponentSOAPAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public int FulfilOrderSOAP(string orderId) {
+            return base.Channel.FulfilOrderSOAP(orderId);
+        }
+        
+        public System.Threading.Tasks.Task<int> FulfilOrderSOAPAsync(string orderId) {
+            return base.Channel.FulfilOrderSOAPAsync(orderId);
+        }
+        
+        public int RejectOrderSOAP(string orderId, string reason) {
+            return base.Channel.RejectOrderSOAP(orderId, reason);
+        }
+        
+        public System.Threading.Tasks.Task<int> RejectOrderSOAPAsync(string orderId, string reason) {
+            return base.Channel.RejectOrderSOAPAsync(orderId, reason);
         }
         
         public int DeleteUserSOAP(string activeId) {
@@ -1665,12 +1705,28 @@ namespace Front_end.ServiceReference {
             return base.Channel.FetchOrderSOAPAsync(userId, orderId, cardNumber);
         }
         
+        public Front_end.ServiceReference.Order FetchOrderByIdSOAP(string orderId) {
+            return base.Channel.FetchOrderByIdSOAP(orderId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order> FetchOrderByIdSOAPAsync(string orderId) {
+            return base.Channel.FetchOrderByIdSOAPAsync(orderId);
+        }
+        
         public Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId) {
             return base.Channel.FetchAllUserOrdersSOAP(userId);
         }
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersSOAPAsync(string userId) {
             return base.Channel.FetchAllUserOrdersSOAPAsync(userId);
+        }
+        
+        public Front_end.ServiceReference.Order[] FetchAllOrdersSOAP(string filter) {
+            return base.Channel.FetchAllOrdersSOAP(filter);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllOrdersSOAPAsync(string filter) {
+            return base.Channel.FetchAllOrdersSOAPAsync(filter);
         }
         
         public int CheckoutOrderSOAP(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
@@ -1725,6 +1781,18 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/EditComponent", ReplyAction="http://tempuri.org/IServiceREST/EditComponentResponse")]
         System.Threading.Tasks.Task<int> EditComponentAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FulfilOrder", ReplyAction="http://tempuri.org/IServiceREST/FulfilOrderResponse")]
+        int FulfilOrder(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FulfilOrder", ReplyAction="http://tempuri.org/IServiceREST/FulfilOrderResponse")]
+        System.Threading.Tasks.Task<int> FulfilOrderAsync(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/RejectOrder", ReplyAction="http://tempuri.org/IServiceREST/RejectOrderResponse")]
+        int RejectOrder(string orderId, string reason);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/RejectOrder", ReplyAction="http://tempuri.org/IServiceREST/RejectOrderResponse")]
+        System.Threading.Tasks.Task<int> RejectOrderAsync(string orderId, string reason);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteUser", ReplyAction="http://tempuri.org/IServiceREST/DeleteUserResponse")]
         int DeleteUser(string activeId);
@@ -1839,6 +1907,18 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchSingleComponentByImage", ReplyAction="http://tempuri.org/IServiceREST/FetchSingleComponentByImageResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageAsync(string image);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllOrders", ReplyAction="http://tempuri.org/IServiceREST/FetchAllOrdersResponse")]
+        Front_end.ServiceReference.Order[] FetchAllOrders(string filter);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllOrders", ReplyAction="http://tempuri.org/IServiceREST/FetchAllOrdersResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllOrdersAsync(string filter);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchOrderById", ReplyAction="http://tempuri.org/IServiceREST/FetchOrderByIdResponse")]
+        Front_end.ServiceReference.Order FetchOrderById(string orderId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchOrderById", ReplyAction="http://tempuri.org/IServiceREST/FetchOrderByIdResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Order> FetchOrderByIdAsync(string orderId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1898,6 +1978,22 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> EditComponentAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
             return base.Channel.EditComponentAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public int FulfilOrder(string orderId) {
+            return base.Channel.FulfilOrder(orderId);
+        }
+        
+        public System.Threading.Tasks.Task<int> FulfilOrderAsync(string orderId) {
+            return base.Channel.FulfilOrderAsync(orderId);
+        }
+        
+        public int RejectOrder(string orderId, string reason) {
+            return base.Channel.RejectOrder(orderId, reason);
+        }
+        
+        public System.Threading.Tasks.Task<int> RejectOrderAsync(string orderId, string reason) {
+            return base.Channel.RejectOrderAsync(orderId, reason);
         }
         
         public int DeleteUser(string activeId) {
@@ -2050,6 +2146,22 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageAsync(string image) {
             return base.Channel.FetchSingleComponentByImageAsync(image);
+        }
+        
+        public Front_end.ServiceReference.Order[] FetchAllOrders(string filter) {
+            return base.Channel.FetchAllOrders(filter);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllOrdersAsync(string filter) {
+            return base.Channel.FetchAllOrdersAsync(filter);
+        }
+        
+        public Front_end.ServiceReference.Order FetchOrderById(string orderId) {
+            return base.Channel.FetchOrderById(orderId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Order> FetchOrderByIdAsync(string orderId) {
+            return base.Channel.FetchOrderByIdAsync(orderId);
         }
     }
 }

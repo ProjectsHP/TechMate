@@ -33,10 +33,10 @@ namespace Front_end
                         dispOrder += "<div class='product-price'>Build</div>";
                         dispOrder += "<div class='product-price'>"+o.dateCreated+"</div>";
                         dispOrder += "<div class='product-price'>"+loggedUser.name+" "+loggedUser.surname+"</div>";
-
                         dispOrder += "<div class='product-price'>R23000</div>";
                         dispOrder += "<div class='product-price'>5</div>";
                         dispOrder += "<div class='product-price'>Confirmed</div>";
+                        dispOrder += "</div>";
                         count++;
 
                     }

@@ -281,7 +281,98 @@ namespace WCF_Service_Server_
             }
         }
 
-       
+        public int FulfilOrder(string orderId)
+        {
+           
+            var activeOrder = FetchOrderById(orderId);
+            if(activeOrder != null)
+            {
+                string uId = Convert.ToString(activeOrder.userId);
+               var user= FetchActiveUser(uId);
+                if(user != null)
+                {
+                    activeOrder.orderStatus = "Approved";
+
+
+                    try
+                    {
+                        //edited successfully
+                        db.SubmitChanges();
+                        string mail = "Hello " + user.name +" "+user.surname+ " Thank you for your order, it has been reviewed and approved. It will soon leave the storehouse into shippment to your specified address. Your order number is #" + activeOrder.Id;
+                        SendMail("hlulankubayi@gmail.com", "Order approved", mail);
+                        return 1;
+                    }
+                    catch (IndexOutOfRangeException ex)
+                    {
+                        //error OutOfRangeException 
+                        ex.GetBaseException();
+                        return -1;
+                    }
+                }
+                else
+                {
+                    //user not found
+                    return -2;
+                }
+
+              
+
+
+            }
+            else
+            {
+                //Order not found
+                return 0;
+            }
+
+           
+        }
+
+        public int RejectOrder(string orderId, string reason)
+        {
+            var activeOrder = FetchOrderById(orderId);
+            if (activeOrder != null)
+            {
+                string uId = Convert.ToString(activeOrder.userId);
+                var user = FetchActiveUser(uId);
+                if (user != null)
+                {
+                    activeOrder.orderStatus = "Rejected";
+
+
+                    try
+                    {
+                        //edited successfully
+                        db.SubmitChanges();
+                        string mail = "Hello " + user.name + " " + user.surname + " Thank you for your order, Unfortunately your order has been rejected due to: " + reason;
+                        mail += " Your order Id is #" + activeOrder.Id;
+                        SendMail("hlulankubayi@gmail.com", "Order Rejected", mail);
+                        return 1;
+                    }
+                    catch (IndexOutOfRangeException ex)
+                    {
+                        //error OutOfRangeException 
+                        ex.GetBaseException();
+                        return -1;
+                    }
+                }
+                else
+                {
+                    //user not found
+                    return -2;
+                }
+
+
+
+
+            }
+            else
+            {
+                //Order not found
+                return 0;
+            }
+        }
+
         //******CREATE************* CREATE*************CREATE************* CREATE*************CREATE*******
 
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice)
@@ -1014,6 +1105,46 @@ namespace WCF_Service_Server_
             }
         }
 
-      
+        public List<Order> FetchAllOrders(string filter)
+        {
+        
+            var orderList = new List<Order>();
+
+            dynamic allOrders = (from u in db.Orders
+                                 select u);
+
+            if (allOrders != null)
+            {
+                foreach (dynamic comp in allOrders)
+                {
+
+                    orderList.Add(comp);
+                }
+                return orderList;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Order FetchOrderById(string orderId)
+        {
+            int oId = Convert.ToInt32(orderId);
+            var activeUser = (from u in db.Orders
+                              where u.Id == oId
+                              select u).FirstOrDefault();
+
+            if (activeUser != null)
+            {
+                return activeUser;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+       
     }
 }

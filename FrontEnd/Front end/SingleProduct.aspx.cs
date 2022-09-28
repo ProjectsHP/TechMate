@@ -41,15 +41,13 @@ namespace Front_end
                     dispComp += "<li>";
                     dispComp += "<a href='Cart.aspx?pId=" + component.Id + "'>Add to cart</a>";
                     dispComp += "<a href='BuildComputer.aspx?" + component.category + "_build=" + component.Id + "'>Add to build</a>";
-                    dispComp += "<a href='#'>Add to wishlist </a>";
-                    if (Session["Admin"] != null)
+                    if (Session["UserType"].ToString() =="Admin")
                     {
-                        //must disp remove component
+                        dispComp += "<a href='EditComponent.aspx?compId="+component.Id+"'>Update component </a>";
                     }
                     dispComp += "</li>";
                     dispComp += "</ul>";
                     dispComp += "</div>";
-
                     dispComp += "</div>";
                 }
 

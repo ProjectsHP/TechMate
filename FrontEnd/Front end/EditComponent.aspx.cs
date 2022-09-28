@@ -23,6 +23,27 @@ namespace Front_end
                 compDet.Visible = false;
             }
 
+            if (Request.QueryString["compId"] != null)
+            {
+                string id = Request.QueryString["compId"].ToString();
+                Session["ActiveComp"] = id;
+                duplicateFound = false;
+                duplicateSearch.Visible = false;
+                compDet.Visible = true;
+                var com = SRef.FetchComponentSOAP(id);
+                if (com != null)
+                {
+                    dispImg.Src = "Content/images/products/components/" + com.image;
+                    txtNameEDIT.Value = com.name;
+                    txtPriceEDIT.Value = com.price;
+                    txtTypeEDIT.Value = com.category;
+                    txtCompatibilityEDIT.Value = com.compatibility;
+                    txtDescription.Value = com.description;
+                    txtQuantityEDIT.Value = com.availability;
+                    compFound = true;
+                }
+            }
+
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)

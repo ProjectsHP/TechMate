@@ -61,15 +61,17 @@ namespace Front_end
                         Session["UserType"] = "Admin";
                         Response.Redirect("Admin.aspx");
                     break;
-                    case "Client":
-                        Session["UserType"] = "Client";
-                        Response.Redirect("Home.aspx");
+                    case "Clerk":
+                        Session["UserType"] = "Clerk";
+                        Response.Redirect("Clerk.aspx");
                     break;
-    
+                    case "Customer":
+                        Session["UserType"] = "Customer";
+                        break;
+
                 }
 
 
-                
                 Response.Redirect("Home.aspx");
 
             }
@@ -85,7 +87,9 @@ namespace Front_end
                    int reg = SRef.RegisterSOAP(txtName.Value, txtSurname.Value, txtContacts.Value, "", txtEmail.Value, txtPassword.Value, "Customer");
                    if (reg == 1)
                    {
-                       Response.Redirect("Home.aspx");
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Successfully registered, you may login')", true);
+                    txtLoginEmail.Focus();
+                 
                    }
                    else if (reg == 0)
                    {

@@ -32,6 +32,13 @@ namespace WCF_Service_Server_
         int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
 
 
+        [OperationContract(Name = "FulfilOrderSOAP")]
+        int FulfilOrder(string orderId);
+
+        [OperationContract(Name = "RejectOrderSOAP")]
+        int RejectOrder(string orderId, string reason);
+
+
         [OperationContract(Name = "DeleteUserSOAP")]
         int DeleteUser(string activeId);
 
@@ -83,7 +90,6 @@ namespace WCF_Service_Server_
         int CreateComponent(string name, string priceToDisp, string availability, string description,string image, string category, string compatibilityStatus);
 
 
-
         [OperationContract(Name = "CreateBuildSOAP")]
         int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
 
@@ -102,8 +108,17 @@ namespace WCF_Service_Server_
         OrderClass FetchOrder(string userId, string orderId, string cardNumber);
 
 
+        [OperationContract(Name = "FetchOrderByIdSOAP")]
+        Order FetchOrderById(string orderId);
+
+
+
         [OperationContract(Name = "FetchAllUserOrdersSOAP")]
         List<Order> FetchAllUserOrders(string userId);
+
+
+        [OperationContract(Name = "FetchAllOrdersSOAP")]
+        List<Order> FetchAllOrders(string filter);
 
 
 

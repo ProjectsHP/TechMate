@@ -300,6 +300,9 @@
     <Content Include="bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
     <Content Include="BuildComputer.aspx" />
     <Content Include="Cart.aspx" />
+    <Content Include="Clerk.aspx" />
+    <Content Include="ClerkManageOrders.aspx" />
+    <Content Include="ClerkViewOrders.aspx" />
     <Content Include="ConfirmOrder.aspx" />
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Component.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -1061,6 +1064,27 @@
     </Compile>
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clerk.aspx.cs">
+      <DependentUpon>Clerk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clerk.aspx.designer.cs">
+      <DependentUpon>Clerk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkManageOrders.aspx.cs">
+      <DependentUpon>ClerkManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClerkManageOrders.aspx.designer.cs">
+      <DependentUpon>ClerkManageOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClerkViewOrders.aspx.cs">
+      <DependentUpon>ClerkViewOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClerkViewOrders.aspx.designer.cs">
+      <DependentUpon>ClerkViewOrders.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConfirmOrder.aspx.cs">
       <DependentUpon>ConfirmOrder.aspx</DependentUpon>

@@ -46,6 +46,22 @@ namespace WCF_Service_Server_
 
 
         [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FulfilOrderURI/{orderId}",
+        RequestFormat = WebMessageFormat.Json,
+        ResponseFormat = WebMessageFormat.Json,
+        BodyStyle = WebMessageBodyStyle.Wrapped)]
+        int FulfilOrder(string orderId);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/RejectOrderURI/{orderId}/{reason}",
+        RequestFormat = WebMessageFormat.Json,
+        ResponseFormat = WebMessageFormat.Json,
+        BodyStyle = WebMessageBodyStyle.Wrapped)]
+        int RejectOrder(string orderId, string reason);
+
+
+        [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/DeleteUserURI/{activeId}",
           RequestFormat = WebMessageFormat.Json,
           ResponseFormat = WebMessageFormat.Json,
@@ -214,6 +230,21 @@ namespace WCF_Service_Server_
    BodyStyle = WebMessageBodyStyle.Wrapped)]
         List<Component> FetchSingleComponentByImage(string image);
 
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchAllOrdersURI/{filter}",
+ RequestFormat = WebMessageFormat.Json,
+ ResponseFormat = WebMessageFormat.Json,
+ BodyStyle = WebMessageBodyStyle.Wrapped)]
+        List<Order> FetchAllOrders(string filter);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/FetchOrderByIdURI/{orderId}",
+          RequestFormat = WebMessageFormat.Json,
+          ResponseFormat = WebMessageFormat.Json,
+          BodyStyle = WebMessageBodyStyle.Wrapped)]
+        Order FetchOrderById(string orderId);
 
     }
 }
