@@ -24,7 +24,7 @@
 
                                     <div id="features" class="features" style="margin-top: 158px">
                                         <div class="container">
-                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='Home.aspx';" style="cursor: pointer;">
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='AddComponent.aspx';" style="cursor: pointer;">
                                                 <div class="feature_block_wrap">
                                                     <div class="teacher" style="height: 200px">
                                                         <div class="feature_block">
@@ -37,7 +37,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='Home.aspx';" style="cursor: pointer;">
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='EditComponent.aspx';" style="cursor: pointer;">
                                                 <div class="feature_block_wrap">
                                                     <div class="certificate" style="height: 200px">
                                                         <div class="feature_block">
@@ -50,7 +50,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='Home.aspx';" style="cursor: pointer;">
+                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" onclick="location.href='EditComponent.aspx';" style="cursor: pointer;">
                                                 <div class="feature_block_wrap">
                                                     <div class="courses" style="height: 200px">
                                                         <div class="feature_block">

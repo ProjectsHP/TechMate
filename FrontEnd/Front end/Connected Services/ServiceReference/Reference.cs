@@ -1329,11 +1329,23 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/EditUserSOAP", ReplyAction="http://tempuri.org/IService/EditUserSOAPResponse")]
         System.Threading.Tasks.Task<int> EditUserSOAPAsync(string name, string surname, string cellNo, string gender, string email, string activeId);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/EditComponentSOAP", ReplyAction="http://tempuri.org/IService/EditComponentSOAPResponse")]
+        int EditComponentSOAP(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/EditComponentSOAP", ReplyAction="http://tempuri.org/IService/EditComponentSOAPResponse")]
+        System.Threading.Tasks.Task<int> EditComponentSOAPAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteUserSOAP", ReplyAction="http://tempuri.org/IService/DeleteUserSOAPResponse")]
         int DeleteUserSOAP(string activeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteUserSOAP", ReplyAction="http://tempuri.org/IService/DeleteUserSOAPResponse")]
         System.Threading.Tasks.Task<int> DeleteUserSOAPAsync(string activeId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteComponentSOAP", ReplyAction="http://tempuri.org/IService/DeleteComponentSOAPResponse")]
+        int DeleteComponentSOAP(string compId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteComponentSOAP", ReplyAction="http://tempuri.org/IService/DeleteComponentSOAPResponse")]
+        System.Threading.Tasks.Task<int> DeleteComponentSOAPAsync(string compId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/StoreUserAddressSOAP", ReplyAction="http://tempuri.org/IService/StoreUserAddressSOAPResponse")]
         int StoreUserAddressSOAP(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
@@ -1388,6 +1400,18 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchComponentSOAP", ReplyAction="http://tempuri.org/IService/FetchComponentSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Component> FetchComponentSOAPAsync(string component_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchSingleComponentByImageSOAP", ReplyAction="http://tempuri.org/IService/FetchSingleComponentByImageSOAPResponse")]
+        Front_end.ServiceReference.Component[] FetchSingleComponentByImageSOAP(string image);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchSingleComponentByImageSOAP", ReplyAction="http://tempuri.org/IService/FetchSingleComponentByImageSOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageSOAPAsync(string image);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CreateComponentSOAP", ReplyAction="http://tempuri.org/IService/CreateComponentSOAPResponse")]
+        int CreateComponentSOAP(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CreateComponentSOAP", ReplyAction="http://tempuri.org/IService/CreateComponentSOAPResponse")]
+        System.Threading.Tasks.Task<int> CreateComponentSOAPAsync(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/CreateBuildSOAP", ReplyAction="http://tempuri.org/IService/CreateBuildSOAPResponse")]
         int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
@@ -1497,12 +1521,28 @@ namespace Front_end.ServiceReference {
             return base.Channel.EditUserSOAPAsync(name, surname, cellNo, gender, email, activeId);
         }
         
+        public int EditComponentSOAP(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.EditComponentSOAP(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public System.Threading.Tasks.Task<int> EditComponentSOAPAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.EditComponentSOAPAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
         public int DeleteUserSOAP(string activeId) {
             return base.Channel.DeleteUserSOAP(activeId);
         }
         
         public System.Threading.Tasks.Task<int> DeleteUserSOAPAsync(string activeId) {
             return base.Channel.DeleteUserSOAPAsync(activeId);
+        }
+        
+        public int DeleteComponentSOAP(string compId) {
+            return base.Channel.DeleteComponentSOAP(compId);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteComponentSOAPAsync(string compId) {
+            return base.Channel.DeleteComponentSOAPAsync(compId);
         }
         
         public int StoreUserAddressSOAP(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
@@ -1575,6 +1615,22 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Component> FetchComponentSOAPAsync(string component_id) {
             return base.Channel.FetchComponentSOAPAsync(component_id);
+        }
+        
+        public Front_end.ServiceReference.Component[] FetchSingleComponentByImageSOAP(string image) {
+            return base.Channel.FetchSingleComponentByImageSOAP(image);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageSOAPAsync(string image) {
+            return base.Channel.FetchSingleComponentByImageSOAPAsync(image);
+        }
+        
+        public int CreateComponentSOAP(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.CreateComponentSOAP(name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public System.Threading.Tasks.Task<int> CreateComponentSOAPAsync(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.CreateComponentSOAPAsync(name, priceToDisp, availability, description, image, category, compatibilityStatus);
         }
         
         public int CreateBuildSOAP(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
@@ -1664,11 +1720,23 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/EditUser", ReplyAction="http://tempuri.org/IServiceREST/EditUserResponse")]
         System.Threading.Tasks.Task<int> EditUserAsync(string name, string surname, string cellNo, string gender, string email, string activeId);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/EditComponent", ReplyAction="http://tempuri.org/IServiceREST/EditComponentResponse")]
+        int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/EditComponent", ReplyAction="http://tempuri.org/IServiceREST/EditComponentResponse")]
+        System.Threading.Tasks.Task<int> EditComponentAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteUser", ReplyAction="http://tempuri.org/IServiceREST/DeleteUserResponse")]
         int DeleteUser(string activeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteUser", ReplyAction="http://tempuri.org/IServiceREST/DeleteUserResponse")]
         System.Threading.Tasks.Task<int> DeleteUserAsync(string activeId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteComponent", ReplyAction="http://tempuri.org/IServiceREST/DeleteComponentResponse")]
+        int DeleteComponent(string compId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteComponent", ReplyAction="http://tempuri.org/IServiceREST/DeleteComponentResponse")]
+        System.Threading.Tasks.Task<int> DeleteComponentAsync(string compId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/SendMail", ReplyAction="http://tempuri.org/IServiceREST/SendMailResponse")]
         int SendMail(string receiverEmail, string subject, string body);
@@ -1687,6 +1755,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/StoreUserAddress", ReplyAction="http://tempuri.org/IServiceREST/StoreUserAddressResponse")]
         System.Threading.Tasks.Task<int> StoreUserAddressAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateComponent", ReplyAction="http://tempuri.org/IServiceREST/CreateComponentResponse")]
+        int CreateComponent(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateComponent", ReplyAction="http://tempuri.org/IServiceREST/CreateComponentResponse")]
+        System.Threading.Tasks.Task<int> CreateComponentAsync(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CreateBuild", ReplyAction="http://tempuri.org/IServiceREST/CreateBuildResponse")]
         int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice);
@@ -1759,6 +1833,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchAllUserOrders", ReplyAction="http://tempuri.org/IServiceREST/FetchAllUserOrdersResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersAsync(string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchSingleComponentByImage", ReplyAction="http://tempuri.org/IServiceREST/FetchSingleComponentByImageResponse")]
+        Front_end.ServiceReference.Component[] FetchSingleComponentByImage(string image);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FetchSingleComponentByImage", ReplyAction="http://tempuri.org/IServiceREST/FetchSingleComponentByImageResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageAsync(string image);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1812,12 +1892,28 @@ namespace Front_end.ServiceReference {
             return base.Channel.EditUserAsync(name, surname, cellNo, gender, email, activeId);
         }
         
+        public int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.EditComponent(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public System.Threading.Tasks.Task<int> EditComponentAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.EditComponentAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
         public int DeleteUser(string activeId) {
             return base.Channel.DeleteUser(activeId);
         }
         
         public System.Threading.Tasks.Task<int> DeleteUserAsync(string activeId) {
             return base.Channel.DeleteUserAsync(activeId);
+        }
+        
+        public int DeleteComponent(string compId) {
+            return base.Channel.DeleteComponent(compId);
+        }
+        
+        public System.Threading.Tasks.Task<int> DeleteComponentAsync(string compId) {
+            return base.Channel.DeleteComponentAsync(compId);
         }
         
         public int SendMail(string receiverEmail, string subject, string body) {
@@ -1842,6 +1938,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> StoreUserAddressAsync(string userId, string country, string province, string city, string streetUnit, string name, string surname, string cellPhone, string email) {
             return base.Channel.StoreUserAddressAsync(userId, country, province, city, streetUnit, name, surname, cellPhone, email);
+        }
+        
+        public int CreateComponent(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.CreateComponent(name, priceToDisp, availability, description, image, category, compatibilityStatus);
+        }
+        
+        public System.Threading.Tasks.Task<int> CreateComponentAsync(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus) {
+            return base.Channel.CreateComponentAsync(name, priceToDisp, availability, description, image, category, compatibilityStatus);
         }
         
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice) {
@@ -1938,6 +2042,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<Front_end.ServiceReference.Order[]> FetchAllUserOrdersAsync(string userId) {
             return base.Channel.FetchAllUserOrdersAsync(userId);
+        }
+        
+        public Front_end.ServiceReference.Component[] FetchSingleComponentByImage(string image) {
+            return base.Channel.FetchSingleComponentByImage(image);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Component[]> FetchSingleComponentByImageAsync(string image) {
+            return base.Channel.FetchSingleComponentByImageAsync(image);
         }
     }
 }

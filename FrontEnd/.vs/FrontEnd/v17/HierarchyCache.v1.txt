@@ -30,6 +30,86 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\
 ++References
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Antlr3.Runtime
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++AspNet.ScriptManager.bootstrap
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++AspNet.ScriptManager.jQuery
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.AspNet.FriendlyUrls
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.AspNet.Web.Optimization.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.CSharp
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.Common
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.DataVisualization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.Design
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.ProcessingObjectModel
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WebDesign
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ReportViewer.WinForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ScriptManager.MSAjax
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.ScriptManager.WebForms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.SqlServer.Types
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Microsoft.Web.Infrastructure
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++Newtonsoft.Json
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.ComponentModel.DataAnnotations
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Configuration
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Core
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Data
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Data.DataSetExtensions
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Drawing
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.EnterpriseServices
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Runtime.Serialization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.ServiceModel
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.ApplicationServices
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.DynamicData
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Entity
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Extensions
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Optimization
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Web.Services
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Windows.Forms
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Xml
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++System.Xml.Linq
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
+++WebGrease
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
 ++App_Code
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\app_code\
@@ -56,6 +136,42 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\fonts\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\
+++revicons
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\
+++fontawesome-webfont3295-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295-2.html
+++fontawesome-webfont3295.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.html
+++fontawesome-webfont3295.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.ttf
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.ttf
+++fontawesome-webfont3295.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.woff
+++fontawesome-webfont3295.woff2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff2
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.woff2
+++fontawesome-webfontd41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfontd41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfontd41d.html
+++Pe-icon-7-strokebb1d-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-2.html
+++Pe-icon-7-strokebb1d-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-3.html
+++Pe-icon-7-strokebb1d-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-4.html
+++Pe-icon-7-strokebb1d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d.html
+++Pe-icon-7-stroked41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-stroked41d.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-stroked41d.html
 ++rev
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\js\rev\
@@ -109,12 +225,189 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++fancybox
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\
+++blank.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\blank.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\blank.gif
+++fancybox_loading.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_loading.gif
+++fancybox_loading@2x.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading@2x.gif
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_loading@2x.gif
+++fancybox_overlay.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_overlay.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_overlay.png
+++fancybox_sprite.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_sprite.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_sprite.png
+++no_Image.png
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\no_image.png
 ++products
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\
 ++components
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\
+++c1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c1.jpg
+++c2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c2.jpg
+++c3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c3.jpg
+++compbg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\compbg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\compbg.jpg
+++component1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\component1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\component1.jpg
+++cpubg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\cpubg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\cpubg.jpg
+++d1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d1.jpg
+++d10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d10.jpg
+++d11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d11.jpg
+++d12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d12.jpg
+++d13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d13.jpg
+++d14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d14.jpg
+++d2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d2.jpg
+++d3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d3.jpg
+++d4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d4.jpg
+++d5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d5.jpg
+++d6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d6.jpg
+++d7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d7.jpg
+++d8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d8.jpg
+++d9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d9.jpg
+++g1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g1.jpg
+++g2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g2.jpg
+++g3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g3.jpg
+++g4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g4.jpg
+++g5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g5.jpg
+++g6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g6.jpg
+++g7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g7.jpg
+++g8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g8.jpg
+++g9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g9.jpg
+++graphicsbg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\graphicsbg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\graphicsbg.jpg
+++l1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l1.jpg
+++l10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l10.jpg
+++l11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l11.jpg
+++l12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l12.jpg
+++l13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l13.jpg
+++l14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l14.jpg
+++l15.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l15.jpg
+++l16.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l16.jpg
+++l17.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l17.jpg
+++l18.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l18.jpg
+++l19.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l19.jpg
+++l2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l2.jpg
+++l20.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l20.jpg
+++l21.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l21.jpg
+++l22.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l22.jpg
+++l23.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l23.jpg
+++l24.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l24.jpg
+++l25.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l25.jpg
+++l26.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l26.jpg
+++l27.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l27.jpg
+++l28.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l28.jpg
+++l29.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l29.jpg
+++l3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l3.jpg
+++l30.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l30.jpg
+++l4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l4.jpg
+++l5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l5.jpg
+++l6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l6.jpg
+++l7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l7.jpg
+++l8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l8.jpg
+++l9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l9.jpg
+++r1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r1.jpg
+++r2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r2.jpg
+++r3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r3.jpg
+++r4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r4.jpg
+++r5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r5.jpg
+++r6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r6.jpg
+++r7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r7.jpg
+++r8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r8.jpg
+++rambg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\rambg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\rambg.jpg
+++s1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s1.jpg
+++s2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s2.jpg
+++s3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s3.jpg
+++s4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s4.jpg
+++s5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s5.jpg
+++s6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s6.jpg
+++s7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s7.jpg
+++storagebg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\storagebg.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\storagebg.jpg
 ++desktops
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\desktops\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\desktops\
@@ -365,12 +658,18 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sqlservertypes\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\app_code\sqlservertypes\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\sqlservertypes\
+++AddComponent.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\addcomponent.aspx
 ++Admin.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\admin.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\admin.aspx
+++Admin.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.cs
+++Admin.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.designer.cs
 ++BuildComputer.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\buildcomputer.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\buildcomputer.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\buildcomputer.aspx
 ++BuildComputer.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\buildcomputer.aspx.cs
 ++BuildComputer.aspx.designer.cs
@@ -379,8 +678,8 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bundle.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bundle.config
 ++Cart.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\cart.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\cart.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\cart.aspx
 ++Cart.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\cart.aspx.cs
 ++Cart.aspx.designer.cs
@@ -392,89 +691,128 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\confirmorder.aspx.cs
 ++ConfirmOrder.aspx.designer.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\confirmorder.aspx.designer.cs
+++EditComponent.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\editcomponent.aspx
 ++Global.asax
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\global.asax
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\global.asax
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\global.asax
 ++Home.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\home.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\home.aspx
+++Home.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.cs
+++Home.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.designer.cs
 ++Login.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\login.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\login.aspx
 ++Login.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx.cs
 ++Login.aspx.designer.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\login.aspx.designer.cs
 ++Logout.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\logout.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx
-++Logout.aspx.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.cs
-++Logout.aspx.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\logout.aspx
 ++Master.Master
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\master.master
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\master.master
+++Master.Master.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.cs
+++Master.Master.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.designer.cs
+++OrderHistory.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\orderhistory.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\orderhistory.aspx
+++OrderHistory.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\orderhistory.aspx.cs
+++OrderHistory.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\orderhistory.aspx.designer.cs
 ++packages.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\packages.config
-++PurchaseProof.aspx
+++ProofOfPurchase.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\proofofpurchase.aspx
+++ProofOfPurchase.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx.cs
+++ProofOfPurchase.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx.designer.cs
 ++Reports.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\reports.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\reports.aspx
 ++SelectComponent.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\selectcomponent.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\selectcomponent.aspx
+++SelectComponent.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.cs
+++SelectComponent.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.designer.cs
 ++SingleProduct.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\singleproduct.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\singleproduct.aspx
 ++SingleProduct.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx.cs
 ++SingleProduct.aspx.designer.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\singleproduct.aspx.designer.cs
 ++SQL_DBDataSet.xsd
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xsd
+++TechMate_dbDataSet.xsd
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\techmate_dbdataset.xsd
+++TechMate_dbDataSet.Designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\techmate_dbdataset.designer.cs
+++TechMate_dbDataSet.xsc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\techmate_dbdataset.xsc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\techmate_dbdataset.xsc
+++TechMate_dbDataSet.xss
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\techmate_dbdataset.xss
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\techmate_dbdataset.xss
 ++UserProfile.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\userprofile.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofile.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\userprofile.aspx
 ++UserProfileDemo.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\userprofiledemo.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofiledemo.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\userprofiledemo.aspx
 ++userReport.rdlc
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userreport.rdlc
 ++ViewSwitcher.ascx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\viewswitcher.ascx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\viewswitcher.ascx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\viewswitcher.ascx
 ++Web.config
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize\original\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize\transformed\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\assist\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\original\web.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\transformed\web.config
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.config
 ++Web.sitemap
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web.sitemap
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\web.sitemap
 ++web_tracelog.svclog
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\web_tracelog.svclog
 ++WebForm1.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\webform1.aspx
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\webform1.aspx
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\webform1.aspx
 ++Front_end.ServiceReference.BuildClass.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.buildclass.datasource
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.buildclass.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.buildclass.datasource
 ++Front_end.ServiceReference.Component.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.component.datasource
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.component.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.component.datasource
 ++Front_end.ServiceReference.DeliveryAddress.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.deliveryaddress.datasource
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.deliveryaddress.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.deliveryaddress.datasource
+++Front_end.ServiceReference.Order.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.order.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.order.datasource
+++Front_end.ServiceReference.OrderClass.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.orderclass.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.orderclass.datasource
 ++Front_end.ServiceReference.User.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.user.datasource
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.user.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.user.datasource
 ++Front_end.ServiceReference.UserClass.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.userclass.datasource
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.userclass.datasource
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.userclass.datasource
 ++Reference.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\reference.cs
 ++PublishProfiles
@@ -483,84 +821,6 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\servicedependencies\
 ++AssemblyInfo.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\assemblyinfo.cs
-++Antlr3.Runtime
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++AspNet.ScriptManager.bootstrap
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++AspNet.ScriptManager.jQuery
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.AspNet.FriendlyUrls
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.AspNet.Web.Optimization.WebForms
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.CSharp
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.Common
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.DataVisualization
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.Design
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.ProcessingObjectModel
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.WebDesign
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.WebForms
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ReportViewer.WinForms
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ScriptManager.MSAjax
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.ScriptManager.WebForms
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.SqlServer.Types
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Microsoft.Web.Infrastructure
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++Newtonsoft.Json
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.ComponentModel.DataAnnotations
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Configuration
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Core
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Data
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Data.DataSetExtensions
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Drawing
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.EnterpriseServices
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Runtime.Serialization
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.ServiceModel
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.ApplicationServices
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.DynamicData
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.Entity
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.Extensions
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.Optimization
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Web.Services
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Xml
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++System.Xml.Linq
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
-++WebGrease
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:
 ++Loader.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\loader.cs
 ++BundleConfig.cs
@@ -620,17 +880,17 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\envdte.dll
 ++Front end.dll
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.dll
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\front end.dll
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\front end.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.dll
 ++Front end.dll.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.dll.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\front end.dll.config
 ++Front end.pdb
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\front end.pdb
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.pdb
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\front end.pdb
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\front end.pdb
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.pdb
 ++Microsoft.AspNet.FriendlyUrls.dll
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\microsoft.aspnet.friendlyurls.dll
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\microsoft.aspnet.friendlyurls.dll
@@ -768,42 +1028,18 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++loader.html
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\assets\loader.html
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\assets\loader.html
-++revicons
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\
-++fontawesome-webfont3295-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295-2.html
-++fontawesome-webfont3295.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.html
-++fontawesome-webfont3295.ttf
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.ttf
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.ttf
-++fontawesome-webfont3295.woff
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.woff
-++fontawesome-webfont3295.woff2
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfont3295.woff2
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfont3295.woff2
-++fontawesome-webfontd41d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\fontawesome-webfontd41d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\fontawesome-webfontd41d.html
-++Pe-icon-7-strokebb1d-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-2.html
-++Pe-icon-7-strokebb1d-3.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-3.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-3.html
-++Pe-icon-7-strokebb1d-4.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d-4.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d-4.html
-++Pe-icon-7-strokebb1d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-strokebb1d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-strokebb1d.html
-++Pe-icon-7-stroked41d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\pe-icon-7-stroked41d.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\pe-icon-7-stroked41d.html
+++revicons90c6-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-2.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-2.html
+++revicons90c6-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-3.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-3.html
+++revicons90c6-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-4.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-4.html
+++revicons90c6.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6.html
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6.html
 ++closedhand.html
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\rev\closedhand.html
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\rev\closedhand.html
@@ -888,186 +1124,6 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++icomoond41d.eot
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\fonts\icomoond41d.eot
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\fonts\icomoond41d.eot
-++blank.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\blank.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\blank.gif
-++fancybox_loading.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_loading.gif
-++fancybox_loading@2x.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_loading@2x.gif
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_loading@2x.gif
-++fancybox_overlay.png
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_overlay.png
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_overlay.png
-++fancybox_sprite.png
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\fancybox\fancybox_sprite.png
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\fancybox\fancybox_sprite.png
-++C1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c1.jpg
-++C2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c2.jpg
-++C3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c3.jpg
-++compBG-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\compbg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\compbg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\compbg-350x430.jpg
-++component1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\component1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\component1.jpg
-++cpuBG-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\cpubg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\cpubg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\cpubg-350x430.jpg
-++D1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d1.jpg
-++D10.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d10.jpg
-++D11.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d11.jpg
-++D12.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d12.jpg
-++D13.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d13.jpg
-++D14.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d14.jpg
-++D2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d2.jpg
-++D3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d3.jpg
-++D4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d4.jpg
-++D5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d5.jpg
-++D6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d6.jpg
-++D7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d7.jpg
-++D8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d8.jpg
-++D9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d9.jpg
-++G1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g1.jpg
-++G2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g2.jpg
-++G3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g3.jpg
-++G4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g4.jpg
-++G5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g5.jpg
-++G6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g6.jpg
-++G7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g7.jpg
-++G8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g8.jpg
-++G9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g9.jpg
-++graphicsBG-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\graphicsbg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\graphicsbg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\graphicsbg-350x430.jpg
-++L1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l1.jpg
-++L10.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l10.jpg
-++L11.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l11.jpg
-++L12.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l12.jpg
-++L13.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l13.jpg
-++L14.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l14.jpg
-++L15.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l15.jpg
-++L16.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l16.jpg
-++L17.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l17.jpg
-++L18.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l18.jpg
-++L19.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l19.jpg
-++L2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l2.jpg
-++L20.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l20.jpg
-++L21.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l21.jpg
-++L22.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l22.jpg
-++L23.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l23.jpg
-++L24.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l24.jpg
-++L25.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l25.jpg
-++L26.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l26.jpg
-++L27.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l27.jpg
-++L28.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l28.jpg
-++L29.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l29.jpg
-++L3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l3.jpg
-++L30.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l30.jpg
-++L4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l4.jpg
-++L5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l5.jpg
-++L6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l6.jpg
-++L7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l7.jpg
-++L8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l8.jpg
-++L9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l9.jpg
-++R1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r1.jpg
-++R2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r2.jpg
-++R3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r3.jpg
-++R4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r4.jpg
-++R5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r5.jpg
-++R6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r6.jpg
-++R7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r7.jpg
-++R8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r8.jpg
-++ramBG-350X430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\rambg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\rambg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\rambg-350x430.jpg
-++S1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s1.jpg
-++S2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s2.jpg
-++S3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s3.jpg
-++S4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s4.jpg
-++S5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s5.jpg
-++S6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s6.jpg
-++S7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s7.jpg
-++storageBG-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\storagebg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\storagebg-350x430.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\storagebg-350x430.jpg
 ++computerBG.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\desktops\computerbg.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\desktops\computerbg.jpg
@@ -1122,38 +1178,32 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\app_code\sqlservertypes\readme.htm
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sqlservertypes\readme.htm
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\app_code\sqlservertypes\readme.htm
-++Admin.aspx.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.cs
-++Admin.aspx.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\admin.aspx.designer.cs
+++AddComponent.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\addcomponent.aspx.cs
+++AddComponent.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\addcomponent.aspx.designer.cs
+++EditComponent.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\editcomponent.aspx.cs
+++EditComponent.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\editcomponent.aspx.designer.cs
 ++Global.asax.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\global.asax.cs
-++Home.aspx.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.cs
-++Home.aspx.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\home.aspx.designer.cs
-++Master.Master.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.cs
-++Master.Master.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\master.master.designer.cs
-++PurchaseProof.aspx.cs
-++PurchaseProof.aspx.designer.cs
+++Logout.aspx.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.cs
+++Logout.aspx.designer.cs
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\logout.aspx.designer.cs
 ++Reports.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx.cs
 ++Reports.aspx.designer.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\reports.aspx.designer.cs
-++SelectComponent.aspx.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.cs
-++SelectComponent.aspx.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\selectcomponent.aspx.designer.cs
 ++SQL_DBDataSet.Designer.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.designer.cs
 ++SQL_DBDataSet.xsc
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sql_dbdataset.xsc
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xsc
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sql_dbdataset.xsc
 ++SQL_DBDataSet.xss
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sql_dbdataset.xss
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\sql_dbdataset.xss
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\sql_dbdataset.xss
 ++UserProfile.aspx.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\userprofile.aspx.cs
 ++UserProfile.aspx.designer.cs
@@ -1453,18 +1503,6 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++VBCSCompiler.exe.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\bin\roslyn\vbcscompiler.exe.config
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\roslyn\vbcscompiler.exe.config
-++revicons90c6-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-2.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-2.html
-++revicons90c6-3.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-3.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-3.html
-++revicons90c6-4.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6-4.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6-4.html
-++revicons90c6.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\css\fonts\revicons\revicons90c6.html
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\css\fonts\revicons\revicons90c6.html
 ++compBG.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\compbg.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\150\compbg.jpg
@@ -1480,40 +1518,65 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++storageBG.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\150\storagebg.jpg
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\150\storagebg.jpg
+++compBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\compbg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\compbg-350x430.jpg
+++cpuBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\cpubg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\cpubg-350x430.jpg
+++graphicsBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\graphicsbg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\graphicsbg-350x430.jpg
+++ramBG-350X430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\rambg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\rambg-350x430.jpg
+++storageBG-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\ui\350\storagebg-350x430.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\ui\350\storagebg-350x430.jpg
+++TempPE
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\
 ++.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\.netframework,version=v4.7.2.assemblyattributes.cs
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\.netframework,version=v4.7.2.assemblyattributes.cs
+++DesignTimeResolveAssemblyReferences.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferences.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferences.cache
+++DesignTimeResolveAssemblyReferencesInput.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferencesinput.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferencesinput.cache
+++Front end.csproj.AssemblyReference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.assemblyreference.cache
+++Front end.csproj.CopyComplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.copycomplete
+++Front end.csproj.CoreCompileInputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.corecompileinputs.cache
+++Front end.csproj.FileListAbsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.filelistabsolute.txt
+++FrontEnd.csproj.AssemblyReference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.assemblyreference.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.assemblyreference.cache
+++FrontEnd.csproj.CopyComplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.copycomplete
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.copycomplete
+++FrontEnd.csproj.CoreCompileInputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.corecompileinputs.cache
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.corecompileinputs.cache
+++FrontEnd.csproj.FileListAbsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.filelistabsolute.txt
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.filelistabsolute.txt
 ++CSAutoParameterize
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize\
 ++Package
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\
-++TempPE
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\
+++ProfileTransformWebConfig
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\profiletransformwebconfig\
 ++TransformWebConfig
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\
 ++_WPPLastBuildInfo.txt
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\_wpplastbuildinfo.txt
 ++CSAutoParameterize.parameters.xml
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize.parameters.xml
-++DesignTimeResolveAssemblyReferences.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferences.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferences.cache
-++DesignTimeResolveAssemblyReferencesInput.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\designtimeresolveassemblyreferencesinput.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\designtimeresolveassemblyreferencesinput.cache
-++FrontEnd.csproj.AssemblyReference.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.assemblyreference.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.assemblyreference.cache
-++FrontEnd.csproj.CopyComplete
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.copycomplete
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.copycomplete
-++FrontEnd.csproj.CoreCompileInputs.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.corecompileinputs.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.corecompileinputs.cache
-++FrontEnd.csproj.FileListAbsolute.txt
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\frontend.csproj.filelistabsolute.txt
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\frontend.csproj.filelistabsolute.txt
 ++addon
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\addon\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\scripts\codemirror\addon\
@@ -1629,23 +1692,32 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\bin\sqlservertypes\x86\sqlserverspatial140.dll
 ++profile.arm.json
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\properties\servicedependencies\techmateweb - web deploy\profile.arm.json
+++_C__USERS_PHKUB_DESKTOP_IFM3B_BACKUP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_backup_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
+++_C__USERS_PHKUB_DESKTOP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
+++Connected Services.ServiceReference.Reference.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\connected services.servicereference.reference.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\connected services.servicereference.reference.cs.dll
+++SQL_DB_MDFDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_db_mdfdataset.designer.cs.dll
+++SQL_DBDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_dbdataset.designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\sql_dbdataset.designer.cs.dll
+++TechMate_dbDataSet.Designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\techmate_dbdataset.designer.cs.dll
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\techmate_dbdataset.designer.cs.dll
 ++original
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize\original\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\original\
 ++transformed
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\csautoparameterize\transformed\
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\transformed\
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\profiletransformwebconfig\transformed\
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\transformed\
 ++PackageTmp
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\
 ++FrontEnd.SourceManifest.xml
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\frontend.sourcemanifest.xml
-++Connected Services.ServiceReference.Reference.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\connected services.servicereference.reference.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\connected services.servicereference.reference.cs.dll
-++SQL_DBDataSet.Designer.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\temppe\sql_dbdataset.designer.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_dbdataset.designer.cs.dll
 ++assist
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\transformwebconfig\assist\
 ++comment
@@ -3188,191 +3260,145 @@ i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\fronten
 ++z80.js
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\scripts\codemirror\mode\z80\z80.js
 i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\scripts\codemirror\mode\z80\z80.js
-++Invoice.aspx
-++Invoice.aspx.cs
-++Invoice.aspx.designer.cs
-++Invoice.css
-++invoice.css
-++ProofOfPurchase.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\proofofpurchase.aspx
-++ProofOfPurchase.aspx.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx.cs
-++ProofOfPurchase.aspx.designer.cs
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\proofofpurchase.aspx.designer.cs
-++Front_end.ServiceReference.OrderClass.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\connected services\servicereference\front_end.servicereference.orderclass.datasource
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\connected services\servicereference\front_end.servicereference.orderclass.datasource
-++_C__USERS_PHKUB_DESKTOP_IFM3B_BACKUP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_backup_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
-++_C__USERS_PHKUB_DESKTOP_IFM3B_WCF_SERVICESOAP_REST_WCF_SERVICE_SERVER__WCF_SERVICE_SERVER__APP_DATA_SQL_DB_MDFDataSet.Designer.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\_c__users_phkub_desktop_ifm3b_wcf_servicesoap_rest_wcf_service_server__wcf_service_server__app_data_sql_db_mdfdataset.designer.cs.dll
-++SQL_DB_MDFDataSet.Designer.cs.dll
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\temppe\sql_db_mdfdataset.designer.cs.dll
-++Front end.csproj.AssemblyReference.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.assemblyreference.cache
-++Front end.csproj.CopyComplete
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.copycomplete
-++Front end.csproj.CoreCompileInputs.cache
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.corecompileinputs.cache
-++Front end.csproj.FileListAbsolute.txt
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\debug\front end.csproj.filelistabsolute.txt
-++c1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c1.jpg
-++c2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c2.jpg
-++c3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\c3.jpg
-++compbg-350x430.jpg
-++cpubg-350x430.jpg
-++d1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d1.jpg
-++d10.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d10.jpg
-++d11.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d11.jpg
-++d12.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d12.jpg
-++d13.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d13.jpg
-++d14.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d14.jpg
-++d2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d2.jpg
-++d3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d3.jpg
-++d4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d4.jpg
-++d5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d5.jpg
-++d6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d6.jpg
-++d7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d7.jpg
-++d8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d8.jpg
-++d9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\d9.jpg
-++g1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g1.jpg
-++g2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g2.jpg
-++g3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g3.jpg
-++g4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g4.jpg
-++g5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g5.jpg
-++g6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g6.jpg
-++g7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g7.jpg
-++g8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g8.jpg
-++g9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\g9.jpg
-++graphicsbg-350x430.jpg
-++l1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l1.jpg
-++l10.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l10.jpg
-++l11.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l11.jpg
-++l12.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l12.jpg
-++l13.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l13.jpg
-++l14.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l14.jpg
-++l15.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l15.jpg
-++l16.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l16.jpg
-++l17.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l17.jpg
-++l18.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l18.jpg
-++l19.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l19.jpg
-++l2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l2.jpg
-++l20.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l20.jpg
-++l21.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l21.jpg
-++l22.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l22.jpg
-++l23.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l23.jpg
-++l24.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l24.jpg
-++l25.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l25.jpg
-++l26.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l26.jpg
-++l27.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l27.jpg
-++l28.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l28.jpg
-++l29.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l29.jpg
-++l3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l3.jpg
-++l30.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l30.jpg
-++l4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l4.jpg
-++l5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l5.jpg
-++l6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l6.jpg
-++l7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l7.jpg
-++l8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l8.jpg
-++l9.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\l9.jpg
-++r1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r1.jpg
-++r2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r2.jpg
-++r3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r3.jpg
-++r4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r4.jpg
-++r5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r5.jpg
-++r6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r6.jpg
-++r7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r7.jpg
-++r8.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\r8.jpg
-++rambg-350x430.jpg
-++s1.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s1.jpg
-++s2.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s2.jpg
-++s3.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s3.jpg
-++s4.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s4.jpg
-++s5.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s5.jpg
-++s6.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s6.jpg
-++s7.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\s7.jpg
-++storagebg-350x430.jpg
-++compbg.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\compbg.jpg
-++cpubg.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\cpubg.jpg
-++graphicsbg.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\graphicsbg.jpg
-++rambg.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\rambg.jpg
-++storagebg.jpg
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\content\images\products\components\storagebg.jpg
-++ProfileTransformWebConfig
-i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\profiletransformwebconfig\
+++C1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c1.jpg
+++C2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c2.jpg
+++C3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\c3.jpg
+++D1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d1.jpg
+++D10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d10.jpg
+++D11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d11.jpg
+++D12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d12.jpg
+++D13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d13.jpg
+++D14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d14.jpg
+++D2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d2.jpg
+++D3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d3.jpg
+++D4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d4.jpg
+++D5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d5.jpg
+++D6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d6.jpg
+++D7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d7.jpg
+++D8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d8.jpg
+++D9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\d9.jpg
+++G1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g1.jpg
+++G2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g2.jpg
+++G3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g3.jpg
+++G4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g4.jpg
+++G5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g5.jpg
+++G6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g6.jpg
+++G7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g7.jpg
+++G8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g8.jpg
+++G9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\g9.jpg
+++L1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l1.jpg
+++L10.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l10.jpg
+++L11.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l11.jpg
+++L12.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l12.jpg
+++L13.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l13.jpg
+++L14.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l14.jpg
+++L15.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l15.jpg
+++L16.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l16.jpg
+++L17.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l17.jpg
+++L18.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l18.jpg
+++L19.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l19.jpg
+++L2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l2.jpg
+++L20.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l20.jpg
+++L21.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l21.jpg
+++L22.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l22.jpg
+++L23.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l23.jpg
+++L24.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l24.jpg
+++L25.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l25.jpg
+++L26.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l26.jpg
+++L27.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l27.jpg
+++L28.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l28.jpg
+++L29.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l29.jpg
+++L3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l3.jpg
+++L30.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l30.jpg
+++L4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l4.jpg
+++L5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l5.jpg
+++L6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l6.jpg
+++L7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l7.jpg
+++L8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l8.jpg
+++L9.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\l9.jpg
+++R1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r1.jpg
+++R2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r2.jpg
+++R3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r3.jpg
+++R4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r4.jpg
+++R5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r5.jpg
+++R6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r6.jpg
+++R7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r7.jpg
+++R8.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\r8.jpg
+++S1.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s1.jpg
+++S2.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s2.jpg
+++S3.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s3.jpg
+++S4.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s4.jpg
+++S5.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s5.jpg
+++S6.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s6.jpg
+++S7.jpg
+i:{22a46f7a-bdd0-4564-b60e-568a4bb25db9}:c:\users\phkub\desktop\techmate\frontend\front end\obj\release\package\packagetmp\content\images\products\components\s7.jpg

@@ -77,6 +77,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -378,6 +379,7 @@
     <Content Include="Content\images\ConnecTech-02.jpg" />
     <Content Include="Content\images\ConnecTech-02.png" />
     <Content Include="Content\images\ConnecTech.jpg" />
+    <Content Include="Content\images\fancybox\no_Image.png" />
     <Content Include="Content\images\logoTM.jpg" />
     <Content Include="Content\images\products\components\c1.jpg" />
     <Content Include="Content\images\products\components\c2.jpg" />

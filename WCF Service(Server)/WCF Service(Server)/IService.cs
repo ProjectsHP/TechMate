@@ -28,9 +28,16 @@ namespace WCF_Service_Server_
         [OperationContract(Name="EditUserSOAP")]     
         int EditUser(string name, string surname, string cellNo, string gender,string email, string activeId);
 
+        [OperationContract(Name = "EditComponentSOAP")]
+        int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
+
 
         [OperationContract(Name = "DeleteUserSOAP")]
         int DeleteUser(string activeId);
+
+
+        [OperationContract(Name = "DeleteComponentSOAP")]
+        int DeleteComponent(string compId);
 
 
         [OperationContract(Name = "StoreUserAddressSOAP")]
@@ -66,6 +73,15 @@ namespace WCF_Service_Server_
 
         [OperationContract(Name = "FetchComponentSOAP")]
         Component FetchComponent(string component_id);
+
+
+        [OperationContract(Name = "FetchSingleComponentByImageSOAP")]
+        List<Component> FetchSingleComponentByImage(string image);
+
+
+        [OperationContract(Name = "CreateComponentSOAP")]
+        int CreateComponent(string name, string priceToDisp, string availability, string description,string image, string category, string compatibilityStatus);
+
 
 
         [OperationContract(Name = "CreateBuildSOAP")]

@@ -124,6 +124,83 @@ namespace WCF_Service_Server_
 
         }
 
+
+        public int SendMail(string receiverEmail, string subject, string body)
+        {
+            MailSender mailSender = new MailSender();
+            int response = mailSender.sendTextMail(receiverEmail, subject, body);
+            return response;
+        }
+
+
+        //********DELETE***************** DELETE*****************DELETE***************** DELETE*********
+
+        public int DeleteUser(string activeId)
+        {
+            int userId = Convert.ToInt32(activeId);
+            var user = (from u in db.Users
+                        where userId == u.Id
+                        select u).FirstOrDefault();
+
+            if (user != null)
+            {
+                db.Users.DeleteOnSubmit(user);
+                try
+                {
+
+                    //succesfull
+                    db.SubmitChanges();
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+                    //error
+                    ex.GetBaseException();
+                    return -1;
+                }
+            }
+            else
+            {
+                //user not found
+                return 0;
+            }
+
+        }
+
+        public int DeleteComponent(string compId)
+        {
+            int cId = Convert.ToInt32(compId);
+            var comp = (from u in db.Components
+                        where u.Id == cId
+                        select u).FirstOrDefault();
+
+            if (comp != null)
+            {
+                db.Components.DeleteOnSubmit(comp);
+                try
+                {
+
+                    //succesfull
+                    db.SubmitChanges();
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+                    //error
+                    ex.GetBaseException();
+                    return -1;
+                }
+            }
+            else
+            {
+                //component not found
+                return 0;
+            }
+        }
+
+        // *******EDIT** EDIT*****EDIT****** EDIT*******EDIT***** EDIT********EDIT****** EDIT********
+
+
         public int EditUser(string name, string surname, string cellNo, string gender, string email, string activeId)
         {
             int id = Convert.ToInt32(activeId);
@@ -161,44 +238,51 @@ namespace WCF_Service_Server_
 
         }
 
-        public int DeleteUser(string activeId)
+        public int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus)
         {
-            int userId = Convert.ToInt32(activeId);
-            var user = (from u in db.Users
-                        where userId == u.Id
+            int id = Convert.ToInt32(compId);
+            var comp = (from u in db.Components
+                        where id == u.Id
                         select u).FirstOrDefault();
 
-            if (user != null)
+            if (comp != null)
             {
-                db.Users.DeleteOnSubmit(user);
+
+                string p = priceToDisp;
+                string normalPrice = p.Replace(" ", "");
+               int intPrice  = Convert.ToInt32(normalPrice);
+
+                comp.name = name;
+                comp.price = priceToDisp;
+                comp.availability = availability;
+                comp.description = description;
+                comp.image = image;
+                comp.category = category;
+                comp.compatibility = compatibilityStatus;
+                comp.intPriceFormat = intPrice;
+
                 try
                 {
-
-                    //succesfull
+                    //edited successfully
                     db.SubmitChanges();
                     return 1;
                 }
-                catch (Exception ex)
+                catch (IndexOutOfRangeException ex)
                 {
-                    //error
+                    //error OutOfRangeException 
                     ex.GetBaseException();
                     return -1;
                 }
             }
             else
             {
-                //user not found
+                //User doesnt exist
                 return 0;
             }
-
         }
 
-        public int SendMail(string receiverEmail, string subject, string body)
-        {
-            MailSender mailSender = new MailSender();
-            int response = mailSender.sendTextMail(receiverEmail, subject, body);
-            return response;
-        }
+       
+        //******CREATE************* CREATE*************CREATE************* CREATE*************CREATE*******
 
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice)
         {
@@ -248,264 +332,119 @@ namespace WCF_Service_Server_
 
         }
 
-        public User FetchActiveUser(string id)
+        public int CreateComponent(string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus)
         {
-            int userId = Convert.ToInt32(id);
-            var activeUser = (from u in db.Users
-                              where u.Id == userId
-                              select u).FirstOrDefault();
+            string p = priceToDisp;
+            string normalPrice = p.Replace(" ", "");
+            int price = Convert.ToInt32(normalPrice);
 
-            if (activeUser != null)
+
+            var newComp = new Component
             {
-                return activeUser;
+                name = name,
+                intPriceFormat = price,
+                availability = availability,
+                description = description,
+                image = image,
+                category = category,
+                compatibility = compatibilityStatus,
+                price = priceToDisp,
+
+
+            };
+            db.Components.InsertOnSubmit(newComp);
+
+            try
+            {
+                // registered successfully
+                db.SubmitChanges();
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                //error occured
+                ex.GetBaseException();
+                return -1;
+            }
+
+
+        }
+
+        public int SaveCart(string userId, string buildId, string totalPrice, string discountSaved)
+        {
+            int user_id = Convert.ToInt32(userId);
+
+            var user = (from u in db.Users
+                        where u.Id == user_id
+                        select u).FirstOrDefault();
+
+            if (user != null)
+            {
+
+                var newCart = new Cart
+                {
+                    build_id = -1,
+                    user_id = Convert.ToInt32(user_id),
+                    totalPrice = totalPrice,
+                    totalDiscountSaved = discountSaved
+
+                };
+                db.Carts.InsertOnSubmit(newCart);
+
+                try
+                {
+                    // added new cart successfully
+                    db.SubmitChanges();
+
+                    int cartId = newCart.Id;
+                    return cartId;
+                }
+                catch (Exception ex)
+                {
+                    //error occured
+                    ex.GetBaseException();
+                    return -1;
+                }
+
             }
             else
             {
-                return null;
+                //user does not exist
+                return -2;
             }
+
+
         }
 
-        public List<User> FetchAllUsers()
-        {
-            var allUserList = new List<User>();
-            dynamic allUsers = (from u in db.Users
-                                select u);
-
-            if (allUsers != null)
-            {
-                foreach (dynamic user in allUsers)
-                {
-                    allUserList.Add(user);
-                }
-                return allUserList;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-
-        public Component FetchComponent(string component_id)
-        {
-            int compId = Convert.ToInt32(component_id);
-            var activeComponent = (from u in db.Components
-                                   where u.Id == compId
-                                   select u).FirstOrDefault();
-
-            if (activeComponent != null)
-            {
-                return activeComponent;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public List<Component> FetchRandomComponents(string size)
+        public int SaveCartItems(string componentId, string cartId, string quantity)
         {
 
-            var compList = new List<Component>();
-
-            dynamic result = (from u in db.Components.ToList()
-
-                              select u).OrderBy(x => Guid.NewGuid()).Take(Convert.ToInt32(size));
-
-
-
-            if (result != null)
+            var cartItem = new CartItem
             {
-                foreach (Component comp in result)
-                {
-                    compList.Add(comp);
-                }
+                component_id = Convert.ToInt32(componentId),
+                cart_id = Convert.ToInt32(cartId),
+                quantity = 1
+
+            };
+            db.CartItems.InsertOnSubmit(cartItem);
+
+            try
+            {
+                // added new cart item successfully
+                db.SubmitChanges();
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                //error occured
+                ex.GetBaseException();
+                return -1;
             }
 
-            return compList;
-        }
 
-        public List<Component> FetchComponentsByCategory(string category)
-        {
-            var compsList = new List<Component>();
-            dynamic allComps = (from u in db.Components
-                                where u.category == category
-                                select u);
-
-            if (allComps != null)
-            {
-                foreach (dynamic comp in allComps)
-                {
-                    compsList.Add(comp);
-                }
-                return compsList;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public List<Component> FetchBuild(string build_id)
-        {
-
-            var buildCompList = new List<Component>();
-            int Id = Convert.ToInt32(build_id);
-            var activeBuild = (from u in db.Builds
-                               where u.Id == Id
-                               select u).FirstOrDefault();
-
-            if (activeBuild != null)
-            {
-                dynamic buildComp = (from u in db.Components
-                                     where u.Id == activeBuild.storage_id ||
-                                           u.Id == activeBuild.graphics_id ||
-                                           u.Id == activeBuild.cpu_id ||
-                                           u.Id == activeBuild.ram_id ||
-                                           u.Id == activeBuild.baseBuild_id
-                                     select u);
-                foreach (dynamic comp in buildComp)
-                {
-
-                    buildCompList.Add(comp);
-                }
-
-                buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
-
-                return buildCompList;
-            }
-            else
-            {
-                return null;
-            }
 
 
         }
-
-
-        public List<Component> FetchSingleUserBuild(string user_id)
-        {
-
-            var buildCompList = new List<Component>();
-            int Id = Convert.ToInt32(user_id);
-            var activeBuild = (from u in db.Builds
-                               where u.user_id == Id
-                               select u).FirstOrDefault();
-
-            if (activeBuild != null)
-            {
-                dynamic buildComp = (from u in db.Components
-                                     where u.Id == activeBuild.storage_id ||
-                                           u.Id == activeBuild.graphics_id ||
-                                           u.Id == activeBuild.cpu_id ||
-                                           u.Id == activeBuild.ram_id ||
-                                           u.Id == activeBuild.baseBuild_id
-                                     select u);
-                foreach (dynamic comp in buildComp)
-                {
-
-                    buildCompList.Add(comp);
-                }
-
-                buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
-
-                return buildCompList;
-            }
-            else
-            {
-                return null;
-            }
-
-
-        }
-
-        public List<BuildClass> FetchAllUserBuilds(string user_id)
-        {
-
-            var buildCompList = new List<BuildClass>();
-            int Id = Convert.ToInt32(user_id);
-
-            dynamic activeBuild = (from u in db.Builds
-                                   where u.user_id == Id
-                                   select u);
-
-            if (activeBuild != null)
-            {
-
-                foreach (Build build in activeBuild)
-                {
-                    BuildClass buildClass = new BuildClass();
-                    string buildId = Convert.ToString(build.Id);
-                    List<Component> buildComponentData = FetchBuild(buildId);
-
-                    foreach (Component component in buildComponentData)
-                    {
-                        switch (component.category)
-                        {
-                            case "Ram":
-                                buildClass.RamComponent = component;
-
-                                break;
-                            case "CPU":
-                                buildClass.CpuComponent = component;
-
-                                break;
-                            case "Storage":
-                                buildClass.StorageComponent = component;
-
-                                break;
-                            case "Desktop":
-                                buildClass.BaseCaseComponent = component;
-                                break;
-                            case "Graphics":
-                                buildClass.GraphicsComponent = component;
-                                break;
-                        }
-
-                    }
-                    buildClass.Build_id = buildId;
-                    buildClass.CompatibilityStatus = "Compatible";
-                    buildClass.User_build_id = user_id;
-                    buildClass.Category = build.category;
-                    buildClass.TotalPrice = Convert.ToString(build.totalPrice);
-
-                    buildCompList.Add(buildClass);
-                }
-
-                //   buildCompList.Sort((a, b) => a.Category.CompareTo(b.Category));
-
-                return buildCompList;
-            }
-            else
-            {
-                return null;
-            }
-
-
-        }
-
-        public List<Component> FetchTopComponents(string category, string size)
-        {
-            var compList = new List<Component>();
-
-            dynamic result = (from u in db.Components.ToList()
-                              where u.category == category
-                              select u).Take(Convert.ToInt32(size));
-
-
-
-            if (result != null)
-            {
-                foreach (Component comp in result)
-                {
-                    compList.Add(comp);
-                }
-            }
-
-            return compList;
-        }
-
-
 
         public int CheckoutOrder(string userId, string orderId, string cardId, string paymentId,
                                  string userAddressId, string totalPrice, string totalItems, string paymentMade,
@@ -633,6 +572,288 @@ namespace WCF_Service_Server_
 
         }
 
+
+      //********FETCH*************** FETCH***************FETCH*************** FETCH***************FETCH*******
+
+        public User FetchActiveUser(string id)
+        {
+            int userId = Convert.ToInt32(id);
+            var activeUser = (from u in db.Users
+                              where u.Id == userId
+                              select u).FirstOrDefault();
+
+            if (activeUser != null)
+            {
+                return activeUser;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<User> FetchAllUsers()
+        {
+            var allUserList = new List<User>();
+            dynamic allUsers = (from u in db.Users
+                                select u);
+
+            if (allUsers != null)
+            {
+                foreach (dynamic user in allUsers)
+                {
+                    allUserList.Add(user);
+                }
+                return allUserList;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Component FetchComponent(string component_id)
+        {
+            int compId = Convert.ToInt32(component_id);
+            var activeComponent = (from u in db.Components
+                                   where u.Id == compId
+                                   select u).FirstOrDefault();
+
+            if (activeComponent != null)
+            {
+                return activeComponent;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<Component> FetchSingleComponentByImage(string image)
+        {
+
+            var compList = new List<Component>();  
+            dynamic result = (from u in db.Components
+                                   where u.image == image
+                                   select u);
+            
+            if (result != null)
+            {
+               
+                    foreach (Component comp in result)
+                    {
+                        compList.Add(comp);
+                    }
+              
+                return compList;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<Component> FetchRandomComponents(string size)
+        {
+
+            var compList = new List<Component>();
+
+            dynamic result = (from u in db.Components.ToList()
+
+                              select u).OrderBy(x => Guid.NewGuid()).Take(Convert.ToInt32(size));
+
+
+
+            if (result != null)
+            {
+                foreach (Component comp in result)
+                {
+                    compList.Add(comp);
+                }
+            }
+
+            return compList;
+        }
+
+        public List<Component> FetchComponentsByCategory(string category)
+        {
+            var compsList = new List<Component>();
+            dynamic allComps = (from u in db.Components
+                                where u.category == category
+                                select u);
+
+            if (allComps != null)
+            {
+                foreach (dynamic comp in allComps)
+                {
+                    compsList.Add(comp);
+                }
+                return compsList;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public List<Component> FetchBuild(string build_id)
+        {
+
+            var buildCompList = new List<Component>();
+            int Id = Convert.ToInt32(build_id);
+            var activeBuild = (from u in db.Builds
+                               where u.Id == Id
+                               select u).FirstOrDefault();
+
+            if (activeBuild != null)
+            {
+                dynamic buildComp = (from u in db.Components
+                                     where u.Id == activeBuild.storage_id ||
+                                           u.Id == activeBuild.graphics_id ||
+                                           u.Id == activeBuild.cpu_id ||
+                                           u.Id == activeBuild.ram_id ||
+                                           u.Id == activeBuild.baseBuild_id
+                                     select u);
+                foreach (dynamic comp in buildComp)
+                {
+
+                    buildCompList.Add(comp);
+                }
+
+                buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
+
+                return buildCompList;
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+
+        public List<Component> FetchSingleUserBuild(string user_id)
+        {
+
+            var buildCompList = new List<Component>();
+            int Id = Convert.ToInt32(user_id);
+            var activeBuild = (from u in db.Builds
+                               where u.user_id == Id
+                               select u).FirstOrDefault();
+
+            if (activeBuild != null)
+            {
+                dynamic buildComp = (from u in db.Components
+                                     where u.Id == activeBuild.storage_id ||
+                                           u.Id == activeBuild.graphics_id ||
+                                           u.Id == activeBuild.cpu_id ||
+                                           u.Id == activeBuild.ram_id ||
+                                           u.Id == activeBuild.baseBuild_id
+                                     select u);
+                foreach (dynamic comp in buildComp)
+                {
+
+                    buildCompList.Add(comp);
+                }
+
+                buildCompList.Sort((a, b) => a.category.CompareTo(b.category));
+
+                return buildCompList;
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+
+        public List<BuildClass> FetchAllUserBuilds(string user_id)
+        {
+
+            var buildCompList = new List<BuildClass>();
+            int Id = Convert.ToInt32(user_id);
+
+            dynamic activeBuild = (from u in db.Builds
+                                   where u.user_id == Id
+                                   select u);
+
+            if (activeBuild != null)
+            {
+
+                foreach (Build build in activeBuild)
+                {
+                    BuildClass buildClass = new BuildClass();
+                    string buildId = Convert.ToString(build.Id);
+                    List<Component> buildComponentData = FetchBuild(buildId);
+
+                    foreach (Component component in buildComponentData)
+                    {
+                        switch (component.category)
+                        {
+                            case "Ram":
+                                buildClass.RamComponent = component;
+
+                                break;
+                            case "CPU":
+                                buildClass.CpuComponent = component;
+
+                                break;
+                            case "Storage":
+                                buildClass.StorageComponent = component;
+
+                                break;
+                            case "Desktop":
+                                buildClass.BaseCaseComponent = component;
+                                break;
+                            case "Graphics":
+                                buildClass.GraphicsComponent = component;
+                                break;
+                        }
+
+                    }
+                    buildClass.Build_id = buildId;
+                    buildClass.CompatibilityStatus = "Compatible";
+                    buildClass.User_build_id = user_id;
+                    buildClass.Category = build.category;
+                    buildClass.TotalPrice = Convert.ToString(build.totalPrice);
+
+                    buildCompList.Add(buildClass);
+                }
+
+                //   buildCompList.Sort((a, b) => a.Category.CompareTo(b.Category));
+
+                return buildCompList;
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+
+        public List<Component> FetchTopComponents(string category, string size)
+        {
+            var compList = new List<Component>();
+
+            dynamic result = (from u in db.Components.ToList()
+                              where u.category == category
+                              select u).Take(Convert.ToInt32(size));
+
+
+
+            if (result != null)
+            {
+                foreach (Component comp in result)
+                {
+                    compList.Add(comp);
+                }
+            }
+
+            return compList;
+        }
+
         public DeliveryAddress FetchUserAddress(string userId)
         {
             int user_id = Convert.ToInt32(userId);
@@ -652,89 +873,13 @@ namespace WCF_Service_Server_
 
         }
 
-        public int SaveCart(string userId, string buildId, string totalPrice, string discountSaved)
-        {
-            int user_id = Convert.ToInt32(userId);
-
-            var user = (from u in db.Users
-                        where u.Id == user_id
-                        select u).FirstOrDefault();
-
-            if (user != null)
-            {
-
-                var newCart = new Cart
-                {
-                    build_id = -1,
-                    user_id = Convert.ToInt32(user_id),
-                    totalPrice = totalPrice,
-                    totalDiscountSaved = discountSaved
-
-                };
-                db.Carts.InsertOnSubmit(newCart);
-
-                try
-                {
-                    // added new cart successfully
-                    db.SubmitChanges();
-
-                    int cartId = newCart.Id;
-                    return cartId;
-                }
-                catch (Exception ex)
-                {
-                    //error occured
-                    ex.GetBaseException();
-                    return -1;
-                }
-
-            }
-            else
-            {
-                //user does not exist
-                return -2;
-            }
-
-
-        }
-
-        public int SaveCartItems(string componentId, string cartId, string quantity)
-        {
-
-            var cartItem = new CartItem
-            {
-                component_id = Convert.ToInt32(componentId),
-                cart_id = Convert.ToInt32(cartId),
-                quantity = 1
-
-            };
-            db.CartItems.InsertOnSubmit(cartItem);
-
-            try
-            {
-                // added new cart item successfully
-                db.SubmitChanges();
-                return 1;
-            }
-            catch (Exception ex)
-            {
-                //error occured
-                ex.GetBaseException();
-                return -1;
-            }
-
-
-
-
-        }
-
         public OrderClass FetchOrder(string userId, string orderId, string cardNumber)
         {
             bool running = true;
             OrderClass objOrder = new OrderClass();
             int uId = Convert.ToInt32(userId);
             int oId = Convert.ToInt32(orderId);
-           
+
             var activeOrder = (from u in db.Orders
                                where u.userId == uId
                                select u).FirstOrDefault();
@@ -784,7 +929,7 @@ namespace WCF_Service_Server_
                                select u).FirstOrDefault();
                 if (cartObj != null)
                 {
-                    
+
                     //get cart items
                     dynamic itemsList = (from u in db.CartItems
                                          where u.cart_id == activeOrder.cartId
@@ -794,9 +939,9 @@ namespace WCF_Service_Server_
                     {
 
                         //make list of items
-                        
-                       objOrder.ListOfCartObj = new List<CartItem>();
-                       objOrder.ListOfComponents = new List<Component>();
+
+                        objOrder.ListOfCartObj = new List<CartItem>();
+                        objOrder.ListOfComponents = new List<Component>();
 
                         foreach (CartItem item in itemsList)
                         {
@@ -827,38 +972,38 @@ namespace WCF_Service_Server_
             else
             {
                 running = false;
-                
-            }
-
-
-                //return 
-                if (running == true)
-                {
-                    return objOrder;
-                }
-                else
-                {
-                    return null;
-                }
 
             }
+
+
+            //return 
+            if (running == true)
+            {
+                return objOrder;
+            }
+            else
+            {
+                return null;
+            }
+
+        }
 
         public List<Order> FetchAllUserOrders(string userId)
         {
             int uId = Convert.ToInt32(userId);
             var orderList = new List<Order>();
-           
+
 
 
             dynamic allOrders = (from u in db.Orders
-                                where u.userId == uId
-                                select u);
+                                 where u.userId == uId
+                                 select u);
 
             if (allOrders != null)
             {
                 foreach (dynamic comp in allOrders)
                 {
-                 
+
                     orderList.Add(comp);
                 }
                 return orderList;
@@ -868,5 +1013,7 @@ namespace WCF_Service_Server_
                 return null;
             }
         }
+
+      
     }
-    }
+}
