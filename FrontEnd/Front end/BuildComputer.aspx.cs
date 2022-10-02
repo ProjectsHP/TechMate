@@ -135,7 +135,7 @@ namespace Front_end
             }
 
               createBuild();
-
+              Compatibility case2verify = null;
             if (Session["Desktop_build"] != null)
             {
                 var desktop = SRef.FetchComponentSOAP(Session["Desktop_build"].ToString());
@@ -143,6 +143,7 @@ namespace Front_end
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>"+desktop.category+"</h5>";
                 selectedComp += "<p>"+desktop.name+"</p>";
+                selectedComp += "<h6>In stock</h6>";
                 selectedComp += "<a href = '#'>R"+desktop.price+"</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
@@ -150,6 +151,8 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)desktop.intPriceFormat;
+                string dId= Convert.ToString(desktop.Id);
+                case2verify = SRef.FetchCaseCompatibilitySOAP(dId);
 
             }
             if (Session["CPU_build"] != null)
@@ -159,6 +162,17 @@ namespace Front_end
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>" + cpu.category + "</h5>";
                 selectedComp += "<p>" + cpu.name + "</p>";
+                if (case2verify != null)
+                {
+                    if (case2verify.cpuType == cpu.compatibility)
+                    {
+                        selectedComp += "<h6 style='color:green'>Compatible</h6>";
+                    }
+                    else
+                    {
+                        selectedComp += "<h6 style='color:orangered'>Not Compatible</h6>";
+                    }
+                }
                 selectedComp += "<a href = '#'>R" + cpu.price + "</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
@@ -166,6 +180,7 @@ namespace Front_end
                 selectedComp += "</figure>";
                 selectedComp += "</div>";
                 total += (int)cpu.intPriceFormat;
+               
       
             }
             if (Session["Ram_build"] != null)
@@ -175,6 +190,17 @@ namespace Front_end
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>" + ram.category + "</h5>";
                 selectedComp += "<p>" + ram.name + "</p>";
+                if (case2verify != null)
+                {
+                    if (case2verify.ramType == ram.compatibility)
+                    {
+                        selectedComp += "<h6 style='color:green'>Compatible</h6>";
+                    }
+                    else
+                    {
+                        selectedComp += "<h6 style='color:orangered'>Not Compatible</h6>";
+                    }
+                }
                 selectedComp += "<a href = '#'>R" + ram.price + "</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
@@ -191,6 +217,17 @@ namespace Front_end
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>" + storage.category + "</h5>";
                 selectedComp += "<p>" + storage.name + "</p>";
+                if (case2verify != null)
+                {
+                    if (case2verify.storageType == storage.compatibility)
+                    {
+                        selectedComp += "<h6 style='color:green'>Compatible</h6>";
+                    }
+                    else
+                    {
+                        selectedComp += "<h6 style='color:orangered'>Not Compatible</h6>";
+                    }
+                }
                 selectedComp += "<a href = '#'>R" + storage.price + "</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
@@ -207,6 +244,18 @@ namespace Front_end
                 selectedComp += "<div class='col-md-12 col-xs-12'>";
                 selectedComp += "<h5>" + graphics.category + "</h5>";
                 selectedComp += "<p>" + graphics.name + "</p>";
+                if (case2verify != null)
+                {
+                    if (case2verify.graphicsType == graphics.compatibility)
+                    {
+                        selectedComp += "<h6 style='color:green'>Compatible</h6>";
+                    }
+                    else
+                    {
+                        selectedComp += "<h6 style='color:orangered'>Not Compatible</h6>";
+                    }
+                }
+               
                 selectedComp += "<a href = '#'>R" + graphics.price + "</a>";
                 selectedComp += "</div>";
                 selectedComp += "<figure>";
@@ -217,18 +266,46 @@ namespace Front_end
     
             }
 
-            if (total!=0)
+            
+            if (verifyNullSessionsForCompatibility()==false)
             {
-                selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
-                selectedComp += "<div class='col-md-12 col-xs-12'>";
-                selectedComp += "<h5>Build details:</h5>";
-                selectedComp += "<p>This build is compitable with all selected components. No issues detected</p>";
-                selectedComp += "<a href = '#'>Total: R"+total+"</a>";
-                selectedComp += "</div>";
-                selectedComp += "<figure>";
-                selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
-                selectedComp += "</figure>";
-                selectedComp += "</div>";
+                var status = SRef.VerifyBuildCompatibilitySOAP(Session["Desktop_build"].ToString(), Session["Ram_build"].ToString(),
+                                  Session["CPU_build"].ToString(), Session["Storage_build"].ToString(), Session["Graphics_build"].ToString());  
+                if (status != null)
+                {
+                    Session["compatibilityStatus"] = status.BuildCompatibility;
+                    if (status.BuildCompatibility == "Compatible")
+                    {
+                        selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
+                        selectedComp += "<div class='col-md-12 col-xs-12'>";
+                        selectedComp += "<h5>Build details:</h5>";
+                        selectedComp += "<p>This build is compitable with all selected components. No issues detected</p>";
+                        selectedComp += "<h6 style='color:green'>Ready to build</h6>";
+                        selectedComp += "<a href = '#'>Total: R" + total + "</a>";
+                        selectedComp += "</div>";
+                        selectedComp += "<figure>";
+                        selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
+                        selectedComp += "</figure>";
+                        selectedComp += "</div>";
+                    }
+                    else
+                    {
+                        selectedComp += "<div class='overview_info instructor col-lg-2 col-md-3 col-sm-6 col-xs-12'>";
+                        selectedComp += "<div class='col-md-12 col-xs-12'>";
+                        selectedComp += "<h5>Build details:</h5>";
+                        selectedComp += "<p>This build contains one or more components that is not compatible with your case.</p>";
+                        selectedComp += "<h6 style='color:orangered'>Compatibility issues</h6>";
+                        selectedComp += "<a href = '#'>Total: R" + total + "</a>";
+                        selectedComp += "</div>";
+                        selectedComp += "<figure>";
+                        selectedComp += "<div class='icon'><i class='fa fa-laptop'></i></div>";
+                        selectedComp += "</figure>";
+                        selectedComp += "</div>";
+                    }
+                  
+
+                }
+
             }
           
             shBuild.InnerHtml = selectedComp;
@@ -241,28 +318,41 @@ namespace Front_end
 
             if (verifyNullSessions() == false)
             {
-                string ram = Session["Ram_build"].ToString();
-                string cpu = Session["CPU_build"].ToString();
-                string storage = Session["Storage_build"].ToString();
-                string desktop = Session["Desktop_build"].ToString();
-                string user = Session["LoggedUser"].ToString();
-                string graphics = Session["Graphics_build"].ToString();
-                string totPrice = Convert.ToString(total);
-                int response = SRef.CreateBuildSOAP(user, desktop, cpu, storage, graphics, ram, "Compatible",totPrice);
-                if (response !=-1)
+                if (verifyNullSessionsForCompatibility() == false)
                 {
-                    Session.Remove("Ram_build");
-                    Session.Remove("CPU_build");
-                    Session.Remove("Storage_build");
-                    Session.Remove("Graphics_build");
-                    Session.Remove("Desktop_build");
-                    Session["ActiveBuild"] = response;
-                    Response.Redirect("Cart.aspx");
+                    string ram = Session["Ram_build"].ToString();
+                    string cpu = Session["CPU_build"].ToString();
+                    string storage = Session["Storage_build"].ToString();
+                    string desktop = Session["Desktop_build"].ToString();
+                    string user = Session["LoggedUser"].ToString();
+                    string graphics = Session["Graphics_build"].ToString();
+                    string totPrice = Convert.ToString(total);
+
+
+
+                    int response = SRef.CreateBuildSOAP(user, desktop, cpu, storage, graphics, ram, Session["compatibilityStatus"].ToString(), totPrice);
+                    if (response != -1)
+                    {
+                        Session.Remove("Ram_build");
+                        Session.Remove("CPU_build");
+                        Session.Remove("Storage_build");
+                        Session.Remove("Graphics_build");
+                        Session.Remove("Desktop_build");
+                        Session.Remove("compatibilityStatus");
+                        Session["ActiveBuild"] = response;
+                        Response.Redirect("Cart.aspx");
+                    }
                 }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Your build has compatibility issues, one or more component is not compatible with your case.')", true);
+
+                }
+
+
             }
          
-     
-
+    
         }
 
         public void createBuild()
@@ -332,5 +422,39 @@ namespace Front_end
 
             return false;
         }
+
+
+        public bool verifyNullSessionsForCompatibility()
+        {
+           
+          
+            if (Session["Desktop_build"] == null)
+            {
+                return true;
+            }
+            else if (Session["CPU_build"] == null)
+            {
+                return true;
+            }
+            else if (Session["Storage_build"] == null)
+            {
+                return true;
+            }
+            else if (Session["Graphics_build"] == null)
+            {
+                return true;
+            }
+            else if (Session["LoggedUser"] == null)
+            {
+                return true;
+            }
+
+
+           
+
+            return false;
+        }
+
+     
     }
 }

@@ -12,6 +12,17 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UserClass" nillable="true" type="tns:UserClass" />
+  <xs:complexType name="CompatibilityClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BuildCompatibility" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CpuType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GraphicsType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RamType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StorageType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompatibilityClass" nillable="true" type="tns:CompatibilityClass" />
   <xs:complexType name="User">
     <xs:sequence>
       <xs:element minOccurs="0" name="Id" type="xs:int" />
@@ -130,6 +141,17 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Order" nillable="true" type="tns:Order" />
+  <xs:complexType name="Compatibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="cpuType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desktopCase_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="graphicsType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ramType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="storageType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Compatibility" nillable="true" type="tns:Compatibility" />
   <xs:complexType name="ArrayOfOrder">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />

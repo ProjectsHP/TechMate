@@ -15,6 +15,11 @@ namespace Front_end
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+
+          
+            updtStock.Visible = false;
             string dispComp = "";
             string dispD = "";
             string dispRec = "";
@@ -32,6 +37,7 @@ namespace Front_end
                     dispComp += "</div>";
                     dispComp += "<div class='teacher_info col-md-7 col-xs-12'>";
                     dispComp += "<h4>" + component.name + "<em>R" + component.price + "</em></h4>";
+                    dispComp += "<p>" + component.availability + " items left</p>";
                     dispComp += "<div class='teach_sumarry'>";
                     dispComp += "<h5>Description:</h5>";
                     dispComp += "<p>" + component.description + "</p>";
@@ -41,9 +47,17 @@ namespace Front_end
                     dispComp += "<li>";
                     dispComp += "<a href='Cart.aspx?pId=" + component.Id + "'>Add to cart</a>";
                     dispComp += "<a href='BuildComputer.aspx?" + component.category + "_build=" + component.Id + "'>Add to build</a>";
-                    if (Session["UserType"].ToString() =="Admin")
+                    if (Session["UserType"] != null)
                     {
+                       if (Session["UserType"].ToString() =="Admin")
+                       {
                         dispComp += "<a href='EditComponent.aspx?compId="+component.Id+"'>Update component </a>";
+                       }
+                       /* if (Session["UserType"].ToString() == "Manager")
+                        {
+                            dispComp += "<a href='javascript:controlStockUpdateVisibility();'>Update stock </a>";
+
+                        }*/
                     }
                     dispComp += "</li>";
                     dispComp += "</ul>";
@@ -81,13 +95,42 @@ namespace Front_end
 
 
             dispProduct.InnerHtml = dispComp;
-            dispDescr.InnerText = dispD;
+            if (Session["UserType"] != null)
+            {
+                if (Session["UserType"].ToString() == "Manager")
+                {
+                    updtStock.Visible = true;
+                }
+
+            }
 
 
+                //dispDescr.InnerText = dispD;
+
+            }
 
         }
 
+        protected void btnUpdateStock_Click(object sender, EventArgs e)
+        {
+            if (Request.QueryString["pId"] != null)
+            {
+                string pId = Request.QueryString["pId"].ToString();
 
+                int response = SRef.UpdateStockSOAP(pId, selectType.Value, stockCount.Value);
+                if(response == 1)
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Successfully updated component stock count')", true);
+
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error! could not update stock')", true);
+
+                }
+
+            }
+        }
     }
 
 }

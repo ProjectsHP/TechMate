@@ -325,6 +325,12 @@
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Order.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.CompatibilityClass.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Compatibility.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiceReference\Service.disco" />
     <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
@@ -477,6 +483,7 @@
     <Content Include="Content\images\techmate_logo.png" />
     <Content Include="EditComponent.aspx" />
     <Content Include="Logout.aspx" />
+    <Content Include="Manager.aspx" />
     <Content Include="OrderHistory.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
     <Content Include="Reports.aspx" />
@@ -1128,6 +1135,13 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.aspx.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager.aspx.designer.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>

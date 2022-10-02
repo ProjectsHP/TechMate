@@ -38,6 +38,12 @@
   <wsdl:message name="IService_EditComponentSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:EditComponentSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_UpdateStockSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_UpdateStockSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IService_FulfilOrderSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:FulfilOrderSOAP" />
   </wsdl:message>
@@ -49,6 +55,12 @@
   </wsdl:message>
   <wsdl:message name="IService_RejectOrderSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:RejectOrderSOAPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_VerifyBuildCompatibilitySOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyBuildCompatibilitySOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_VerifyBuildCompatibilitySOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyBuildCompatibilitySOAPResponse" />
   </wsdl:message>
   <wsdl:message name="IService_DeleteUserSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:DeleteUserSOAP" />
@@ -158,6 +170,12 @@
   <wsdl:message name="IService_FetchOrderByIdSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:FetchOrderByIdSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_FetchCaseCompatibilitySOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:FetchCaseCompatibilitySOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_FetchCaseCompatibilitySOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FetchCaseCompatibilitySOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IService_FetchAllUserOrdersSOAP_InputMessage">
     <wsdl:part name="parameters" element="tns:FetchAllUserOrdersSOAP" />
   </wsdl:message>
@@ -188,6 +206,12 @@
   <wsdl:message name="IService_SaveCartItemsSOAP_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaveCartItemsSOAPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_SaveOrderSOAP_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrderSOAP" />
+  </wsdl:message>
+  <wsdl:message name="IService_SaveOrderSOAP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrderSOAPResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceREST_Login_InputMessage">
     <wsdl:part name="parameters" element="tns:Login" />
   </wsdl:message>
@@ -212,6 +236,12 @@
   <wsdl:message name="IServiceREST_EditComponent_OutputMessage">
     <wsdl:part name="parameters" element="tns:EditComponentResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceREST_UpdateStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStock" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_UpdateStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStockResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceREST_FulfilOrder_InputMessage">
     <wsdl:part name="parameters" element="tns:FulfilOrder" />
   </wsdl:message>
@@ -223,6 +253,12 @@
   </wsdl:message>
   <wsdl:message name="IServiceREST_RejectOrder_OutputMessage">
     <wsdl:part name="parameters" element="tns:RejectOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_VerifyBuildCompatibility_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyBuildCompatibility" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_VerifyBuildCompatibility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyBuildCompatibilityResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceREST_DeleteUser_InputMessage">
     <wsdl:part name="parameters" element="tns:DeleteUser" />
@@ -241,6 +277,12 @@
   </wsdl:message>
   <wsdl:message name="IServiceREST_SendMail_OutputMessage">
     <wsdl:part name="parameters" element="tns:SendMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_SaveOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrder" />
+  </wsdl:message>
+  <wsdl:message name="IServiceREST_SaveOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrderResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceREST_CheckoutOrder_InputMessage">
     <wsdl:part name="parameters" element="tns:CheckoutOrder" />
@@ -371,6 +413,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/EditComponentSOAP" message="tns:IService_EditComponentSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/EditComponentSOAPResponse" message="tns:IService_EditComponentSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateStockSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/UpdateStockSOAP" message="tns:IService_UpdateStockSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/UpdateStockSOAPResponse" message="tns:IService_UpdateStockSOAP_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="FulfilOrderSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FulfilOrderSOAP" message="tns:IService_FulfilOrderSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FulfilOrderSOAPResponse" message="tns:IService_FulfilOrderSOAP_OutputMessage" />
@@ -378,6 +424,10 @@
     <wsdl:operation name="RejectOrderSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/RejectOrderSOAP" message="tns:IService_RejectOrderSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/RejectOrderSOAPResponse" message="tns:IService_RejectOrderSOAP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyBuildCompatibilitySOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/VerifyBuildCompatibilitySOAP" message="tns:IService_VerifyBuildCompatibilitySOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/VerifyBuildCompatibilitySOAPResponse" message="tns:IService_VerifyBuildCompatibilitySOAP_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="DeleteUserSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/DeleteUserSOAP" message="tns:IService_DeleteUserSOAP_InputMessage" />
@@ -451,6 +501,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchOrderByIdSOAP" message="tns:IService_FetchOrderByIdSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchOrderByIdSOAPResponse" message="tns:IService_FetchOrderByIdSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="FetchCaseCompatibilitySOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchCaseCompatibilitySOAP" message="tns:IService_FetchCaseCompatibilitySOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchCaseCompatibilitySOAPResponse" message="tns:IService_FetchCaseCompatibilitySOAP_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="FetchAllUserOrdersSOAP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP" message="tns:IService_FetchAllUserOrdersSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse" message="tns:IService_FetchAllUserOrdersSOAP_OutputMessage" />
@@ -471,6 +525,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/SaveCartItemsSOAP" message="tns:IService_SaveCartItemsSOAP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/SaveCartItemsSOAPResponse" message="tns:IService_SaveCartItemsSOAP_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="SaveOrderSOAP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SaveOrderSOAP" message="tns:IService_SaveOrderSOAP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SaveOrderSOAPResponse" message="tns:IService_SaveOrderSOAP_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IServiceREST">
     <wsdl:operation name="Login">
@@ -489,6 +547,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/EditComponent" message="tns:IServiceREST_EditComponent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/EditComponentResponse" message="tns:IServiceREST_EditComponent_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/UpdateStock" message="tns:IServiceREST_UpdateStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/UpdateStockResponse" message="tns:IServiceREST_UpdateStock_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="FulfilOrder">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/FulfilOrder" message="tns:IServiceREST_FulfilOrder_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/FulfilOrderResponse" message="tns:IServiceREST_FulfilOrder_OutputMessage" />
@@ -496,6 +558,10 @@
     <wsdl:operation name="RejectOrder">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/RejectOrder" message="tns:IServiceREST_RejectOrder_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/RejectOrderResponse" message="tns:IServiceREST_RejectOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyBuildCompatibility">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/VerifyBuildCompatibility" message="tns:IServiceREST_VerifyBuildCompatibility_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/VerifyBuildCompatibilityResponse" message="tns:IServiceREST_VerifyBuildCompatibility_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="DeleteUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/DeleteUser" message="tns:IServiceREST_DeleteUser_InputMessage" />
@@ -508,6 +574,10 @@
     <wsdl:operation name="SendMail">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/SendMail" message="tns:IServiceREST_SendMail_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/SendMailResponse" message="tns:IServiceREST_SendMail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/SaveOrder" message="tns:IServiceREST_SaveOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceREST/SaveOrderResponse" message="tns:IServiceREST_SaveOrder_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="CheckoutOrder">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceREST/CheckoutOrder" message="tns:IServiceREST_CheckoutOrder_InputMessage" />
@@ -629,6 +699,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="UpdateStockSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/UpdateStockSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="FulfilOrderSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/FulfilOrderSOAP" style="document" />
       <wsdl:input>
@@ -640,6 +719,15 @@
     </wsdl:operation>
     <wsdl:operation name="RejectOrderSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/RejectOrderSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyBuildCompatibilitySOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/VerifyBuildCompatibilitySOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -809,6 +897,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="FetchCaseCompatibilitySOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/FetchCaseCompatibilitySOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="FetchAllUserOrdersSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/FetchAllUserOrdersSOAP" style="document" />
       <wsdl:input>
@@ -847,6 +944,15 @@
     </wsdl:operation>
     <wsdl:operation name="SaveCartItemsSOAP">
       <soap:operation soapAction="http://tempuri.org/IService/SaveCartItemsSOAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOrderSOAP">
+      <soap:operation soapAction="http://tempuri.org/IService/SaveOrderSOAP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

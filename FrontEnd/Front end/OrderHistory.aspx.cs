@@ -30,12 +30,14 @@ namespace Front_end
                         dispOrder += "<div class='product'>";
                         dispOrder += "<div class='product-price'>"+count+"</div>";
                         dispOrder += "<div class='product-price''>"+o.Id+"</div>";
-                        dispOrder += "<div class='product-price'>Build</div>";
+                        dispOrder += "<div class='product-price'>mmm</div>";
                         dispOrder += "<div class='product-price'>"+o.dateCreated+"</div>";
-                        dispOrder += "<div class='product-price'>"+loggedUser.name+" "+loggedUser.surname+"</div>";
                         dispOrder += "<div class='product-price'>R23000</div>";
                         dispOrder += "<div class='product-price'>5</div>";
                         dispOrder += "<div class='product-price'>Confirmed</div>";
+                        dispOrder += "<div class='product-price'>";
+                        dispOrder += "<a href='ProofOfPurchase.aspx?orderId=" + o.Id + "'>View order</a>";
+                        dispOrder += "</div>";
                         dispOrder += "</div>";
                         count++;
 

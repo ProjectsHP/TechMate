@@ -44,5 +44,11 @@
         <elementListCompartment Id="041915ee-42e4-4064-a0ab-21988ae8c54d" absoluteBounds="5.64, 3.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="87f7bb91-7e95-45a1-9982-1131c3ccac32" absoluteBounds="1.375, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/linq2sqlDataContext/Compatibility" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0abc52a5-86cb-4983-a041-f8ec78f4bb4d" absoluteBounds="1.3900000000000001, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

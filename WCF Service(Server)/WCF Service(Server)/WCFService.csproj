@@ -113,6 +113,7 @@
   <ItemGroup>
     <Compile Include="BuildClass.cs" />
     <Compile Include="CartItemClass.cs" />
+    <Compile Include="CompatibilityClass.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="IServiceREST.cs" />
     <Compile Include="linq2sql.designer.cs">

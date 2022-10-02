@@ -51,6 +51,9 @@ namespace WCF_Service_Server_
     partial void InsertCart(Cart instance);
     partial void UpdateCart(Cart instance);
     partial void DeleteCart(Cart instance);
+    partial void InsertCompatibility(Compatibility instance);
+    partial void UpdateCompatibility(Compatibility instance);
+    partial void DeleteCompatibility(Compatibility instance);
     #endregion
 		
 		public linq2sqlDataContext() : 
@@ -136,6 +139,14 @@ namespace WCF_Service_Server_
 			get
 			{
 				return this.GetTable<Cart>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Compatibility> Compatibilities
+		{
+			get
+			{
+				return this.GetTable<Compatibility>();
 			}
 		}
 	}
@@ -1653,6 +1664,188 @@ namespace WCF_Service_Server_
 					this._totalDiscountSaved = value;
 					this.SendPropertyChanged("totalDiscountSaved");
 					this.OntotalDiscountSavedChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Compatibility")]
+	public partial class Compatibility : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<int> _desktopCase_id;
+		
+		private string _ramType;
+		
+		private string _storageType;
+		
+		private string _cpuType;
+		
+		private string _graphicsType;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OndesktopCase_idChanging(System.Nullable<int> value);
+    partial void OndesktopCase_idChanged();
+    partial void OnramTypeChanging(string value);
+    partial void OnramTypeChanged();
+    partial void OnstorageTypeChanging(string value);
+    partial void OnstorageTypeChanged();
+    partial void OncpuTypeChanging(string value);
+    partial void OncpuTypeChanged();
+    partial void OngraphicsTypeChanging(string value);
+    partial void OngraphicsTypeChanged();
+    #endregion
+		
+		public Compatibility()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_desktopCase_id", DbType="Int")]
+		public System.Nullable<int> desktopCase_id
+		{
+			get
+			{
+				return this._desktopCase_id;
+			}
+			set
+			{
+				if ((this._desktopCase_id != value))
+				{
+					this.OndesktopCase_idChanging(value);
+					this.SendPropertyChanging();
+					this._desktopCase_id = value;
+					this.SendPropertyChanged("desktopCase_id");
+					this.OndesktopCase_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ramType", DbType="VarChar(MAX)")]
+		public string ramType
+		{
+			get
+			{
+				return this._ramType;
+			}
+			set
+			{
+				if ((this._ramType != value))
+				{
+					this.OnramTypeChanging(value);
+					this.SendPropertyChanging();
+					this._ramType = value;
+					this.SendPropertyChanged("ramType");
+					this.OnramTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_storageType", DbType="VarChar(MAX)")]
+		public string storageType
+		{
+			get
+			{
+				return this._storageType;
+			}
+			set
+			{
+				if ((this._storageType != value))
+				{
+					this.OnstorageTypeChanging(value);
+					this.SendPropertyChanging();
+					this._storageType = value;
+					this.SendPropertyChanged("storageType");
+					this.OnstorageTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cpuType", DbType="VarChar(MAX)")]
+		public string cpuType
+		{
+			get
+			{
+				return this._cpuType;
+			}
+			set
+			{
+				if ((this._cpuType != value))
+				{
+					this.OncpuTypeChanging(value);
+					this.SendPropertyChanging();
+					this._cpuType = value;
+					this.SendPropertyChanged("cpuType");
+					this.OncpuTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_graphicsType", DbType="VarChar(MAX)")]
+		public string graphicsType
+		{
+			get
+			{
+				return this._graphicsType;
+			}
+			set
+			{
+				if ((this._graphicsType != value))
+				{
+					this.OngraphicsTypeChanging(value);
+					this.SendPropertyChanging();
+					this._graphicsType = value;
+					this.SendPropertyChanged("graphicsType");
+					this.OngraphicsTypeChanged();
 				}
 			}
 		}

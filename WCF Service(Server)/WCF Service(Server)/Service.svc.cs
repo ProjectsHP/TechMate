@@ -124,12 +124,129 @@ namespace WCF_Service_Server_
 
         }
 
-
         public int SendMail(string receiverEmail, string subject, string body)
         {
             MailSender mailSender = new MailSender();
             int response = mailSender.sendTextMail(receiverEmail, subject, body);
             return response;
+        }
+
+
+        // *********LOGIC************LOGIC*************LOGIC******************
+
+        public CompatibilityClass VerifyBuildCompatibility(string desktopBaseId, string ram, string cpu, string storage, string graphics)
+        {
+
+            CompatibilityClass compObj = new CompatibilityClass();
+            int deskId = Convert.ToInt32(desktopBaseId);
+                        var caseCompatibility = (from u in db.Compatibilities
+                              where u.desktopCase_id == deskId
+                              select u).FirstOrDefault();
+
+
+            if (caseCompatibility != null)
+            {
+                int ramId = Convert.ToInt32(ram);
+                int cpuId = Convert.ToInt32(cpu);
+                int graphicsId = Convert.ToInt32(graphics);
+                int storageId = Convert.ToInt32(storage);
+
+                dynamic build = (from u in db.Components
+                                     where u.Id == ramId ||
+                                           u.Id == cpuId ||
+                                           u.Id == graphicsId ||
+                                           u.Id == storageId 
+                                     select u);
+             
+                if(build != null)
+                {
+                    foreach(Component comp in build)
+                    {
+                    
+                        switch (comp.category)
+                        {
+                            case "Ram":
+                                if (caseCompatibility.ramType == comp.compatibility)
+                                {
+                                    compObj.RamType = "Compatible";
+                          
+
+                                }
+                                else
+                                {
+                                    compObj.RamType = "Not Compatible";
+                                
+                                }
+                              
+                                break;
+                            case "CPU":
+                                if (caseCompatibility.cpuType == comp.compatibility)
+                                {
+                                    compObj.CpuType = "Compatible";
+                              
+
+                                }
+                                else
+                                {
+                                    compObj.CpuType = "Not Compatible";
+                                
+                                }
+
+                                break;
+                            case "Graphics":
+                                if (caseCompatibility.graphicsType == comp.compatibility)
+                                {
+                                    compObj.GraphicsType = "Compatible";
+                          
+
+                                }
+                                else
+                                {
+                                    compObj.GraphicsType = "Not Compatible";
+                              
+                                }
+
+                                break;
+                            case "Storage":
+                                if (caseCompatibility.storageType == comp.compatibility)
+                                {
+                                    compObj.StorageType = "Compatible";
+                             
+
+                                }
+                                else
+                                {
+                                    compObj.StorageType = "Not Compatible";
+                              
+                                }
+                                break;
+                                default:
+
+                                break;
+
+
+                        }
+                    }
+
+                    compObj.BaseId = desktopBaseId;
+                    string y = "Compatible";
+                    string n = "Not Compatible";
+                    if(compObj.RamType ==y && compObj.CpuType==y && compObj.GraphicsType==y && compObj.StorageType == y)
+                    {
+                        compObj.BuildCompatibility = y;
+                    }
+                    else
+                    {
+                        compObj.BuildCompatibility = n;
+                    }
+
+                    return compObj;
+                }
+                return null;
+
+               
+            }
+            return null;
         }
 
 
@@ -373,6 +490,59 @@ namespace WCF_Service_Server_
             }
         }
 
+        public int UpdateStock(string componentId, string updateType, string quantity)
+        {
+            int stockQuantity = Convert.ToInt32(quantity);
+
+            var activeComp = FetchComponent(componentId);
+            if (activeComp != null)
+            {
+                int stockCount = Convert.ToInt32(activeComp.availability);
+                
+                    if (updateType == "Increase" )
+                    {
+                        stockCount += stockQuantity;
+                    }
+                    else if(updateType == "Decrease")
+                    {
+                        stockCount -= stockQuantity;
+                        if (stockCount <= 0)
+                        {
+                            stockCount = 0;
+                        }
+                    }
+                    
+               
+                    activeComp.availability = stockCount.ToString();
+
+
+                    try
+                    {
+                        //edited successfully
+                        db.SubmitChanges();
+                        return 1;
+                    }
+                    catch (IndexOutOfRangeException ex)
+                    {
+                        //error OutOfRangeException 
+                        ex.GetBaseException();
+                        return -1;
+                    }
+              
+
+
+
+
+            }
+            else
+            {
+                //Order not found
+                return 0;
+            }
+
+            return -1;
+        }
+
         //******CREATE************* CREATE*************CREATE************* CREATE*************CREATE*******
 
         public int CreateBuild(string user_id, string desktop_id, string cpu_id, string storage_id, string graphics_id, string ram_id, string compatibilityStatus, string totalPrice)
@@ -398,7 +568,7 @@ namespace WCF_Service_Server_
                 graphics_id = graphics,
                 ram_id = ram,
                 compatibilityStatus = compatibilityStatus,
-                category = "Desktop Computer",
+                category = "Build",
                 user_id = user,
                 totalPrice = total,
 
@@ -507,6 +677,55 @@ namespace WCF_Service_Server_
 
         }
 
+        public int SaveOrder(string cartId, string userAddressId, string userId)
+        {
+            int user_id = Convert.ToInt32(userId);
+
+
+            string date = DateTime.Today.ToString("dd/MM/yyyy");
+            var newOrder = new Order
+                {
+                    cartId = Convert.ToInt32(cartId),
+                    paymentId = -1,
+                    userAddressId = Convert.ToInt32(userAddressId),
+                    userId = Convert.ToInt32(userId),
+                    dateCreated=date,
+                    paymentMade="Paid",
+                   orderStatus="Pending",
+                };
+                db.Orders.InsertOnSubmit(newOrder);
+
+                try
+                {
+                    // added new cart successfully
+                    db.SubmitChanges();
+                string body = "Hello your order has been received. It will shortly be reviewed and place for shippment.";
+              
+                int retVal = SendMail("hlulankubayi@gmail.com", "Order received", body);
+                if (retVal == 1)
+                {
+                    //added and sent email
+                    int orderId = newOrder.Id;
+                    return orderId;
+                }
+                else
+                {
+                    // added but did not send email
+                    return -3;
+                }
+                
+                }
+                catch (Exception ex)
+                {
+                    //error occured
+                    ex.GetBaseException();
+                    return -1;
+                }
+
+          
+
+        }
+
         public int SaveCartItems(string componentId, string cartId, string quantity)
         {
 
@@ -569,7 +788,7 @@ namespace WCF_Service_Server_
                     }
                     if (allSavedToCart == true)
                     {
-                        string date = DateTime.Today.ToString("yy/MM/yyyy");
+                        string date = DateTime.Today.ToString("dd/MM/yyyy");
                         var newOrder = new Order
                         {
                             cartId = cartSaved,
@@ -634,7 +853,7 @@ namespace WCF_Service_Server_
                     country = country,
                     province = province,
                     city = city,
-                    suburb = "Brixton",
+                   // suburb = "Brixton",
                     streetUnit = streetUnit,
 
 
@@ -645,7 +864,9 @@ namespace WCF_Service_Server_
                 {
                     // registered successfully
                     db.SubmitChanges();
-                    return 1;
+                    int addrId = newUserAddress.Id;
+                    return addrId;
+                  
                 }
                 catch (Exception ex)
                 {
@@ -980,7 +1201,7 @@ namespace WCF_Service_Server_
                 objOrder.OrderId = activeOrder.Id;
                 objOrder.CardNumber = Convert.ToInt32(cardNumber);
                 objOrder.OrderDate = activeOrder.dateCreated;
-                objOrder.OrderStatus = "Accepted";
+                objOrder.OrderStatus = activeOrder.orderStatus;
                 objOrder.PaymentMade = activeOrder.paymentMade;
 
                 //get address
@@ -990,7 +1211,6 @@ namespace WCF_Service_Server_
                 if (address != null)
                 {
                     objOrder.DeliveryAddress = address;
-
 
                 }
                 else
@@ -1145,6 +1365,23 @@ namespace WCF_Service_Server_
             }
         }
 
-       
+        public Compatibility FetchCaseCompatibility(string caseId)
+        {
+            int cId = Convert.ToInt32(caseId);
+            var compatibility = (from u in db.Compatibilities
+                              where u.desktopCase_id == cId
+                              select u).FirstOrDefault();
+
+            if (compatibility != null)
+            {
+                return compatibility;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+      
     }
 }

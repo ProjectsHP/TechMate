@@ -81,4 +81,14 @@
       <Column Name="totalDiscountSaved" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Compatibility" Member="Compatibilities">
+    <Type Name="Compatibility">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="desktopCase_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ramType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="storageType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="cpuType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="graphicsType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>

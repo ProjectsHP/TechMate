@@ -31,10 +31,10 @@
                         <label class="product-price">Order Id</label>
                         <label class="product-price">Order Type</label>
                         <label class="product-price">Date Created</label>
-                        <label class="product-price">Customer</label>
                         <label class="product-price">Total Price</label>
                         <label class="product-price">Total Items</label>
                         <label class="product-price">Status</label>
+                     <label class="product-price"></label>
                  
                 </div>
 

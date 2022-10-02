@@ -98,6 +98,9 @@
                     </div>
 
                     <div class="top_info" style="float: right">
+                         <span class="cont_no" id="lilProfile" runat="server">
+                            <i class="fa fa-user"></i><a href="UserProfile.aspx">My profile</a>
+                        </span>
                         <span class="cont_no" id="liCart" runat="server">
                             <i class="fa fa-shopping-cart"></i><a href="Cart.aspx">Cart</a>
                         </span>
@@ -132,14 +135,8 @@
                                         <h5 class="sp_module_title">LearnMate</h5>
                                     </li>
                                     <li>
-                                        <a href="#">Home</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="index.html">Home 1</a></li>
-                                            <li><a href="index2.html">Home 2</a></li>
-                                            <li><a href="index3.html">Home 3</a></li>
-                                            <li><a href="index4.html">Home 4</a></li>
-                                            <li><a href="index5.html">Home 5</a></li>
-                                        </ul>
+                                        <a href="Home.aspx">Home</a>
+                                      
                                     </li>
                                     <li>
                                         <a href="#">Courses</a>
@@ -185,18 +182,26 @@
                                         <ul class="submenu">
                                             <li><a href="SelectComponent.aspx?category=Laptop">Laptops</a></li>
                                             <li><a href="SelectComponent.aspx?category=Desktop">Desktops</a></li>
-                                            <li><a href="SelectComponent.aspx?category=Laptop">Cell Phones</a></li>
-                                            <li><a href="SelectComponent.aspx?category=Laptop">Accessories</a></li>
-                                            <li><a href="SelectComponent.aspx?category=Laptop">Individual Components</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Ram">Rams</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Storage">Storage</a></li>
+                                            <li><a href="SelectComponent.aspx?category=CPU">Processors</a></li>
+                                            <li><a href="SelectComponent.aspx?category=Graphics">Graphics</a></li>
                                         </ul>
                                     </li>
-                                    <li><a class="trigger" href="#">Blog <i class="fa fa-angle-down"></i></a>
+                                   <%-- <li><a class="trigger" href="#">Blog <i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a href="blog_right_sidebar.html">Latest right now</a></li>
                                             <li><a href="blog_left_sidebar.html">Most popular</a></li>
                                             <li><a href="blog_dtl.html">Recommended buys</a></li>
                                         </ul>
-                                    </li>
+                                    </li>--%>
+                                    
+                                    <li><a id="liOrderHistory" runat="server" class="trigger" href="OrderHistory.aspx">My orders</a></li>
+<%--                                    <li><a id="liContactUs" runat="server" class="trigger" href="contact.html">Contact us</a></li>--%>
+<%--                                    <li><a id="liProfile" runat="server" class="trigger" href="UserProfile.aspx">Profile</a></li>--%>
+                                    <li><a id="liClerk" runat="server" class="trigger" href="Clerk.aspx">Clerk </a></li>
+                                      <li><a id="liAdmin" runat="server" class="trigger" href="Admin.aspx">Admin </a></li>
+                                      <li><a id="liManager" runat="server" class="trigger" href="Manager.aspx">Manager </a></li>
                                     <li><a id="liReports" runat="server" class="trigger" href="#">Reports <i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
                                             <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Sales</a></li>
@@ -204,10 +209,6 @@
                                             <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Usage</a></li>
                                         </ul>
                                     </li>
-                                    <li><a id="liOrderHistory" runat="server" class="trigger" href="OrderHistory.aspx">My orders</a></li>
-                                    <li><a id="liContactUs" runat="server" class="trigger" href="contact.html">Contact us</a></li>
-                                    <li><a id="liProfile" runat="server" class="trigger" href="UserProfile.aspx">Profile</a></li>
-
 
                                 </ul>
                             </div>

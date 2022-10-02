@@ -21,7 +21,7 @@
 
 
 
-        <div id="contact_wrap" style="color:orangered" class="contact_wrap">
+        <div id="contact_wrap" class="contact_wrap">
 
             <div class="container">
                 <div id="duplicateSearch" runat="server">

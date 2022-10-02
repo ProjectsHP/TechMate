@@ -11,9 +11,12 @@ namespace Front_end
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            liContactUs.Visible = false;
-            liProfile.Visible = false;
+          //  liContactUs.Visible = false;
+      //      liProfile.Visible = false;
             liReports.Visible = false;
+            liManager.Visible = false;
+            liClerk.Visible = false;
+            liAdmin.Visible = false;
             if (Session["LoggedUser"] == null)
             {
                 liLogout.Visible = false;
@@ -21,15 +24,29 @@ namespace Front_end
             }
             else
             {
-                if (Session["UserType"]=="Admin")
+                string userType = Session["UserType"].ToString();
+                switch (userType)
                 {
-                    liContactUs.Visible = false;
-                    liReports.Visible = true;
+                    case "Manager":
+                        liReports.Visible = true;
+                        liManager.Visible = true;
+                        break;
 
+                    case "Admin":
+                        liAdmin.Visible = true;
+                        break;
+
+                    case "Clerk":
+                        liClerk.Visible=true;
+                        break;
+
+                        default:
+                        break;
                 }
+              
                 liLogout.Visible = true;
                 liLogin.Visible=false;
-                liProfile.Visible = true;
+               // liProfile.Visible = true;
             }
         }
     }

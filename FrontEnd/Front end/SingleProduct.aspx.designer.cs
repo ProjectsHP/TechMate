@@ -24,13 +24,40 @@ namespace Front_end
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dispProduct;
 
         /// <summary>
-        /// dispDescr control.
+        /// updtStock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dispDescr;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl updtStock;
+
+        /// <summary>
+        /// selectType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect selectType;
+
+        /// <summary>
+        /// stockCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl stockCount;
+
+        /// <summary>
+        /// btnUpdateStock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdateStock;
 
         /// <summary>
         /// recList control.

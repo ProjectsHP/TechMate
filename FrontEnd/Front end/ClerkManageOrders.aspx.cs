@@ -66,14 +66,38 @@ namespace Front_end
 
         protected void btnFulfilOrder_Click(object sender, EventArgs e)
         {
+            bool isRunning = true;
             if (Request.QueryString["mngOrderId"] != null)
             {
                 string orderId = Request.QueryString["mngOrderId"].ToString();
                 int orderResponse = SRef.FulfilOrderSOAP(orderId);
-                if(orderResponse == 1)
+                if(orderResponse == 1 && Session["LoggedUser"]!=null)
                 {
-                    //update stock here
-                    Response.Redirect("ClerkViewOrders.aspx");
+
+                    //Update stock levels here
+                    string uId = Session["LoggedUser"].ToString();
+                    var myOrder =  SRef.FetchOrderSOAP(uId,orderId,"223");
+
+                    if(myOrder != null)
+                    {
+                        foreach(Component c in myOrder.ListOfComponents)
+                        {
+                           int update = SRef.UpdateStockSOAP(c.Id.ToString(), "Decrease", "1");
+                            if(update != 1)
+                            {
+                                isRunning = false;
+                            }
+                        }
+                    }
+                    if (isRunning)
+                    {
+                        Response.Redirect("ClerkViewOrders.aspx");
+                    }
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error! could not find order')", true);
+
                 }
             }
             else

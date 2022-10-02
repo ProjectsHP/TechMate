@@ -57,6 +57,7 @@ namespace Front_end
 
                 switch (UserID.UserType)
                 {
+
                     case "Admin":
                         Session["UserType"] = "Admin";
                         Response.Redirect("Admin.aspx");
@@ -65,9 +66,14 @@ namespace Front_end
                         Session["UserType"] = "Clerk";
                         Response.Redirect("Clerk.aspx");
                     break;
+                    case "Manager":
+                        Session["UserType"] = "Manager";
+                        Response.Redirect("Manager.aspx");
+                        break;
                     case "Customer":
                         Session["UserType"] = "Customer";
                         break;
+
 
                 }
 

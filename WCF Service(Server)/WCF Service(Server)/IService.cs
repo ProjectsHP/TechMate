@@ -32,11 +32,23 @@ namespace WCF_Service_Server_
         int EditComponent(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
 
 
+        [OperationContract(Name = "UpdateStockSOAP")]
+        int UpdateStock(string componentId, string updateType, string quantity);
+
+
+        // Logic functions********** Logic functions********** Logic functions********** Logic functions**********
+
         [OperationContract(Name = "FulfilOrderSOAP")]
         int FulfilOrder(string orderId);
 
         [OperationContract(Name = "RejectOrderSOAP")]
         int RejectOrder(string orderId, string reason);
+
+
+        [OperationContract(Name = "VerifyBuildCompatibilitySOAP")]
+        CompatibilityClass VerifyBuildCompatibility(string desktopBaseId, string ram, string cpu, string storage, string graphics);
+
+
 
 
         [OperationContract(Name = "DeleteUserSOAP")]
@@ -112,6 +124,10 @@ namespace WCF_Service_Server_
         Order FetchOrderById(string orderId);
 
 
+        [OperationContract(Name = "FetchCaseCompatibilitySOAP")]
+        Compatibility FetchCaseCompatibility(string componentId);
+
+
 
         [OperationContract(Name = "FetchAllUserOrdersSOAP")]
         List<Order> FetchAllUserOrders(string userId);
@@ -135,6 +151,10 @@ namespace WCF_Service_Server_
 
         [OperationContract(Name = "SaveCartItemsSOAP")]
         int SaveCartItems(string componentId, string cartId, string quantity);
+
+
+        [OperationContract(Name = "SaveOrderSOAP")]
+        int SaveOrder(string cartId, string userAddressId, string userId);
 
 
 

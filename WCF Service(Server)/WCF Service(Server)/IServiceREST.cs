@@ -46,6 +46,14 @@ namespace WCF_Service_Server_
 
 
         [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/UpdateStockURI/{componentId}/{updateType}/{quantity}",
+        RequestFormat = WebMessageFormat.Json,
+        ResponseFormat = WebMessageFormat.Json,
+        BodyStyle = WebMessageBodyStyle.Wrapped)]
+        int UpdateStock(string componentId, string updateType, string quantity);
+
+
+        [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/FulfilOrderURI/{orderId}",
         RequestFormat = WebMessageFormat.Json,
         ResponseFormat = WebMessageFormat.Json,
@@ -59,6 +67,14 @@ namespace WCF_Service_Server_
         ResponseFormat = WebMessageFormat.Json,
         BodyStyle = WebMessageBodyStyle.Wrapped)]
         int RejectOrder(string orderId, string reason);
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", UriTemplate = "/VerifyBuildCompatibilityURI/{desktopBaseId}/{ram}/{cpu}/{storage}/{graphics}",
+     RequestFormat = WebMessageFormat.Json,
+     ResponseFormat = WebMessageFormat.Json,
+     BodyStyle = WebMessageBodyStyle.Wrapped)]
+        CompatibilityClass VerifyBuildCompatibility(string desktopBaseId, string ram, string cpu, string storage, string graphics);
+
 
 
         [OperationContract]
@@ -92,6 +108,14 @@ namespace WCF_Service_Server_
           ResponseFormat = WebMessageFormat.Json,
           BodyStyle = WebMessageBodyStyle.Wrapped)]
         int SendMail(string receiverEmail, string subject, string body);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "/SaveOrderURI",
+          RequestFormat = WebMessageFormat.Json,
+          ResponseFormat = WebMessageFormat.Json,
+          BodyStyle = WebMessageBodyStyle.Wrapped)]
+        int SaveOrder(string cartId, string userAddressId, string userId);
 
 
         [OperationContract]

@@ -24,7 +24,7 @@ namespace Front_end
 
                 string dispList = "";
                 string dispSummary = "";
-                dynamic itemsList = (Component[])Session["ListOfItemsToCheckout"];
+                dynamic itemsList = (List<Component>)Session["ListOfItemsToCheckout"];
 
 
 
@@ -72,35 +72,33 @@ namespace Front_end
                 {
                   int addressResponse =  SRef.StoreUserAddressSOAP(user_id, txtCountry.Value, txtProvince.Value, txtCity.Value,
                                                txtStreetUnit.Value, txtOrderName.Value, txtOrderSurname.Value,txtOrderContact.Value, txtOrderEmail.Value);
-                    if(addressResponse == 1)
+                    if(addressResponse > 0)
                     {
 
-                      
-                        List<int> list = new List<int>();
-                        
-                       
-                        for (int i = 0; i < listOfItems.Count; i++)
-                        {
-                            list.Add(listOfItems[i].Id);
-                        }
-                        int[] myArray = list.ToArray();
-                        int response = SRef.CheckoutOrderSOAP(user_id, "-5", "-5", "-5", "-5", totalPrice.ToString(),
-                                                              listOfItems.Count.ToString(), "True","Pending",myArray);
 
-                        if (response == 1)
+                        string activeCartId = "-1";
+                        string AddrId = addressResponse.ToString();
+                        if (Session["ActiveCartId"] != null)
                         {
-                          
-                            Session["ActiveContacts"]=txtOrderContact.Value;
-                            Session["ActiveEmail"]=txtOrderEmail.Value;
-                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thank you, your order has been placed.')", true);
-                            Response.Redirect("ProofOfPurchase.aspx");
+                            activeCartId = Session["ActiveCartId"].ToString();
 
-                        }
-                        else
-                        {
-                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error! internal error please try again')", true);
+                           int orderId = SRef.SaveOrderSOAP(activeCartId, AddrId, user_id);
+                            if(orderId > 0)
+                            {
+                                Session["ActiveOrderId"] = orderId.ToString();
+                                Session["ActiveContacts"] = txtOrderContact.Value;
+                                Session["ActiveEmail"] = txtOrderEmail.Value;
+                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thank you, your order has been placed.')", true);
+                                Response.Redirect("ProofOfPurchase.aspx");
+                            }
+                            else
+                            {
+                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Error! internal error please try again')", true);
+
+                            }
 
                         }
+
                     }
                     else
                     {

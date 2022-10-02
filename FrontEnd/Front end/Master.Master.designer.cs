@@ -33,6 +33,15 @@ namespace Front_end
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lilProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lilProfile;
+
+        /// <summary>
         /// liCart control.
         /// </summary>
         /// <remarks>
@@ -69,15 +78,6 @@ namespace Front_end
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
 
         /// <summary>
-        /// liReports control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor liReports;
-
-        /// <summary>
         /// liOrderHistory control.
         /// </summary>
         /// <remarks>
@@ -87,22 +87,40 @@ namespace Front_end
         protected global::System.Web.UI.HtmlControls.HtmlAnchor liOrderHistory;
 
         /// <summary>
-        /// liContactUs control.
+        /// liClerk control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor liContactUs;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor liClerk;
 
         /// <summary>
-        /// liProfile control.
+        /// liAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor liProfile;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor liAdmin;
+
+        /// <summary>
+        /// liManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor liManager;
+
+        /// <summary>
+        /// liReports control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor liReports;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

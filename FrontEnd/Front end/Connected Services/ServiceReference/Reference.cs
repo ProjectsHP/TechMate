@@ -156,6 +156,131 @@ namespace Front_end.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CompatibilityClass", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class CompatibilityClass : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BaseIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BuildCompatibilityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CpuTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GraphicsTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RamTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StorageTypeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BaseId {
+            get {
+                return this.BaseIdField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BaseIdField, value) != true)) {
+                    this.BaseIdField = value;
+                    this.RaisePropertyChanged("BaseId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BuildCompatibility {
+            get {
+                return this.BuildCompatibilityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BuildCompatibilityField, value) != true)) {
+                    this.BuildCompatibilityField = value;
+                    this.RaisePropertyChanged("BuildCompatibility");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CpuType {
+            get {
+                return this.CpuTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CpuTypeField, value) != true)) {
+                    this.CpuTypeField = value;
+                    this.RaisePropertyChanged("CpuType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string GraphicsType {
+            get {
+                return this.GraphicsTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GraphicsTypeField, value) != true)) {
+                    this.GraphicsTypeField = value;
+                    this.RaisePropertyChanged("GraphicsType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RamType {
+            get {
+                return this.RamTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RamTypeField, value) != true)) {
+                    this.RamTypeField = value;
+                    this.RaisePropertyChanged("RamType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string StorageType {
+            get {
+                return this.StorageTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StorageTypeField, value) != true)) {
+                    this.StorageTypeField = value;
+                    this.RaisePropertyChanged("StorageType");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
     [System.SerializableAttribute()]
     public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1301,6 +1426,131 @@ namespace Front_end.ServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Compatibility", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service_Server_")]
+    [System.SerializableAttribute()]
+    public partial class Compatibility : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string cpuTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> desktopCase_idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string graphicsTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ramTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string storageTypeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string cpuType {
+            get {
+                return this.cpuTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.cpuTypeField, value) != true)) {
+                    this.cpuTypeField = value;
+                    this.RaisePropertyChanged("cpuType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> desktopCase_id {
+            get {
+                return this.desktopCase_idField;
+            }
+            set {
+                if ((this.desktopCase_idField.Equals(value) != true)) {
+                    this.desktopCase_idField = value;
+                    this.RaisePropertyChanged("desktopCase_id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string graphicsType {
+            get {
+                return this.graphicsTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.graphicsTypeField, value) != true)) {
+                    this.graphicsTypeField = value;
+                    this.RaisePropertyChanged("graphicsType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ramType {
+            get {
+                return this.ramTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ramTypeField, value) != true)) {
+                    this.ramTypeField = value;
+                    this.RaisePropertyChanged("ramType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string storageType {
+            get {
+                return this.storageTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.storageTypeField, value) != true)) {
+                    this.storageTypeField = value;
+                    this.RaisePropertyChanged("storageType");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IService")]
     public interface IService {
@@ -1335,6 +1585,12 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/EditComponentSOAP", ReplyAction="http://tempuri.org/IService/EditComponentSOAPResponse")]
         System.Threading.Tasks.Task<int> EditComponentSOAPAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateStockSOAP", ReplyAction="http://tempuri.org/IService/UpdateStockSOAPResponse")]
+        int UpdateStockSOAP(string componentId, string updateType, string quantity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/UpdateStockSOAP", ReplyAction="http://tempuri.org/IService/UpdateStockSOAPResponse")]
+        System.Threading.Tasks.Task<int> UpdateStockSOAPAsync(string componentId, string updateType, string quantity);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FulfilOrderSOAP", ReplyAction="http://tempuri.org/IService/FulfilOrderSOAPResponse")]
         int FulfilOrderSOAP(string orderId);
         
@@ -1346,6 +1602,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/RejectOrderSOAP", ReplyAction="http://tempuri.org/IService/RejectOrderSOAPResponse")]
         System.Threading.Tasks.Task<int> RejectOrderSOAPAsync(string orderId, string reason);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/VerifyBuildCompatibilitySOAP", ReplyAction="http://tempuri.org/IService/VerifyBuildCompatibilitySOAPResponse")]
+        Front_end.ServiceReference.CompatibilityClass VerifyBuildCompatibilitySOAP(string desktopBaseId, string ram, string cpu, string storage, string graphics);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/VerifyBuildCompatibilitySOAP", ReplyAction="http://tempuri.org/IService/VerifyBuildCompatibilitySOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.CompatibilityClass> VerifyBuildCompatibilitySOAPAsync(string desktopBaseId, string ram, string cpu, string storage, string graphics);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/DeleteUserSOAP", ReplyAction="http://tempuri.org/IService/DeleteUserSOAPResponse")]
         int DeleteUserSOAP(string activeId);
@@ -1455,6 +1717,12 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchOrderByIdSOAP", ReplyAction="http://tempuri.org/IService/FetchOrderByIdSOAPResponse")]
         System.Threading.Tasks.Task<Front_end.ServiceReference.Order> FetchOrderByIdSOAPAsync(string orderId);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchCaseCompatibilitySOAP", ReplyAction="http://tempuri.org/IService/FetchCaseCompatibilitySOAPResponse")]
+        Front_end.ServiceReference.Compatibility FetchCaseCompatibilitySOAP(string componentId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchCaseCompatibilitySOAP", ReplyAction="http://tempuri.org/IService/FetchCaseCompatibilitySOAPResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.Compatibility> FetchCaseCompatibilitySOAPAsync(string componentId);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/FetchAllUserOrdersSOAP", ReplyAction="http://tempuri.org/IService/FetchAllUserOrdersSOAPResponse")]
         Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId);
         
@@ -1484,6 +1752,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveCartItemsSOAP", ReplyAction="http://tempuri.org/IService/SaveCartItemsSOAPResponse")]
         System.Threading.Tasks.Task<int> SaveCartItemsSOAPAsync(string componentId, string cartId, string quantity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveOrderSOAP", ReplyAction="http://tempuri.org/IService/SaveOrderSOAPResponse")]
+        int SaveOrderSOAP(string cartId, string userAddressId, string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SaveOrderSOAP", ReplyAction="http://tempuri.org/IService/SaveOrderSOAPResponse")]
+        System.Threading.Tasks.Task<int> SaveOrderSOAPAsync(string cartId, string userAddressId, string userId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1553,6 +1827,14 @@ namespace Front_end.ServiceReference {
             return base.Channel.EditComponentSOAPAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
         }
         
+        public int UpdateStockSOAP(string componentId, string updateType, string quantity) {
+            return base.Channel.UpdateStockSOAP(componentId, updateType, quantity);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateStockSOAPAsync(string componentId, string updateType, string quantity) {
+            return base.Channel.UpdateStockSOAPAsync(componentId, updateType, quantity);
+        }
+        
         public int FulfilOrderSOAP(string orderId) {
             return base.Channel.FulfilOrderSOAP(orderId);
         }
@@ -1567,6 +1849,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> RejectOrderSOAPAsync(string orderId, string reason) {
             return base.Channel.RejectOrderSOAPAsync(orderId, reason);
+        }
+        
+        public Front_end.ServiceReference.CompatibilityClass VerifyBuildCompatibilitySOAP(string desktopBaseId, string ram, string cpu, string storage, string graphics) {
+            return base.Channel.VerifyBuildCompatibilitySOAP(desktopBaseId, ram, cpu, storage, graphics);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.CompatibilityClass> VerifyBuildCompatibilitySOAPAsync(string desktopBaseId, string ram, string cpu, string storage, string graphics) {
+            return base.Channel.VerifyBuildCompatibilitySOAPAsync(desktopBaseId, ram, cpu, storage, graphics);
         }
         
         public int DeleteUserSOAP(string activeId) {
@@ -1713,6 +2003,14 @@ namespace Front_end.ServiceReference {
             return base.Channel.FetchOrderByIdSOAPAsync(orderId);
         }
         
+        public Front_end.ServiceReference.Compatibility FetchCaseCompatibilitySOAP(string componentId) {
+            return base.Channel.FetchCaseCompatibilitySOAP(componentId);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.Compatibility> FetchCaseCompatibilitySOAPAsync(string componentId) {
+            return base.Channel.FetchCaseCompatibilitySOAPAsync(componentId);
+        }
+        
         public Front_end.ServiceReference.Order[] FetchAllUserOrdersSOAP(string userId) {
             return base.Channel.FetchAllUserOrdersSOAP(userId);
         }
@@ -1752,6 +2050,14 @@ namespace Front_end.ServiceReference {
         public System.Threading.Tasks.Task<int> SaveCartItemsSOAPAsync(string componentId, string cartId, string quantity) {
             return base.Channel.SaveCartItemsSOAPAsync(componentId, cartId, quantity);
         }
+        
+        public int SaveOrderSOAP(string cartId, string userAddressId, string userId) {
+            return base.Channel.SaveOrderSOAP(cartId, userAddressId, userId);
+        }
+        
+        public System.Threading.Tasks.Task<int> SaveOrderSOAPAsync(string cartId, string userAddressId, string userId) {
+            return base.Channel.SaveOrderSOAPAsync(cartId, userAddressId, userId);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1782,6 +2088,12 @@ namespace Front_end.ServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/EditComponent", ReplyAction="http://tempuri.org/IServiceREST/EditComponentResponse")]
         System.Threading.Tasks.Task<int> EditComponentAsync(string compId, string name, string priceToDisp, string availability, string description, string image, string category, string compatibilityStatus);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/UpdateStock", ReplyAction="http://tempuri.org/IServiceREST/UpdateStockResponse")]
+        int UpdateStock(string componentId, string updateType, string quantity);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/UpdateStock", ReplyAction="http://tempuri.org/IServiceREST/UpdateStockResponse")]
+        System.Threading.Tasks.Task<int> UpdateStockAsync(string componentId, string updateType, string quantity);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/FulfilOrder", ReplyAction="http://tempuri.org/IServiceREST/FulfilOrderResponse")]
         int FulfilOrder(string orderId);
         
@@ -1793,6 +2105,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/RejectOrder", ReplyAction="http://tempuri.org/IServiceREST/RejectOrderResponse")]
         System.Threading.Tasks.Task<int> RejectOrderAsync(string orderId, string reason);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/VerifyBuildCompatibility", ReplyAction="http://tempuri.org/IServiceREST/VerifyBuildCompatibilityResponse")]
+        Front_end.ServiceReference.CompatibilityClass VerifyBuildCompatibility(string desktopBaseId, string ram, string cpu, string storage, string graphics);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/VerifyBuildCompatibility", ReplyAction="http://tempuri.org/IServiceREST/VerifyBuildCompatibilityResponse")]
+        System.Threading.Tasks.Task<Front_end.ServiceReference.CompatibilityClass> VerifyBuildCompatibilityAsync(string desktopBaseId, string ram, string cpu, string storage, string graphics);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/DeleteUser", ReplyAction="http://tempuri.org/IServiceREST/DeleteUserResponse")]
         int DeleteUser(string activeId);
@@ -1811,6 +2129,12 @@ namespace Front_end.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/SendMail", ReplyAction="http://tempuri.org/IServiceREST/SendMailResponse")]
         System.Threading.Tasks.Task<int> SendMailAsync(string receiverEmail, string subject, string body);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/SaveOrder", ReplyAction="http://tempuri.org/IServiceREST/SaveOrderResponse")]
+        int SaveOrder(string cartId, string userAddressId, string userId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/SaveOrder", ReplyAction="http://tempuri.org/IServiceREST/SaveOrderResponse")]
+        System.Threading.Tasks.Task<int> SaveOrderAsync(string cartId, string userAddressId, string userId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceREST/CheckoutOrder", ReplyAction="http://tempuri.org/IServiceREST/CheckoutOrderResponse")]
         int CheckoutOrder(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId);
@@ -1980,6 +2304,14 @@ namespace Front_end.ServiceReference {
             return base.Channel.EditComponentAsync(compId, name, priceToDisp, availability, description, image, category, compatibilityStatus);
         }
         
+        public int UpdateStock(string componentId, string updateType, string quantity) {
+            return base.Channel.UpdateStock(componentId, updateType, quantity);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateStockAsync(string componentId, string updateType, string quantity) {
+            return base.Channel.UpdateStockAsync(componentId, updateType, quantity);
+        }
+        
         public int FulfilOrder(string orderId) {
             return base.Channel.FulfilOrder(orderId);
         }
@@ -1994,6 +2326,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> RejectOrderAsync(string orderId, string reason) {
             return base.Channel.RejectOrderAsync(orderId, reason);
+        }
+        
+        public Front_end.ServiceReference.CompatibilityClass VerifyBuildCompatibility(string desktopBaseId, string ram, string cpu, string storage, string graphics) {
+            return base.Channel.VerifyBuildCompatibility(desktopBaseId, ram, cpu, storage, graphics);
+        }
+        
+        public System.Threading.Tasks.Task<Front_end.ServiceReference.CompatibilityClass> VerifyBuildCompatibilityAsync(string desktopBaseId, string ram, string cpu, string storage, string graphics) {
+            return base.Channel.VerifyBuildCompatibilityAsync(desktopBaseId, ram, cpu, storage, graphics);
         }
         
         public int DeleteUser(string activeId) {
@@ -2018,6 +2358,14 @@ namespace Front_end.ServiceReference {
         
         public System.Threading.Tasks.Task<int> SendMailAsync(string receiverEmail, string subject, string body) {
             return base.Channel.SendMailAsync(receiverEmail, subject, body);
+        }
+        
+        public int SaveOrder(string cartId, string userAddressId, string userId) {
+            return base.Channel.SaveOrder(cartId, userAddressId, userId);
+        }
+        
+        public System.Threading.Tasks.Task<int> SaveOrderAsync(string cartId, string userAddressId, string userId) {
+            return base.Channel.SaveOrderAsync(cartId, userAddressId, userId);
         }
         
         public int CheckoutOrder(string userId, string orderId, string cardId, string paymentId, string userAddressId, string totalPrice, string totalItems, string paymentMade, string orderStatus, int[] listOfCartItemId) {
