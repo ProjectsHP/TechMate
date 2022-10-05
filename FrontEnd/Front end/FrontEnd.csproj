@@ -389,6 +389,7 @@
     <Content Include="Content\images\ConnecTech-02.png" />
     <Content Include="Content\images\ConnecTech.jpg" />
     <Content Include="Content\images\fancybox\no_Image.png" />
+    <Content Include="Content\images\lg.png" />
     <Content Include="Content\images\logoTM.jpg" />
     <Content Include="Content\images\products\components\c1.jpg" />
     <Content Include="Content\images\products\components\c2.jpg" />
@@ -486,9 +487,9 @@
     <Content Include="Manager.aspx" />
     <Content Include="OrderHistory.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
-    <Content Include="Reports.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="ReportsStockLevel.aspx" />
     <Content Include="Scripts\CodeMirror\addon\comment\comment.js" />
     <Content Include="Scripts\CodeMirror\addon\comment\continuecomment.js" />
     <Content Include="Scripts\CodeMirror\addon\dialog\dialog.css" />
@@ -1165,6 +1166,13 @@
       <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsStockLevel.aspx.cs">
+      <DependentUpon>ReportsStockLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportsStockLevel.aspx.designer.cs">
+      <DependentUpon>ReportsStockLevel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SelectComponent.aspx.cs">
       <DependentUpon>SelectComponent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1180,16 +1188,6 @@
       <DependentUpon>SingleProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Loader.cs" />
-    <Compile Include="SQL_DBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="TechMate_dbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1217,13 +1215,6 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Reports.aspx.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reports.aspx.designer.cs">
-      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1257,29 +1248,7 @@
     </None>
     <None Include="packages.config" />
     <Content Include="Web.sitemap" />
-    <Content Include="SQL_DBDataSet.xsc">
-      <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\TechMateWeb - Web Deploy.pubxml" />
-    <None Include="SQL_DBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SQL_DBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="SQL_DBDataSet.xss">
-      <DependentUpon>SQL_DBDataSet.xsd</DependentUpon>
-    </Content>
-    <Content Include="TechMate_dbDataSet.xsc">
-      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="TechMate_dbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TechMate_dbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="TechMate_dbDataSet.xss">
-      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1291,10 +1260,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="userReport.rdlc" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
+    <EmbeddedResource Include="StockReport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
