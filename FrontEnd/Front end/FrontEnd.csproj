@@ -483,13 +483,13 @@
     <Content Include="Content\images\products\ui\350\storageBG-350x430.jpg" />
     <Content Include="Content\images\techmate_logo.png" />
     <Content Include="EditComponent.aspx" />
+    <Content Include="InventoryReport.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Manager.aspx" />
     <Content Include="OrderHistory.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="ReportsStockLevel.aspx" />
     <Content Include="Scripts\CodeMirror\addon\comment\comment.js" />
     <Content Include="Scripts\CodeMirror\addon\comment\continuecomment.js" />
     <Content Include="Scripts\CodeMirror\addon\dialog\dialog.css" />
@@ -1123,6 +1123,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InventoryReport.aspx.cs">
+      <DependentUpon>InventoryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryReport.aspx.designer.cs">
+      <DependentUpon>InventoryReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1166,13 +1173,6 @@
       <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportsStockLevel.aspx.cs">
-      <DependentUpon>ReportsStockLevel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReportsStockLevel.aspx.designer.cs">
-      <DependentUpon>ReportsStockLevel.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SelectComponent.aspx.cs">
       <DependentUpon>SelectComponent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1188,6 +1188,11 @@
       <DependentUpon>SingleProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\Loader.cs" />
+    <Compile Include="TechMate_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1249,6 +1254,17 @@
     <None Include="packages.config" />
     <Content Include="Web.sitemap" />
     <None Include="Properties\PublishProfiles\TechMateWeb - Web Deploy.pubxml" />
+    <Content Include="TechMate_dbDataSet.xsc">
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TechMate_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechMate_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TechMate_dbDataSet.xss">
+      <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1263,7 +1279,7 @@
     <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="StockReport.rdlc" />
+    <EmbeddedResource Include="repInventory.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

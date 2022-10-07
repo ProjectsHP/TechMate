@@ -204,7 +204,7 @@
                                       <li><a id="liManager" runat="server" class="trigger" href="Manager.aspx">Manager </a></li>
                                     <li><a id="liReports" runat="server" class="trigger" href="#">Reports <i class="fa fa-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Sales</a></li>
+                                            <li><a class="trigger" href="InventoryReport.aspx" target="_blank" rel="noopener noreferrer">Inventory</a></li>
                                             <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Finance</a></li>
                                             <li><a class="trigger" href="Reports.aspx" target="_blank" rel="noopener noreferrer">Usage</a></li>
                                         </ul>
