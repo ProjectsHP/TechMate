@@ -487,6 +487,7 @@
     <Content Include="Logout.aspx" />
     <Content Include="Manager.aspx" />
     <Content Include="OrderHistory.aspx" />
+    <Content Include="PopularityReport.aspx" />
     <Content Include="ProofOfPurchase.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
@@ -1165,6 +1166,13 @@
     <Compile Include="OrderHistory.aspx.designer.cs">
       <DependentUpon>OrderHistory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PopularityReport.aspx.cs">
+      <DependentUpon>PopularityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopularityReport.aspx.designer.cs">
+      <DependentUpon>PopularityReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProofOfPurchase.aspx.cs">
       <DependentUpon>ProofOfPurchase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1192,6 +1200,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechMate_dbFullDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
@@ -1265,6 +1278,17 @@
     <Content Include="TechMate_dbDataSet.xss">
       <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="TechMate_dbFullDataSet.xsc">
+      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TechMate_dbFullDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TechMate_dbFullDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TechMate_dbFullDataSet.xss">
+      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1279,6 +1303,7 @@
     <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PopularityReport.rdlc" />
     <EmbeddedResource Include="repInventory.rdlc" />
   </ItemGroup>
   <PropertyGroup>
