@@ -303,6 +303,7 @@
     <Content Include="Clerk.aspx" />
     <Content Include="ClerkManageOrders.aspx" />
     <Content Include="ClerkViewOrders.aspx" />
+    <Content Include="ComponentPopularityReport.aspx" />
     <Content Include="ConfirmOrder.aspx" />
     <Content Include="Connected Services\ServiceReference\Front_end.ServiceReference.Component.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -958,8 +959,6 @@
     <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />
     <Content Include="SqlServerTypes\x86\msvcr120.dll" />
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll" />
-    <Content Include="UserProfile.aspx" />
-    <Content Include="UserProfileDemo.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\fontello-custom3b7b-2.html" />
@@ -1039,7 +1038,6 @@
     <Content Include="Content\images\slider_with_instructor.jpg" />
     <Content Include="Content\images\to-top-arrow.png" />
     <Content Include="Global.asax" />
-    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -1094,6 +1092,13 @@
     </Compile>
     <Compile Include="ClerkViewOrders.aspx.designer.cs">
       <DependentUpon>ClerkViewOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentPopularityReport.aspx.cs">
+      <DependentUpon>ComponentPopularityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComponentPopularityReport.aspx.designer.cs">
+      <DependentUpon>ComponentPopularityReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConfirmOrder.aspx.cs">
       <DependentUpon>ConfirmOrder.aspx</DependentUpon>
@@ -1201,31 +1206,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="TechMate_dbFullDataSet.Designer.cs">
+    <Compile Include="TechMate_dbDataSetFull.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="UserProfile.aspx.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserProfile.aspx.designer.cs">
-      <DependentUpon>UserProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserProfileDemo.aspx.cs">
-      <DependentUpon>UserProfileDemo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserProfileDemo.aspx.designer.cs">
-      <DependentUpon>UserProfileDemo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <DependentUpon>TechMate_dbDataSetFull.xsd</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -1278,16 +1262,16 @@
     <Content Include="TechMate_dbDataSet.xss">
       <DependentUpon>TechMate_dbDataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="TechMate_dbFullDataSet.xsc">
-      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
+    <Content Include="TechMate_dbDataSetFull.xsc">
+      <DependentUpon>TechMate_dbDataSetFull.xsd</DependentUpon>
     </Content>
-    <None Include="TechMate_dbFullDataSet.xsd">
+    <None Include="TechMate_dbDataSetFull.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TechMate_dbFullDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>TechMate_dbDataSetFull.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <Content Include="TechMate_dbFullDataSet.xss">
-      <DependentUpon>TechMate_dbFullDataSet.xsd</DependentUpon>
+    <Content Include="TechMate_dbDataSetFull.xss">
+      <DependentUpon>TechMate_dbDataSetFull.xsd</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
